@@ -1,13 +1,12 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { Text, View, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
+import 'react-native-gesture-handler';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
-export default function Index() {
+export default function Tour() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
-      <Link href="/Welcome" style={styles.button}>
-        Go to welcome screen
-      </Link>
+      <Text style={styles.text}>Tour screen</Text>
     </View>
   );
 }
