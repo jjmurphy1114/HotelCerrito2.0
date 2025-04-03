@@ -8,7 +8,7 @@ import Tour from './Tour';
 export default function Home() {
   return (
     <View style={styles.container}>
-          <Text style={styles.text}>Tour screen</Text>
+          <Text style={styles.text}>HOME PAGE</Text>
         </View>
       );
     }

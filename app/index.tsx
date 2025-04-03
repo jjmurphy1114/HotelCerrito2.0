@@ -1,36 +1,18 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
-import 'react-native-gesture-handler';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
-import Activities from './Activities';
-import Tour from './Tour';
-import Home from './Home'
+import { View, Text, Button } from 'react-native';
+import { useRouter } from 'expo-router';
 
+export default function Welcome() {
+  const router = useRouter();
 
-const Drawer = createDrawerNavigator(); 
+  const handleLanguageSelect = () => {
+    // Navigate to the drawer group (starts with /home)
+    router.replace('/(drawer)/Home');
+  };
 
-export default function Index() {
   return (
-    <View style={styles.container}>
-              <Text style={styles.text}>Tour screen</Text>
-            </View>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 24 }}>Welcome!</Text>
+      <Button title="Choose English" onPress={handleLanguageSelect} />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#25292e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: 'underline',
-    color: '#fff',
-  },
-});
