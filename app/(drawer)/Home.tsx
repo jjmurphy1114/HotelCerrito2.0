@@ -40,7 +40,7 @@ export default function Home() {
     <View style={styles.container}>
       <Image
         style={styles.image}
-        source={require('/Users/ceciherriman/HotelCerrito2.0/assets/images/emoji4.png')} 
+        source={require('../../assets/images/emoji4.png')} 
         placeholder={{ blurhash }}
         contentFit="cover"
         transition={1000}
