@@ -4,6 +4,7 @@ import { Dimensions } from 'react-native';
 import { useTheme } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -16,6 +17,7 @@ const blurhash =
 export default function OtherServices() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
 
   const styles = StyleSheet.create({
     container: {
@@ -90,7 +92,7 @@ export default function OtherServices() {
           <Text style={styles.headerText}>{t('otherServices.header')}</Text>
         </View>
 
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={(e) => {router.replace('/otherServices/CerritoRestaurant')}} >
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>{t('otherServices.button1')}</Text>
             <Image
