@@ -105,7 +105,7 @@ export default function OtherServices() {
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={(e) => {router.replace('/otherServices/Laundry')}}>
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>{t('otherServices.button2')}</Text>
             <Image
@@ -119,7 +119,7 @@ export default function OtherServices() {
         </TouchableOpacity>
 
 
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={(e) => {router.replace('/otherServices/WaterRefill')}}>
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>{t('otherServices.button3')}</Text>
             <Image
@@ -133,7 +133,7 @@ export default function OtherServices() {
         </TouchableOpacity>
 
 
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={(e) => {router.replace('/otherServices/RoomCleaning')}}>
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>{t('otherServices.button4')}</Text>
             <Image
@@ -147,7 +147,7 @@ export default function OtherServices() {
         </TouchableOpacity>
 
 
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={(e) => {router.replace('/otherServices/ReserveActivities')}}>
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>{t('otherServices.button5')}</Text>
             <Image
@@ -161,7 +161,7 @@ export default function OtherServices() {
         </TouchableOpacity>
 
 
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={(e) => {router.replace('/otherServices/Maintenance')}}>
           <View style={styles.buttonContainer}>
             <Text style={styles.buttonText}>{t('otherServices.button6')}</Text>
             <Image
