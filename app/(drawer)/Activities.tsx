@@ -7,31 +7,67 @@ import * as React from 'react'
 import { useState } from 'react';
 import { Button, Card, IconButton, MD3Colors } from 'react-native-paper';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
+import { useTranslation } from 'react-i18next';
+
 
 const RelaxCarousel = () => {
+  const { t } = useTranslation();
   const [index, setIndex] = useState(0);
   const length = 7;
 
-  const HandlePrevious = () => {
+  const handlePrevious = () => {
     const newIndex = index - 1;
     setIndex(newIndex < 0 ? length - 1 : newIndex);
   };
 
-  const HandleNext = () => {
+  const handleNext = () => {
     const newIndex = index + 1;
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
   return (
-    <View className='carousel'>
-      <Button onPress={HandlePrevious}>Previous</Button>
-      <Button onPress={HandleNext}>Next</Button>
-      <Text>{index}</Text>
+    <View style={{flexDirection: 'row', width: '100%'}}>
+      <View style={{ flex: 0 }}>
+        <IconButton
+          icon = {'chevron-left'}
+          iconColor={'orange'}
+          size={80}
+          onPress={handlePrevious}
+        />
+      </View>
+      <View style={{ flex: 1}}>
+        <Card>
+          <Card.Title title = {relaxActivities[index].activityNum + "/" + relaxActivities[index].totActivities + ": " + t(relaxActivities[index].activityTitle)}/>
+          <Card.Cover source = {{ uri: relaxImages[index]}} />
+          <View style={{ flexDirection: 'row'}}>
+            <View style={{ flex: 0}}>
+              <Text>{t("activities.description")}</Text>
+            </View>
+            <View style={{ flex: 1}}>
+              <IconButton
+                icon = {'chevron-right'}
+                iconColor={'black'}
+                size={20}
+                onPress={() => console.log('Pressed')}
+              />
+            </View>
+          </View>
+        </Card>
+      </View>
+      <View style={{ flex: 0 }}>
+        <IconButton
+          icon = {'chevron-right'}
+          iconColor={'orange'}
+          size={80}
+          onPress={handleNext}
+        />
+      </View>
     </View>
   );
 };
 
 const EducatCarousel = () => {
+  const { t } = useTranslation();
   const [index, setIndex] = useState(0);
   const length = 5;
 
@@ -46,15 +82,48 @@ const EducatCarousel = () => {
   };
 
   return (
-    <View className='carousel'>
-      <Button onPress={handlePrevious}>Previous</Button>
-      <Button onPress={handleNext}>Next</Button>
-      <Text>{index}</Text>
+    <View style={{flexDirection: 'row', width: '100%'}}>
+      <View style={{ flex: 0 }}>
+        <IconButton
+          icon = {'chevron-left'}
+          iconColor={'orange'}
+          size={80}
+          onPress={handlePrevious}
+        />
+      </View>
+      <View style={{ flex: 1}}>
+        <Card>
+          <Card.Title title = {educatActivities[index].activityNum + "/" + educatActivities[index].totActivities + ": " + t(educatActivities[index].activityTitle)}/>
+          <Card.Cover source = {{ uri: educatImages[index]}} />
+          <View style={{ flexDirection: 'row'}}>
+            <View style={{ flex: 0}}>
+              <Text>{t("activities.description")}</Text>
+            </View>
+            <View style={{ flex: 1}}>
+              <IconButton
+                icon = {'chevron-right'}
+                iconColor={'black'}
+                size={20}
+                onPress={() => console.log('Pressed')}
+              />
+            </View>
+          </View>
+        </Card>
+      </View>
+      <View style={{ flex: 0 }}>
+        <IconButton
+          icon = {'chevron-right'}
+          iconColor={'orange'}
+          size={80}
+          onPress={handleNext}
+        />
+      </View>
     </View>
   );
 };
 
 const AdventCarousel = () => {
+  const { t } = useTranslation();
   const [index, setIndex] = useState(0);
   const length = 6;
 
@@ -69,13 +138,46 @@ const AdventCarousel = () => {
   };
 
   return (
-    <View className='carousel'>
-      <Button onPress={handlePrevious}>Previous</Button>
-      <Button onPress={handleNext}>Next</Button>
-      <Text>{index}</Text>
+    <View style={{flexDirection: 'row', width: '100%'}}>
+      <View style={{ flex: 0 }}>
+        <IconButton
+          icon = {'chevron-left'}
+          iconColor={'orange'}
+          size={80}
+          onPress={handlePrevious}
+        />
+      </View>
+      <View style={{ flex: 1}}>
+        <Card>
+          <Card.Title title = {adventActivities[index].activityNum + "/" + adventActivities[index].totActivities + ": " + t(adventActivities[index].activityTitle)}/>
+          <Card.Cover source = {{ uri: adventImages[index]}} />
+          <View style={{ flexDirection: 'row'}}>
+            <View style={{ flex: 0}}>
+              <Text>{t("activities.description")}</Text>
+            </View>
+            <View style={{ flex: 1}}>
+              <IconButton
+                icon = {'chevron-right'}
+                iconColor={'black'}
+                size={20}
+                onPress={() => console.log('Pressed')}
+              />
+            </View>
+          </View>
+        </Card>
+      </View>
+      <View style={{ flex: 0 }}>
+        <IconButton
+          icon = {'chevron-right'}
+          iconColor={'orange'}
+          size={80}
+          onPress={handleNext}
+        />
+      </View>
     </View>
   );
 };
+
 
 const relaxImages = [
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVklBFlfJOKO5inPoGF1TJ59PAdrVmWJ5Eg&s',
@@ -98,58 +200,146 @@ type ActivityCardProps = {
 
 const Pool: ActivityCardProps = {
   imageUrl: relaxImages[0],
-  activityTitle: "Swim at the Pool",
+  activityTitle: "activities.relaxing.pool.title",
   activityNum: 1,
   totActivities: 7,
-  description: "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 7:00 PM, M-F.",
+  description: "activities.relaxing.pool.description",
 };
 
 const Restaurant: ActivityCardProps = {
   imageUrl: relaxImages[1],
-  activityTitle: "Eat at the Restaurant",
+  activityTitle: "activities.relaxing.restaurant.title",
   activityNum: 2,
   totActivities: 7,
-  description: "Taste the flavors of Paraguay, with vegetables straight from the school garden and cheese made from the milk of campus cows. See how to make a lunch or dinner reservation here.",
+  description: "activities.relaxing.restaurant.description",
 };
 
 const Hammocks: ActivityCardProps = {
   imageUrl: relaxImages[0],
-  activityTitle: "Lie in the Hammocks",
+  activityTitle: "activities.relaxing.hammocks.title",
   activityNum: 3,
   totActivities: 7,
-  description: "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time. Weather dependent.",
+  description: "activities.relaxing.hammocks.description",
 };
 
 const Games: ActivityCardProps = {
   imageUrl: relaxImages[0],
-  activityTitle: "Play Tabletop Games",
+  activityTitle: "activities.relaxing.games.title",
   activityNum: 4,
   totActivities: 7,
-  description: "Visit the game room by the pavilion for a rousing session of foosball, cards, or board games.",
+  description: "activities.relaxing.games.description",
 };
 
 const Quinchos: ActivityCardProps = {
   imageUrl: relaxImages[0],
-  activityTitle: "Sit at the Quinchos",
+  activityTitle: "activities.relaxing.quinchos.title",
   activityNum: 5,
   totActivities: 7,
-  description: "Cook and gather with friends/family. ingesta de asados y destinado a reuniones y actividades sociales.",
+  description: "activities.relaxing.quinchos.description",
 };
 
 const GiftShop: ActivityCardProps = {
   imageUrl: relaxImages[0],
-  activityTitle: "Purchase Souvenirs",
+  activityTitle: "activities.relaxing.gift_shop.title",
   activityNum: 6,
   totActivities: 7,
-  description: "Support the Cerrito School by purchasing products in the hotel lobby. You can find yogurt, dulce de leche, and cheese, all made by students on campus. We also have snacks, drinks, and souvenirs.",
+  description: "activities.relaxing.gift_shop.description",
 };
 
 const Exercise: ActivityCardProps = {
   imageUrl: relaxImages[0],
-  activityTitle: "Work Out",
+  activityTitle: "activities.relaxing.exercise.title",
   activityNum: 7,
   totActivities: 7,
-  description: "Exercise. Just do it.",
+  description: "activities.relaxing.exercise.description",
+};
+
+const Production: ActivityCardProps = {
+  imageUrl: educatImages[0],
+  activityTitle: "activities.educational.production.title",
+  activityNum: 1,
+  totActivities: 5,
+  description: "activities.educational.production.description",
+};
+
+const Tour: ActivityCardProps = {
+  imageUrl: educatImages[1],
+  activityTitle: "activities.educational.tour.title",
+  activityNum: 2,
+  totActivities: 5,
+  description: "activities.educational.tour.description",
+};
+
+const Cheese: ActivityCardProps = {
+  imageUrl: educatImages[0],
+  activityTitle: "activities.educational.cheese.title",
+  activityNum: 3,
+  totActivities: 5,
+  description: "activities.educational.cheese.description",
+};
+
+const TobaQom: ActivityCardProps = {
+  imageUrl: educatImages[0],
+  activityTitle: "activities.educational.toba_qom.title",
+  activityNum: 4,
+  totActivities: 7,
+  description: "activities.educational.toba_qom.description",
+};
+
+const Eucalyptus: ActivityCardProps = {
+  imageUrl: educatImages[0],
+  activityTitle: "activities.educational.eucalyptus.title",
+  activityNum: 5,
+  totActivities: 7,
+  description: "activities.educational.eucalyptus.description",
+};
+
+const Monkeys: ActivityCardProps = {
+  imageUrl: adventImages[0],
+  activityTitle: "activities.adventurous.monkeys.title",
+  activityNum: 1,
+  totActivities: 6,
+  description: "activities.adventurous.monkeys.description",
+};
+
+const Hiking: ActivityCardProps = {
+  imageUrl: adventImages[1],
+  activityTitle: "activities.adventurous.hiking.title",
+  activityNum: 2,
+  totActivities: 6,
+  description: "activities.adventurous.hiking.description",
+};
+
+const Biking: ActivityCardProps = {
+  imageUrl: adventImages[0],
+  activityTitle: "activities.adventurous.biking.title",
+  activityNum: 3,
+  totActivities: 6,
+  description: "activities.adventurous.biking.description",
+};
+
+const Horses: ActivityCardProps = {
+  imageUrl: adventImages[0],
+  activityTitle: "activities.adventurous.horses.title",
+  activityNum: 4,
+  totActivities: 6,
+  description: "activities.adventurous.horses.description",
+};
+
+const Sports: ActivityCardProps = {
+  imageUrl: adventImages[0],
+  activityTitle: "activities.adventurous.sports.title",
+  activityNum: 5,
+  totActivities: 6,
+  description: "activities.adventurous.sports.description",
+};
+
+const Playground: ActivityCardProps = {
+  imageUrl: adventImages[0],
+  activityTitle: "activities.adventurous.playground.title",
+  activityNum: 6,
+  totActivities: 6,
+  description: "activities.adventurous.playground.description",
 };
 
 const relaxActivities: ActivityCardProps[] = [
@@ -162,52 +352,43 @@ const relaxActivities: ActivityCardProps[] = [
   Exercise,
 ];
 
-// const educatActivities: ActivityCardProps = [
-//   Production,
-//   Tour,
-//   Cheese,
-//   TobaQom,
-//   Eucalyptus,
-// ];
+const educatActivities: ActivityCardProps[] = [
+  Production,
+  Tour,
+  Cheese,
+  TobaQom,
+  Eucalyptus,
+];
 
-// const adventActivities: ActivityCardProps = [
-//   Monkeys,
-//   Hiking,
-//   Biking,
-//   Horses,
-//   Sports,
-//   Playground,
-// ];
+const adventActivities: ActivityCardProps[] = [
+  Monkeys,
+  Hiking,
+  Biking,
+  Horses,
+  Sports,
+  Playground,
+];
 
 //export default Carousel;
 
 const Activity_Cards = () => (
   <View>
     <Card>
-      {/* <View style={styles.title}> */}
-        <Card.Title title = "Relaxing Activities" />
-      {/* </View> */}
+      <Card.Title title = "Relaxing Activities" />
       <Card.Content>
-        {/* <Button>L</Button>
-        <Card.Cover source={{ uri: relaxImages[0]}} />
-        <Button>R</Button> */}
         <RelaxCarousel></RelaxCarousel>
       </Card.Content>
     </Card>
     <Card>
       <Card.Title title = "Educational Activities" />
       <Card.Content>
-        <Button>L</Button>
-        <Card.Cover source={{ uri: educatImages[0]}} />
-        <Button>R</Button>
+        	<EducatCarousel></EducatCarousel>
       </Card.Content>
     </Card>
     <Card>
       <Card.Title title = "Adventure Activities" />
       <Card.Content>
-        <Button>L</Button>
-        <Card.Cover source={{ uri: adventImages[0]}} />
-        <Button>R</Button>
+        <AdventCarousel></AdventCarousel>
       </Card.Content>
     </Card>
   </View>
@@ -218,10 +399,7 @@ const Activity_Cards = () => (
 export default function Activities() {
   return (
     <View style={styles.container}>
-      {/* <Activity_Cards></Activity_Cards> */}
-      <RelaxCarousel></RelaxCarousel>
-      <EducatCarousel></EducatCarousel>
-      <AdventCarousel></AdventCarousel>
+      <Activity_Cards></Activity_Cards>
       {/* {<Text style={styles.text}>Activities screen</Text>} */}
     </View>
   );

@@ -10,7 +10,85 @@
         "welcome": "Welcome to the Self-Guided Tour!"
     }, 
     "activities": {
-
+        "description": "Description",
+        "relaxing": {
+            "pool": {
+                "title": "Swim in the Pool",
+                "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 7:00 PM, M-F."
+            },
+            "restaurant": {
+                "title": "Eat at the Restaurant",
+                "description": "Taste the flavors of Paraguay, with vegetables straight from the school garden and cheese made from the milk of campus cows. See how to make a lunch or dinner reservation here."
+            },
+            "hammocks": {
+                "title": "Lie in the Hammocks",
+                "description": "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time. Weather dependent."
+            },
+            "games": {
+                "title": "Play Tabletop Games",
+                "description": "Visit the game room by the pavilion for a rousing session of foosball, cards, or board games."
+            },
+            "quinchos": {
+                "title": "Sit at the Quinchos",
+                "description": "Cook and gather with friends/family. ingesta de asados y destinado a reuniones y actividades sociales."
+            },
+            "gift_shop": {
+                "title": "Purchase Souvenirs",
+                "description": "Support the Cerrito School by purchasing products in the hotel lobby. You can find yogurt, dulce de leche, and cheese, all made by students on campus. We also have snacks, drinks, and souvenirs."
+            },
+            "exercise": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "educational": {
+            "production": {
+                "title": "",
+                "description": ""
+            },
+            "tour": {
+                "title": "",
+                "description": ""
+            },
+            "cheese": {
+                "title": "",
+                "description": ""
+            },
+            "toba_qom": {
+                "title": "",
+                "description": ""
+            },
+            "eucalyptus": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "adventurous": {
+            "monkeys": {
+                "title": "",
+                "description": ""
+            },
+            "hiking": {
+                "title": "",
+                "description": ""
+            },
+            "biking": {
+                "title": "",
+                "description": ""
+            },
+            "horses": {
+                "title": "",
+                "description": ""
+            },
+            "sports": {
+                "title": "",
+                "description": ""
+            },
+            "playground": {
+                "title": "",
+                "description": ""
+            }
+        }
     },
     "settings": {
         "title": "Settings"
