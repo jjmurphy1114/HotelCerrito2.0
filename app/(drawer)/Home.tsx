@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, TouchableHighlight } from 'react-native';
 import 'react-native-gesture-handler';
 import { useTheme } from 'react-native-paper';
 import { Image } from 'expo-image';
@@ -124,9 +124,17 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
         contentFit="cover"
         transition={1000}
       />
-      <View style={styles.buttonContainer}>
-        <Text onPress={(e) => handleButtonSelect(routerPath)} style={styles.button}>{buttonTitle}</Text>
-      </View>
+      <TouchableHighlight
+        activeOpacity={0.6}
+        underlayColor="#DDDDDD"
+        onPress={(e) => handleButtonSelect(routerPath)}>
+        
+        <View style={styles.buttonContainer}>
+          <Text style={styles.button}>{buttonTitle}</Text>
+        </View>
+        
+      </TouchableHighlight>
+      
     </View>
   )
 }
