@@ -52,6 +52,23 @@
         "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que los huéspedes informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
         "body2": "Para hacer una reserva o ver el menú diario, por favor envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
+    },
+    "laundry": {
+        "title": "Servicio de Lavandería",
+        "header": "Servicio de Lavandería", 
+        "body1": "La ropa sucia se puede dejar en la recepción del hotel para lavarla y plancharla.\n",
+        "body2": "Horario de Lavandería\n",
+        "body3": "La ropa sucia se puede dejar a las ",
+        "body4": "9.00 los lunes o martes",
+        "body5": ", o a las ",
+        "body6": "16.00 los miércoles.",
+        "body7": "\n El hotel solicita que los huéspedes recojan su ropa limpia a las",
+        "body8": " 16.00 del día siguiente a dejarla.\n",
+        "body9": "Pago\n",
+        "body10": "Los servicios de lavandería cuestan",
+        "body11": " PGY25,000 por 5 prendas.\n",
+        "body12": "El hotel puede recibir el pago entre las ",
+        "body13": "11.00 y las 13.00 los viernes."
     }
 }
   
