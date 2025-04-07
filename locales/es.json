@@ -1,0 +1,19 @@
+{
+    "home": {
+        "home_title": "Inicio",
+        "home_description": "La Pagina de Inicio"
+    },
+    "tour": {
+        "title": "Tour Autoguiado",
+        "begin_tour": "Comenzar Tour",
+        "view_stops": "Mirar Paradas",
+        "welcome": "¡Bienvenidos al Tour Autoguiado!"
+    }, 
+    "activities": {
+
+    },
+    "settings": {
+        "title": "Configuración"
+    }
+}
+  

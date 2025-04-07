@@ -3,6 +3,7 @@ import 'react-native-gesture-handler';
 import { useTheme } from 'react-native-paper';
 import { Image } from 'expo-image';
 import { Dimensions } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -15,6 +16,7 @@ export function ImageButtonPair() {
 
 export default function Home() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   
   const styles = StyleSheet.create({
     container: {
@@ -40,13 +42,13 @@ export default function Home() {
     <View style={styles.container}>
       <Image
         style={styles.image}
-        source={require('/Users/ceciherriman/HotelCerrito2.0/assets/images/emoji4.png')} 
+        source={require('../../assets/images/emoji4.png')} 
         placeholder={{ blurhash }}
         contentFit="cover"
         transition={1000}
       />
       
-      <Text style={{color: colors.primary}}>HOME PAGE</Text>
+      <Text style={{color: colors.primary}}>{t('home.home_description')}</Text>
 
     </View>
     );
