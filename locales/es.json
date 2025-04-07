@@ -1,7 +1,16 @@
 {
     "home": {
-        "home_title": "Inicio",
-        "home_description": "La Pagina de Inicio"
+        "title": "Inicio",
+        "button1": "Sobre Cerrito Hotel y Escuela",
+        "button2": "Toma el Tour Autoguiado",
+        "button3":"Explorar las Actividades",
+        "button4": "Ver la Tienda",
+        "button5": "Otros Servicios",
+        "button6": "Pedir una Reservación",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "Todos los derechos reservados.",
+        "Footer3": "Creado por Fundación Paraguaya"
+    
     },
     "tour": {
         "title": "Tour Autoguiado",
@@ -62,6 +71,29 @@
     },
     "settings": {
         "title": "Configuración"
+    },
+    "about": {
+        "title": "Nosotros",
+        "Header": "Sobre Nosotros",
+        "FDDesc": "Nosotros desarrollamos e implementamos soluciones prácticas, innovadoras y sostenibles que permitan activar el potencial emprendedor de las familias para eliminar la pobreza multidimensional y vivir con dignidad.",
+        "CerritoTitle": "La Escuela Cerrito", 
+        "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, llegados de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
+        "HelpTitle": "Cómo Puedes Ayudar", 
+        "HelpDesc": "Comprar servicios y artículos de la Escuela y Hotel Cerrito genera ingresos que ayudan a Cerrito y a nuestra labor de apoyo estudiantil. Reservar habitaciones, usar el servicio de lavandería, comer en el restaurante del hotel y comprar productos en la tienda son maneras de apoyar nuestra misión económicamente. También puedes recomendar Cerrito a tus amigos y familiares.",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "Todos los derechos reservados.",
+        "Footer3": "Creado por Fundación Paraguaya"
+    },
+    "otherServices": {
+        "title": "Otros Servicios",
+        "header": "Otros Servicios",
+        "button1": "El Restaurante Cerrito",
+        "button2": "Servicio de Lavandería",
+        "button3": "Repuesto de Agua Potable",
+        "button4": "Limpieza de Habitación",
+        "button5": "Reservar Actividades",
+        "button6": "El Mantenimiento"
+
     }
 }
   

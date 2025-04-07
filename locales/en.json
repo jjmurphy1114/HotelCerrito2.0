@@ -1,7 +1,16 @@
 {
     "home": {
-        "home_title": "Home",
-        "home_description": "This is the home page"
+        "title": "Home",
+        "button1": "About Cerrito School and Hotel",
+        "button2": "Take the Self-Guided Tour",
+        "button3":"Explore Activities",
+        "button4": "View Shop",
+        "button5": "Other Services",
+        "button6": "Make a Reservation",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "All rights reserved.",
+        "Footer3": "Created by Fundación Paraguaya"
+
     },
     "tour": {
         "title": "Self-Guided Tour", 
@@ -62,6 +71,28 @@
     },
     "settings": {
         "title": "Settings"
+    },
+    "about": {
+        "title": "About",
+        "Header": "About Us",
+        "FDDesc": "We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.",
+        "CerritoTitle": "The Cerrito School", 
+        "CerritoDesc": "Hotel Cerrito is a venture of Fundación Paraguaya. The school follows a self-management model, in which a self-sufficient farm school generates its own income. We foster an entrepreneurial spirit in our students, who come from 12 departments across the country and abroad. We are a coeducational boarding school with facilities for 150 students.",
+        "HelpTitle": "How You Can Help", 
+        "HelpDesc": "Purchasing services and goods from the Cerrito School and Hotel generates income to help Cerrito and our work to support students. Booking rooms, using laundry services, eating at the hotel restaurant, and buying products, goods, or merchandise at the shop are all ways that you can support our mission monetarily. You can also reccommend Cerrito to friends and family.",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "All rights reserved.",
+        "Footer3": "Created by Fundación Paraguaya"
+    },
+    "otherServices": {
+        "title": "Other Services",
+        "header": "Other Services",
+        "button1": "Cerrito Restaurant",
+        "button2": "Laundry Services",
+        "button3": "Refill Drinking Water",
+        "button4": "Housekeeping",
+        "button5": "Reserve Activities",
+        "button6": "Room Maintenance"
     }
 }
   
