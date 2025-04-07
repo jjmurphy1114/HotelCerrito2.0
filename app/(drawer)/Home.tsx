@@ -10,8 +10,8 @@ import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
-const imageSizeWidth = width * 0.4;
-const imageSizeHeight = width * 0.4;
+const imageSizeWidth = width * 0.6;
+const imageSizeHeight = height * 0.3;
 
 type ImageButtonPairProps = {
   button: number;
@@ -58,7 +58,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
-    }
+    },
   });
 
   const blurhash =
@@ -132,7 +132,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
         <View style={styles.buttonContainer}>
           <Text style={styles.button}>{buttonTitle}</Text>
         </View>
-        
+
       </TouchableHighlight>
       
     </View>
@@ -155,10 +155,30 @@ export default function Home() {
       backgroundColor: colors.background,
       alignItems: 'center',
       justifyContent: 'center',
+      padding: 10,
+      paddingBottom: 70
+    },
+    footer: {
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      backgroundColor: colors.primary,
+      padding: 10,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    footerText: {
+      fontSize: 11,
+      fontFamily: Platform.select({
+        android: 'Inter_900Black',
+        ios: 'Inter-Black',
+      })
     }
   });
 
   return (
+    <View>
     <ScrollView contentContainerStyle={styles.scrollView}>
       <ImageButtonPair button={1}></ImageButtonPair>
       <ImageButtonPair button={2}></ImageButtonPair>
@@ -166,7 +186,14 @@ export default function Home() {
       <ImageButtonPair button={4}></ImageButtonPair>
       <ImageButtonPair button={5}></ImageButtonPair>
       <ImageButtonPair button={6}></ImageButtonPair>
+
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>Copyright © 2018 Fundación Paraguaya.</Text>
+        <Text style={styles.footerText}>All rights reserved.</Text>
+        <Text style={styles.footerText}>Created by Fundación Paraguaya</Text>
+      </View>
     </ScrollView>
+    </View>
   );
 }
 
