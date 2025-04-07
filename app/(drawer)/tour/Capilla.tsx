@@ -14,7 +14,7 @@ export default function Capilla() {
   
   return (
     StopTemplate(t("tour.capilla.description"), 
-      require('../../../assets/audio/en/KylePleaseStopEdging.mp3'),
+      require('../../../assets/audio/en/mapa-central.mp3'),
       require('../../../assets/images/Capilla.jpg'),
       '/(drawer)/tour/MapaCentral' as RelativePathString,
       "../stop1"

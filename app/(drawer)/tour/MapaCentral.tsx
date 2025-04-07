@@ -14,7 +14,7 @@ export default function MapaCentral() {
 
   return (
     StopTemplate(t("tour.mapa_central.description"), 
-      require('../../../assets/audio/en/KylePleaseStopEdging.mp3'),
+      require('../../../assets/audio/en/mapa-central.mp3'),
       require('../../../assets/images/MapaCentral.jpg'),
       '/(drawer)/Tour' as RelativePathString,
       '/(drawer)/tour/Capilla' as RelativePathString
