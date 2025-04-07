@@ -1,9 +1,11 @@
 import { Drawer } from 'expo-router/drawer';
+import { useTranslation } from 'react-i18next';
 import { useTheme } from 'react-native-paper';
 
 export default function DrawerLayout() {
   
     const { colors } = useTheme();
+    const { t } = useTranslation();
   
     return (
     <Drawer
@@ -19,13 +21,12 @@ export default function DrawerLayout() {
         headerTintColor: colors.onPrimary,
       }}>
       <Drawer.Screen name="Home" options={{ title: 'Home' }} />
-      <Drawer.Screen name="Tour" options={{ title: 'Self-Guided Tour' }} />
+      <Drawer.Screen name="Tour" options={{ title: t('tour.title') }} />
       <Drawer.Screen name="Activities" options={{ title: 'Activities' }} />
 
       {/* Tour stops hidden from the main drawer but still accessible */}
       <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
       <Drawer.Screen name='tour/stop1' options={{ drawerItemStyle: {display: 'none'}, title: "Stop 1"}} />
-
 
     </Drawer>
   );

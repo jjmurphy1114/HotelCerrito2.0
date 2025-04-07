@@ -1,0 +1,15 @@
+{
+    "home": {
+        "home_title": "Home",
+        "home_description": "This is the home page"
+    },
+    "tour": {
+        "title": "Self-Guided Tour", 
+        "begin_tour": "Begin Tour",
+        "view_stops": "View Stops"
+    }, 
+    "activities": {
+
+    }
+}
+  

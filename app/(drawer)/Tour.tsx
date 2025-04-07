@@ -1,9 +1,11 @@
 import { View, StyleSheet } from 'react-native';
 import { Text, Button } from 'react-native-paper';
 import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 
 export default function TourStart() {
   const router = useRouter();
+  const { t } = useTranslation();
 
   return (
     <View style={styles.container}>
@@ -12,7 +14,7 @@ export default function TourStart() {
         mode="contained"
         onPress={() => router.push('/tour/stop1')}
       >
-        Begin Tour
+        {t('tour.begin_tour')}
       </Button>
       
       {/* <Button mode="contained" onPress={() => router.push('../tour')}>
