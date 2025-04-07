@@ -373,6 +373,7 @@ const adventActivities: ActivityCardProps[] = [
 
 const Activity_Cards = () => (
   <View>
+    <ScrollView>
     <Card>
       <Card.Title title = "Relaxing Activities" />
       <Card.Content>
@@ -391,6 +392,7 @@ const Activity_Cards = () => (
         <AdventCarousel></AdventCarousel>
       </Card.Content>
     </Card>
+    </ScrollView>
   </View>
 )
 
