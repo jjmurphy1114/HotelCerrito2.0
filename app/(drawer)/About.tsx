@@ -4,6 +4,7 @@ import { Dimensions } from 'react-native';
 import { Image } from 'expo-image';
 import { useTheme } from 'react-native-paper';
 import { Platform } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -15,6 +16,7 @@ const blurhash =
 
 export default function About() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   const styles = StyleSheet.create({
     container: {
@@ -107,7 +109,7 @@ export default function About() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>About Us</Text>
+          <Text style={styles.headerText}>{t('About.Header')}</Text>
         </View>
 
         <Image
@@ -118,19 +120,18 @@ export default function About() {
         />
 
         <Text style={styles.subheader}>Fundación Paraguaya</Text>
-        <Text style={styles.text}>Develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.</Text>
+        <Text style={styles.text}>{t('About.FDDesc')}</Text>
 
-        <Text style={styles.subheader}>The Cerrito School</Text>
-        <Text style={styles.text}>Hotel Escuela Cerrito is a venture of Fundación Paraguaya. The school follows a self-management model, in which a self-sufficient farm school generates its own income. We foster an entrepreneurial spirit in our students, who come from 12 departments across the country and abroad. We are a coeducational boarding school with facilities for 150 students.
-        </Text>
+        <Text style={styles.subheader}>{t('About.CerritoTitle')}</Text>
+        <Text style={styles.text}>{t('About.CerritoDesc')} </Text>
 
-        <Text style={styles.subheader}>How You Can Help</Text>
-        <Text style={styles.text}> Purchasing services and goods from the Cerrito School and Hotel helps generate income to support Cerrito and its work to support students. Booking rooms, using aundry services, eating at the hotel restaurant, and buying products, goods, or merchandise at the shop are all ways that you can support the school monetarily. You can also reccommend Cerrito to friends and family. </Text>
+        <Text style={styles.subheader}>{t('About.HelpTitle')}</Text>
+        <Text style={styles.text}>{t('About.HelpDesc')}</Text>
       
         <View style={styles.footer}>
-          <Text style={styles.footerText}>Copyright © 2018 Fundación Paraguaya.</Text>
-          <Text style={styles.footerText}>All rights reserved.</Text>
-          <Text style={styles.footerText}>Created by Fundación Paraguaya</Text>
+          <Text style={styles.footerText}>{t('About.Footer1')}</Text>
+          <Text style={styles.footerText}>{t('About.Footer2')}</Text>
+          <Text style={styles.footerText}>{t('About.Footer3')}</Text>
         </View>
       </ScrollView>
 
