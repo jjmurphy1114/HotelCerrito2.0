@@ -5,11 +5,14 @@
     },
     "tour": {
         "title": "Tour Autoguiado",
-        "begin_tour": "Comencar Tour",
+        "begin_tour": "Comenzar Tour",
         "view_stops": "Mirar Paradas"
     }, 
     "activities": {
 
+    },
+    "settings": {
+        "title": "Configuración"
     }
 }
   

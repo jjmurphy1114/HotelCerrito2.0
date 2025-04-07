@@ -48,7 +48,7 @@ export default function Home() {
         transition={1000}
       />
       
-      <Text style={{color: colors.primary}}>HOME PAGE</Text>
+      <Text style={{color: colors.primary}}>{t('home.home_description')}</Text>
 
     </View>
     );

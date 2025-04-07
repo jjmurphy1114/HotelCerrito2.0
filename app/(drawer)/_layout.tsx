@@ -23,6 +23,7 @@ export default function DrawerLayout() {
       <Drawer.Screen name="Home" options={{ title: 'Home' }} />
       <Drawer.Screen name="Tour" options={{ title: t('tour.title') }} />
       <Drawer.Screen name="Activities" options={{ title: 'Activities' }} />
+      <Drawer.Screen name="Settings" options={{ title: t('settings.title')} } />
 
       {/* Tour stops hidden from the main drawer but still accessible */}
       <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />

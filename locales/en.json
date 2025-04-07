@@ -10,6 +10,9 @@
     }, 
     "activities": {
 
+    },
+    "settings": {
+        "title": "Settings"
     }
 }
   
