@@ -21,7 +21,6 @@ export default function OtherServices() {
     container: {
       flex: 1,
       backgroundColor: colors.background,
-      marginTop: 5,
     },
     header: {
       position: 'absolute',
@@ -30,6 +29,7 @@ export default function OtherServices() {
       right: 0,
       backgroundColor: colors.background,
       paddingVertical: 0,
+      marginTop: 20,
       justifyContent: 'center',
       alignItems: 'center',
     },
@@ -44,19 +44,19 @@ export default function OtherServices() {
       }),
     },
     buttonContainer: {
-      width: width * 0.7,
+      width: width * 0.8,
       flexDirection: 'row',   
       alignItems: 'center',   
       backgroundColor: colors.secondary,
-      paddingVertical: 15,
+      paddingVertical: 18,
       paddingRight: 10,
       borderRadius: 10,
-      margin: 10,
+      marginVertical: 20
     },
     buttonText: {
       color: colors.onSecondary,
       textAlign: 'center',
-      fontSize: 15,
+      fontSize: 18,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
