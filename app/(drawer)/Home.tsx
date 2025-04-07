@@ -52,6 +52,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     button: {
       color: colors.onSecondary, 
       backgroundColor: colors.secondary,
+      textAlign: 'center',
       fontSize: 15,
       padding: 20,
       fontFamily: Platform.select({
@@ -156,7 +157,7 @@ export default function Home() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: 10,
-      paddingBottom: 70
+      paddingBottom: 60
     },
     footer: {
       position: 'absolute',
