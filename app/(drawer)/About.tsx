@@ -153,16 +153,10 @@ export default function About() {
 
           <View style={styles.socialMediaIcons}>
             <TouchableOpacity onPress={handleFacebookLink}>
-            <Image
-                source={require('../../assets/images/facebook.png')}
-                style={styles.socialIcon}
-              />
+            <Text> Facebook </Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={handleXLink}>
-            <Image
-                source={require('../../assets/images/x-logo.png')} 
-                style={styles.socialIcon}
-              />
+            <Text> X </Text>
             </TouchableOpacity>
           </View>
 
