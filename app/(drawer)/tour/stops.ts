@@ -4,12 +4,12 @@ import { RelativePathString } from "expo-router";
 const tourStops = [
     {
       titleKey: 'tour.mapa_central.title',
-      route: '/(drawer)/tour-stops/MapaCentral' as RelativePathString,
+      route: '/(drawer)/tour/MapaCentral' as RelativePathString,
       number: 1,
     },
     {
       titleKey: 'tour.capilla.title',
-      route: '/(drawer)/tour-stops/Capilla' as RelativePathString,
+      route: '/(drawer)/tour/Capilla' as RelativePathString,
       number: 2,
     },
 ];

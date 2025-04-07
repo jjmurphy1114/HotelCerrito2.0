@@ -15,7 +15,7 @@ export default function TourStops() {
       {tourStops.map((stop) => (
         <Button
           key={stop.route}
-          onPress={() => router.push(stop.route)}
+          onPress={() => router.replace(stop.route)}
           style={{ marginTop: 10 }}
         >
           {t('tour.view_stops.stop')} {stop.number}: {t(stop.titleKey)}
