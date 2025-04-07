@@ -6,7 +6,8 @@
     "tour": {
         "title": "Tour Autoguiado",
         "begin_tour": "Comenzar Tour",
-        "view_stops": "Mirar Paradas"
+        "view_stops": "Mirar Paradas",
+        "welcome": "¡Bienvenidos al Tour Autoguiado!"
     }, 
     "activities": {
 

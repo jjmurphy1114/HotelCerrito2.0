@@ -9,7 +9,7 @@ export default function TourStart() {
 
   return (
     <View style={styles.container}>
-       <Text variant="headlineMedium">Welcome to the Tour</Text>
+       <Text variant="headlineMedium" style={{textAlign: "center"}}>{t("tour.welcome")}</Text>
       <Button
         mode="contained"
         onPress={() => router.push('/tour/stop1')}
@@ -25,5 +25,5 @@ export default function TourStart() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 },
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, textAlign: 'center' },
 });

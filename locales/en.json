@@ -6,7 +6,8 @@
     "tour": {
         "title": "Self-Guided Tour", 
         "begin_tour": "Begin Tour",
-        "view_stops": "View Stops"
+        "view_stops": "View Stops",
+        "welcome": "Welcome to the Self-Guided Tour!"
     }, 
     "activities": {
 
