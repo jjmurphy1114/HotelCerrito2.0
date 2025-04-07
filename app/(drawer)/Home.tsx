@@ -6,6 +6,7 @@ import { Dimensions } from 'react-native';
 import * as Font from 'expo-font';
 import React, { useState, useEffect } from 'react';
 import { Platform } from 'react-native';
+import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -16,8 +17,19 @@ type ImageButtonPairProps = {
   button: number;
 };
 
+type ButtonSelectProps = {
+  path: RelativePathString;
+};
+
 function ImageButtonPair({ button } : ImageButtonPairProps) {
   const { colors } = useTheme();
+  const router = useRouter();
+
+  const handleButtonSelect = ({ path } : ButtonSelectProps) => {
+    // Navigate to the drawer group (starts with /home)
+   //router.replace('/(drawer)/Home');
+    router.replace(path)
+  };
   
   const styles = StyleSheet.create({
     container: {
@@ -34,10 +46,14 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
       height: imageSizeHeight,
       backgroundColor: '#0553',
     },
+    buttonContainer: {
+      width: imageSizeWidth,
+    },
     button: {
       color: colors.onSecondary, 
       backgroundColor: colors.secondary,
-      fontSize: 20,
+      fontSize: 15,
+      padding: 20,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
@@ -50,6 +66,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
 
   var buttonTitle; 
   var imagePath;
+  var routerPath: ButtonSelectProps;
 
   const images = [
     require("../../assets/images/emoji1.png"),
@@ -60,29 +77,41 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     require("../../assets/images/emoji6.png"),
   ];
 
+  const routerPaths: RelativePathString[] = [
+    '/(drawer)/About' as RelativePathString,
+    '/(drawer)/Tour' as RelativePathString,
+    '/(drawer)/Activities' as RelativePathString,
+  ]
+
   if (button == 1) {
     buttonTitle = "About Cerrito School and Hotel"
     imagePath = images[0]
+    routerPath = { path: routerPaths[0] };
   }
   else if (button == 2) {
     buttonTitle = "Take the Self-Guided Tour"
     imagePath = images[1]
+    routerPath = { path: routerPaths[1] };
   }
   else if (button == 3) {
     buttonTitle = "Explore Activities"
     imagePath = images[2]
+    routerPath = { path: routerPaths[2] };
   }
   else if (button == 4) {
     buttonTitle = "View Shop"
     imagePath = images[3]
+    routerPath = { path: routerPaths[0] };
   }
   else if (button == 5) {
     buttonTitle = "Other Services"
     imagePath = images[4]
+    routerPath = { path: routerPaths[0] };
   }
   else {
     buttonTitle = "Make a Reservation"
     imagePath = images[5]
+    routerPath = { path: routerPaths[0] };
   }
 
 
@@ -95,8 +124,9 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
         contentFit="cover"
         transition={1000}
       />
-      
-      <Text style={styles.button}>{buttonTitle}</Text>
+      <View style={styles.buttonContainer}>
+        <Text onPress={(e) => handleButtonSelect(routerPath)} style={styles.button}>{buttonTitle}</Text>
+      </View>
     </View>
   )
 }
