@@ -6,7 +6,10 @@
         "button3":"Explore Activities",
         "button4": "View Shop",
         "button5": "Other Services",
-        "button6": "Make a Reservation"
+        "button6": "Make a Reservation",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "All rights reserved.",
+        "Footer3": "Created by Fundación Paraguaya"
 
     },
     "tour": {

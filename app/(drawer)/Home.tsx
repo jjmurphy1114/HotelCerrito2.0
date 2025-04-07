@@ -70,11 +70,11 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   var routerPath: ButtonSelectProps;
 
   const images = [
-    require("../../assets/images/emoji1.png"),
-    require("../../assets/images/emoji2.png"),
-    require("../../assets/images/emoji3.png"),
+    require("../../assets/images/CerritoSign.jpeg"),
+    require("../../assets/images/MapaCentral.jpeg"),
+    require("../../assets/images/HowlerMonkey.jpeg"),
     require("../../assets/images/emoji4.png"),
-    require("../../assets/images/emoji5.png"),
+    require("../../assets/images/HotelSide.jpeg"),
     require("../../assets/images/emoji6.png"),
   ];
 
@@ -146,6 +146,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
 
 export default function Home() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   const styles = StyleSheet.create({
     container: {
@@ -193,9 +194,9 @@ export default function Home() {
       <ImageButtonPair button={6}></ImageButtonPair>
 
       <View style={styles.footer}>
-        <Text style={styles.footerText}>Copyright © 2018 Fundación Paraguaya.</Text>
-        <Text style={styles.footerText}>All rights reserved.</Text>
-        <Text style={styles.footerText}>Created by Fundación Paraguaya</Text>
+          <Text style={styles.footerText}>{t('home.Footer1')}</Text>
+          <Text style={styles.footerText}>{t('home.Footer2')}</Text>
+          <Text style={styles.footerText}>{t('home.Footer3')}</Text>
       </View>
     </ScrollView>
     </View>
