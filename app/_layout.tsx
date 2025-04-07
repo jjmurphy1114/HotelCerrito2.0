@@ -1,6 +1,8 @@
 import { Slot } from 'expo-router';
 import { MD3LightTheme as DefaultTheme, PaperProvider } from 'react-native-paper';
 import '../lib/i18n';
+import { Platform } from 'react-native';
+
 
 const theme = {
   ...DefaultTheme,

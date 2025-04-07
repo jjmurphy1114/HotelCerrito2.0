@@ -32,6 +32,16 @@
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "All rights reserved.",
         "Footer3": "Created by Fundación Paraguaya"
+    },
+    "otherServices": {
+        "title": "Other Services",
+        "header": "Other Services",
+        "button1": "Cerrito Restaurant",
+        "button2": "Laundry Services",
+        "button3": "Refill Drinking Water",
+        "button4": "Housekeeping",
+        "button5": "Reserve Activities",
+        "button6": "Room Maintenance"
     }
 }
   

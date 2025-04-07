@@ -32,6 +32,17 @@
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
         "Footer3": "Creado por Fundación Paraguaya"
+    },
+    "otherServices": {
+        "title": "Otros Servicios",
+        "header": "Otros Servicios",
+        "button1": "El Restaurante Cerrito",
+        "button2": "Servicio de Lavandería",
+        "button3": "Repuesto de Agua Potable",
+        "button4": "Limpieza de Habitación",
+        "button5": "Reservar Actividades",
+        "button6": "El Mantenimiento"
+
     }
 }
   

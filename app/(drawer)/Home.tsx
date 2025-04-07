@@ -28,8 +28,6 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   const router = useRouter();
 
   const handleButtonSelect = ({ path } : ButtonSelectProps) => {
-    // Navigate to the drawer group (starts with /home)
-   //router.replace('/(drawer)/Home');
     router.replace(path)
   };
   
@@ -84,6 +82,10 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     '/(drawer)/About' as RelativePathString,
     '/(drawer)/Tour' as RelativePathString,
     '/(drawer)/Activities' as RelativePathString,
+    '/(drawer)/Shop' as RelativePathString,
+    '/(drawer)/OtherServices' as RelativePathString,
+    '/(drawer)/Reservation' as RelativePathString,
+
   ]
 
   if (button == 1) {
@@ -109,7 +111,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   else if (button == 5) {
     buttonTitle = t('home.button5')
     imagePath = images[4]
-    routerPath = { path: routerPaths[0] };
+    routerPath = { path: routerPaths[4] };
   }
   else {
     buttonTitle = t('home.button6')
