@@ -28,8 +28,6 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   const router = useRouter();
 
   const handleButtonSelect = ({ path } : ButtonSelectProps) => {
-    // Navigate to the drawer group (starts with /home)
-   //router.replace('/(drawer)/Home');
     router.replace(path)
   };
   
@@ -72,11 +70,11 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   var routerPath: ButtonSelectProps;
 
   const images = [
-    require("../../assets/images/emoji1.png"),
-    require("../../assets/images/emoji2.png"),
-    require("../../assets/images/emoji3.png"),
+    require("../../assets/images/CerritoSign.jpeg"),
+    require("../../assets/images/MapaCentral.jpeg"),
+    require("../../assets/images/HowlerMonkey.jpeg"),
     require("../../assets/images/emoji4.png"),
-    require("../../assets/images/emoji5.png"),
+    require("../../assets/images/HotelSide.jpeg"),
     require("../../assets/images/emoji6.png"),
   ];
 
@@ -84,35 +82,39 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     '/(drawer)/About' as RelativePathString,
     '/(drawer)/Tour' as RelativePathString,
     '/(drawer)/Activities' as RelativePathString,
+    '/(drawer)/Shop' as RelativePathString,
+    '/(drawer)/OtherServices' as RelativePathString,
+    '/(drawer)/Reservation' as RelativePathString,
+
   ]
 
   if (button == 1) {
-    buttonTitle = "About Cerrito School and Hotel"
+    buttonTitle = t('home.button1')
     imagePath = images[0]
     routerPath = { path: routerPaths[0] };
   }
   else if (button == 2) {
-    buttonTitle = "Take the Self-Guided Tour"
+    buttonTitle = t('home.button2')
     imagePath = images[1]
     routerPath = { path: routerPaths[1] };
   }
   else if (button == 3) {
-    buttonTitle = "Explore Activities"
+    buttonTitle = t('home.button3')
     imagePath = images[2]
     routerPath = { path: routerPaths[2] };
   }
   else if (button == 4) {
-    buttonTitle = "View Shop"
+    buttonTitle = t('home.button4')
     imagePath = images[3]
     routerPath = { path: routerPaths[0] };
   }
   else if (button == 5) {
-    buttonTitle = "Other Services"
+    buttonTitle = t('home.button5')
     imagePath = images[4]
-    routerPath = { path: routerPaths[0] };
+    routerPath = { path: routerPaths[4] };
   }
   else {
-    buttonTitle = "Make a Reservation"
+    buttonTitle = t('home.button6')
     imagePath = images[5]
     routerPath = { path: routerPaths[0] };
   }
@@ -144,6 +146,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
 
 export default function Home() {
   const { colors } = useTheme();
+  const { t } = useTranslation();
 
   const styles = StyleSheet.create({
     container: {
@@ -191,9 +194,9 @@ export default function Home() {
       <ImageButtonPair button={6}></ImageButtonPair>
 
       <View style={styles.footer}>
-        <Text style={styles.footerText}>Copyright © 2018 Fundación Paraguaya.</Text>
-        <Text style={styles.footerText}>All rights reserved.</Text>
-        <Text style={styles.footerText}>Created by Fundación Paraguaya</Text>
+          <Text style={styles.footerText}>{t('home.Footer1')}</Text>
+          <Text style={styles.footerText}>{t('home.Footer2')}</Text>
+          <Text style={styles.footerText}>{t('home.Footer3')}</Text>
       </View>
     </ScrollView>
     </View>
