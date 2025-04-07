@@ -9,30 +9,32 @@ export default function AudioPlayer({ source }: { source: any }) {
   const [position, setPosition] = useState<number>(0);
 
   useEffect(() => {
+    
+    const loadAndPlay = async () => {
+        if (soundRef.current) {
+          await soundRef.current.unloadAsync();
+        }
+    
+        const { sound } = await Audio.Sound.createAsync(source, { shouldPlay: false });
+        soundRef.current = sound;
+    
+        // Keep position updated
+        sound.setOnPlaybackStatusUpdate((status) => {
+            if (status.isLoaded) {
+              setPosition(status.positionMillis);
+              setIsPlaying(status.isPlaying);
+            }
+          });      
+      };
+    
+    loadAndPlay();
+    
     return () => {
       if (soundRef.current) {
         soundRef.current.unloadAsync();
       }
     };
-  }, []);
-
-  const loadAndPlay = async () => {
-    if (soundRef.current) {
-      await soundRef.current.unloadAsync();
-    }
-
-    const { sound } = await Audio.Sound.createAsync(source, { shouldPlay: true });
-    soundRef.current = sound;
-    setIsPlaying(true);
-
-    // Keep position updated
-    sound.setOnPlaybackStatusUpdate((status) => {
-        if (status.isLoaded) {
-          setPosition(status.positionMillis);
-          setIsPlaying(status.isPlaying);
-        }
-      });      
-  };
+  }, [source]);
 
   const togglePlayPause = async () => {
     if (!soundRef.current) return;
@@ -71,12 +73,6 @@ export default function AudioPlayer({ source }: { source: any }) {
         <IconButton icon={isPlaying ? 'pause' : 'play'} onPress={togglePlayPause} />
         <IconButton icon="fast-forward-10" onPress={() => skip(10000)} />
       </View>
-
-      {!soundRef.current && (
-        <Button mode="contained" onPress={loadAndPlay}>
-          Load & Play
-        </Button>
-      )}
     </View>
   );
 }
