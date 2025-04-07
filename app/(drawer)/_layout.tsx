@@ -27,7 +27,6 @@ export default function DrawerLayout() {
 
       {/* Tour stops hidden from the main drawer but still accessible */}
       <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
-      <Drawer.Screen name='tour/stop1' options={{ drawerItemStyle: {display: 'none'}, title: "Stop 1"}} />
 
     </Drawer>
   );

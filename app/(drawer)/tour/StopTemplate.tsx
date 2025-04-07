@@ -5,8 +5,7 @@ import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
 
-export default function StopTemplate(title: string, 
-                                    description: string, 
+export default function StopTemplate( description: string, 
                                     audioPath: any, 
                                     image: any, 
                                     prev: RelativePathString, 
@@ -20,22 +19,10 @@ export default function StopTemplate(title: string,
   const { t } = useTranslation();
 
   /*For navigating to the next page*/
-  const NextPage = () => {
-    try {
-     router.replace(next);
-    } catch (error) {
-      console.log("Potential error in NextPage")
-    }
-  };
+  const NextPage = () => router.replace(next);
 
   /*For navigating to the previous page*/
-  const PrevPage = () => {
-    try {
-      router.replace(prev);
-    } catch (error) {
-      console.log("Potential error in PrevPage")
-    }
-  };
+  const PrevPage = () => router.replace(prev);
 
   // Expo Image setup
   const { width, height } = Dimensions.get('window');
@@ -44,7 +31,6 @@ export default function StopTemplate(title: string,
 
   const styles = StyleSheet.create({
       container: {
-        // flex: 1,
         backgroundColor: colors.background,
         marginTop: 5,
         padding: 2,
@@ -52,7 +38,6 @@ export default function StopTemplate(title: string,
         justifyContent: 'center',
       },
       image: {
-        flex: 1,
         width: imageSizeWidth,
         height: imageSizeHeight,
         backgroundColor: colors.background,
@@ -62,7 +47,8 @@ export default function StopTemplate(title: string,
         margin: 20,
         padding: 10,
         borderRadius: 10,
-        outlineColor: colors.secondary
+        backgroundColor: colors.secondary,
+        width: "90%"
       },
       scrollBox: {
         maxHeight: 200,

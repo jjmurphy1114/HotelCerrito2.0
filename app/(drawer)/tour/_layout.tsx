@@ -1,10 +1,13 @@
 import { Stack } from 'expo-router';
 import { useRouter } from 'expo-router';
-import { Button } from 'react-native-paper';
+import { Button, useTheme } from 'react-native-paper';
 import { View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 export default function TourLayout() {
   const router = useRouter();
+  const { t } = useTranslation();
+  const { colors } = useTheme();
 
   return (
     <>
@@ -12,9 +15,12 @@ export default function TourLayout() {
         screenOptions={{
           headerRight: () => (
             <Button onPress={() => router.push('/tour')} compact>
-              View Stops
+              {t('tour.view_stops.title')}
             </Button>
           ),
+          headerStyle: {
+            backgroundColor: colors.secondary
+          }
         }}
       />
     </>

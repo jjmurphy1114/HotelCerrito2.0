@@ -1,5 +1,6 @@
 import { Audio } from 'expo-av';
 import { useRef, useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { View, StyleSheet } from 'react-native';
 import { Button, IconButton, Text } from 'react-native-paper';
 
@@ -7,6 +8,7 @@ export default function AudioPlayer({ source }: { source: any }) {
   const soundRef = useRef<Audio.Sound | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [position, setPosition] = useState<number>(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     
@@ -66,7 +68,7 @@ export default function AudioPlayer({ source }: { source: any }) {
 
   return (
     <View style={styles.container}>
-      <Text variant="labelLarge">Audio Player</Text>
+      <Text variant="labelLarge">{t("tour.audio_player")}</Text>
 
       <View style={styles.controls}>
         <IconButton icon="rewind-10" onPress={() => skip(-10000)} />

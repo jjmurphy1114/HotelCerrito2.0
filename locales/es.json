@@ -6,8 +6,56 @@
     "tour": {
         "title": "Tour Autoguiado",
         "begin_tour": "Comenzar Tour",
-        "view_stops": "Mirar Paradas",
-        "welcome": "¡Bienvenidos al Tour Autoguiado!"
+        "view_stops": {
+            "title": "Mirar Paradas",
+            "stop": "Parada"
+        },
+        "welcome": "¡Bienvenidos al Tour Autoguiado!",
+        "audio_player": "Reproductor de Audio",
+        "mapa_central": {
+            "title": "Central Map",
+            "description": "This is the central map of the tour. It shows all the stops and their locations."
+        },
+        "capilla": {
+            "title": "Capilla",
+            "description": "N/A"
+        }, 
+        "cancha": {
+            "title": "Cancha",
+            "description": "N/A"
+        },
+        "sector_academico": {
+            "title": "Sector Académico",
+            "description": "N/A"
+        },
+        "patio_central": {
+            "title": "Patio Central",
+            "description": "N/A"
+        },
+        "comedor": {
+            "title": "Comedor",
+            "description": "N/A"
+        }, 
+        "CPA": {
+            "title": "Centro de Producción Animal",
+            "description": "N/A"
+        },
+        "planta_lactea": {
+            "title": "Planta Lactea",
+            "description": "N/A"
+        },
+        "CPV": {
+            "title": "Centro de Producción Vegetal",
+            "description": "N/A"
+        },
+        "piscina_quinchos": {
+            "title": "Piscina y Canchos",
+            "description": "N/A"
+        },
+        "hotel" : {
+            "title": "Hotel",
+            "description": "N/A"
+        }
     }, 
     "activities": {
 
