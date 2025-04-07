@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, Linking, TouchableOpacity } from 'react-native';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
 import { Image } from 'expo-image';
@@ -17,6 +17,14 @@ const blurhash =
 export default function About() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+
+  const handleFacebookLink = () => {
+    Linking.openURL('https://https://www.facebook.com/hotelescuelacerrito/');
+  };
+
+  const handleXLink = () => {
+    Linking.openURL('https://x.com/hotelcerrito');
+  };
 
   const styles = StyleSheet.create({
     container: {
@@ -83,7 +91,7 @@ export default function About() {
       alignItems: 'center',
       justifyContent: 'center',
       paddingTop: 60,
-      paddingBottom: 80, // Ensure there's space for the footer
+      paddingBottom: 110,
     },
     footer: {
       position: 'absolute',
@@ -103,13 +111,23 @@ export default function About() {
         ios: 'Inter-Black',
       }),
     },
+    socialMediaIcons: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      marginTop: 10,
+    },
+    socialIcon: {
+      margin: 10,
+      fontSize: 25,
+      color: colors.onPrimary,
+    },
   });
 
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>{t('About.Header')}</Text>
+          <Text style={styles.headerText}>{t('about.Header')}</Text>
         </View>
 
         <Image
@@ -120,18 +138,34 @@ export default function About() {
         />
 
         <Text style={styles.subheader}>Fundación Paraguaya</Text>
-        <Text style={styles.text}>{t('About.FDDesc')}</Text>
+        <Text style={styles.text}>{t('about.FDDesc')}</Text>
 
-        <Text style={styles.subheader}>{t('About.CerritoTitle')}</Text>
-        <Text style={styles.text}>{t('About.CerritoDesc')} </Text>
+        <Text style={styles.subheader}>{t('about.CerritoTitle')}</Text>
+        <Text style={styles.text}>{t('about.CerritoDesc')} </Text>
 
-        <Text style={styles.subheader}>{t('About.HelpTitle')}</Text>
-        <Text style={styles.text}>{t('About.HelpDesc')}</Text>
+        <Text style={styles.subheader}>{t('about.HelpTitle')}</Text>
+        <Text style={styles.text}>{t('about.HelpDesc')}</Text>
       
         <View style={styles.footer}>
-          <Text style={styles.footerText}>{t('About.Footer1')}</Text>
-          <Text style={styles.footerText}>{t('About.Footer2')}</Text>
-          <Text style={styles.footerText}>{t('About.Footer3')}</Text>
+          <Text style={styles.footerText}>{t('about.Footer1')}</Text>
+          <Text style={styles.footerText}>{t('about.Footer2')}</Text>
+          <Text style={styles.footerText}>{t('about.Footer3')}</Text>
+
+          <View style={styles.socialMediaIcons}>
+            <TouchableOpacity onPress={handleFacebookLink}>
+            <Image
+                source={require('../../assets/images/facebook.png')}
+                style={styles.socialIcon}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={handleXLink}>
+            <Image
+                source={require('../../assets/images/x-logo.png')} 
+                style={styles.socialIcon}
+              />
+            </TouchableOpacity>
+          </View>
+
         </View>
       </ScrollView>
 

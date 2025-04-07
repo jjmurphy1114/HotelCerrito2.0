@@ -1,7 +1,13 @@
 {
     "home": {
-        "home_title": "Inicio",
-        "home_description": "La Pagina de Inicio"
+        "title": "Inicio",
+        "button1": "Sobre Cerrito Hotel y Escuela",
+        "button2": "Toma el Tour Autoguiado",
+        "button3":"Explorar las Actividades",
+        "button4": "Ver la Tienda",
+        "button5": "Otros Servicios",
+        "button6": "Pedir una Reservación"
+    
     },
     "tour": {
         "title": "Tour Autoguiado",
@@ -15,9 +21,10 @@
     "settings": {
         "title": "Configuración"
     },
-    "About": {
+    "about": {
+        "title": "Nosotros",
         "Header": "Sobre Nosotros",
-        "FDDesc": "Nosotros Desarrollamos e implementamos soluciones prácticas, innovadoras y sostenibles que permitan activar el potencial emprendedor de las familias para eliminar la pobreza multidimensional y vivir con dignidad.",
+        "FDDesc": "Nosotros desarrollamos e implementamos soluciones prácticas, innovadoras y sostenibles que permitan activar el potencial emprendedor de las familias para eliminar la pobreza multidimensional y vivir con dignidad.",
         "CerritoTitle": "La Escuela Cerrito", 
         "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, llegados de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
         "HelpTitle": "Cómo Puedes Ayudar", 

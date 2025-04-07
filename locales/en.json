@@ -1,7 +1,13 @@
 {
     "home": {
-        "home_title": "Home",
-        "home_description": "This is the home page"
+        "title": "Home",
+        "button1": "About Cerrito School and Hotel",
+        "button2": "Take the Self-Guided Tour",
+        "button3":"Explore Activities",
+        "button4": "View Shop",
+        "button5": "Other Services",
+        "button6": "Make a Reservation"
+
     },
     "tour": {
         "title": "Self-Guided Tour", 
@@ -15,7 +21,8 @@
     "settings": {
         "title": "Settings"
     },
-    "About": {
+    "about": {
+        "title": "About",
         "Header": "About Us",
         "FDDesc": "We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.",
         "CerritoTitle": "The Cerrito School", 

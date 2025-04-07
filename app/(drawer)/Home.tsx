@@ -87,32 +87,32 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   ]
 
   if (button == 1) {
-    buttonTitle = "About Cerrito School and Hotel"
+    buttonTitle = t('home.button1')
     imagePath = images[0]
     routerPath = { path: routerPaths[0] };
   }
   else if (button == 2) {
-    buttonTitle = "Take the Self-Guided Tour"
+    buttonTitle = t('home.button2')
     imagePath = images[1]
     routerPath = { path: routerPaths[1] };
   }
   else if (button == 3) {
-    buttonTitle = "Explore Activities"
+    buttonTitle = t('home.button3')
     imagePath = images[2]
     routerPath = { path: routerPaths[2] };
   }
   else if (button == 4) {
-    buttonTitle = "View Shop"
+    buttonTitle = t('home.button4')
     imagePath = images[3]
     routerPath = { path: routerPaths[0] };
   }
   else if (button == 5) {
-    buttonTitle = "Other Services"
+    buttonTitle = t('home.button5')
     imagePath = images[4]
     routerPath = { path: routerPaths[0] };
   }
   else {
-    buttonTitle = "Make a Reservation"
+    buttonTitle = t('home.button6')
     imagePath = images[5]
     routerPath = { path: routerPaths[0] };
   }
