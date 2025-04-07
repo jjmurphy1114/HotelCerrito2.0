@@ -21,6 +21,7 @@ export default function DrawerLayout() {
         headerTintColor: colors.onPrimary,
       }}>
       <Drawer.Screen name="Home" options={{ title: 'Home' }} />
+      <Drawer.Screen name="About" options={{ title: 'About' }} />
       <Drawer.Screen name="Tour" options={{ title: t('tour.title') }} />
       <Drawer.Screen name="Activities" options={{ title: 'Activities' }} />
       <Drawer.Screen name="Settings" options={{ title: t('settings.title')} } />
