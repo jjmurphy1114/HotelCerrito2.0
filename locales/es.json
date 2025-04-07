@@ -45,7 +45,13 @@
         "button4": "Limpieza de Habitación",
         "button5": "Reservar Actividades",
         "button6": "El Mantenimiento"
-
+    },
+    "cerritoRestaurant": {
+        "title": "El Restaurante Cerrito",
+        "header": "El Restaurante Cerrito", 
+        "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que los huéspedes informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
+        "body2": "Para hacer una reserva o ver el menú diario, por favor envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
     }
 }
   

@@ -45,6 +45,13 @@
         "button4": "Housekeeping",
         "button5": "Reserve Activities",
         "button6": "Room Maintenance"
+    },
+    "cerritoRestaurant": {
+        "title": "Cerrito Restaurant",
+        "header": "Cerrito Restaurant", 
+        "body1": "The Cerrito Schools restaurant serves lunch and dinner daily. \n\nThe restaurant requests that guests inform the hotel of their desire to eat at the restaurant and the number of people in their party: \n\nBy 10 AM for lunch, or \nBy 12 PM for dinner \n\nThe hotel staff will also send a menu for the day upon request.\n",
+        "body2": "To make a reservation or view the daily menu, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
     }
 }
   
