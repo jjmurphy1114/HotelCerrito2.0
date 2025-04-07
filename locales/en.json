@@ -69,6 +69,13 @@
         "body11": " PGY25,000 for 5 garments.\n",
         "body12": "The hotel can receive payment between ",
         "body13": "11AM and 1PM on Fridays."
+    },
+    "waterRefill": {
+        "title": "Refill Drinking Water",
+        "header": "Refill Drinking Water", 
+        "body1": "Drinking water is available for pickup at the hotel lobby upon request at no charge.\n",
+        "body2": "To request a water refill, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
     }
 }
   

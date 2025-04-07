@@ -30,6 +30,7 @@ export default function WaterRefill() {
         backgroundColor: colors.background,
         paddingVertical: 0,
         marginTop: 20,
+        marginBottom: 20,
         justifyContent: 'center',
         alignItems: 'center',
       },
@@ -118,7 +119,7 @@ export default function WaterRefill() {
         paddingBottom: 110,
       },
       bodyTextContainer: {
-        marginTop: 20
+        marginTop: 40
       }
     });
   
@@ -126,13 +127,13 @@ export default function WaterRefill() {
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollView}>
           <View style={styles.header}>
-            <Text style={styles.headerText}>{t('cerritoRestaurant.header')}</Text>
+            <Text style={styles.headerText}>{t('waterRefill.header')}</Text>
           </View>
   
           <View style={styles.bodyTextContainer}>
-          <Text style={styles.text}>{t('cerritoRestaurant.body1')}</Text>
-          <Text style={styles.textGreen}>{t('cerritoRestaurant.body2')}</Text>
-          <Text style={styles.textYellow}>{t('cerritoRestaurant.body3')}</Text>
+          <Text style={styles.text}>{t('waterRefill.body1')}</Text>
+          <Text style={styles.textGreen}>{t('waterRefill.body2')}</Text>
+          <Text style={styles.textYellow}>{t('waterRefill.body3')}</Text>
           </View>
           
         </ScrollView>

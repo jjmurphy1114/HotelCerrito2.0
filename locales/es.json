@@ -69,6 +69,13 @@
         "body11": " PGY25,000 por 5 prendas.\n",
         "body12": "El hotel puede recibir el pago entre las ",
         "body13": "11.00 y las 13.00 los viernes."
+    },
+    "waterRefill": {
+        "title": "Repuesto de Agua Potable",
+        "header": "Repuesto de Agua Potable", 
+        "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
+        "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
     }
 }
   
