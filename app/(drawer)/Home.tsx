@@ -3,6 +3,7 @@ import 'react-native-gesture-handler';
 import { useTheme } from 'react-native-paper';
 import { Image } from 'expo-image';
 import { Dimensions } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import * as Font from 'expo-font';
 import React, { useState, useEffect } from 'react';
 import { Platform } from 'react-native';
@@ -23,6 +24,7 @@ type ButtonSelectProps = {
 
 function ImageButtonPair({ button } : ImageButtonPairProps) {
   const { colors } = useTheme();
+  const { t } = useTranslation();
   const router = useRouter();
 
   const handleButtonSelect = ({ path } : ButtonSelectProps) => {
