@@ -31,7 +31,7 @@ export default function OtherServices() {
       right: 0,
       backgroundColor: colors.background,
       paddingVertical: 0,
-      marginTop: 20,
+      marginTop: width * 0.05,
       justifyContent: 'center',
       alignItems: 'center',
     },
@@ -39,7 +39,7 @@ export default function OtherServices() {
       color: colors.onSecondary,
       textAlign: 'center',
       fontSize: 25,
-      padding: 5,
+      padding: width * 0.012,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
@@ -50,10 +50,10 @@ export default function OtherServices() {
       flexDirection: 'row',   
       alignItems: 'center',   
       backgroundColor: colors.secondary,
-      paddingVertical: 18,
-      paddingRight: 10,
-      borderRadius: 10,
-      marginVertical: 20
+      paddingVertical: width * 0.045,
+      paddingRight: width * 0.04,
+      borderRadius: width * 0.02,
+      marginVertical: width * 0.05
     },
     buttonText: {
       color: colors.onSecondary,
@@ -80,8 +80,8 @@ export default function OtherServices() {
       backgroundColor: colors.background,
       alignItems: 'center',
       justifyContent: 'center',
-      paddingTop: 60,
-      paddingBottom: 110,
+      paddingTop: width * 0.17,
+      paddingBottom: width * 0.3,
     },
   });
 
