@@ -43,6 +43,42 @@ export default function CerritoRestaurant() {
         ios: 'Inter-Black',
       }),
     },
+    text: {
+      color: colors.onSecondary, 
+      textAlign: 'center',
+      fontSize: 20,
+      padding: 0,
+      paddingLeft: 30,
+      paddingRight: 30,
+      fontFamily: Platform.select({
+        android: 'Inter_400Regular',
+        ios: 'Inter24pt-Regular',
+      }),
+    },
+    textGreen: {
+      color: colors.primary, 
+      textAlign: 'center',
+      fontSize: 20,
+      padding: 0,
+      paddingLeft: 20,
+      paddingRight: 20,
+      fontFamily: Platform.select({
+        android: 'Inter_400Regular',
+        ios: 'Inter-Black',
+      }),
+    },
+    textYellow: {
+      color: colors.secondary, 
+      textAlign: 'center',
+      fontSize: 25,
+      padding: 0,
+      paddingLeft: 20,
+      paddingRight: 20,
+      fontFamily: Platform.select({
+        android: 'Inter_400Regular',
+        ios: 'Inter-Black',
+      }),
+    },
     buttonContainer: {
       width: width * 0.8,
       flexDirection: 'row',   
@@ -81,13 +117,22 @@ export default function CerritoRestaurant() {
       paddingTop: 60,
       paddingBottom: 110,
     },
+    bodyTextContainer: {
+      marginTop: 20
+    }
   });
 
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>Cerrito Restaurant</Text>
+          <Text style={styles.headerText}>{t('cerritoRestaurant.header')}</Text>
+        </View>
+
+        <View style={styles.bodyTextContainer}>
+        <Text style={styles.text}>{t('cerritoRestaurant.body1')}</Text>
+        <Text style={styles.textGreen}>{t('cerritoRestaurant.body2')}</Text>
+        <Text style={styles.textYellow}>{t('cerritoRestaurant.body3')}</Text>
         </View>
         
       </ScrollView>

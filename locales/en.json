@@ -93,6 +93,59 @@
         "button4": "Housekeeping",
         "button5": "Reserve Activities",
         "button6": "Room Maintenance"
+    },
+    "cerritoRestaurant": {
+        "title": "Cerrito Restaurant",
+        "header": "Cerrito Restaurant", 
+        "body1": "The Cerrito Schools restaurant serves lunch and dinner daily. \n\nThe restaurant requests that guests inform the hotel of their desire to eat at the restaurant and the number of people in their party: \n\nBy 10 AM for lunch, or \nBy 12 PM for dinner \n\nThe hotel staff will also send a menu for the day upon request.\n",
+        "body2": "To make a reservation or view the daily menu, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    },
+    "laundry": {
+        "title": "Laundry",
+        "header": "Laundry", 
+        "body1": "Dirty laundry can be dropped off at the front desk of the hotel to be washed and ironed.\n",
+        "body2": "Laundry Schedule\n",
+        "body3": "Dirty laundry can be dropped off at ",
+        "body4": "9AM on Monday or Tuesday",
+        "body5": ", or ",
+        "body6": "4PM on Wednesday.",
+        "body7": "\n The hotel requests that guests pick up their clean laundry at",
+        "body8": " 4PM on the day after they drop it off.\n",
+        "body9": "Payment\n",
+        "body10": "Laundry services cost",
+        "body11": " PGY25,000 for 5 garments.\n",
+        "body12": "The hotel can receive payment between ",
+        "body13": "11AM and 1PM on Fridays."
+    },
+    "waterRefill": {
+        "title": "Refill Drinking Water",
+        "header": "Refill Drinking Water", 
+        "body1": "Drinking water is available for pickup at the hotel lobby upon request at no charge.\n",
+        "body2": "To request a water refill, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    },
+    "housekeeping": {
+        "title": "Housekeeping",
+        "header": "Housekeeping", 
+        "body1": "Housekeeping services are available upon request at no charge.\n",
+        "body2": "To schedule housekeeping for your hotel room, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    },
+    "reserveActivities": {
+        "title": "Reserve Activities",
+        "header": "Reserve Activities", 
+        "body1": "Some available activities require reservations through the front desk. These include:\n",
+        "body2": "Eating at the Cerrito Restaurant,\nTour of the Cheese Factory,\nVisit to Toba Qom artisanal products stand, and\nHorse Riding.\n",
+        "body3": "To learn about and make a reservation for any of these activities, please see the front desk or send a WhatsApp message to:\n",
+        "body4": "+595-976-360-833"
+    },
+    "maintenance": {
+        "title": "Room Maintenance",
+        "header": "Room Maintenance",
+        "body1": "Maintenance services are available upon request at no charge.\n",
+        "body2": "To request maintenance for your room/hotel appliances, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
     }
 }
   

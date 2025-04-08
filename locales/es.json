@@ -93,7 +93,59 @@
         "button4": "Limpieza de Habitación",
         "button5": "Reservar Actividades",
         "button6": "El Mantenimiento"
-
+    },
+    "cerritoRestaurant": {
+        "title": "El Restaurante Cerrito",
+        "header": "El Restaurante Cerrito", 
+        "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que los huéspedes informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
+        "body2": "Para hacer una reserva o ver el menú diario, por favor envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
+    "laundry": {
+        "title": "Servicio de Lavandería",
+        "header": "Servicio de Lavandería", 
+        "body1": "La ropa sucia se puede dejar en la recepción del hotel para lavarla y plancharla.\n",
+        "body2": "Horario de Lavandería\n",
+        "body3": "La ropa sucia se puede dejar a las ",
+        "body4": "9.00 los lunes o martes",
+        "body5": ", o a las ",
+        "body6": "16.00 los miércoles.",
+        "body7": "\n El hotel solicita que los huéspedes recojan su ropa limpia a las",
+        "body8": " 16.00 del día siguiente a dejarla.\n",
+        "body9": "Pago\n",
+        "body10": "Los servicios de lavandería cuestan",
+        "body11": " PGY25,000 por 5 prendas.\n",
+        "body12": "El hotel puede recibir el pago entre las ",
+        "body13": "11.00 y las 13.00 los viernes."
+    },
+    "waterRefill": {
+        "title": "Repuesto de Agua Potable",
+        "header": "Repuesto de Agua Potable", 
+        "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
+        "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
+    "housekeeping": {
+        "title": "Limpieza",
+        "header": "Limpieza", 
+        "body1": "El servicio de limpieza está disponible bajo petición y sin coste alguno.\n",
+        "body2": "Para fijar el servicio de limpieza de su habitación de hotel, envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
+    "reserveActivities": {
+        "title": "Reservar Actividades",
+        "header": "Reservar Actividades", 
+        "body1": "Algunas actividades disponibles requieren reserva previa en recepción. Estas incluyen:\n",
+        "body2": "Comer en el Restaurante Cerrito,\nRecorrido por la Quesería,\nVisita a stand de productos artesanales Toba Qom y\nPaseo a Caballo.\n",
+        "body3": "Para conocer y reservar cualquiera de estas actividades, consulte en recepción o envíe un mensaje de WhatsApp a:\n",
+        "body4": "+595-976-360-833"
+    },
+    "maintenance": {
+        "title": "Mantenimiento de Habitación",
+        "header": "Mantenimiento de Habitación",
+        "body1": "Los servicios de mantenimiento están disponibles a pedido sin costo alguno.\n",
+        "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
     }
 }
   
