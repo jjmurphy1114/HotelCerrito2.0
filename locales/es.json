@@ -22,7 +22,7 @@
         "welcome": "¡Bienvenidos al Tour Autoguiado!",
         "audio_player": "Reproductor de Audio",
         "mapa_central": {
-            "title": "Central Map",
+            "title": "Mapa Central",
             "description": "This is the central map of the tour. It shows all the stops and their locations."
         },
         "capilla": {
@@ -57,8 +57,8 @@
             "title": "Centro de Producción Vegetal",
             "description": "N/A"
         },
-        "piscina_quinchos": {
-            "title": "Piscina y Canchos",
+        "piscina": {
+            "title": "Piscina y Quinchos",
             "description": "N/A"
         },
         "hotel" : {
