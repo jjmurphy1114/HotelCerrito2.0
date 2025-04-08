@@ -20,6 +20,11 @@
             "stop": "Stop"
         },
         "welcome": "Welcome to the Self-Guided Tour!",
+        "map":{
+            "open": "View Map",
+            "close": "Close Map",
+            "path": "Path:"
+        },
         "audio_player": "Audio Player",
         "mapa_central": {
             "title": "Central Map",
