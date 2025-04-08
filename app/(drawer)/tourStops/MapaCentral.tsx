@@ -1,4 +1,4 @@
-import StopTemplate from './StopTemplate';
+import StopTemplate from '../tour/StopTemplate';
 import { useTranslation } from 'react-i18next';
 import { useLayoutEffect } from 'react';
 import { RelativePathString, useNavigation } from 'expo-router';
@@ -17,7 +17,7 @@ export default function MapaCentral() {
       require('../../../assets/audio/en/mapa-central.mp3'),
       require('../../../assets/images/MapaCentral.jpg'),
       '/(drawer)/Tour' as RelativePathString,
-      '/(drawer)/tour/Capilla' as RelativePathString
+      '/(drawer)/tourStops/Capilla' as RelativePathString
     )
   );
 }
