@@ -28,9 +28,9 @@ export default function DrawerLayout() {
       <Drawer.Screen name="Settings" options={{ title: t('settings.title')} } />
 
       {/* Tour stops hidden from the main drawer but still accessible */}
-      <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
-      <Drawer.Screen name='tour/index' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
-      <Drawer.Screen name='tourStops' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
+      <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />
+      <Drawer.Screen name='tour/index' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />
+      <Drawer.Screen name='tourStops' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />
 
       <Drawer.Screen name='otherServices/CerritoRestaurant' options={{ drawerItemStyle: {display: 'none'}, title: t('cerritoRestaurant.title')}} />
       <Drawer.Screen name='otherServices/Laundry' options={{ drawerItemStyle: {display: 'none'}, title: t('laundry.title')}} />
