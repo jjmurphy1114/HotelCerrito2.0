@@ -76,6 +76,13 @@
         "body1": "Drinking water is available for pickup at the hotel lobby upon request at no charge.\n",
         "body2": "To request a water refill, please send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
+    },
+    "housekeeping": {
+        "title": "Housekeeping",
+        "header": "Housekeeping", 
+        "body1": "Housekeeping services are available upon request at no charge.\n",
+        "body2": "To schedule housekeeping for your hotel room, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
     }
 }
   

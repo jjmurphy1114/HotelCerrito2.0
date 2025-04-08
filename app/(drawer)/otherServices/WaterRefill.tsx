@@ -71,13 +71,14 @@ export default function WaterRefill() {
       textYellow: {
         color: colors.secondary, 
         textAlign: 'center',
+        textDecorationLine: 'underline',
         fontSize: 25,
         padding: 0,
         paddingLeft: 20,
         paddingRight: 20,
         fontFamily: Platform.select({
-          android: 'Inter_400Regular',
-          ios: 'Inter-Black',
+          android: 'Inter_400Italic',
+          ios: 'Inter-Italic',
         }),
       },
       buttonContainer: {

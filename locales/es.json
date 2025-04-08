@@ -76,6 +76,13 @@
         "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
         "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
-    }
+    },
+    "housekeeping": {
+        "title": "Limpieza",
+        "header": "Limpieza", 
+        "body1": "El servicio de limpieza está disponible bajo petición y sin coste alguno.\n",
+        "body2": "Para fijar el servicio de limpieza de su habitación de hotel, envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
 }
   
