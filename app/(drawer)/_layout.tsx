@@ -1,6 +1,8 @@
 import { Drawer } from 'expo-router/drawer';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from 'react-native-paper';
+import { View } from 'react-native';
+import CerritoLogo from '../components/CerritoLogo';
 
 export default function DrawerLayout() {
   
@@ -19,6 +21,11 @@ export default function DrawerLayout() {
           backgroundColor: colors.primary,
         },
         headerTintColor: colors.onPrimary,
+        headerRight: () => (
+          <View style={{ marginRight: 12 }}>
+            <CerritoLogo width={60} height={60} />
+          </View>
+        )
       }}>
       <Drawer.Screen name="Home" options={{ title: t('home.title') }} />
       <Drawer.Screen name="About" options={{ title: t('about.title') }} />
