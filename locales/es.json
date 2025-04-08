@@ -67,7 +67,85 @@
         }
     }, 
     "activities": {
-
+        "activities": "Descripción",
+        "relaxing": {
+            "pool": {
+                "title": "Nada en la Piscina",
+                "description": ""
+            },
+            "restaurant": {
+                "title": "",
+                "description": ""
+            },
+            "hammocks": {
+                "title": "",
+                "description": ""
+            },
+            "games": {
+                "title": "",
+                "description": ""
+            },
+            "quinchos": {
+                "title": "",
+                "description": ""
+            },
+            "gift_shop": {
+                "title": "",
+                "description": ""
+            },
+            "exercise": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "educational": {
+            "production": {
+                "title": "",
+                "description": ""
+            },
+            "tour": {
+                "title": "",
+                "description": ""
+            },
+            "cheese": {
+                "title": "",
+                "description": ""
+            },
+            "toba_qom": {
+                "title": "",
+                "description": ""
+            },
+            "eucalyptus": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "adventurous": {
+            "monkeys": {
+                "title": "",
+                "description": ""
+            },
+            "hiking": {
+                "title": "",
+                "description": ""
+            },
+            "biking": {
+                "title": "",
+                "description": ""
+            },
+            "horses": {
+                "title": "",
+                "description": ""
+            },
+            "sports": {
+                "title": "",
+                "description": ""
+            },
+            "playground": {
+                "title": "",
+                "description": ""
+            }
+        }
     },
     "settings": {
         "title": "Configuración"
