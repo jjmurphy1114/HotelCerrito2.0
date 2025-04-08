@@ -84,5 +84,13 @@
         "body2": "Para fijar el servicio de limpieza de su habitación de hotel, envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
+    "reserveActivities": {
+        "title": "Reservar Actividades",
+        "header": "Reservar Actividades", 
+        "body1": "Algunas actividades disponibles requieren reserva previa en recepción. Estas incluyen:\n",
+        "body2": "Comer en el Restaurante Cerrito,\nRecorrido por la Quesería,\nVisita a stand de productos artesanales Toba Qom y\nPaseo a Caballo.\n",
+        "body3": "Para conocer y reservar cualquiera de estas actividades, consulte en recepción o envíe un mensaje de WhatsApp a:\n",
+        "body4": "+595-976-360-833"
+    }
 }
   

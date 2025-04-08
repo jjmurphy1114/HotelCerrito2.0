@@ -33,7 +33,7 @@ export default function DrawerLayout() {
       <Drawer.Screen name='otherServices/CerritoRestaurant' options={{ drawerItemStyle: {display: 'none'}, title: t('cerritoRestaurant.title')}} />
       <Drawer.Screen name='otherServices/Laundry' options={{ drawerItemStyle: {display: 'none'}, title: t('laundry.title')}} />
       <Drawer.Screen name='otherServices/WaterRefill' options={{ drawerItemStyle: {display: 'none'}, title: t('waterRefill.title')}} />
-      <Drawer.Screen name='otherServices/RoomCleaning' options={{ drawerItemStyle: {display: 'none'}, title: "Housekeeping"}} />
+      <Drawer.Screen name='otherServices/RoomCleaning' options={{ drawerItemStyle: {display: 'none'}, title: t('housekeeping.title')}} />
       <Drawer.Screen name='otherServices/ReserveActivities' options={{ drawerItemStyle: {display: 'none'}, title: "Reserve Activities"}} />
       <Drawer.Screen name='otherServices/Maintenance' options={{ drawerItemStyle: {display: 'none'}, title: "Maintenance"}} />
     </Drawer>
