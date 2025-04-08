@@ -15,8 +15,56 @@
     "tour": {
         "title": "Self-Guided Tour", 
         "begin_tour": "Begin Tour",
-        "view_stops": "View Stops",
-        "welcome": "Welcome to the Self-Guided Tour!"
+        "view_stops": {
+            "title": "View Stops",
+            "stop": "Stop"
+        },
+        "welcome": "Welcome to the Self-Guided Tour!",
+        "audio_player": "Audio Player",
+        "mapa_central": {
+            "title": "Central Map",
+            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum"	
+        },
+        "capilla": {
+            "title": "Chapel",
+            "description": "N/A"
+        }, 
+        "cancha": {
+            "title": "Sports Fields",
+            "description": "N/A"
+        },
+        "sector_academico": {
+            "title": "Academic Sector",
+            "description": "N/A"
+        },
+        "patio_central": {
+            "title": "Central Patio",
+            "description": "N/A"
+        },
+        "comedor": {
+            "title": "Restaurant",
+            "description": "N/A"
+        }, 
+        "CPA": {
+            "title": "Animal Production Center",
+            "description": "N/A"
+        },
+        "planta_lactea": {
+            "title": "Cheese Factory",
+            "description": "N/A"
+        },
+        "CPV": {
+            "title": "Vegetable Production Center",
+            "description": "N/A"
+        },
+        "piscina_quinchos": {
+            "title": "Pool and Gazebo",
+            "description": "N/A"
+        },
+        "hotel" : {
+            "title": "Hotel",
+            "description": "N/A"
+        }
     }, 
     "activities": {
 
