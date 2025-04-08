@@ -35,8 +35,8 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     container: {
       flex: 1,
       backgroundColor: colors.background,
-      marginTop: 5,
-      padding: 40,
+      marginTop: width * 0.008,
+      padding: width * 0.085,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -54,7 +54,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
       backgroundColor: colors.secondary,
       textAlign: 'center',
       fontSize: 15,
-      padding: 20,
+      padding: width * 0.05,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
@@ -121,26 +121,25 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
 
 
   return (
-  <View style={styles.container}>
-      <Image
-        style={styles.image}
-        source={imagePath}
-        placeholder={{ blurhash }}
-        contentFit="cover"
-        transition={1000}
-      />
+    <View style={styles.container}>
       <TouchableHighlight
         activeOpacity={0.6}
         underlayColor="#DDDDDD"
         onPress={(e) => handleButtonSelect(routerPath)}>
         
         <View style={styles.buttonContainer}>
+        <Image
+          style={styles.image}
+          source={imagePath}
+          placeholder={{ blurhash }}
+          contentFit="cover"
+          transition={1000}
+        />
           <Text style={styles.button}>{buttonTitle}</Text>
         </View>
-
       </TouchableHighlight>
-      
     </View>
+
   )
 }
 
@@ -152,8 +151,6 @@ export default function Home() {
     container: {
       flex: 1,
       backgroundColor: colors.background,
-      marginTop: 5,
-      padding: 40,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -161,8 +158,8 @@ export default function Home() {
       backgroundColor: colors.background,
       alignItems: 'center',
       justifyContent: 'center',
-      padding: 10,
-      paddingBottom: 60
+      padding: width * 0.04,
+      paddingBottom: width * 0.2
     },
     footer: {
       position: 'absolute',
@@ -170,7 +167,7 @@ export default function Home() {
       left: 0,
       right: 0,
       backgroundColor: colors.primary,
-      padding: 10,
+      padding: width * 0.04,
       justifyContent: 'center',
       alignItems: 'center',
     },
