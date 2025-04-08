@@ -90,9 +90,9 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     '/(drawer)/About' as RelativePathString,
     '/(drawer)/Tour' as RelativePathString,
     '/(drawer)/Activities' as RelativePathString,
-    '/(drawer)/Shop' as RelativePathString,
+    '/(drawer)/Home' as RelativePathString,
     '/(drawer)/OtherServices' as RelativePathString,
-    '/(drawer)/Reservation' as RelativePathString,
+    '/(drawer)/Home' as RelativePathString,
   ]
 
   if (button == 1) {
