@@ -67,6 +67,7 @@
         }
     }, 
     "activities": {
+        "title": "Actividades",
         "activities": "Descripción",
         "relaxing": {
             "pool": {
@@ -198,7 +199,7 @@
     },
     "waterRefill": {
         "title": "Repuesto de Agua Potable",
-        "header": "Repuesto de Agua Potable", 
+        "header": "Repuesto de Agua\n Potable", 
         "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
         "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
@@ -220,7 +221,7 @@
     },
     "maintenance": {
         "title": "Mantenimiento de Habitación",
-        "header": "Mantenimiento de Habitación",
+        "header": "Mantenimiento de\n Habitación",
         "body1": "Los servicios de mantenimiento están disponibles a pedido sin costo alguno.\n",
         "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"

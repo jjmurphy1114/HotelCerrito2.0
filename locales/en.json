@@ -67,6 +67,7 @@
         }
     }, 
     "activities": {
+        "title": "Activities",
         "description": "Description",
         "relaxing": {
             "pool": {
