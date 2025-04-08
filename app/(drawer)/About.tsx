@@ -2,9 +2,10 @@ import { Text, View, StyleSheet, ScrollView, Linking, TouchableOpacity } from 'r
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
 import { Image } from 'expo-image';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -17,6 +18,11 @@ const blurhash =
 export default function About() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
+  
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/Home');
+
 
   const handleFacebookLink = () => {
     Linking.openURL('https://https://www.facebook.com/hotelescuelacerrito/');
@@ -51,6 +57,13 @@ export default function About() {
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
+      position: 'absolute',
+        left: 0,
+        right: 0,
+    },
+    backButton: {
+      alignSelf: 'flex-start',
+      zIndex: 10
     },
     subheader: {
       color: colors.onSecondary, 
@@ -124,6 +137,9 @@ export default function About() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+              <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('about.Header')}</Text>
         </View>
 
