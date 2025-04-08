@@ -1,0 +1,230 @@
+{
+    "home": {
+        "title": "Home",
+        "button1": "About Cerrito School and Hotel",
+        "button2": "Take the Self-Guided Tour",
+        "button3":"Explore Activities",
+        "button4": "View Shop",
+        "button5": "Other Services",
+        "button6": "Make a Reservation",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "All rights reserved.",
+        "Footer3": "Created by Fundación Paraguaya"
+
+    },
+    "tour": {
+        "title": "Self-Guided Tour", 
+        "begin_tour": "Begin Tour",
+        "view_stops": {
+            "title": "View Stops",
+            "stop": "Stop"
+        },
+        "welcome": "Welcome to the Self-Guided Tour!",
+        "audio_player": "Audio Player",
+        "mapa_central": {
+            "title": "Central Map",
+            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum"	
+        },
+        "capilla": {
+            "title": "Chapel",
+            "description": "N/A"
+        }, 
+        "cancha": {
+            "title": "Sports Fields",
+            "description": "N/A"
+        },
+        "sector_academico": {
+            "title": "Academic Sector",
+            "description": "N/A"
+        },
+        "patio_central": {
+            "title": "Central Patio",
+            "description": "N/A"
+        },
+        "comedor": {
+            "title": "Restaurant",
+            "description": "N/A"
+        }, 
+        "CPA": {
+            "title": "Animal Production Center",
+            "description": "N/A"
+        },
+        "planta_lactea": {
+            "title": "Cheese Factory",
+            "description": "N/A"
+        },
+        "CPV": {
+            "title": "Vegetable Production Center",
+            "description": "N/A"
+        },
+        "piscina": {
+            "title": "Pool and Gazebo",
+            "description": "N/A"
+        },
+        "hotel" : {
+            "title": "Hotel",
+            "description": "N/A"
+        }
+    }, 
+    "activities": {
+        "title": "Activities",
+        "description": "Description",
+        "relaxing": {
+            "pool": {
+                "title": "Swim in the Pool",
+                "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 7:00 PM, M-F."
+            },
+            "restaurant": {
+                "title": "Eat at the Restaurant",
+                "description": "Taste the flavors of Paraguay, with vegetables straight from the school garden and cheese made from the milk of campus cows. See how to make a lunch or dinner reservation here."
+            },
+            "hammocks": {
+                "title": "Lie in the Hammocks",
+                "description": "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time. Weather dependent."
+            },
+            "games": {
+                "title": "Play Tabletop Games",
+                "description": "Visit the game room by the pavilion for a rousing session of foosball, cards, or board games."
+            },
+            "quinchos": {
+                "title": "Sit at the Quinchos",
+                "description": "Cook and gather with friends/family. ingesta de asados y destinado a reuniones y actividades sociales."
+            },
+            "gift_shop": {
+                "title": "Purchase Souvenirs",
+                "description": "Support the Cerrito School by purchasing products in the hotel lobby. You can find yogurt, dulce de leche, and cheese, all made by students on campus. We also have snacks, drinks, and souvenirs."
+            },
+            "exercise": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "educational": {
+            "production": {
+                "title": "",
+                "description": ""
+            },
+            "tour": {
+                "title": "",
+                "description": ""
+            },
+            "cheese": {
+                "title": "",
+                "description": ""
+            },
+            "toba_qom": {
+                "title": "",
+                "description": ""
+            },
+            "eucalyptus": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "adventurous": {
+            "monkeys": {
+                "title": "",
+                "description": ""
+            },
+            "hiking": {
+                "title": "",
+                "description": ""
+            },
+            "biking": {
+                "title": "",
+                "description": ""
+            },
+            "horses": {
+                "title": "",
+                "description": ""
+            },
+            "sports": {
+                "title": "",
+                "description": ""
+            },
+            "playground": {
+                "title": "",
+                "description": ""
+            }
+        }
+    },
+    "settings": {
+        "title": "Settings"
+    },
+    "about": {
+        "title": "About",
+        "Header": "About Us",
+        "FDDesc": "We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.",
+        "CerritoTitle": "The Cerrito School", 
+        "CerritoDesc": "Hotel Cerrito is a venture of Fundación Paraguaya. The school follows a self-management model, in which a self-sufficient farm school generates its own income. We foster an entrepreneurial spirit in our students, who come from 12 departments across the country and abroad. We are a coeducational boarding school with facilities for 150 students.",
+        "HelpTitle": "How You Can Help", 
+        "HelpDesc": "Purchasing services and goods from the Cerrito School and Hotel generates income to help Cerrito and our work to support students. Booking rooms, using laundry services, eating at the hotel restaurant, and buying products, goods, or merchandise at the shop are all ways that you can support our mission monetarily. You can also reccommend Cerrito to friends and family.",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "All rights reserved.",
+        "Footer3": "Created by Fundación Paraguaya"
+    },
+    "otherServices": {
+        "title": "Other Services",
+        "header": "Other Services",
+        "button1": "Cerrito Restaurant",
+        "button2": "Laundry Services",
+        "button3": "Refill Drinking Water",
+        "button4": "Housekeeping",
+        "button5": "Reserve Activities",
+        "button6": "Room Maintenance"
+    },
+    "cerritoRestaurant": {
+        "title": "Cerrito Restaurant",
+        "header": "Cerrito Restaurant", 
+        "body1": "The Cerrito Schools restaurant serves lunch and dinner daily. \n\nThe restaurant requests that guests inform the hotel of their desire to eat at the restaurant and the number of people in their party: \n\nBy 10 AM for lunch, or \nBy 12 PM for dinner \n\nThe hotel staff will also send a menu for the day upon request.\n",
+        "body2": "To make a reservation or view the daily menu, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    },
+    "laundry": {
+        "title": "Laundry",
+        "header": "Laundry", 
+        "body1": "Dirty laundry can be dropped off at the front desk of the hotel to be washed and ironed.\n",
+        "body2": "Laundry Schedule\n",
+        "body3": "Dirty laundry can be dropped off at ",
+        "body4": "9AM on Monday or Tuesday",
+        "body5": ", or ",
+        "body6": "4PM on Wednesday.",
+        "body7": "\n The hotel requests that guests pick up their clean laundry at",
+        "body8": " 4PM on the day after they drop it off.\n",
+        "body9": "Payment\n",
+        "body10": "Laundry services cost",
+        "body11": " PGY25,000 for 5 garments.\n",
+        "body12": "The hotel can receive payment between ",
+        "body13": "11AM and 1PM on Fridays."
+    },
+    "waterRefill": {
+        "title": "Refill Drinking Water",
+        "header": "Refill Drinking Water", 
+        "body1": "Drinking water is available for pickup at the hotel lobby upon request at no charge.\n",
+        "body2": "To request a water refill, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    },
+    "housekeeping": {
+        "title": "Housekeeping",
+        "header": "Housekeeping", 
+        "body1": "Housekeeping services are available upon request at no charge.\n",
+        "body2": "To schedule housekeeping for your hotel room, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    },
+    "reserveActivities": {
+        "title": "Reserve Activities",
+        "header": "Reserve Activities", 
+        "body1": "Some available activities require reservations through the front desk. These include:\n",
+        "body2": "Eating at the Cerrito Restaurant,\nTour of the Cheese Factory,\nVisit to Toba Qom artisanal products stand, and\nHorse Riding.\n",
+        "body3": "To learn about and make a reservation for any of these activities, please see the front desk or send a WhatsApp message to:\n",
+        "body4": "+595-976-360-833"
+    },
+    "maintenance": {
+        "title": "Room Maintenance",
+        "header": "Room Maintenance",
+        "body1": "Maintenance services are available upon request at no charge.\n",
+        "body2": "To request maintenance for your room/hotel appliances, please send a WhatsApp message to:\n",
+        "body3": "+595-976-360-833"
+    }
+}
+  

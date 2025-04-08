@@ -1,29 +1,29 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { Text, View, StyleSheet } from 'react-native';
-import 'react-native-gesture-handler';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { View, StyleSheet } from 'react-native';
+import { Text, Button } from 'react-native-paper';
+import { useRouter } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 
-export default function Tour() {
+export default function TourStart() {
+  const router = useRouter();
+  const { t } = useTranslation();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Tour screen</Text>
+       <Text variant="headlineMedium" style={{textAlign: "center"}}>{t("tour.welcome")}</Text>
+      <Button
+        mode="contained"
+        onPress={() => router.push('/tourStops/MapaCentral')}
+      >
+        {t('tour.begin_tour')}
+      </Button>
+      
+      {/* <Button mode="contained" onPress={() => router.push('../tour')}>
+        View Stops
+      </Button> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#25292e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: 'underline',
-    color: '#fff',
-  },
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, textAlign: 'center' },
 });

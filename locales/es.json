@@ -1,0 +1,230 @@
+{
+    "home": {
+        "title": "Inicio",
+        "button1": "Sobre Cerrito Hotel y Escuela",
+        "button2": "Toma el Tour Autoguiado",
+        "button3":"Explorar las Actividades",
+        "button4": "Ver la Tienda",
+        "button5": "Otros Servicios",
+        "button6": "Pedir una Reservación",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "Todos los derechos reservados.",
+        "Footer3": "Creado por Fundación Paraguaya"
+    
+    },
+    "tour": {
+        "title": "Tour Autoguiado",
+        "begin_tour": "Comenzar Tour",
+        "view_stops": {
+            "title": "Mirar Paradas",
+            "stop": "Parada"
+        },
+        "welcome": "¡Bienvenidos al Tour Autoguiado!",
+        "audio_player": "Reproductor de Audio",
+        "mapa_central": {
+            "title": "Mapa Central",
+            "description": "This is the central map of the tour. It shows all the stops and their locations."
+        },
+        "capilla": {
+            "title": "Capilla",
+            "description": "N/A"
+        }, 
+        "cancha": {
+            "title": "Cancha",
+            "description": "N/A"
+        },
+        "sector_academico": {
+            "title": "Sector Académico",
+            "description": "N/A"
+        },
+        "patio_central": {
+            "title": "Patio Central",
+            "description": "N/A"
+        },
+        "comedor": {
+            "title": "Comedor",
+            "description": "N/A"
+        }, 
+        "CPA": {
+            "title": "Centro de Producción Animal",
+            "description": "N/A"
+        },
+        "planta_lactea": {
+            "title": "Planta Lactea",
+            "description": "N/A"
+        },
+        "CPV": {
+            "title": "Centro de Producción Vegetal",
+            "description": "N/A"
+        },
+        "piscina": {
+            "title": "Piscina y Quinchos",
+            "description": "N/A"
+        },
+        "hotel" : {
+            "title": "Hotel",
+            "description": "N/A"
+        }
+    }, 
+    "activities": {
+        "title": "Actividades",
+        "activities": "Descripción",
+        "relaxing": {
+            "pool": {
+                "title": "Nada en la Piscina",
+                "description": ""
+            },
+            "restaurant": {
+                "title": "",
+                "description": ""
+            },
+            "hammocks": {
+                "title": "",
+                "description": ""
+            },
+            "games": {
+                "title": "",
+                "description": ""
+            },
+            "quinchos": {
+                "title": "",
+                "description": ""
+            },
+            "gift_shop": {
+                "title": "",
+                "description": ""
+            },
+            "exercise": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "educational": {
+            "production": {
+                "title": "",
+                "description": ""
+            },
+            "tour": {
+                "title": "",
+                "description": ""
+            },
+            "cheese": {
+                "title": "",
+                "description": ""
+            },
+            "toba_qom": {
+                "title": "",
+                "description": ""
+            },
+            "eucalyptus": {
+                "title": "",
+                "description": ""
+            }
+        },
+        "adventurous": {
+            "monkeys": {
+                "title": "",
+                "description": ""
+            },
+            "hiking": {
+                "title": "",
+                "description": ""
+            },
+            "biking": {
+                "title": "",
+                "description": ""
+            },
+            "horses": {
+                "title": "",
+                "description": ""
+            },
+            "sports": {
+                "title": "",
+                "description": ""
+            },
+            "playground": {
+                "title": "",
+                "description": ""
+            }
+        }
+    },
+    "settings": {
+        "title": "Configuración"
+    },
+    "about": {
+        "title": "Nosotros",
+        "Header": "Sobre Nosotros",
+        "FDDesc": "Nosotros desarrollamos e implementamos soluciones prácticas, innovadoras y sostenibles que permitan activar el potencial emprendedor de las familias para eliminar la pobreza multidimensional y vivir con dignidad.",
+        "CerritoTitle": "La Escuela Cerrito", 
+        "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, llegados de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
+        "HelpTitle": "Cómo Puedes Ayudar", 
+        "HelpDesc": "Comprar servicios y artículos de la Escuela y Hotel Cerrito genera ingresos que ayudan a Cerrito y a nuestra labor de apoyo estudiantil. Reservar habitaciones, usar el servicio de lavandería, comer en el restaurante del hotel y comprar productos en la tienda son maneras de apoyar nuestra misión económicamente. También puedes recomendar Cerrito a tus amigos y familiares.",
+        "Footer1": "Copyright © 2018 Fundación Paraguaya.",
+        "Footer2": "Todos los derechos reservados.",
+        "Footer3": "Creado por Fundación Paraguaya"
+    },
+    "otherServices": {
+        "title": "Otros Servicios",
+        "header": "Otros Servicios",
+        "button1": "El Restaurante Cerrito",
+        "button2": "Servicio de Lavandería",
+        "button3": "Repuesto de Agua Potable",
+        "button4": "Limpieza de Habitación",
+        "button5": "Reservar Actividades",
+        "button6": "El Mantenimiento"
+    },
+    "cerritoRestaurant": {
+        "title": "El Restaurante Cerrito",
+        "header": "El Restaurante Cerrito", 
+        "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que los huéspedes informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
+        "body2": "Para hacer una reserva o ver el menú diario, por favor envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
+    "laundry": {
+        "title": "Servicio de Lavandería",
+        "header": "Servicio de Lavandería", 
+        "body1": "La ropa sucia se puede dejar en la recepción del hotel para lavarla y plancharla.\n",
+        "body2": "Horario de Lavandería\n",
+        "body3": "La ropa sucia se puede dejar a las ",
+        "body4": "9.00 los lunes o martes",
+        "body5": ", o a las ",
+        "body6": "16.00 los miércoles.",
+        "body7": "\n El hotel solicita que los huéspedes recojan su ropa limpia a las",
+        "body8": " 16.00 del día siguiente a dejarla.\n",
+        "body9": "Pago\n",
+        "body10": "Los servicios de lavandería cuestan",
+        "body11": " PGY25,000 por 5 prendas.\n",
+        "body12": "El hotel puede recibir el pago entre las ",
+        "body13": "11.00 y las 13.00 los viernes."
+    },
+    "waterRefill": {
+        "title": "Repuesto de Agua Potable",
+        "header": "Repuesto de Agua\n Potable", 
+        "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
+        "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
+    "housekeeping": {
+        "title": "Limpieza",
+        "header": "Limpieza", 
+        "body1": "El servicio de limpieza está disponible bajo petición y sin coste alguno.\n",
+        "body2": "Para fijar el servicio de limpieza de su habitación de hotel, envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    },
+    "reserveActivities": {
+        "title": "Reservar Actividades",
+        "header": "Reservar Actividades", 
+        "body1": "Algunas actividades disponibles requieren reserva previa en recepción. Estas incluyen:\n",
+        "body2": "Comer en el Restaurante Cerrito,\nRecorrido por la Quesería,\nVisita a stand de productos artesanales Toba Qom y\nPaseo a Caballo.\n",
+        "body3": "Para conocer y reservar cualquiera de estas actividades, consulte en recepción o envíe un mensaje de WhatsApp a:\n",
+        "body4": "+595-976-360-833"
+    },
+    "maintenance": {
+        "title": "Mantenimiento de Habitación",
+        "header": "Mantenimiento de\n Habitación",
+        "body1": "Los servicios de mantenimiento están disponibles a pedido sin costo alguno.\n",
+        "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, envíe un mensaje de WhatsApp a:\n",
+        "body3": "+595-976-360-833"
+    }
+}
+  
