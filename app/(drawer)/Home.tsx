@@ -54,7 +54,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
       backgroundColor: colors.secondary,
       textAlign: 'center',
       fontSize: 15,
-      padding: width * 0.038,
+      padding: width * 0.05,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
@@ -121,26 +121,25 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
 
 
   return (
-  <View style={styles.container}>
-      <Image
-        style={styles.image}
-        source={imagePath}
-        placeholder={{ blurhash }}
-        contentFit="cover"
-        transition={1000}
-      />
+    <View style={styles.container}>
       <TouchableHighlight
         activeOpacity={0.6}
         underlayColor="#DDDDDD"
         onPress={(e) => handleButtonSelect(routerPath)}>
         
         <View style={styles.buttonContainer}>
+        <Image
+          style={styles.image}
+          source={imagePath}
+          placeholder={{ blurhash }}
+          contentFit="cover"
+          transition={1000}
+        />
           <Text style={styles.button}>{buttonTitle}</Text>
         </View>
-
       </TouchableHighlight>
-      
     </View>
+
   )
 }
 
