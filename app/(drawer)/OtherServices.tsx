@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { RelativePathString, useRouter } from 'expo-router';
@@ -18,6 +18,9 @@ export default function OtherServices() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const router = useRouter();
+  
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/Home');
 
   const styles = StyleSheet.create({
     container: {
@@ -43,7 +46,13 @@ export default function OtherServices() {
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
-      }),
+      }),position: 'absolute',
+      left: 0,
+      right: 0,
+    },
+    backButton: {
+      alignSelf: 'flex-start',
+      zIndex: 10
     },
     buttonContainer: {
       width: width * 0.8,
@@ -89,6 +98,9 @@ export default function OtherServices() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+              <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('otherServices.header')}</Text>
         </View>
 
