@@ -35,7 +35,7 @@ export default function Maintenance() {
         right: 0,
         backgroundColor: colors.background,
         paddingVertical: 0,
-        marginTop: width * 0.04,
+        marginTop: width * 0.07,
         justifyContent: 'center', 
         alignItems: 'center',
         paddingHorizontal: width * 0.02,
