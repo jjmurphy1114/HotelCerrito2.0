@@ -30,6 +30,8 @@ export default function DrawerLayout() {
       {/* Tour stops hidden from the main drawer but still accessible */}
       <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
       <Drawer.Screen name='tour/index' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
+      <Drawer.Screen name='tour/stops' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
+      <Drawer.Screen name='tour/StopTemplate' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
       <Drawer.Screen name='tourStops' options={{ drawerItemStyle: {display: 'none'}, title: "Self-Guided Tour"}} />
 
       <Drawer.Screen name='otherServices/CerritoRestaurant' options={{ drawerItemStyle: {display: 'none'}, title: t('cerritoRestaurant.title')}} />

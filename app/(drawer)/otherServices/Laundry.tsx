@@ -1,7 +1,8 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { RelativePathString, useRouter } from 'expo-router';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
@@ -16,6 +17,10 @@ const blurhash =
 export default function Laundry() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
+  
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/OtherServices');
 
   const styles = StyleSheet.create({
       container: {
@@ -24,14 +29,16 @@ export default function Laundry() {
       },
       header: {
         position: 'absolute',
+        flexDirection: 'row',
         top: 0,
         left: 0,
         right: 0,
         backgroundColor: colors.background,
         paddingVertical: 0,
         marginTop: 20,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         alignItems: 'center',
+        paddingHorizontal: 10,
       },
       headerText: {
         color: colors.onSecondary,
@@ -42,6 +49,9 @@ export default function Laundry() {
           android: 'Inter_900Black',
           ios: 'Inter-Black',
         }),
+        position: 'absolute',
+        left: 0,
+        right: 0,
       },
       text: {
         color: colors.onSecondary, 
@@ -132,6 +142,9 @@ export default function Laundry() {
       },
       bodyTextContainer: {
         marginTop: 20
+      },
+      backButton: {
+
       }
     });
 
@@ -139,6 +152,7 @@ export default function Laundry() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+        <IconButton style={styles.backButton} icon="arrow-left" onPress={PrevPage} /> 
           <Text style={styles.headerText}>{t('laundry.header')}</Text>
         </View>
 
