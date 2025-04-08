@@ -29,14 +29,14 @@ export default function Laundry() {
       },
       header: {
         position: 'absolute',
-        flexDirection: 'row',
+        // flexDirection: 'row',
         top: 0,
         left: 0,
         right: 0,
         backgroundColor: colors.background,
         paddingVertical: 0,
         marginTop: 20,
-        justifyContent: 'space-between',
+        justifyContent: 'center', 
         alignItems: 'center',
         paddingHorizontal: 10,
       },
@@ -52,6 +52,10 @@ export default function Laundry() {
         position: 'absolute',
         left: 0,
         right: 0,
+      },
+      backButton: {
+        alignSelf: 'flex-start',
+        zIndex: 10
       },
       text: {
         color: colors.onSecondary, 
@@ -142,9 +146,6 @@ export default function Laundry() {
       },
       bodyTextContainer: {
         marginTop: 20
-      },
-      backButton: {
-
       }
     });
 
@@ -152,7 +153,9 @@ export default function Laundry() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
-        <IconButton style={styles.backButton} icon="arrow-left" onPress={PrevPage} /> 
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+            <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('laundry.header')}</Text>
         </View>
 
