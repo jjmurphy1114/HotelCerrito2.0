@@ -30,7 +30,7 @@ export default function About() {
     container: {
       flex: 1,
       backgroundColor: colors.background,
-      marginTop: 5,
+      marginTop: 0,
     },
     header: {
       position: 'absolute',
@@ -46,7 +46,7 @@ export default function About() {
       color: colors.onSecondary, 
       textAlign: 'center',
       fontSize: 25,
-      padding: 5,
+      padding: width*.012,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
@@ -56,22 +56,22 @@ export default function About() {
       color: colors.onSecondary, 
       textAlign: 'center',
       fontSize: 28,
-      paddingTop: 30,
-      paddingBottom: 10,
+      paddingTop: width*.1,
+      paddingBottom: width*.025,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
-      marginBottom: 10,
+      marginBottom: width*.025,
     },
     text: {
       color: colors.onSecondary, 
       textAlign: 'left',
       fontSize: 23,
       padding: 0,
-      paddingLeft: 20,
-      paddingRight: 20,
-      marginBottom: 20,
+      paddingLeft: width*.052,
+      paddingRight: width*.052,
+      marginBottom: width*.02,
       fontFamily: Platform.select({
         android: 'Inter_400Regular',
         ios: 'Inter24pt-Regular',
@@ -92,8 +92,8 @@ export default function About() {
       backgroundColor: colors.background,
       alignItems: 'center',
       justifyContent: 'center',
-      paddingTop: 60,
-      paddingBottom: 110,
+      paddingTop: width*.17,
+      paddingBottom: width*.33,
     },
     footer: {
       position: 'absolute',
@@ -101,10 +101,10 @@ export default function About() {
       left: 0,
       right: 0,
       backgroundColor: colors.primary,
-      padding: 10,
+      padding: width*.03,
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 30,
+      marginTop: width*.1,
     },
     footerText: {
       fontSize: 11,
@@ -116,12 +116,7 @@ export default function About() {
     socialMediaIcons: {
       flexDirection: 'row',
       justifyContent: 'center',
-      marginTop: 10,
-    },
-    socialIcon: {
-      margin: 10,
-      fontSize: 25,
-      color: colors.onPrimary,
+      marginTop: width*.025,
     },
   });
 
