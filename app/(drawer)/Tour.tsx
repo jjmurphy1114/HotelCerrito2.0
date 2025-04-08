@@ -12,7 +12,7 @@ export default function TourStart() {
        <Text variant="headlineMedium" style={{textAlign: "center"}}>{t("tour.welcome")}</Text>
       <Button
         mode="contained"
-        onPress={() => router.push('/tour/stop1')}
+        onPress={() => router.push('/tourStops/MapaCentral')}
       >
         {t('tour.begin_tour')}
       </Button>

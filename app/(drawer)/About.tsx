@@ -55,24 +55,26 @@ export default function About() {
     subheader: {
       color: colors.onSecondary, 
       textAlign: 'center',
-      fontSize: 20,
+      fontSize: 28,
       paddingTop: 30,
       paddingBottom: 10,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
+      marginBottom: 10,
     },
     text: {
       color: colors.onSecondary, 
       textAlign: 'left',
-      fontSize: 15,
+      fontSize: 23,
       padding: 0,
       paddingLeft: 20,
       paddingRight: 20,
+      marginBottom: 20,
       fontFamily: Platform.select({
         android: 'Inter_400Regular',
-        ios: 'Inter-Black',
+        ios: 'Inter24pt-Regular',
       }),
     },
     button: {
