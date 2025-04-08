@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { Text, View, StyleSheet, TextStyle, ScrollView, StatusBar } from 'react-native';
+import { Text, View, StyleSheet, TextStyle, ScrollView, StatusBar, Dimensions } from 'react-native';
 import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Link } from 'expo-router';
@@ -9,6 +9,7 @@ import { Button, Card, IconButton, MD3Colors } from 'react-native-paper';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
+const { width, height } = Dimensions.get('window');
 
 const RelaxCarousel = () => {
   const { t } = useTranslation();

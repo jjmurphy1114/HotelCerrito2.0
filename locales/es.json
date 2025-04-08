@@ -153,7 +153,8 @@
         }
     },
     "settings": {
-        "title": "Configuración"
+        "title": "Configuración",
+        "header": "Cambia Idioma"
     },
     "about": {
         "title": "Nosotros",

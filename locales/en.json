@@ -154,7 +154,8 @@
         }
     },
     "settings": {
-        "title": "Settings"
+        "title": "Settings",
+        "header": "Change Language"
     },
     "about": {
         "title": "About",
