@@ -1,7 +1,8 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { RelativePathString, useRouter } from 'expo-router';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
@@ -16,6 +17,10 @@ const blurhash =
 export default function CerritoRestaurant() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
+
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/OtherServices');
 
   const styles = StyleSheet.create({
     container: {
@@ -24,14 +29,16 @@ export default function CerritoRestaurant() {
     },
     header: {
       position: 'absolute',
+      // flexDirection: 'row',
       top: 0,
       left: 0,
       right: 0,
       backgroundColor: colors.background,
       paddingVertical: 0,
       marginTop: 20,
-      justifyContent: 'center',
+      justifyContent: 'center', 
       alignItems: 'center',
+      paddingHorizontal: 10,
     },
     headerText: {
       color: colors.onSecondary,
@@ -42,6 +49,13 @@ export default function CerritoRestaurant() {
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
+      position: 'absolute',
+      left: 0,
+      right: 0,
+    },
+    backButton: {
+      alignSelf: 'flex-start',
+      zIndex: 10
     },
     text: {
       color: colors.onSecondary, 
@@ -70,13 +84,14 @@ export default function CerritoRestaurant() {
     textYellow: {
       color: colors.secondary, 
       textAlign: 'center',
+      textDecorationLine: 'underline',
       fontSize: 25,
       padding: 0,
       paddingLeft: 20,
       paddingRight: 20,
       fontFamily: Platform.select({
-        android: 'Inter_400Regular',
-        ios: 'Inter-Black',
+        android: 'Inter_400Italic',
+        ios: 'Inter-Italic',
       }),
     },
     buttonContainer: {
@@ -118,7 +133,7 @@ export default function CerritoRestaurant() {
       paddingBottom: 110,
     },
     bodyTextContainer: {
-      marginTop: 20
+      marginTop: 40
     }
   });
 
@@ -126,6 +141,9 @@ export default function CerritoRestaurant() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+            <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('cerritoRestaurant.header')}</Text>
         </View>
 
@@ -134,6 +152,7 @@ export default function CerritoRestaurant() {
         <Text style={styles.textGreen}>{t('cerritoRestaurant.body2')}</Text>
         <Text style={styles.textYellow}>{t('cerritoRestaurant.body3')}</Text>
         </View>
+
         
       </ScrollView>
     </View>

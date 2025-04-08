@@ -1,9 +1,10 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -16,6 +17,11 @@ const blurhash =
 export default function RoomCleaning() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
+    
+      /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/OtherServices');
+  
 
   const styles = StyleSheet.create({
         container: {
@@ -24,15 +30,16 @@ export default function RoomCleaning() {
         },
         header: {
           position: 'absolute',
+          // flexDirection: 'row',
           top: 0,
           left: 0,
           right: 0,
           backgroundColor: colors.background,
           paddingVertical: 0,
           marginTop: 20,
-          marginBottom: 20,
-          justifyContent: 'center',
+          justifyContent: 'center', 
           alignItems: 'center',
+          paddingHorizontal: 10,
         },
         headerText: {
           color: colors.onSecondary,
@@ -43,6 +50,13 @@ export default function RoomCleaning() {
             android: 'Inter_900Black',
             ios: 'Inter-Black',
           }),
+          position: 'absolute',
+          left: 0,
+          right: 0,
+        },
+        backButton: {
+          alignSelf: 'flex-start',
+          zIndex: 10
         },
         text: {
           color: colors.onSecondary, 
@@ -128,6 +142,9 @@ export default function RoomCleaning() {
         <View style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollView}>
             <View style={styles.header}>
+              <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+                <IconButton icon="arrow-left" />
+              </TouchableOpacity>
               <Text style={styles.headerText}>{t('housekeeping.header')}</Text>
             </View>
     
