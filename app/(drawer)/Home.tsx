@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, ScrollView, TouchableHighlight } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, TouchableHighlight, Linking } from 'react-native';
 import 'react-native-gesture-handler';
 import { useTheme } from 'react-native-paper';
 import { Image } from 'expo-image';
@@ -28,7 +28,15 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   const router = useRouter();
 
   const handleButtonSelect = ({ path } : ButtonSelectProps) => {
-    router.replace(path)
+    if(button == 6) {
+      Linking.openURL('http://hotelcerrito.com.py/#mostrar');
+    }
+    else if (button == 4) {
+      Linking.openURL('https://cerritopy.com.py/cerrito-gourmet/#/home');
+    }
+    else {
+      router.replace(path)
+    }
   };
   
   const styles = StyleSheet.create({
@@ -82,10 +90,9 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     '/(drawer)/About' as RelativePathString,
     '/(drawer)/Tour' as RelativePathString,
     '/(drawer)/Activities' as RelativePathString,
-    '/(drawer)/Shop' as RelativePathString,
+    '/(drawer)/Home' as RelativePathString,
     '/(drawer)/OtherServices' as RelativePathString,
-    '/(drawer)/Reservation' as RelativePathString,
-
+    '/(drawer)/Home' as RelativePathString,
   ]
 
   if (button == 1) {
