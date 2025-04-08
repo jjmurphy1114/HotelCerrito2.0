@@ -10,7 +10,6 @@
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
         "Footer3": "Creado por Fundación Paraguaya"
-    
     },
     "tour": {
         "title": "Tour Autoguiado",
@@ -19,7 +18,12 @@
             "title": "Mirar Paradas",
             "stop": "Parada"
         },
-        "welcome": "¡Bienvenidos al Tour Autoguiado!",
+        "welcome": "¡Bienvenido a la Escuela y el Hotel Cerrito! En este tour, puede conocer la historia de la Escuela y el Hotel y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el mapa central y los puestos de madera amarilla para llegar a cada parada. Puede hacerlo en el orden recomendado o en cualquier orden que le gustaría con el botón de Mirar Paradas.\nLa siguiente pantalla tiene el mapa central de la escuela. Después hay las paradas del tour. Puede navegar la página por las flechas en la pantalla o usando las pestañas de navegación en la parte inferior de la pantalla",
+        "map":{
+            "open": "Mirar Mapa",
+            "close": "Cerrar Mapa",
+            "path": "Sendero:"
+        },
         "audio_player": "Reproductor de Audio",
         "mapa_central": {
             "title": "Mapa Central",
