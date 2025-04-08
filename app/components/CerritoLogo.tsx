@@ -1,5 +1,6 @@
 import { Image } from "expo-image";
 import { StyleSheet} from 'react-native';
+import { Platform } from 'react-native';
 
 type Props = {
   width?: number;
@@ -14,7 +15,10 @@ export default function CerritoLogo({ width = 40, height = 40 }: Props) {
     cerritoImage: {
       width: width,
       height: height,
-      marginBottom: 15
+      marginBottom: Platform.select({
+        android: 0,
+        ios: 12,
+      })
     }
   });
   return (
