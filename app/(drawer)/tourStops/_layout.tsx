@@ -42,7 +42,9 @@ export default function TourLayout() {
     >
 
       <View style={{ flexDirection: 'row', gap: 8 }}>
-          <Button compact onPress={() => setMapVisible(true)}>
+          <Button compact onPress={() => setMapVisible(true)}
+                  icon={"map"}
+            >
             {t('tour.map.open')}
           </Button>
       </View>
