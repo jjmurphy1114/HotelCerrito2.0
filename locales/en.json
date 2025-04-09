@@ -7,6 +7,7 @@
         "button4": "View Shop",
         "button5": "Other Services",
         "button6": "Make a Reservation",
+        "button7": "Observe the Howler Monkeys",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "All rights reserved.",
         "Footer3": "Created by Fundación Paraguaya"
@@ -72,12 +73,9 @@
         }
     }, 
     "activities": {
-<<<<<<< HEAD
-        "details": "Details",
-=======
         "title": "Activities",
-        "description": "Description",
->>>>>>> a60b9d76c6a4442fbf78fafd590f4212e6aebc5a
+        "details": "Details",
+        "description": "",
         "relaxing": {
             "pool": {
                 "title": "Swimming",
@@ -172,6 +170,14 @@
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "All rights reserved.",
         "Footer3": "Created by Fundación Paraguaya"
+    },
+    "howlerMonkeys": {
+        "title": "Howler Monkeys",
+        "header": "Observe the Howler Monkeys",
+        "subheader1": "About the Howler Monkeys",
+        "subheader2": "Reccomendations for Observing the Howler Monkeys",
+        "text1": "about here",
+        "text2": "hwo here"
     },
     "otherServices": {
         "title": "Other Services",

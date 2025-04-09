@@ -7,6 +7,7 @@
         "button4": "Ver la Tienda",
         "button5": "Otros Servicios",
         "button6": "Pedir una Reservación",
+        "button7": "Observar los Monos Aulladores",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
         "Footer3": "Creado por Fundación Paraguaya"
@@ -71,13 +72,8 @@
         }
     }, 
     "activities": {
-<<<<<<< HEAD
         "details": "Detalles",
         "description": "",
-=======
-        "title": "Actividades",
-        "activities": "Descripción",
->>>>>>> a60b9d76c6a4442fbf78fafd590f4212e6aebc5a
         "relaxing": {
             "pool": {
                 "title": "Nada en la Piscina",
@@ -172,6 +168,10 @@
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
         "Footer3": "Creado por Fundación Paraguaya"
+    },
+    "howlerMonkeys": {
+        "title": "Monos Aulladores",
+        "header": "Observar los Monos Aulladores"
     },
     "otherServices": {
         "title": "Otros Servicios",

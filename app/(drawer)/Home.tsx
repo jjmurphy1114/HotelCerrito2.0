@@ -80,10 +80,11 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   const images = [
     require("../../assets/images/CerritoSign.jpeg"),
     require("../../assets/images/MapaCentral.jpeg"),
-    require("../../assets/images/HowlerMonkey.jpeg"),
+    require("../../assets/images/HorseRiding.jpeg"),
     require("../../assets/images/emoji4.png"),
     require("../../assets/images/HotelSide.jpeg"),
-    require("../../assets/images/emoji6.png"),
+    require("../../assets/images/HotelFrontDesk.jpeg"),
+    require("../../assets/images/HowlerMonkey.jpeg"),
   ];
 
   const routerPaths: RelativePathString[] = [
@@ -93,6 +94,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     '/(drawer)/Home' as RelativePathString,
     '/(drawer)/OtherServices' as RelativePathString,
     '/(drawer)/Home' as RelativePathString,
+    '/(drawer)/HowlerMonkeys' as RelativePathString,
   ]
 
   if (button == 1) {
@@ -120,10 +122,15 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     imagePath = images[4]
     routerPath = { path: routerPaths[4] };
   }
-  else {
+  else if (button == 6) {
     buttonTitle = t('home.button6')
     imagePath = images[5]
     routerPath = { path: routerPaths[0] };
+  }
+  else {
+    buttonTitle = t('home.button7')
+    imagePath = images[6]
+    routerPath = { path: routerPaths[6] };
   }
 
 
@@ -192,6 +199,7 @@ export default function Home() {
     <ScrollView contentContainerStyle={styles.scrollView}>
       <ImageButtonPair button={1}></ImageButtonPair>
       <ImageButtonPair button={2}></ImageButtonPair>
+      <ImageButtonPair button={7}></ImageButtonPair>
       <ImageButtonPair button={3}></ImageButtonPair>
       <ImageButtonPair button={4}></ImageButtonPair>
       <ImageButtonPair button={5}></ImageButtonPair>

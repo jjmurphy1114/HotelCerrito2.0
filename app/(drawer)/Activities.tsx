@@ -28,8 +28,10 @@ const RelaxCarousel = () => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
-  const handleDesc = () => 
+  const handleDesc = () => {
     isOpen = !isOpen;
+    console.log(isOpen)
+  }
 
   return (
     <View>
@@ -50,19 +52,7 @@ const RelaxCarousel = () => {
             <Card.Cover 
             style = {styles.cardCover} 
             source = {{ uri: relaxImages[index]}} />
-            {/* <View style={styles.cardDescription/*{ flexDirection: 'row'}*/} > } 
-              {/* <View style={{ flex: 0}}> */}
-                {/* <Text>{t("activities.description")}</Text> */}
-              {/* </View> */}
-              {/* <View style={styles.rightArrowContainer/*{flex: 1}*/}> */}
-                {/* <IconButton */}
-                  {/* icon = {'chevron-right'} */}
-                  {/* iconColor={'black'} */}
-                  {/* size={20} */}
-                  {/* onPress={() => console.log('Pressed')} */}
-                {/* /> */}
-              {/* </View> */}
-            {/* </View> */}
+
           </Card>
         </View>
         <View style={styles.arrowButton}>
