@@ -60,8 +60,8 @@ export default function StopTemplate( title: string,
         paddingRight: 10,
       },
       text: {
-        fontSize: 16,
-        lineHeight: 22,
+        fontSize: 18,
+        lineHeight: 24,
       },
       title: {
         fontSize: 20,
