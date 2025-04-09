@@ -20,6 +20,11 @@
             "stop": "Stop"
         },
         "welcome": "Welcome to the Self-Guided Tour!",
+        "map":{
+            "open": "View Map",
+            "close": "Close Map",
+            "path": "Path:"
+        },
         "audio_player": "Audio Player",
         "mapa_central": {
             "title": "Central Map",
@@ -57,7 +62,7 @@
             "title": "Vegetable Production Center",
             "description": "N/A"
         },
-        "piscina_quinchos": {
+        "piscina": {
             "title": "Pool and Gazebo",
             "description": "N/A"
         },
@@ -67,7 +72,12 @@
         }
     }, 
     "activities": {
+<<<<<<< HEAD
         "details": "Details",
+=======
+        "title": "Activities",
+        "description": "Description",
+>>>>>>> a60b9d76c6a4442fbf78fafd590f4212e6aebc5a
         "relaxing": {
             "pool": {
                 "title": "Swimming",
@@ -148,7 +158,8 @@
         }
     },
     "settings": {
-        "title": "Settings"
+        "title": "Settings",
+        "header": "Change Language"
     },
     "about": {
         "title": "About",

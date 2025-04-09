@@ -18,7 +18,7 @@ export default function TourStops() {
   // This is the current menu for switching between stops. To change the order of the stops, go to stops.ts
   return (
     <ScrollView contentContainerStyle={{ padding: 20 }}>
-      <Text variant="headlineMedium">All Stops</Text>
+      <Text variant="headlineMedium">{t("tour.view_stops.title")}</Text>
       {tourStops.map((stop) => (
         <Button
           key={stop.route}

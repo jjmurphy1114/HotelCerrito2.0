@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { FlatList, Text, View, StyleSheet, TextStyle, ScrollView, StatusBar, TouchableOpacity } from 'react-native';
+import { FlatList, Text, View, StyleSheet, TextStyle, ScrollView, StatusBar, Dimensions, TouchableOpacity } from 'react-native';
 import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Link } from 'expo-router';
@@ -10,6 +10,7 @@ import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import CardCover from 'react-native-paper/lib/typescript/components/Card/CardCover';
 
+const { width, height } = Dimensions.get('window');
 
 const RelaxCarousel = () => {
   const { t } = useTranslation();
@@ -489,7 +490,7 @@ const styles = StyleSheet.create({
   carousel: {
     flexDirection: 'row', 
     justifyContent: 'space-between'/*'center'*/, 
-    paddingHorizontal: 20, 
+    paddingHorizontal: 10, 
     alignItems: 'center'/*'stretch'*/,
     flex: 1,
   },

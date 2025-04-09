@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { RelativePathString, useRouter } from 'expo-router';
@@ -18,6 +18,9 @@ export default function OtherServices() {
   const { colors } = useTheme();
   const { t } = useTranslation();
   const router = useRouter();
+  
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/Home');
 
   const styles = StyleSheet.create({
     container: {
@@ -31,7 +34,7 @@ export default function OtherServices() {
       right: 0,
       backgroundColor: colors.background,
       paddingVertical: 0,
-      marginTop: 20,
+      marginTop: width * 0.05,
       justifyContent: 'center',
       alignItems: 'center',
     },
@@ -39,21 +42,27 @@ export default function OtherServices() {
       color: colors.onSecondary,
       textAlign: 'center',
       fontSize: 25,
-      padding: 5,
+      padding: width * 0.012,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
-      }),
+      }),position: 'absolute',
+      left: 0,
+      right: 0,
+    },
+    backButton: {
+      alignSelf: 'flex-start',
+      zIndex: 10
     },
     buttonContainer: {
       width: width * 0.8,
       flexDirection: 'row',   
       alignItems: 'center',   
       backgroundColor: colors.secondary,
-      paddingVertical: 18,
-      paddingRight: 10,
-      borderRadius: 10,
-      marginVertical: 20
+      paddingVertical: width * 0.045,
+      paddingRight: width * 0.04,
+      borderRadius: width * 0.02,
+      marginVertical: width * 0.05
     },
     buttonText: {
       color: colors.onSecondary,
@@ -80,8 +89,8 @@ export default function OtherServices() {
       backgroundColor: colors.background,
       alignItems: 'center',
       justifyContent: 'center',
-      paddingTop: 60,
-      paddingBottom: 110,
+      paddingTop: width * 0.17,
+      paddingBottom: width * 0.3,
     },
   });
 
@@ -89,6 +98,9 @@ export default function OtherServices() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+              <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('otherServices.header')}</Text>
         </View>
 

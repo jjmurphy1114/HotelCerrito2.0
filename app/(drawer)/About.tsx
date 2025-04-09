@@ -2,9 +2,10 @@ import { Text, View, StyleSheet, ScrollView, Linking, TouchableOpacity } from 'r
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
 import { Image } from 'expo-image';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
@@ -17,6 +18,11 @@ const blurhash =
 export default function About() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
+  
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/Home');
+
 
   const handleFacebookLink = () => {
     Linking.openURL('https://https://www.facebook.com/hotelescuelacerrito/');
@@ -30,7 +36,7 @@ export default function About() {
     container: {
       flex: 1,
       backgroundColor: colors.background,
-      marginTop: 5,
+      marginTop: 0,
     },
     header: {
       position: 'absolute',
@@ -46,32 +52,39 @@ export default function About() {
       color: colors.onSecondary, 
       textAlign: 'center',
       fontSize: 25,
-      padding: 5,
+      padding: width*.012,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
+      position: 'absolute',
+        left: 0,
+        right: 0,
+    },
+    backButton: {
+      alignSelf: 'flex-start',
+      zIndex: 10
     },
     subheader: {
       color: colors.onSecondary, 
       textAlign: 'center',
       fontSize: 28,
-      paddingTop: 30,
-      paddingBottom: 10,
+      paddingTop: width*.1,
+      paddingBottom: width*.025,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
       }),
-      marginBottom: 10,
+      marginBottom: width*.025,
     },
     text: {
       color: colors.onSecondary, 
       textAlign: 'left',
       fontSize: 23,
       padding: 0,
-      paddingLeft: 20,
-      paddingRight: 20,
-      marginBottom: 20,
+      paddingLeft: width*.052,
+      paddingRight: width*.052,
+      marginBottom: width*.02,
       fontFamily: Platform.select({
         android: 'Inter_400Regular',
         ios: 'Inter24pt-Regular',
@@ -92,8 +105,8 @@ export default function About() {
       backgroundColor: colors.background,
       alignItems: 'center',
       justifyContent: 'center',
-      paddingTop: 60,
-      paddingBottom: 110,
+      paddingTop: width*.17,
+      paddingBottom: width*.33,
     },
     footer: {
       position: 'absolute',
@@ -101,10 +114,10 @@ export default function About() {
       left: 0,
       right: 0,
       backgroundColor: colors.primary,
-      padding: 10,
+      padding: width*.03,
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 30,
+      marginTop: width*.1,
     },
     footerText: {
       fontSize: 11,
@@ -116,12 +129,7 @@ export default function About() {
     socialMediaIcons: {
       flexDirection: 'row',
       justifyContent: 'center',
-      marginTop: 10,
-    },
-    socialIcon: {
-      margin: 10,
-      fontSize: 25,
-      color: colors.onPrimary,
+      marginTop: width*.025,
     },
   });
 
@@ -129,6 +137,9 @@ export default function About() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+              <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('about.Header')}</Text>
         </View>
 

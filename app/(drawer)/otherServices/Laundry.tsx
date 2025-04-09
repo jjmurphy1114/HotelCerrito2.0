@@ -1,7 +1,8 @@
 import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { RelativePathString, useRouter } from 'expo-router';
 import 'react-native-gesture-handler';
 import { Dimensions } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme, IconButton } from 'react-native-paper';
 import { Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
@@ -16,6 +17,10 @@ const blurhash =
 export default function Laundry() {
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const router = useRouter();
+  
+  /*For navigating to the previous page*/
+  const PrevPage = () => router.replace('/(drawer)/OtherServices');
 
   const styles = StyleSheet.create({
       container: {
@@ -24,32 +29,41 @@ export default function Laundry() {
       },
       header: {
         position: 'absolute',
+        // flexDirection: 'row',
         top: 0,
         left: 0,
         right: 0,
         backgroundColor: colors.background,
         paddingVertical: 0,
-        marginTop: 20,
-        justifyContent: 'center',
+        marginTop: width * 0.04,
+        justifyContent: 'center', 
         alignItems: 'center',
+        paddingHorizontal: width * 0.02,
       },
       headerText: {
         color: colors.onSecondary,
         textAlign: 'center',
         fontSize: 25,
-        padding: 5,
+        padding: width * 0.012,
         fontFamily: Platform.select({
           android: 'Inter_900Black',
           ios: 'Inter-Black',
         }),
+        position: 'absolute',
+        left: 0,
+        right: 0,
+      },
+      backButton: {
+        alignSelf: 'flex-start',
+        zIndex: 10
       },
       text: {
         color: colors.onSecondary, 
         textAlign: 'center',
         fontSize: 20,
         padding: 0,
-        paddingLeft: 30,
-        paddingRight: 30,
+        paddingLeft: width * 0.06,
+        paddingRight: width * 0.06,
         fontFamily: Platform.select({
           android: 'Inter_400Regular',
           ios: 'Inter24pt-Regular',
@@ -60,20 +74,8 @@ export default function Laundry() {
         textAlign: 'center',
         fontSize: 20,
         padding: 0,
-        paddingLeft: 20,
-        paddingRight: 20,
-        fontFamily: Platform.select({
-          android: 'Inter_400Regular',
-          ios: 'Inter-Black',
-        }),
-      },
-      textYellow: {
-        color: colors.secondary, 
-        textAlign: 'center',
-        fontSize: 25,
-        padding: 0,
-        paddingLeft: 20,
-        paddingRight: 20,
+        paddingLeft: width * 0.06,
+        paddingRight: width * 0.06,
         fontFamily: Platform.select({
           android: 'Inter_400Regular',
           ios: 'Inter-Black',
@@ -85,8 +87,8 @@ export default function Laundry() {
         textAlign: 'center',
         fontSize: 20,
         padding: 0,
-        paddingLeft: 20,
-        paddingRight: 20,
+        paddingLeft: width * 0.06,
+        paddingRight: width * 0.06,
         fontFamily: Platform.select({
           android: 'Inter_400Italic',
           ios: 'Inter-Italic',
@@ -97,10 +99,10 @@ export default function Laundry() {
         flexDirection: 'row',   
         alignItems: 'center',   
         backgroundColor: colors.secondary,
-        paddingVertical: 18,
-        paddingRight: 10,
-        borderRadius: 10,
-        marginVertical: 20
+        paddingVertical: width * 0.055,
+        paddingRight: width * 0.03,
+        borderRadius: width * 0.03,
+        marginVertical: width * 0.06
       },
       buttonText: {
         color: colors.onSecondary,
@@ -127,11 +129,11 @@ export default function Laundry() {
         backgroundColor: colors.background,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: 60,
-        paddingBottom: 110,
+        paddingTop: width * 0.15,
+        paddingBottom: width * 0.3,
       },
       bodyTextContainer: {
-        marginTop: 20
+        marginTop: width * 0.06
       }
     });
 
@@ -139,6 +141,9 @@ export default function Laundry() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.header}>
+          <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
+            <IconButton icon="arrow-left" />
+          </TouchableOpacity>
           <Text style={styles.headerText}>{t('laundry.header')}</Text>
         </View>
 

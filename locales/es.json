@@ -10,7 +10,6 @@
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
         "Footer3": "Creado por Fundación Paraguaya"
-    
     },
     "tour": {
         "title": "Tour Autoguiado",
@@ -19,10 +18,15 @@
             "title": "Mirar Paradas",
             "stop": "Parada"
         },
-        "welcome": "¡Bienvenidos al Tour Autoguiado!",
+        "welcome": "¡Bienvenido a la Escuela y el Hotel Cerrito! En este tour, puede conocer la historia de la Escuela y el Hotel y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el mapa central y los puestos de madera amarilla para llegar a cada parada. Puede hacerlo en el orden recomendado o en cualquier orden que le gustaría con el botón de Mirar Paradas.\nLa siguiente pantalla tiene el mapa central de la escuela. Después hay las paradas del tour. Puede navegar la página por las flechas en la pantalla o usando las pestañas de navegación en la parte inferior de la pantalla",
+        "map":{
+            "open": "Mirar Mapa",
+            "close": "Cerrar Mapa",
+            "path": "Sendero:"
+        },
         "audio_player": "Reproductor de Audio",
         "mapa_central": {
-            "title": "Central Map",
+            "title": "Mapa Central",
             "description": "This is the central map of the tour. It shows all the stops and their locations."
         },
         "capilla": {
@@ -57,8 +61,8 @@
             "title": "Centro de Producción Vegetal",
             "description": "N/A"
         },
-        "piscina_quinchos": {
-            "title": "Piscina y Canchos",
+        "piscina": {
+            "title": "Piscina y Quinchos",
             "description": "N/A"
         },
         "hotel" : {
@@ -67,8 +71,13 @@
         }
     }, 
     "activities": {
+<<<<<<< HEAD
         "details": "Detalles",
         "description": "",
+=======
+        "title": "Actividades",
+        "activities": "Descripción",
+>>>>>>> a60b9d76c6a4442fbf78fafd590f4212e6aebc5a
         "relaxing": {
             "pool": {
                 "title": "Nada en la Piscina",
@@ -149,7 +158,8 @@
         }
     },
     "settings": {
-        "title": "Configuración"
+        "title": "Configuración",
+        "header": "Cambia Idioma"
     },
     "about": {
         "title": "Nosotros",
@@ -199,7 +209,7 @@
     },
     "waterRefill": {
         "title": "Repuesto de Agua Potable",
-        "header": "Repuesto de Agua Potable", 
+        "header": "Repuesto de Agua\n Potable", 
         "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
         "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
@@ -221,7 +231,7 @@
     },
     "maintenance": {
         "title": "Mantenimiento de Habitación",
-        "header": "Mantenimiento de Habitación",
+        "header": "Mantenimiento de\n Habitación",
         "body1": "Los servicios de mantenimiento están disponibles a pedido sin costo alguno.\n",
         "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
