@@ -2,11 +2,11 @@
     "home": {
         "title": "Inicio",
         "button1": "Sobre Cerrito Hotel y Escuela",
-        "button2": "Toma el Tour Autoguiado",
-        "button3":"Explorar las Actividades",
-        "button4": "Ver la Tienda",
-        "button5": "Otros Servicios",
-        "button6": "Pedir una Reservación",
+        "button2": "Tomar el Tour Autoguiado",
+        "button3":"Explorar Actividades",
+        "button4": "Ver Nuestra Tienda",
+        "button5": "Servicios",
+        "button6": "Solicita una Reserva",
         "button7": "Observar los Monos Aulladores",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
@@ -162,11 +162,10 @@
     "about": {
         "title": "Quiénes Somos",
         "Header": "Quiénes Somos",
-        "FDDesc": "Nosotros desarrollamos e implementamos soluciones prácticas, innovadoras y sostenibles que permitan activar el potencial emprendedor de las familias para eliminar la pobreza multidimensional y vivir con dignidad.",
         "CerritoTitle": "La Escuela Cerrito", 
-        "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, llegados de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
-        "HelpTitle": "Cómo Puedes Ayudar", 
-        "HelpDesc": "Comprar servicios y artículos de la Escuela y Hotel Cerrito genera ingresos que ayudan a Cerrito y a nuestra labor de apoyo estudiantil. Reservar habitaciones, usar el servicio de lavandería, comer en el restaurante del hotel y comprar productos en la tienda son maneras de apoyar nuestra misión económicamente. También puedes recomendar Cerrito a tus amigos y familiares.",
+        "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, quienes llegan de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
+        "HelpTitle": "Colaborando con la Escuela", 
+        "HelpDesc": "Adquirir  productos y servicios  de la Escuela y Hotel Cerrito genera ingresos que ayudan a sostener nuestro labor de educación estudiantil. Reservar habitaciones, usar el servicio de lavandería, comer en el restaurante del hotel y comprar nuestros productos son maneras de apoyar nuestra misión. También puedes recomendar Cerrito a tus amigos y familiares!",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "Todos los derechos reservados.",
         "Footer3": "Creado por Fundación Paraguaya"
@@ -180,32 +179,32 @@
         "text2": "Dado que los monos aulladores son más activos al amanecer y al atardecer, recomendamos caminar por el campus durante esas horas para tener la mejor oportunidad de ver a los monos. Mientras caminas, busca movimiento en las copas de los árboles y escucha sus aullidos (mira el reproductor de audio abajo para una muestra de audio).\n\nPara evitar interferir con sus actividades naturales y reducir el riesgo de transmisión de enfermedades, la observación de los monos debe ser pasiva, silenciosa, en grupos pequeños y a una distancia mínima de 10 metros.\n\nSi bien los monos aulladores se pueden ver en todo el campus, a menudo se pueden encontrar en los siguientes lugares:\n\n- La arboleda de bambú, o tacuaral, junto al lado del centro de producción animal\n\n- Los árboles junto a ambos conjuntos de cabañas\n\n- Los árboles entre la panadería, el hotel y la cabaña Jazmín"
     },
     "otherServices": {
-        "title": "Otros Servicios",
-        "header": "Otros Servicios",
+        "title": "Servicios",
+        "header": "Servicios",
         "button1": "El Restaurante Cerrito",
         "button2": "Servicio de Lavandería",
         "button3": "Repuesto de Agua Potable",
         "button4": "Limpieza de Habitación",
         "button5": "Reservar Actividades",
-        "button6": "El Mantenimiento"
+        "button6": "Mantenimiento"
     },
     "cerritoRestaurant": {
         "title": "El Restaurante Cerrito",
         "header": "El Restaurante Cerrito", 
-        "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que los huéspedes informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
-        "body2": "Para hacer una reserva o ver el menú diario, por favor envíe un mensaje de WhatsApp a:\n",
+        "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que las visitas informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
+        "body2": "Para hacer una reserva o ver el menú del día, favor enviar un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
     "laundry": {
         "title": "Servicio de Lavandería",
         "header": "Servicio de Lavandería", 
-        "body1": "La ropa sucia se puede dejar en la recepción del hotel para lavarla y plancharla.\n",
+        "body1": "La ropa sucia se puede dejar en la Recepción del Hotel para el lavado y planchado.\n",
         "body2": "Horario de Lavandería\n",
-        "body3": "La ropa sucia se puede dejar a las ",
+        "body3": "La ropa sucia se puede dejar en la Recepción a las ",
         "body4": "9.00 los lunes o martes",
         "body5": ", o a las ",
         "body6": "16.00 los miércoles.",
-        "body7": "\n El hotel solicita que los huéspedes recojan su ropa limpia a las",
+        "body7": "\n Solicitamos que los huéspedes recojan su ropa limpia a las",
         "body8": " 16.00 del día siguiente a dejarla.\n",
         "body9": "Pago\n",
         "body10": "Los servicios de lavandería cuestan",
@@ -216,22 +215,22 @@
     "waterRefill": {
         "title": "Repuesto de Agua Potable",
         "header": "Repuesto de Agua\n Potable", 
-        "body1": "El agua potable está disponible para su recogida en el vestíbulo del hotel bajo petición y sin cargo.\n",
-        "body2": "Para solicitar una recarga de agua, por favor envíe un mensaje de WhatsApp a:\n",
+        "body1": "Para visitas que hospedan en las cabañas, bidones de agua potable pueden ser retirados del lobby del hotel, bajo petición y sin cargo.\n",
+        "body2": "Para solicitar un bidon de agua, favor envíar un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
     "housekeeping": {
         "title": "Limpieza",
         "header": "Limpieza", 
-        "body1": "El servicio de limpieza está disponible bajo petición y sin coste alguno.\n",
-        "body2": "Para fijar el servicio de limpieza de su habitación de hotel, envíe un mensaje de WhatsApp a:\n",
+        "body1": "El servicio de limpieza de las habitaciones está disponible a petición de los clientes sin costo.\n",
+        "body2": "Para solicitar el servicio de limpieza de su habitación del hotel, envíe un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
     "reserveActivities": {
         "title": "Reservar Actividades",
         "header": "Reservar Actividades", 
         "body1": "Algunas actividades disponibles requieren reserva previa en recepción. Estas incluyen:\n",
-        "body2": "Comer en el Restaurante Cerrito,\nRecorrido por la Quesería,\nVisita a stand de productos artesanales Toba Qom y\nPaseo a Caballo.\n",
+        "body2": "Almuerzo o Cenaen el Restaurante Cerrito,\n Tour de la Fabrica de Queso,\n Paseos a Caballo,\n y Visitas al Stand de Productos Artesanales de la colectividad Toba Qom colindante con la Escuela.\n",
         "body3": "Para conocer y reservar cualquiera de estas actividades, consulte en recepción o envíe un mensaje de WhatsApp a:\n",
         "body4": "+595-976-360-833"
     },
@@ -239,7 +238,7 @@
         "title": "Mantenimiento de Habitación",
         "header": "Mantenimiento de\n Habitación",
         "body1": "Los servicios de mantenimiento están disponibles a pedido sin costo alguno.\n",
-        "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, envíe un mensaje de WhatsApp a:\n",
+        "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, favor envia un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     }
 }
