@@ -70,6 +70,7 @@ const RelaxCarousel = () => {
         onPress={handleDesc}
         style={styles.accordion}
         titleStyle={styles.accordionTitle}
+        title=""
         theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
         right={() => (
           <TouchableOpacity
@@ -144,6 +145,7 @@ const EducatCarousel = () => {
         <List.Accordion
         onPress={handleDesc}
         style={styles.accordion}
+        title=""
         titleStyle={styles.accordionTitle}
         theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
         right={() => (
@@ -219,6 +221,7 @@ const AdventCarousel = () => {
         <List.Accordion
         onPress={handleDesc}
         style={styles.accordion}
+        title=""
         titleStyle={styles.accordionTitle}
         theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
         right={() => (
@@ -515,8 +518,8 @@ const styles = StyleSheet.create({
     color: '#000',
     //fontWeight: 'bold',
     fontFamily: 'inter',
-    marginTop: '0',
-    marginBottom: '-10'
+    marginTop: 0,
+    marginBottom: -10
   },
   header: {
     //how to get this centered
@@ -530,12 +533,12 @@ const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
     marginHorizontal: 30,
-    marginBottom: '-10'
+    marginBottom: -10
   },
   cardCover: {
     height: 200,
     borderRadius: 0,
-    marginTop: '-10'
+    marginTop: -10
   },
   cardDescription: {
     flexDirection: 'row',
@@ -587,5 +590,3 @@ const styles = StyleSheet.create({
     color: '#000',
   }
 });
-
-
