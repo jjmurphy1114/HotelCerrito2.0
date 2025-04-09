@@ -70,6 +70,10 @@
         "hotel" : {
             "title": "Hotel",
             "description": "N/A"
+        },
+        "end":{
+            "title": "Fin del Tour",
+            "description": "¡Gracias por realizar la visita autoguiada! Esperamos que haya disfrutado aprendiendo sobre la Escuela y el Hotel Cerrito. Si tiene alguna pregunta o desea obtener más información, no dude en contactarnos."
         }
     }, 
     "activities": {

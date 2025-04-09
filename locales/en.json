@@ -71,6 +71,10 @@
         "hotel" : {
             "title": "Hotel",
             "description": "N/A"
+        },
+        "end": {
+            "title": "End of Tour",
+            "description": "Thank you for taking the self-guided tour! We hope you enjoyed learning about the Cerrito School and Hotel. If you have any questions or would like to learn more, please feel free to reach out to us."
         }
     }, 
     "activities": {
