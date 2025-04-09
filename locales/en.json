@@ -1,4 +1,5 @@
 {
+    "language": "en",
     "home": {
         "title": "Home",
         "button1": "About Cerrito School and Hotel",
@@ -7,6 +8,7 @@
         "button4": "View Shop",
         "button5": "Other Services",
         "button6": "Make a Reservation",
+        "button7": "Observe the Howler Monkeys",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "All rights reserved.",
         "Footer3": "Created by Fundación Paraguaya"
@@ -19,6 +21,8 @@
             "title": "View Stops",
             "stop": "Stop"
         },
+        "back": "Back",
+        "next": "Next",
         "welcome": "Welcome to the Self-Guided Tour!",
         "map":{
             "open": "View Map",
@@ -28,51 +32,70 @@
         "audio_player": "Audio Player",
         "mapa_central": {
             "title": "Central Map",
-            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum"	
+            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "capilla": {
             "title": "Chapel",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         }, 
         "cancha": {
             "title": "Sports Fields",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "sector_academico": {
             "title": "Academic Sector",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "patio_central": {
             "title": "Central Patio",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "comedor": {
             "title": "Restaurant",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         }, 
         "CPA": {
             "title": "Animal Production Center",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
-        "planta_lactea": {
+        "fabrica_de_queso": {
             "title": "Cheese Factory",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "CPV": {
             "title": "Vegetable Production Center",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "piscina": {
             "title": "Pool and Gazebo",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "hotel" : {
             "title": "Hotel",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
+        },
+        "end": {
+            "title": "End of Tour",
+            "description": "Thank you for taking the self-guided tour! We hope you enjoyed learning about the Cerrito School and Hotel. If you have any questions or would like to learn more, please feel free to reach out to us.",
+            "endButton": "End Tour",
+            "continue": "Return to Stop 1"
         }
     }, 
     "activities": {
+        "title": "Activities",
         "details": "Details",
+        "description": "",
         "relaxing": {
             "pool": {
                 "title": "Swimming",
@@ -162,15 +185,23 @@
         "FDDesc": "We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.",
         "CerritoTitle": "The Cerrito School", 
         "CerritoDesc": "Hotel Cerrito is a venture of Fundación Paraguaya. The school follows a self-management model, in which a self-sufficient farm school generates its own income. We foster an entrepreneurial spirit in our students, who come from 12 departments across the country and abroad. We are a coeducational boarding school with facilities for 150 students.",
-        "HelpTitle": "How You Can Help", 
-        "HelpDesc": "Purchasing services and goods from the Cerrito School and Hotel generates income to help Cerrito and our work to support students. Booking rooms, using laundry services, eating at the hotel restaurant, and buying products, goods, or merchandise at the shop are all ways that you can support our mission monetarily. You can also reccommend Cerrito to friends and family.",
+        "HelpTitle": "Collaborating with the School", 
+        "HelpDesc": "Acquiring products and services from the Cerrito School and Hotel generates income that helps sustain our student education work. Booking rooms, using the laundry service, eating at the hotel restaurant and purchasing our products are ways to support our mission. You can also recommend Cerrito to your friends and family!",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
         "Footer2": "All rights reserved.",
         "Footer3": "Created by Fundación Paraguaya"
     },
+    "howlerMonkeys": {
+        "title": "Howler Monkeys",
+        "header": "Observe the Howler Monkeys",
+        "subheader1": "About the Howler Monkeys",
+        "subheader2": "Reccomendations for Observing the Howler Monkeys",
+        "text1": "There is a family of black-and-gold howler monkeys, also known as Alouatta caraya, that reside on the Cerrito School and Hotel campus. All monkeys of this species are born with gold fur. The females remain gold while the males turn black as they mature.\n\nHowler monkeys are calm animals and do not engage in direct contact with humans unless threatened. They are most active during sunrise and sunset and usually seen in the trees. They use their prehensile tails to hang on branches and sleep at night on high and safe branches.\n\nThey are known as howler monkeys because of the howling-like sounds they make to defend their territory, communicate with other groups, and coordinate their movements within the group. It is common for them to howl at dawn and dusk as a way to establish their territorial boundaries.\n\nHowler monkeys commonly eat leaves, however they also eat flowers, tender shoots, and fruits such as mangos. When in season, the local family of howler monkeys at Cerrito enjoy climbing the mango trees on campus and eating the fruit. They serve an important ecological role in seed dispersion as they commonly throw seeds on the ground after finishing their fruits.",
+        "text2": "Since howler monkeys are most active at dawn and dusk, we recommend walking through campus during those times for the best chance of seeing the monkeys. As you walk, look for movement in the tree tops and listen for their howling (see the audio player below for an audio sample).\n\nTo avoid interfering with their natural activities and reduce the risk of disease transmission, observation of the monkeys should be passive, silent, in small groups, and at a minimum distance of 10 meters.\n\nWhile the howler monkeys can be seen throughout campus, they can often be found in the following places:\n\n- The bamboo grove by the animal production center\n\n- The trees by both sets of cabins\n\n- The trees between the bakery, hotel, and Jazmín cabin"
+    },
     "otherServices": {
-        "title": "Other Services",
-        "header": "Other Services",
+        "title": "Services",
+        "header": "Services",
         "button1": "Cerrito Restaurant",
         "button2": "Laundry Services",
         "button3": "Refill Drinking Water",
@@ -182,19 +213,19 @@
         "title": "Cerrito Restaurant",
         "header": "Cerrito Restaurant", 
         "body1": "The Cerrito Schools restaurant serves lunch and dinner daily. \n\nThe restaurant requests that guests inform the hotel of their desire to eat at the restaurant and the number of people in their party: \n\nBy 10 AM for lunch, or \nBy 12 PM for dinner \n\nThe hotel staff will also send a menu for the day upon request.\n",
-        "body2": "To make a reservation or view the daily menu, please send a WhatsApp message to:\n",
+        "body2": "To make a reservation or view the menu of the day, please send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     },
     "laundry": {
         "title": "Laundry",
         "header": "Laundry", 
-        "body1": "Dirty laundry can be dropped off at the front desk of the hotel to be washed and ironed.\n",
+        "body1": "Dirty laundry can be dropped off at the Hotel Reception for washing and drying.\n",
         "body2": "Laundry Schedule\n",
-        "body3": "Dirty laundry can be dropped off at ",
+        "body3": "Dirty laundry can be left at the Reception at ",
         "body4": "9AM on Monday or Tuesday",
         "body5": ", or ",
         "body6": "4PM on Wednesday.",
-        "body7": "\n The hotel requests that guests pick up their clean laundry at",
+        "body7": "\n We request that guests pick up their clean clothes at",
         "body8": " 4PM on the day after they drop it off.\n",
         "body9": "Payment\n",
         "body10": "Laundry services cost",
@@ -205,22 +236,22 @@
     "waterRefill": {
         "title": "Refill Drinking Water",
         "header": "Refill Drinking Water", 
-        "body1": "Drinking water is available for pickup at the hotel lobby upon request at no charge.\n",
-        "body2": "To request a water refill, please send a WhatsApp message to:\n",
+        "body1": "For visitors staying in the cabins, drinking water cans can be collected from the hotel lobby, upon request and free of charge.\n",
+        "body2": "To request a water can, please send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     },
     "housekeeping": {
         "title": "Housekeeping",
         "header": "Housekeeping", 
-        "body1": "Housekeeping services are available upon request at no charge.\n",
-        "body2": "To schedule housekeeping for your hotel room, please send a WhatsApp message to:\n",
+        "body1": "Room cleaning services are available upon request at no charge.\n",
+        "body2": "To schedule room cleaning services for your hotel room, please send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     },
     "reserveActivities": {
         "title": "Reserve Activities",
         "header": "Reserve Activities", 
         "body1": "Some available activities require reservations through the front desk. These include:\n",
-        "body2": "Eating at the Cerrito Restaurant,\nTour of the Cheese Factory,\nVisit to Toba Qom artisanal products stand, and\nHorse Riding.\n",
+        "body2": "Lunch or dinner at the Cerrito Restaurant,\nTour of the Cheese Factory,\nHorseback Riding, and\nVisits to the the Stand of Artisan Products of the Toba Qom community adjacent to the School.\n",
         "body3": "To learn about and make a reservation for any of these activities, please see the front desk or send a WhatsApp message to:\n",
         "body4": "+595-976-360-833"
     },

@@ -256,7 +256,7 @@ require('../../assets/images/emoji4.png'),
 const educatImages = [
   require('../../assets/images/emoji4.png'),
   require('../../assets/images/MapaCentral.jpeg'),
-  require('../../assets/images/PlantaLactea.jpg'),
+  require('../../assets/images/emoji4.png'),
   require('../../assets/images/emoji4.png'),
   require('../../assets/images/emoji4.png'),
 ];

@@ -1,12 +1,14 @@
 import { View, Text, Dimensions, StyleSheet, ScrollView } from 'react-native';
-import { RelativePathString, useRouter } from 'expo-router';
+import { RelativePathString, useRouter, usePathname } from 'expo-router';
 import { useTheme, Card, IconButton } from 'react-native-paper';
 import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
+import { audioMap, getAudio } from './stops';
 
-export default function StopTemplate( description: string, 
-                                    audioPath: any, 
+export default function StopTemplate( title: string,
+                                    description: string, 
+                                    audioPathKey: any, 
                                     image: any, 
                                     prev: RelativePathString, 
                                     next: RelativePathString
@@ -17,6 +19,7 @@ export default function StopTemplate( description: string,
   const router = useRouter();
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const audio = getAudio(audioPathKey);
 
   /*For navigating to the next page*/
   const NextPage = () => router.replace(next);
@@ -57,8 +60,13 @@ export default function StopTemplate( description: string,
         paddingRight: 10,
       },
       text: {
-        fontSize: 16,
-        lineHeight: 22,
+        fontSize: 18,
+        lineHeight: 24,
+      },
+      title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 10,
       },
       navigation: {
         flexDirection: 'row',
@@ -85,7 +93,7 @@ export default function StopTemplate( description: string,
   
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
-      {/* <Text style={{ fontSize: 24 }}>{title}</Text> */}
+      <Text style={{ fontSize: 24 }}>{title}</Text>
       <Image
             style={styles.image}
             source={image} 
@@ -93,16 +101,16 @@ export default function StopTemplate( description: string,
             contentFit="cover"
             transition={1000}
           />
-      <AudioPlayer source={audioPath} />
+      <AudioPlayer source={audio} />
       <View style={styles.navigation}>
         <View style={styles.navButton}>
           <IconButton icon="arrow-left" onPress={PrevPage} />
-          <Text style={styles.navLabel}>Back</Text>
+          <Text style={styles.navLabel}>{t("tour.back")}</Text>
         </View>
 
         <View style={styles.navButton}>
           <IconButton icon="arrow-right" onPress={NextPage} />
-          <Text style={styles.navLabel}>Next</Text>
+          <Text style={styles.navLabel}>{t("tour.next")}</Text>
         </View>
       </View>
       <Card style={styles.card}>

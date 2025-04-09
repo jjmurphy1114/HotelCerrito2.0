@@ -150,9 +150,6 @@ export default function About() {
           transition={1000}
         />
 
-        <Text style={styles.subheader}>Fundación Paraguaya</Text>
-        <Text style={styles.text}>{t('about.FDDesc')}</Text>
-
         <Text style={styles.subheader}>{t('about.CerritoTitle')}</Text>
         <Text style={styles.text}>{t('about.CerritoDesc')} </Text>
 
