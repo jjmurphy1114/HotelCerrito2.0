@@ -7,7 +7,8 @@ export default function Capilla() {
   const { t } = useTranslation();
   
   return (
-    StopTemplate(t("tour.planta_lactea.description"), 
+    StopTemplate(t("tour.planta_lactea.title"),
+      t("tour.planta_lactea.description"), 
       require('../../../assets/audio/en/mapa-central.mp3'),
       require('../../../assets/images/PlantaLactea.jpg'),
       '/(drawer)/tourStops/CPA' as RelativePathString,
