@@ -30,6 +30,24 @@ export default function TourLayout() {
 
   const { width, height } = Dimensions.get('window');
 
+  // Logic for getting path image
+  const pathImages: { [key: string]: any } = {
+    '1-2': require('../../../assets/images/paths/1-2.png'),
+    '2-3': require('../../../assets/images/paths/2-3.png'),
+    '3-4': require('../../../assets/images/paths/3-4.png'),
+    '4-5': require('../../../assets/images/paths/4-5.png'),
+    '5-6': require('../../../assets/images/paths/5-6.png'),
+    '6-7': require('../../../assets/images/paths/6-7.png'),
+    '7-8': require('../../../assets/images/paths/7-8.png'),
+    '8-9': require('../../../assets/images/paths/8-9.png'),
+    '9-10': require('../../../assets/images/paths/9-10.png'),
+    '10-11': require('../../../assets/images/paths/10-11.png')
+  };
+
+  // We used 1 based indexing for the path images
+  const pathKey = `${currentIndex + 1}-${currentIndex + 2}`;
+  const pathImage = pathImages[pathKey];
+
   return (
     <View style={{ flex: 1 }}>
     <View
@@ -90,18 +108,19 @@ export default function TourLayout() {
               style={{ width: '100%', height: '100%' }}
               contentFit="contain"
             />
-            {/* Optional path overlay image */}
-            {/* <Image
-              source={require('../../../assets/images/path-1-2.png')}
+            {/* Path overlay image */}
+            <Image
+              source={pathImage}
               style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
                 width: '100%',
                 height: '100%',
+                zIndex: 999
               }}
               contentFit="contain"
-            /> */}
+            />
           </View>
         </ImageZoom>
 
