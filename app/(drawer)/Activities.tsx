@@ -9,6 +9,7 @@ import { List, Button, Card, IconButton, MD3Colors, Icon } from 'react-native-pa
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import CardCover from 'react-native-paper/lib/typescript/components/Card/CardCover';
+import { Image } from 'expo-image';
 
 const { width, height } = Dimensions.get('window');
 
@@ -49,8 +50,9 @@ const RelaxCarousel = () => {
             style = {styles.header}
             title = {relaxActivities[index].activityNum + "/" + relaxActivities[index].totActivities + ": " + t(relaxActivities[index].activityTitle)}/>
             <Card.Cover 
-            style = {styles.cardCover} 
-            source = {{ uri: relaxImages[index]}} />
+            style = {styles.cardCover}
+            source = {relaxImages[index]}
+            />
           </Card>
         </View>
         <View style={styles.arrowButton}>
@@ -126,7 +128,7 @@ const EducatCarousel = () => {
             title = {educatActivities[index].activityNum + "/" + educatActivities[index].totActivities + ": " + t(educatActivities[index].activityTitle)}/>
             <Card.Cover 
             style = {styles.cardCover} 
-            source = {{ uri: educatImages[index]}} />
+            source = {educatImages[index]} />
           </Card>
         </View>
         <View style={styles.arrowButton}>
@@ -202,7 +204,7 @@ const AdventCarousel = () => {
             title = {adventActivities[index].activityNum + "/" + adventActivities[index].totActivities + ": " + t(adventActivities[index].activityTitle)}/>
             <Card.Cover 
             style = {styles.cardCover} 
-            source = {{ uri: adventImages[index]}} />
+            source = {adventImages[index]} />
           </Card>
         </View>
         <View style={styles.arrowButton}>
@@ -243,18 +245,32 @@ const AdventCarousel = () => {
 //This is a comment to test a lil thing
 
 const relaxImages = [
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVklBFlfJOKO5inPoGF1TJ59PAdrVmWJ5Eg&s',
-  'https://www.google.com/imgres?q=food&imgurl=https%3A%2F%2Fimages.immediate.co.uk%2Fproduction%2Fvolatile%2Fsites%2F30%2F2020%2F08%2Fchorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg&imgrefurl=https%3A%2F%2Fwww.bbcgoodfood.com%2Frecipes%2Fcollection%2Feasy-recipes%2F&docid=960EF8uS8dLI-M&tbnid=AFLc3R-ODnfMdM&vet=12ahUKEwjs1P3wk8aMAxWelZUCHduyDLYQM3oECBoQAA..i&w=700&h=636&hcb=2&ved=2ahUKEwjs1P3wk8aMAxWelZUCHduyDLYQM3oECBoQAA'
+require('../../assets/images/Piscina.jpg'),
+require('../../assets/images/Comedor.jpg'),
+require('../../assets/images/emoji4.png'),
+require('../../assets/images/emoji4.png'),
+require('../../assets/images/emoji4.png'),
+require('../../assets/images/emoji4.png'),
+require('../../assets/images/emoji4.png'),
 ];
 const educatImages = [
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVklBFlfJOKO5inPoGF1TJ59PAdrVmWJ5Eg&s',
+  require('../../assets/images/emoji4.png'),
+  require('../../assets/images/MapaCentral.jpeg'),
+  require('../../assets/images/PlantaLactea.jpg'),
+  require('../../assets/images/emoji4.png'),
+  require('../../assets/images/emoji4.png'),
 ];
 const adventImages = [
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVklBFlfJOKO5inPoGF1TJ59PAdrVmWJ5Eg&s',
+  require('../../assets/images/HowlerMonkey.jpeg'),
+  require('../../assets/images/emoji4.png'),
+  require('../../assets/images/emoji4.png'),
+  require('../../assets/images/emoji4.png'),
+  require('../../assets/images/Cancha.jpg'),
+  require('../../assets/images/emoji4.png'),
 ];
 
 type ActivityCardProps = {
-  imageUrl: string;
+  imageUrl: any;
   activityTitle: string;
   activityNum: number;
   totActivities: number;
