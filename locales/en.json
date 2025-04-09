@@ -1,4 +1,5 @@
 {
+    "language": "en",
     "home": {
         "title": "Home",
         "button1": "About Cerrito School and Hotel",
@@ -31,47 +32,64 @@
         "audio_player": "Audio Player",
         "mapa_central": {
             "title": "Central Map",
-            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum"	
+            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "capilla": {
             "title": "Chapel",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         }, 
         "cancha": {
             "title": "Sports Fields",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "sector_academico": {
             "title": "Academic Sector",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "patio_central": {
             "title": "Central Patio",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "comedor": {
             "title": "Restaurant",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         }, 
         "CPA": {
             "title": "Animal Production Center",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
-        "planta_lactea": {
+        "fabrica_de_queso": {
             "title": "Cheese Factory",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "CPV": {
             "title": "Vegetable Production Center",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "piscina": {
             "title": "Pool and Gazebo",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "hotel" : {
             "title": "Hotel",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
+        },
+        "end": {
+            "title": "End of Tour",
+            "description": "Thank you for taking the self-guided tour! We hope you enjoyed learning about the Cerrito School and Hotel. If you have any questions or would like to learn more, please feel free to reach out to us.",
+            "endButton": "End Tour",
+            "continue": "Return to Stop 1"
         }
     }, 
     "activities": {

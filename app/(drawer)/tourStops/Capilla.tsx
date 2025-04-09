@@ -9,7 +9,7 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.capilla.title"),
       t("tour.capilla.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
+      'capilla',
       require('../../../assets/images/Capilla.jpg'),
       '/(drawer)/tourStops/MapaCentral' as RelativePathString,
       "/(drawer)/tourStops/Cancha" as RelativePathString

@@ -1,13 +1,14 @@
 import { View, Text, Dimensions, StyleSheet, ScrollView } from 'react-native';
-import { RelativePathString, useRouter } from 'expo-router';
+import { RelativePathString, useRouter, usePathname } from 'expo-router';
 import { useTheme, Card, IconButton } from 'react-native-paper';
 import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
+import { audioMap, getAudio } from './stops';
 
 export default function StopTemplate( title: string,
                                     description: string, 
-                                    audioPath: any, 
+                                    audioPathKey: any, 
                                     image: any, 
                                     prev: RelativePathString, 
                                     next: RelativePathString
@@ -18,6 +19,7 @@ export default function StopTemplate( title: string,
   const router = useRouter();
   const { colors } = useTheme();
   const { t } = useTranslation();
+  const audio = getAudio(audioPathKey);
 
   /*For navigating to the next page*/
   const NextPage = () => router.replace(next);
@@ -58,8 +60,8 @@ export default function StopTemplate( title: string,
         paddingRight: 10,
       },
       text: {
-        fontSize: 16,
-        lineHeight: 22,
+        fontSize: 18,
+        lineHeight: 24,
       },
       title: {
         fontSize: 20,
@@ -99,7 +101,7 @@ export default function StopTemplate( title: string,
             contentFit="cover"
             transition={1000}
           />
-      <AudioPlayer source={audioPath} />
+      <AudioPlayer source={audio} />
       <View style={styles.navigation}>
         <View style={styles.navButton}>
           <IconButton icon="arrow-left" onPress={PrevPage} />

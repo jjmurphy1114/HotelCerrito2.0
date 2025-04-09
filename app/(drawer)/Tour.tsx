@@ -27,8 +27,8 @@ export default function TourStart() {
       paddingRight: 10,
     },
     text: {
-      fontSize: 16,
-      lineHeight: 22,
+      fontSize: 18,
+      lineHeight: 24,
     },
   });
   
