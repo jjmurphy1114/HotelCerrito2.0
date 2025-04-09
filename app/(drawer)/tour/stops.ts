@@ -77,19 +77,21 @@ export const audioMap: Record<string, Record<string, any>> = {
     CPV: require('../../../assets/audio/en/mapa_central.mp3'),
     piscina: require('../../../assets/audio/en/mapa_central.mp3'),
     hotel: require('../../../assets/audio/en/mapa_central.mp3'),
+    endScreen: require('../../../assets/audio/en/mapa_central.mp3'),
   },
   es: {
     mapa_central: require('../../../assets/audio/es/mapa_central.mp3'),
-    capilla: require('../../../assets/audio/es/mapa_central.mp3'),
+    capilla: require('../../../assets/audio/es/capilla.mp3'),
     cancha: require('../../../assets/audio/es/cancha.mp3'),
-    sector_academico: require('../../../assets/audio/es/mapa_central.mp3'),
+    sector_academico: require('../../../assets/audio/es/sector_academico.mp3'),
     patio_central: require('../../../assets/audio/es/patio_central.mp3'),
     comedor: require('../../../assets/audio/es/comedor.mp3'),
     CPA: require('../../../assets/audio/es/cpa.mp3'),
-    fabrica_de_queso: require('../../../assets/audio/es/mapa_central.mp3'),
+    fabrica_de_queso: require('../../../assets/audio/es/fabrica_de_queso.mp3'),
     CPV: require('../../../assets/audio/es/cpv.mp3'),
-    piscina: require('../../../assets/audio/es/mapa_central.mp3'),
-    hotel: require('../../../assets/audio/es/mapa_central.mp3'),
+    piscina: require('../../../assets/audio/es/piscina.mp3'),
+    hotel: require('../../../assets/audio/es/hotel.mp3'),
+    endScreen: require('../../../assets/audio/es/end_screen.mp3')
   }
 };
 

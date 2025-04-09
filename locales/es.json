@@ -21,7 +21,7 @@
         },
         "back": "Atrás",
         "next": "Siguiente",
-        "welcome": "¡Bienvenido a la Escuela y el Hotel Cerrito! En este tour, puede conocer la historia de la Escuela y el Hotel y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el mapa central y los puestos de madera amarilla para llegar a cada parada. Puede hacerlo en el orden recomendado o en cualquier orden que le gustaría con el botón de Estaciones.\nLa siguiente pantalla tiene el mapa central de la escuela. Después hay las paradas del tour. Puede navegar la página por las flechas en la pantalla o usando las pestañas de navegación en la parte inferior de la pantalla",
+        "welcome": "¡Bienvenido a la Escuela y Hotel Cerrito! En este tour autoguiado, Ud. puede conocer la historia de la Escuela Cerrito y el Hotel, y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el Mapa Central, el cual se encuentra cerca de la entrada al Hotel, y los postes de madera enumerados que se encuentran alrededor del campus. Se puede hacer el tour en el orden que figura en la aplicación del tour autoguiado, o en cualquier orden que le gustaría, eligiendo el botón “Mirar Estaciones”.\nDurante el tour, Ud. puede disfrutar también de la naturaleza de la Escuela. No se olvide de estar atento para ver o escuchar a los animales que se encuentran en el campus, por ejemplo, a los monos aulladores. Para aprender sobre los monos aulladores, puede elegir la sección “Monos Aulladores” en la aplicación.",
         "map":{
             "open": "Mirar Mapa",
             "close": "Cerrar Mapa",
@@ -30,62 +30,51 @@
         "audio_player": "Reproductor de Audio",
         "mapa_central": {
             "title": "Mapa Central",
-            "description": "This is the central map of the tour. It shows all the stops and their locations.",
-            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
+            "description": "¡Bienvenido a la Escuela Agrícola de Cerrito, un lugar mágico en el Chaco Paraguayo, donde jóvenes de todo el país aprenden a “producir, vender y ganar dinero”! Soy el ingeniero Amalio Enciso, Director de la Escuela. ¡Es un placer darle la bienvenida a “nuestra casa”! La Escuela fue fundada en el año 1960 por el orden de Hermanos Franciscanos alemanes. Veinte años después, los Hermanos Franciscanos optaron por centrarse en vivir y compartir con poblaciones más humildes, y donaron la escuela a los Hermanos Cristianos de La Salle, cuya misión es la de educar. Los Hermanos de La Salle administraron la escuela durante otros 20 años, pero cuando hubo una crisis financiera en el año 2000, el gobierno paraguayo no pudo continuar pagando los salarios y la escuela tuvo problemas financieros. Mientras tanto, los Hermanos La Salle se dieron cuenta de que el currículo de educación técnica vocacional en agricultura que ofrecían estaba “incompleto” porque le faltaba  componentes de educación financiera y emprendedora. En el 2002, los Hermanos de La Salle acudieron a la Fundación Paraguaya y ofrecieron la escuela en donación, con el compromiso de que siguiera con el currículo de técnica vocacional en agricultura, pero que agregara educación financiera y emprendedora. La Fundación Paraguaya tomó posesión de la escuela en 2003 y elaboró un Plan de Negocios Educativo-Productivo para lograr tres objetivos: \n• Cien por ciento de empleabilidad para los graduados \n• Un currículo cien por ciento enfocado hacia el mercado \n• Una institución cien por ciento autosuficiente, sin recursos del estado. \nLa Escuela logró la autosuficiencia financiera en el año 2007, cubriendo el 100% del presupuesto operativo y 40 salarios, sin recibir aportes del gobierno, hasta hoy día. De esta manera, la Escuela Agrícola Cerrito ha servido de inspiración para muchas escuelas alrededor del mundo que buscan lograr su autosuficiencia. \nNuestra próxima estación es la capilla. Camine cuesta abajo por la caminera unos 100 metros. Luego, doblar a la derecha para llegar al poste número 2 frente a la capilla."
         },
         "capilla": {
             "title": "Capilla",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
+            "description": "¡Hola! Estamos en la capilla. Me llamo Daniela y estoy en el tercer año aquí en la Escuela Cerrito. Soy del Chaco. Mi pueblo es conocido por su zoológico, Lluvia de Oro.\nLa capilla fue construida durante la época de los Franciscanos y sirvió como un lugar de culto religioso abierto al público durante las épocas de los hermanos Franciscanos y La Salle. Desde que la Fundación Paraguaya asumió la escuela en 2003, la capilla se ha utilizado para ceremonias religiosas y actividades sociales. Dentro de la capilla se conserva arte traído desde Alemania, como las estaciones de la Cruz y estatuas. Hoy día, funciona como un espacio para eventos internos y para recibir visitantes, y se celebra misa solo en ocasiones especiales.\nEn el patio de la capilla hay una campana que utilizamos como reloj; se toca en los horarios de levantada, durante los recesos, al finalizar las actividades diarias y para otras actividades generales.\nAhora podemos proceder hacia las canchas. Al mirar la fachada de la capilla, verá un portón de metal a su izquierda, a unos 50 metros. Camine al portón, y luego, subir la calle, hacia la derecha, cuesta arriba, unos 300 metros, pasando dos cabañas a su izquierda, para llegar al sector de las canchas. Se encuentra el poste número 3 a la esquina de la cancha de fútbol."
         }, 
-        "cancha": {
-            "title": "Cancha",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/cancha.mp3'"
+        "cancha": { 
+            "title": "Cancha", 
+            "description": "¡Hola, soy Alvaro y ahora estamos en las canchas! Estoy en el tercer año en la Escuela Cerrito y soy de (LUGAR). Mi pueblo es conocido por albergar la basilica, la deliciosa chipa y su hospitalidad \nAcá se puede ver la cancha de fútbol grande, una cancha de pavimento pequeña, y una cancha de voleibol. \nLa cancha de fútbol grande fue construida en el 2024. Tiene dimensiones oficiales, y la Escuela alquila la cancha a equipos locales para llevar a cabo competencias. De esta manera, la cancha genera ingresos para la escuela. Los estudiantes de la Escuela utilizan las canchas para hacer ejercicio al aire libre y juntarse con amigos después de las clases. Los huéspedes del hotel suelen trotar alrededor de la cancha para hacer ejercicios. Regrese ahora por el mismo camino, bajando unos 300 metros. A su derecha, encontrará el poste número 4 a la entrada al Sector Académico. Puede descansar unos minutos ahora tomando asiento en el barco donde se encuentra el asta de bandera, en el patio enfrente del Sector Académico." 
         },
-        "sector_academico": {
-            "title": "Sector Académico",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
+        "sector_academico": { 
+            "title": "Sector Académico", 
+            "description": "¡Hola, me llamo Mica y ahora estamos en el Sector Académico. Estoy en tercer año en la Escuela Cerrito y soy de caazapá. Mi pueblo es conocido por su historia de Ycua Bolaños.\nAquí se encuentran las aulas de clase. El método de educación de la Escuela Agrícola Cerrito es único: estamos divididos en dos grupos. Un grupo realiza tareas en el campo —lo que llamamos “aprender haciendo”— y el otro asiste a clases en el aula. Cada semana, los grupos se turnan para que todos podamos aprender tanto en las unidades productivas, como en el aula.\nTenemos 260 días de clase al año. Cada día, el horario comienza a las 5:45 de la mañana y se extiende hasta las 9:45 de la noche. Normalmente, un día transcurre entre tareas de limpieza, trabajos prácticos, clases teóricas, deportes, descanso y entretenimiento. Los fines de semana no tenemos clases, y podemos salir de la escuela para visitar a nuestros familiares. Sin embargo, debido a la naturaleza agropecuaria de la escuela, algunos estudiantes deben quedarse en el campus los fines de semana para cuidar a los animales o regar los cultivos, y se turnan para dichas tareas.\nLa escuela ofrece dos títulos aprobados por el Ministerio de Educación: Bachillerato Técnico Agropecuario y Bachillerato en Turismo Rural. Desde el 2003, ha graduado a más de 700 jóvenes, quienes hoy son profesionales y emprendedores en todo el país, honrando a la institución con sus carreras.\nMi clase favorita es física con el profesor Cristian Sandoval y, cuando me gradúe, quisiera ser ingeniera industrial.\nAhora vamos a ir al gran Patio Central. Darse la vuelta, cruzar el camino de nuevo, y regresar por el portón hacia la zona de la capilla. Camina unos 50 metros hasta el centro mismo del Patio Central, enfrente del edificio de dos pisos, justo donde se encuentra el poste número 5." 
         },
-        "patio_central": {
-            "title": "Patio Central",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/patio_central.mp3'"
+        "patio_central": { 
+            "title": "Patio Central", 
+            "description": "¡Hola otra vez! Soy Alvaro de nuevo. Ahora estamos en el Patio Central. En el Patio Central, los alumnos disponen de un espacio para compartir en su tiempo libre. Mirando la escalera del edificio de dos pisos, Ud. verá a su izquierda el comedor de los alumnos y, al lado, una sala de televisión que los estudiantes usan en su tiempo libre. Detrás del comedor estudiantil se encuentra el dormitorio de los varones. En el edificio de dos pisos, la planta baja alberga la administración y la dirección general de la escuela, mientras que en la planta alta se encuentran algunas habitaciones de los profesores. A su derecha Ud. verá el dormitorio de las mujeres. ¡A mí me encanta sentarme en el Patio Central con amigos a tomar un rico tereré! La próxima estación es el comedor para visitantes y huéspedes del hotel. Siga el sendero, cuesta arriba, en dirección del hotel, y verá el poste número 6."
         },
-        "comedor": {
-            "title": "Comedor",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/comedor.mp3'"
+        "comedor": { 
+            "title": "Comedor", 
+            "description": "¡Hola! Me llamo Joaquin y ahora estamos enfrente del comedor. Estoy en el primer año en la Escuela Cerrito y soy de Asunción. Mi ciudad es conocido por ser el centro economico, politico, industrial, y cultural de Paraguay. Como parte del hotel, el comedor funciona como un centro de capacitación y práctica en atención al cliente para los estudiantes. Se abre desde las 7:30 de la mañana hasta las 21 horas, ofreciendo desayuno, media mañana, almuerzo, merienda y cena. Cuenta con dos salones con capacidad para aproximadamente 200 personas. Una gran parte de la comida que se sirve en el comedor proviene del centro de producción animal y vegetal, así como de la fábrica de queso de la escuela. Se puede hacer reservaciones para comer en la recepción del hotel. En el comedor, los alumnos aprendemos a organizar bufés y a recibir, atender y servir a los comensales, lo que forma parte de nuestra preparación para obtener un bachillerato en turismo rural. La próxima estación de nuestro tour es el Centro de Producción Animal. Suba el sendero cuesta arriba en dirección del hotel, y tome el primer sendero de tierra a la derecha. Seguir dicho sendero por unos 200 metros manteniéndose a la derecha. Cuando llegue a la bocacalle, donde se encuentra el portón de hierro, continúe derecho, pasando el depósito de herramientas a su izquierda, hasta llegar al poste de madera número 7."
         }, 
-        "CPA": {
-            "title": "Centro de Producción Animal",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/cpa.mp3'"
+        "CPA": { 
+            "title": "Centro de Producción Animal", 
+            "description": "¡Hola! Soy Alvaro de nuevo. Ahora estamos en el Centro de Producción Animal, uno de mis lugares favoritos en el campus. Aquí producimos leche de vaca, leche de cabra, pollo, huevos de gallina y de codorniz, pescado, miel de abeja y lechones. Utilizamos la leche en la fábrica de queso para elaborar nuestros ricos quesos, dulce de leche, y yogur. La Escuela consume aproximadamente 30% de los productos que produce este centro; el resto lo vendemos puerta a puerta en la comunidad, en ferias de productores y en restaurantes y supermercados en la zona, y en Asunción. Los estudiantes hacemos todo lo necesario para cuidar a los animales. En un día típico, por ejemplo, aprendemos sobre la cría y el engorde de los animales de granja y participamos en partos y procesos de limpieza. El centro de producción animal también alberga caballos. Puede acordar con la recepción del hotel para montarlos. La próxima estación es la fábrica de queso. Les invitamos a que camine cuesta arriba, por el centro de producción animal, para mirar los animales, y luego seguir hacia la izquierda, donde verá el gran edificio blanco, que es nuestra fábrica de queso. En la esquina de la fábrica de queso encontrará el poste número 8."
         },
-        "fabrica_de_queso": {
-            "title": "Fábrica de Queso",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
+        "fabrica_de_queso": { 
+            "title": "Fábrica de Queso", 
+            "description": "¡Hola! ¡Soy Mica de nuevo! Ahora estamos en la nueva fábrica de queso.\nEste edificio fue construido en el año 2023 con el objetivo de aumentar la capacidad de producción de queso de la escuela. Ahora hay una capacidad para producir unos 30,000 litros de leche al mes.\nAcá en la fábrica de queso, elaboramos nuestro emblemático queso ibérico, queso azul, queso ricota, yogur bebible, y dulce de leche, utilizando principalmente la leche que produce la escuela.\nPreparamos nuestro famoso queso ibérico con una mezcla de leche de cabra y de vaca, y con esta nueva planta tenemos la capacidad de producir más de 100 kilos de queso a la semana. Nuestro producto más popular es el queso ibérico, de los cuales hacemos cerca de seis tipos. Lo elaboramos de diversas maduraciones y con diferentes adiciones como hierbas o ají picante.\nLos estudiantes participamos en todos los pasos de la producción. En una semana típica, por ejemplo, recibimos la leche del Centro de Producción Animal, la refrigeramos y luego la utilizamos para elaborar los distintos productos lácteos.\n¡Usted puede adquirir todos nuestros deliciosos productos en la recepción del hotel!\nSi quiere aprender más sobre la fábrica de queso, puede reservar un recorrido guiado en la recepción del hotel.\nAhora vamos al Centro de Producción Vegetal. Desde enfrente de la fábrica de queso, seguir el camino cuesta arriba unos 50 metros, para llegar al poste número 9, a su izquierda.\n"
         },
-        "CPV": {
-            "title": "Centro de Producción Vegetal",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/cpv.mp3'"
+        "CPV": { 
+            "title": "Centro de Producción Vegetal", 
+            "description": "¡Hola, es Joaquín! Estamos en el Centro de Producción Vegetal.\nEn esta unidad cultivamos 22 especies de plantas durante el año, incluyendo tomates, locotes, lechuga, espinaca, repollo, pepino, ají picante y más.\nAquí trabajamos exclusivamente con producción orgánica, sin utilizar productos químicos. Elaboramos abono para la huerta y el vivero con materia orgánica generada en la escuela, sin comprar insumos externos, y producimos el excedente para venderlo.\nLos estudiantes, junto con nuestros profesores, realizamos todas las tareas necesarias para mantener una buena producción. En una semana típica, por ejemplo, regamos los plantines, cosechamos los vegetales maduros y los trasplantamos.\nMirando hacia arriba, verá uno de los eucaliptales que pertenece a la Escuela. Para aprender sobre nuestros eucaliptales, puede fijarse en la sección de Actividades Educativas de esta aplicación.\nLa próxima estación del tour es la zona de la piscina y quinchos. Volver cuesta abajo, unos 70 metros, hasta llegar al portón de hierro a su derecha. Caminando hacia el hotel, verá la piscina y el área de quinchos a su derecha, y el poste número 10."
         },
-        "piscina": {
-            "title": "Piscina y Quinchos",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
+        "piscina": { 
+            "title": "Piscina y Quinchos", 
+            "description": "¡Hola! Le saluda Mica una vez más. Ahora estamos en el área de la piscina y los quinchos.\nOriginalmente, las estructuras de los dos quinchos eran gallineros. Luego, cuando trasladamos las gallinas al Centro de Producción Animal, se reacondicionaron los galpones para convertirlos en quinchos. Los quinchos son un espacio al aire libre para que familias y grupos disfruten del ambiente y del espacio verde.\nEl hotel cuenta con una piscina para los huéspedes, con capacidad para 40 personas, que se puede utilizar desde las 9 de la mañana hasta las 8 de la noche todos los días.\nNuestra próxima estación es el hotel. Siga el camino unos 20 metros desde el poste número 10 hacia el hotel; luego tome el sendero de tierra a su izquierda y siga el mismo bordeando el hotel, hasta llegar al frente del mismo, donde encontrará el poste número 11."
         },
-        "hotel" : {
-            "title": "Hotel",
-            "description": "N/A",
-            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
+        "hotel" : { 
+            "title": "Hotel", 
+            "description": "¡Hola soy Daniela de nuevo! Ahora estamos en el Hotel.\nEn la época de los Franciscanos, el edificio que ahora es el hotel era el dormitorio de los estudiantes. Luego se convirtió en una casa de retiro espiritual. Desde el año 2005, ha sido un hotel rural abierto a todo público.\nHoy, el hotel es un centro de formación y práctica para los estudiantes en hotelería y turismo, y representa el 60% de los ingresos de la escuela.\nEl hotel cuenta con 23 habitaciones —disponibles en opciones grupales, matrimoniales, individuales, dobles o triples, algunas con baño privado— y también dispone de 5 cabañas equipadas con cocinas y baños. La capacidad máxima es de 250 personas.\n¡Ofrece varios servicios: wifi en cada habitación, una piscina, quinchos, servicio de restaurante, cáterin y un tour guiado, del cual Ud. está gozando! Además, tiene espacios para eventos especiales como celebraciones de quinceañeras, bodas y canchas deportivas.\nAquí en el hotel, los estudiantes hacemos todo lo necesario para ofrecer una estadía agradable a nuestros huéspedes. En un día típico, por ejemplo, recibo visitantes, limpio habitaciones y aprendo a servir comidas en el restaurante del hotel. ¡Mi parte favorita es conocer a personas de todo el mundo que vienen a visitar nuestra escuela!"
         },
         "end":{
             "title": "Fin del Tour",
-            "description": "¡Gracias por realizar la visita autoguiada! Esperamos que haya disfrutado aprendiendo sobre la Escuela y el Hotel Cerrito. Si tiene alguna pregunta o desea obtener más información, no dude en contactarnos."
+            "description": "Con esto se concluye el tour de la Escuela Agrícola y Hotel Cerrito. Esperamos que lo haya pasado bien y que haya aprendido algo nuevo sobre este lugar tan único. Si quiere explorar y aprender más sobre nuestra Escuela y Hotel, puede ir a la sección “Actividades” de la aplicación. Ahora le invitamos a pasar al lobby del hotel , donde puede descansar, comprar una minuta, bebida, o algunos de nuestros deliciosos productos. ¡Muchas gracias por visitarnos, y que tenga un excelente día!"
         }
     }, 
     "activities": {
