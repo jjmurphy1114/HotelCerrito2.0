@@ -69,8 +69,6 @@ export default function TourLayout() {
           </Button>
       </View>
 
-      {/* <Text style={{ fontSize: 18 }}>{translatedTitle}</Text> */}
-
       <Button onPress={() => router.push('/(drawer)/tour')} compact>
         {t("tour.view_stops.title")}
       </Button>
