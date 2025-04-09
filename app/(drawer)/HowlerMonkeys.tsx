@@ -99,6 +99,8 @@ export default function HowlerMonkeys() {
       justifyContent: 'center',
       paddingTop: width*.17,
       paddingBottom: width*.33,
+      paddingLeft: width*.029,
+      paddingRight: width*.029,
     },
     footer: {
       position: 'absolute',
