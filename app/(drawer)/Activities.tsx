@@ -1,18 +1,20 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { Text, View, StyleSheet, TextStyle, ScrollView, StatusBar } from 'react-native';
+import { FlatList, Text, View, StyleSheet, TextStyle, ScrollView, StatusBar, TouchableOpacity } from 'react-native';
 import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Link } from 'expo-router';
 import * as React from 'react'
 import { useState } from 'react';
-import { Button, Card, IconButton, MD3Colors } from 'react-native-paper';
+import { List, Button, Card, IconButton, MD3Colors, Icon } from 'react-native-paper';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
+import CardCover from 'react-native-paper/lib/typescript/components/Card/CardCover';
 
 
 const RelaxCarousel = () => {
   const { t } = useTranslation();
   const [index, setIndex] = useState(0);
+  var isOpen = false;
   const length = 7;
 
   const handlePrevious = () => {
@@ -25,42 +27,80 @@ const RelaxCarousel = () => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
+  const handleDesc = () => 
+    isOpen = !isOpen;
+
   return (
-    <View style={{flexDirection: 'row', width: '100%'}}>
-      <View style={{ flex: 0 }}>
-        <IconButton
+    <View>
+      <View style={styles.carousel}>
+        <View style={styles.arrowButton}>
+          <IconButton
           icon = {'chevron-left'}
           iconColor={'orange'}
           size={80}
           onPress={handlePrevious}
-        />
-      </View>
-      <View style={{ flex: 1}}>
-        <Card>
-          <Card.Title title = {relaxActivities[index].activityNum + "/" + relaxActivities[index].totActivities + ": " + t(relaxActivities[index].activityTitle)}/>
-          <Card.Cover source = {{ uri: relaxImages[index]}} />
-          <View style={{ flexDirection: 'row'}}>
-            <View style={{ flex: 0}}>
-              <Text>{t("activities.description")}</Text>
-            </View>
-            <View style={{ flex: 1}}>
-              <IconButton
-                icon = {'chevron-right'}
-                iconColor={'black'}
-                size={20}
-                onPress={() => console.log('Pressed')}
-              />
-            </View>
-          </View>
-        </Card>
-      </View>
-      <View style={{ flex: 0 }}>
-        <IconButton
+          />
+        </View>
+        <View style={styles.cardContainer/*{ flex: 1}*/}>
+          <Card style={styles.card}>
+            <Card.Title 
+            style = {styles.header}
+            title = {relaxActivities[index].activityNum + "/" + relaxActivities[index].totActivities + ": " + t(relaxActivities[index].activityTitle)}/>
+            <Card.Cover 
+            style = {styles.cardCover} 
+            source = {{ uri: relaxImages[index]}} />
+            {/* <View style={styles.cardDescription/*{ flexDirection: 'row'}*/} > } 
+              {/* <View style={{ flex: 0}}> */}
+                {/* <Text>{t("activities.description")}</Text> */}
+              {/* </View> */}
+              {/* <View style={styles.rightArrowContainer/*{flex: 1}*/}> */}
+                {/* <IconButton */}
+                  {/* icon = {'chevron-right'} */}
+                  {/* iconColor={'black'} */}
+                  {/* size={20} */}
+                  {/* onPress={() => console.log('Pressed')} */}
+                {/* /> */}
+              {/* </View> */}
+            {/* </View> */}
+          </Card>
+        </View>
+        <View style={styles.arrowButton}>
+          <IconButton
           icon = {'chevron-right'}
           iconColor={'orange'}
           size={80}
           onPress={handleNext}
-        />
+          />
+        </View>
+      </View>
+      <View style={styles.accordionContainer}>
+        <Text style={styles.accordionTitle}>
+          {t("activities.details")}
+        </Text>
+        <List.Accordion
+        style={styles.accordion}
+        titleStyle={styles.accordionTitle}
+        theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
+        //title={t("activities.details")} 
+        // right={props => (
+        //   <List.Icon
+        //     {...props}
+        //     icon={isOpen ? 'chevron-down' : 'chevron-right'}
+        //     onPress={handleDesc}
+        //   />
+        // )}
+        right={() => (
+          <TouchableOpacity
+          style={styles.iconButton}
+          onPress={handleDesc}
+          activeOpacity={1} >
+            <Text style={styles.iconText}>
+              {isOpen ? '▼' : '▶'}
+            </Text>
+          </TouchableOpacity>
+        )} >
+          <Text style={styles.content}> {t(relaxActivities[index].description)} </Text>
+        </List.Accordion>
       </View>
     </View>
   );
@@ -82,8 +122,8 @@ const EducatCarousel = () => {
   };
 
   return (
-    <View style={{flexDirection: 'row', width: '100%'}}>
-      <View style={{ flex: 0 }}>
+    <View style={styles.carousel}>
+      <View style={styles.arrowButton}>
         <IconButton
           icon = {'chevron-left'}
           iconColor={'orange'}
@@ -91,15 +131,17 @@ const EducatCarousel = () => {
           onPress={handlePrevious}
         />
       </View>
-      <View style={{ flex: 1}}>
-        <Card>
-          <Card.Title title = {educatActivities[index].activityNum + "/" + educatActivities[index].totActivities + ": " + t(educatActivities[index].activityTitle)}/>
-          <Card.Cover source = {{ uri: educatImages[index]}} />
-          <View style={{ flexDirection: 'row'}}>
-            <View style={{ flex: 0}}>
-              <Text>{t("activities.description")}</Text>
-            </View>
-            <View style={{ flex: 1}}>
+      <View style={styles.cardContainer}>
+        <Card style={styles.card}>
+          <Card.Title 
+          style = {styles.header}
+          title = {educatActivities[index].activityNum + "/" + educatActivities[index].totActivities + ": " + t(educatActivities[index].activityTitle)}/>
+          <Card.Cover 
+          style = {styles.cardCover} 
+          source = {{ uri: educatImages[index]}} />
+          <View style={styles.cardDescription}>
+            <Text>{t("activities.description")}</Text>
+            <View style={styles.rightArrowContainer}>
               <IconButton
                 icon = {'chevron-right'}
                 iconColor={'black'}
@@ -110,7 +152,7 @@ const EducatCarousel = () => {
           </View>
         </Card>
       </View>
-      <View style={{ flex: 0 }}>
+      <View style={styles.arrowButton}>
         <IconButton
           icon = {'chevron-right'}
           iconColor={'orange'}
@@ -138,8 +180,8 @@ const AdventCarousel = () => {
   };
 
   return (
-    <View style={{flexDirection: 'row', width: '100%'}}>
-      <View style={{ flex: 0 }}>
+    <View style={styles.carousel}>
+      <View style={styles.arrowButton}>
         <IconButton
           icon = {'chevron-left'}
           iconColor={'orange'}
@@ -147,15 +189,17 @@ const AdventCarousel = () => {
           onPress={handlePrevious}
         />
       </View>
-      <View style={{ flex: 1}}>
-        <Card>
-          <Card.Title title = {adventActivities[index].activityNum + "/" + adventActivities[index].totActivities + ": " + t(adventActivities[index].activityTitle)}/>
-          <Card.Cover source = {{ uri: adventImages[index]}} />
-          <View style={{ flexDirection: 'row'}}>
-            <View style={{ flex: 0}}>
-              <Text>{t("activities.description")}</Text>
-            </View>
-            <View style={{ flex: 1}}>
+      <View style={styles.cardContainer}>
+        <Card style={styles.card}>
+          <Card.Title 
+          style = {styles.header}
+          title = {adventActivities[index].activityNum + "/" + adventActivities[index].totActivities + ": " + t(adventActivities[index].activityTitle)}/>
+          <Card.Cover 
+          style = {styles.cardCover} 
+          source = {{ uri: adventImages[index]}} />
+          <View style={styles.cardDescription}>
+            <Text>{t("activities.description")}</Text>
+            <View style={styles.rightArrowContainer}>
               <IconButton
                 icon = {'chevron-right'}
                 iconColor={'black'}
@@ -166,7 +210,7 @@ const AdventCarousel = () => {
           </View>
         </Card>
       </View>
-      <View style={{ flex: 0 }}>
+      <View style={styles.arrowButton}>
         <IconButton
           icon = {'chevron-right'}
           iconColor={'orange'}
@@ -372,24 +416,35 @@ const adventActivities: ActivityCardProps[] = [
 //export default Carousel;
 
 const Activity_Cards = () => (
-  <View>
-    <ScrollView>
-    <Card>
-      <Card.Title title = "Relaxing Activities" />
+  <View style = {styles.topMargin}>
+    <ScrollView contentContainerStyle={styles.scrollViewContent}>
+    <Card style={styles.container}>
+      <View>
+        <Card.Title 
+        title = "Relaxing Activities" 
+        titleStyle={styles.cardTitle}
+        />
+      </View>
       <Card.Content>
-        <RelaxCarousel></RelaxCarousel>
+        <RelaxCarousel/>
       </Card.Content>
     </Card>
-    <Card>
-      <Card.Title title = "Educational Activities" />
+    <Card style={styles.container}>
+      <Card.Title 
+      title = "Educational Activities" 
+      titleStyle={styles.cardTitle}
+      />
       <Card.Content>
-        	<EducatCarousel></EducatCarousel>
+        	<EducatCarousel/>
       </Card.Content>
     </Card>
-    <Card>
-      <Card.Title title = "Adventure Activities" />
+    <Card style={styles.container}>
+      <Card.Title 
+      title = "Adventure Activities"
+      titleStyle={styles.cardTitle}
+      />
       <Card.Content>
-        <AdventCarousel></AdventCarousel>
+        <AdventCarousel/>
       </Card.Content>
     </Card>
     </ScrollView>
@@ -400,7 +455,7 @@ const Activity_Cards = () => (
 
 export default function Activities() {
   return (
-    <View style={styles.container}>
+    <View>      
       <Activity_Cards></Activity_Cards>
       {/* {<Text style={styles.text}>Activities screen</Text>} */}
     </View>
@@ -408,11 +463,15 @@ export default function Activities() {
 }
 
 const styles = StyleSheet.create({
+  topMargin: {
+    marginTop: 30,
+  },
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-//    alignItems: 'center',
+    flex: 0,
+    //backgroundColor: '#fff',
     justifyContent: 'flex-start',
+    shadowColor: '#fff',
+    borderRadius: 0
   },
   text: {
     color: '#fff',
@@ -423,11 +482,94 @@ const styles = StyleSheet.create({
     color: '#fff',
     alignSelf: 'flex-start'
   },
-  title: {
-    fontSize: 20,
+  card: {
+    borderRadius: 0,
+    shadowColor: '#fff',
+  },
+  carousel: {
+    flexDirection: 'row', 
+    justifyContent: 'space-between'/*'center'*/, 
+    paddingHorizontal: 20, 
+    alignItems: 'center'/*'stretch'*/,
+    flex: 1,
+  },
+  cardTitle: {
+    fontSize: 24,
     textDecorationLine: 'underline',
-    alignSelf: 'center',
-    color: '#000'
+    textAlign: 'center',
+    color: '#000',
+    //fontWeight: 'bold',
+    fontFamily: 'inter',
+    marginTop: '0',
+    marginBottom: '-10'
+  },
+  header: {
+    //how to get this centered
+  },
+  arrowButton: {
+    flex: 0,
+    width: 0,  
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardContainer: {
+    flex: 1,
+    marginHorizontal: 30,
+    marginBottom: '-10'
+  },
+  cardCover: {
+    height: 200,
+    borderRadius: 0,
+    marginTop: '-10'
+  },
+  cardDescription: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    padding: 0,
+  },
+  rightArrowContainer: {
+    flex: 0,
+    width: 0,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+  },
+  accordionContainer: {
+    flexDirection: 'row',
+    paddingTop: 5
+    //justifyContent: 'center'
+  },
+  accordion: {
+    //color: '#000',
+    textDecorationColor: '#000',
+    padding: 0,
+    margin: 0,
+    //justifyContent: 'flex-start',
+    width: 50
+  },
+  accordionTitle: {
+    fontSize: 18,
+    color: '#000',
+    paddingLeft: 10,
+    paddingTop: 20,
+    //paddingRight: -20,
+    //width: 20
+  },
+  content: {
+    paddingRight: 100,
+    marginTop: -10,
+    marginLeft: -30,
+    justifyContent: 'space-evenly'
+  },
+  iconButton: {
+    padding: 0,
+    justifyContent: 'center',
+    //alignItems: 'flex-start',
+    alignItems: 'center'
+  },
+  iconText: {
+    fontSize: 18,
+    color: '#000',
   }
 });
 
