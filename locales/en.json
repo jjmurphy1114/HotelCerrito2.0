@@ -74,83 +74,82 @@
         }
     }, 
     "activities": {
-        "title": "Activities",
-        "description": "Description",
+        "details": "Details",
         "relaxing": {
             "pool": {
-                "title": "Swim in the Pool",
+                "title": "Swimming",
                 "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 7:00 PM, M-F."
             },
             "restaurant": {
-                "title": "Eat at the Restaurant",
+                "title": "Campus Restaurant",
                 "description": "Taste the flavors of Paraguay, with vegetables straight from the school garden and cheese made from the milk of campus cows. See how to make a lunch or dinner reservation here."
             },
             "hammocks": {
-                "title": "Lie in the Hammocks",
+                "title": "Hammocks",
                 "description": "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time. Weather dependent."
             },
             "games": {
-                "title": "Play Tabletop Games",
+                "title": "Tabletop Games",
                 "description": "Visit the game room by the pavilion for a rousing session of foosball, cards, or board games."
             },
             "quinchos": {
-                "title": "Sit at the Quinchos",
+                "title": "Quinchos",
                 "description": "Cook and gather with friends/family. ingesta de asados y destinado a reuniones y actividades sociales."
             },
             "gift_shop": {
-                "title": "Purchase Souvenirs",
+                "title": "Hotel Shop",
                 "description": "Support the Cerrito School by purchasing products in the hotel lobby. You can find yogurt, dulce de leche, and cheese, all made by students on campus. We also have snacks, drinks, and souvenirs."
             },
             "exercise": {
-                "title": "",
+                "title": "Exercise Zone",
                 "description": ""
             }
         },
         "educational": {
             "production": {
-                "title": "",
+                "title": "View Production Units",
                 "description": ""
             },
             "tour": {
-                "title": "",
+                "title": "Self-Guided Campus Tour",
                 "description": ""
             },
             "cheese": {
-                "title": "",
+                "title": "Cheese Factory Tour",
                 "description": ""
             },
             "toba_qom": {
-                "title": "",
+                "title": "Visit to the Toba Qom",
                 "description": ""
             },
             "eucalyptus": {
-                "title": "",
+                "title": "Eucalyptus Plantation",
                 "description": ""
             }
         },
         "adventurous": {
             "monkeys": {
-                "title": "",
+                "title": "Observe Howler Monkeys",
                 "description": ""
             },
             "hiking": {
-                "title": "",
+                "title": "Hiking",
                 "description": ""
             },
             "biking": {
-                "title": "",
+                "title": "Biking",
                 "description": ""
             },
             "horses": {
-                "title": "",
+                "title": "Ride Horses",
                 "description": ""
             },
             "sports": {
-                "title": "",
+                "title": "Play Sports",
                 "description": ""
             },
             "playground": {
-                "title": "",
+                "title": "Playground",
                 "description": ""
             }
         }
