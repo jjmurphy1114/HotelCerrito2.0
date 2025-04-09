@@ -72,12 +72,7 @@
         }
     }, 
     "activities": {
-<<<<<<< HEAD
         "details": "Details",
-=======
-        "title": "Activities",
-        "description": "Description",
->>>>>>> a60b9d76c6a4442fbf78fafd590f4212e6aebc5a
         "relaxing": {
             "pool": {
                 "title": "Swimming",
