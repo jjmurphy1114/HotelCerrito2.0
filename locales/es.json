@@ -71,8 +71,13 @@
         }
     }, 
     "activities": {
+<<<<<<< HEAD
+        "details": "Detalles",
+        "description": "",
+=======
         "title": "Actividades",
         "activities": "Descripción",
+>>>>>>> a60b9d76c6a4442fbf78fafd590f4212e6aebc5a
         "relaxing": {
             "pool": {
                 "title": "Nada en la Piscina",
