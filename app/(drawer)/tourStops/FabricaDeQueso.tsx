@@ -7,10 +7,10 @@ export default function Capilla() {
   const { t } = useTranslation();
   
   return (
-    StopTemplate(t("tour.planta_lactea.title"),
-      t("tour.planta_lactea.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
-      require('../../../assets/images/PlantaLactea.jpg'),
+    StopTemplate(t("tour.fabrica_de_queso.title"),
+      t("tour.fabrica_de_queso.description"), 
+      'fabrica_de_queso',
+      require('../../../assets/images/FabricaDeQueso.jpg'),
       '/(drawer)/tourStops/CPA' as RelativePathString,
       "/(drawer)/tourStops/CPV" as RelativePathString
     )

@@ -1,4 +1,5 @@
 {
+    "language": "es",
     "home": {
         "title": "Inicio",
         "button1": "Sobre Cerrito Hotel y Escuela",
@@ -29,47 +30,58 @@
         "audio_player": "Reproductor de Audio",
         "mapa_central": {
             "title": "Mapa Central",
-            "description": "This is the central map of the tour. It shows all the stops and their locations."
+            "description": "This is the central map of the tour. It shows all the stops and their locations.",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "capilla": {
             "title": "Capilla",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         }, 
         "cancha": {
             "title": "Cancha",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "sector_academico": {
             "title": "Sector Académico",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "patio_central": {
             "title": "Patio Central",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/patio_central.mp3'"
         },
         "comedor": {
             "title": "Comedor",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/comedor.mp3'"
         }, 
         "CPA": {
             "title": "Centro de Producción Animal",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cpa.mp3'"
         },
-        "planta_lactea": {
-            "title": "Planta Lactea",
-            "description": "N/A"
+        "fabrica_de_queso": {
+            "title": "Fábrica de Queso",
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "CPV": {
             "title": "Centro de Producción Vegetal",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/cpv.mp3'"
         },
         "piscina": {
             "title": "Piscina y Quinchos",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "hotel" : {
             "title": "Hotel",
-            "description": "N/A"
+            "description": "N/A",
+            "audio": "'../../../assets/audio/es/mapa_central.mp3'"
         },
         "end":{
             "title": "Fin del Tour",
@@ -77,6 +89,7 @@
         }
     }, 
     "activities": {
+        "title": "Actividades",
         "details": "Detalles",
         "description": "",
         "relaxing": {

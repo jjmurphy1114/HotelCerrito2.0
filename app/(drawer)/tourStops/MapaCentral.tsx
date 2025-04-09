@@ -9,7 +9,7 @@ export default function MapaCentral() {
   return (
     StopTemplate(t("tour.mapa_central.title"),
       t("tour.mapa_central.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
+      'mapa_central',
       require('../../../assets/images/MapaCentral.jpeg'),
       '/(drawer)/Tour' as RelativePathString,
       '/(drawer)/tourStops/Capilla' as RelativePathString

@@ -9,7 +9,7 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.piscina.title"),
       t("tour.piscina.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
+      'piscina',
       require('../../../assets/images/Piscina.jpg'),
       '/(drawer)/tourStops/CPV' as RelativePathString,
       "/(drawer)/tourStops/Hotel" as RelativePathString
