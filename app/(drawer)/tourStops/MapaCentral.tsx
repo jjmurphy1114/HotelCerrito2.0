@@ -7,9 +7,10 @@ export default function MapaCentral() {
   const { t } = useTranslation();
 
   return (
-    StopTemplate(t("tour.mapa_central.description"), 
+    StopTemplate(t("tour.mapa_central.title"),
+      t("tour.mapa_central.description"), 
       require('../../../assets/audio/en/mapa-central.mp3'),
-      require('../../../assets/images/MapaCentral.jpg'),
+      require('../../../assets/images/MapaCentral.jpeg'),
       '/(drawer)/Tour' as RelativePathString,
       '/(drawer)/tourStops/Capilla' as RelativePathString
     )
