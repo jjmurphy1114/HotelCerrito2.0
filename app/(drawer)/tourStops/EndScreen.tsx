@@ -4,6 +4,8 @@ import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'expo-image';
 import ImageCarousel from '../../components/ImageCarousel';
+import AudioPlayer from '@/app/components/AudioPlayer';
+import { getAudio } from '../tour/stops';
 
 export default function EndScreen() {
   const router = useRouter();
@@ -36,6 +38,7 @@ export default function EndScreen() {
     }
   });
   
+  const audio = getAudio('endScreen');
 
   return (
     <View style={styles.container}>
@@ -45,7 +48,8 @@ export default function EndScreen() {
           require('../../../assets/images/HowlerMonkey2.jpg'),
           require('../../../assets/images/StudentsAtCPV.jpg'),
         ]}
-      /> 
+      />
+      <AudioPlayer source={audio}/> 
       <Card style={styles.card}>
         <ScrollView
           style={styles.scrollBox}
@@ -62,13 +66,13 @@ export default function EndScreen() {
             mode="contained"
             onPress={() => router.replace('/Home')}
         >
-            End Tour
+            {t("tour.end.endButton")}
         </Button>
         <Button
             mode="outlined"
             onPress={() => router.replace('./MapaCentral')}
         >
-            Return to Stop 1
+           {t("tour.end.continue")}
         </Button>
       </View>
     </View>
