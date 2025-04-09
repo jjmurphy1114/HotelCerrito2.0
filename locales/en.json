@@ -129,23 +129,23 @@
         "educational": {
             "production": {
                 "title": "View Production Units",
-                "description": ""
+                "description": "Visit the various production units on campus, such as the bakery, garden, or farm, to learn more about how students work to support the school by gaining practical skills."
             },
             "tour": {
                 "title": "Self-Guided Campus Tour",
-                "description": ""
+                "description": "Explore the beautiful Cerrito campus and learn all about the main features of the school. Take the self-guided tour here."
             },
             "cheese": {
                 "title": "Cheese Factory Tour",
-                "description": ""
+                "description": "Observe the exciting process of making cheese and learn the history of the campus cheese factory. Contact the hotel reception to arrange a guided tour."
             },
             "toba_qom": {
                 "title": "Visit to the Toba Qom",
-                "description": ""
+                "description": "Explore the nearby Toba Qom Indigenous community, learn about their culture, and support them by purchasing handmade artisanal goods. Please see the hotel concierge to arrange a guided visit."
             },
             "eucalyptus": {
                 "title": "Eucalyptus Plantation",
-                "description": ""
+                "description": "Marvel at the rows of eucalyptus trees. Previously dedicated to the cultivation of sugarcane, the Cerrito School now grows eucalyptus to sell as firewood. The campus has 37 hectares of eucalyptus plantations on the campus that are registered in the National Forestry Institute of Paraguay."
             }
         },
         "adventurous": {
@@ -163,15 +163,15 @@
             },
             "horses": {
                 "title": "Ride Horses",
-                "description": ""
+                "description": "Are you interested in riding a horse? The animal production center has horses. Contact the hotel reception to arrange a horseback ride."
             },
             "sports": {
                 "title": "Play Sports",
-                "description": ""
+                "description": "Come hang out at the sports field and play a game of soccer, basketball, or volleyball."
             },
             "playground": {
                 "title": "Playground",
-                "description": ""
+                "description": "Take your kids to enjoy family fun at the playground next to the pool."
             }
         }
     },
