@@ -51,6 +51,7 @@ const RelaxCarousel = () => {
             <Card.Cover 
             style = {styles.cardCover} 
             source = {{ uri: relaxImages[index]}} />
+
           </Card>
         </View>
         <View style={styles.arrowButton}>
