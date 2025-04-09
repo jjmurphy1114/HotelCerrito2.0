@@ -66,7 +66,7 @@ export default function EndScreen() {
         </Button>
         <Button
             mode="outlined"
-            onPress={() => router.replace('/Home')}
+            onPress={() => router.replace('./MapaCentral')}
         >
             Return to Stop 1
         </Button>
