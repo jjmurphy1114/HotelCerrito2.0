@@ -9,8 +9,8 @@ import { RelativePathString, useRouter } from 'expo-router';
 
 // Get screen width
 const { width, height } = Dimensions.get('window');
-const imageSizeWidth = width * 0.4;
-const imageSizeHeight = height * 0.2;
+const imageSizeWidth = width * 0.44;
+const imageSizeHeight = height * 0.3;
 
 const blurhash =
   '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[';
@@ -137,7 +137,7 @@ export default function HowlerMonkeys() {
 
         <Image
           style={styles.image}
-          source={require('../../assets/images/hotel-cerrito-logo.png')}
+          source={require('../../assets/images/HowlerMonkey.jpeg')}
           contentFit="contain"
           transition={1000}
         />
