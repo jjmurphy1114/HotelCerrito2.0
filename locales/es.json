@@ -16,8 +16,10 @@
         "begin_tour": "Comenzar Tour",
         "view_stops": {
             "title": "Estaciones",
-            "stop": "Esastación"
+            "stop": "Estación"
         },
+        "back": "Atrás",
+        "next": "Siguiente",
         "welcome": "¡Bienvenido a la Escuela y el Hotel Cerrito! En este tour, puede conocer la historia de la Escuela y el Hotel y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el mapa central y los puestos de madera amarilla para llegar a cada parada. Puede hacerlo en el orden recomendado o en cualquier orden que le gustaría con el botón de Estaciones.\nLa siguiente pantalla tiene el mapa central de la escuela. Después hay las paradas del tour. Puede navegar la página por las flechas en la pantalla o usando las pestañas de navegación en la parte inferior de la pantalla",
         "map":{
             "open": "Mirar Mapa",

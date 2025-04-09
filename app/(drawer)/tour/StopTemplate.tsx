@@ -103,12 +103,12 @@ export default function StopTemplate( title: string,
       <View style={styles.navigation}>
         <View style={styles.navButton}>
           <IconButton icon="arrow-left" onPress={PrevPage} />
-          <Text style={styles.navLabel}>Back</Text>
+          <Text style={styles.navLabel}>{t("tour.back")}</Text>
         </View>
 
         <View style={styles.navButton}>
           <IconButton icon="arrow-right" onPress={NextPage} />
-          <Text style={styles.navLabel}>Next</Text>
+          <Text style={styles.navLabel}>{t("tour.next")}</Text>
         </View>
       </View>
       <Card style={styles.card}>
