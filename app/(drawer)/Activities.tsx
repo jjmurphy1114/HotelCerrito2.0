@@ -28,8 +28,9 @@ const RelaxCarousel = () => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
-  const handleDesc = () => 
+  const handleDesc = () => {
     isOpen = !isOpen;
+  }
 
   return (
     <View>
@@ -50,19 +51,6 @@ const RelaxCarousel = () => {
             <Card.Cover 
             style = {styles.cardCover} 
             source = {{ uri: relaxImages[index]}} />
-            {/* <View style={styles.cardDescription/*{ flexDirection: 'row'}*/} > } 
-              {/* <View style={{ flex: 0}}> */}
-                {/* <Text>{t("activities.description")}</Text> */}
-              {/* </View> */}
-              {/* <View style={styles.rightArrowContainer/*{flex: 1}*/}> */}
-                {/* <IconButton */}
-                  {/* icon = {'chevron-right'} */}
-                  {/* iconColor={'black'} */}
-                  {/* size={20} */}
-                  {/* onPress={() => console.log('Pressed')} */}
-                {/* /> */}
-              {/* </View> */}
-            {/* </View> */}
           </Card>
         </View>
         <View style={styles.arrowButton}>
@@ -79,21 +67,13 @@ const RelaxCarousel = () => {
           {t("activities.details")}
         </Text>
         <List.Accordion
+        onPress={handleDesc}
         style={styles.accordion}
         titleStyle={styles.accordionTitle}
         theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
-        //title={t("activities.details")} 
-        // right={props => (
-        //   <List.Icon
-        //     {...props}
-        //     icon={isOpen ? 'chevron-down' : 'chevron-right'}
-        //     onPress={handleDesc}
-        //   />
-        // )}
         right={() => (
           <TouchableOpacity
           style={styles.iconButton}
-          onPress={handleDesc}
           activeOpacity={1} >
             <Text style={styles.iconText}>
               {isOpen ? '▼' : '▶'}
@@ -110,6 +90,7 @@ const RelaxCarousel = () => {
 const EducatCarousel = () => {
   const { t } = useTranslation();
   const [index, setIndex] = useState(0);
+  var isOpen = false;
   const length = 5;
 
   const handlePrevious = () => {
@@ -122,45 +103,61 @@ const EducatCarousel = () => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
+  const handleDesc = () => {
+    isOpen = !isOpen;
+  }
+
   return (
-    <View style={styles.carousel}>
-      <View style={styles.arrowButton}>
-        <IconButton
+    <View>
+      <View style={styles.carousel}>
+        <View style={styles.arrowButton}>
+          <IconButton
           icon = {'chevron-left'}
           iconColor={'orange'}
           size={80}
           onPress={handlePrevious}
-        />
-      </View>
-      <View style={styles.cardContainer}>
-        <Card style={styles.card}>
-          <Card.Title 
-          style = {styles.header}
-          title = {educatActivities[index].activityNum + "/" + educatActivities[index].totActivities + ": " + t(educatActivities[index].activityTitle)}/>
-          <Card.Cover 
-          style = {styles.cardCover} 
-          source = {{ uri: educatImages[index]}} />
-          <View style={styles.cardDescription}>
-            <Text>{t("activities.description")}</Text>
-            <View style={styles.rightArrowContainer}>
-              <IconButton
-                icon = {'chevron-right'}
-                iconColor={'black'}
-                size={20}
-                onPress={() => console.log('Pressed')}
-              />
-            </View>
-          </View>
-        </Card>
-      </View>
-      <View style={styles.arrowButton}>
-        <IconButton
+          />
+        </View>
+        <View style={styles.cardContainer}>
+          <Card style={styles.card}>
+            <Card.Title 
+            style = {styles.header}
+            title = {educatActivities[index].activityNum + "/" + educatActivities[index].totActivities + ": " + t(educatActivities[index].activityTitle)}/>
+            <Card.Cover 
+            style = {styles.cardCover} 
+            source = {{ uri: educatImages[index]}} />
+          </Card>
+        </View>
+        <View style={styles.arrowButton}>
+          <IconButton
           icon = {'chevron-right'}
           iconColor={'orange'}
           size={80}
           onPress={handleNext}
-        />
+          />
+        </View>
       </View>
+      <View style={styles.accordionContainer}>
+        <Text style={styles.accordionTitle}>
+          {t("activities.details")}
+        </Text>
+        <List.Accordion
+        onPress={handleDesc}
+        style={styles.accordion}
+        titleStyle={styles.accordionTitle}
+        theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
+        right={() => (
+          <TouchableOpacity
+          style={styles.iconButton}
+          activeOpacity={1} >
+            <Text style={styles.iconText}>
+              {isOpen ? '▼' : '▶'}
+            </Text>
+          </TouchableOpacity>
+        )} >
+          <Text style={styles.content}> {t(educatActivities[index].description)} </Text>
+        </List.Accordion>
+      </View>      
     </View>
   );
 };
@@ -168,6 +165,7 @@ const EducatCarousel = () => {
 const AdventCarousel = () => {
   const { t } = useTranslation();
   const [index, setIndex] = useState(0);
+  var isOpen = false;
   const length = 6;
 
   const handlePrevious = () => {
@@ -180,44 +178,60 @@ const AdventCarousel = () => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
+  const handleDesc = () => {
+    isOpen = !isOpen;
+  }
+
   return (
-    <View style={styles.carousel}>
-      <View style={styles.arrowButton}>
-        <IconButton
+    <View>
+      <View style={styles.carousel}>
+        <View style={styles.arrowButton}>
+          <IconButton
           icon = {'chevron-left'}
           iconColor={'orange'}
           size={80}
           onPress={handlePrevious}
-        />
-      </View>
-      <View style={styles.cardContainer}>
-        <Card style={styles.card}>
-          <Card.Title 
-          style = {styles.header}
-          title = {adventActivities[index].activityNum + "/" + adventActivities[index].totActivities + ": " + t(adventActivities[index].activityTitle)}/>
-          <Card.Cover 
-          style = {styles.cardCover} 
-          source = {{ uri: adventImages[index]}} />
-          <View style={styles.cardDescription}>
-            <Text>{t("activities.description")}</Text>
-            <View style={styles.rightArrowContainer}>
-              <IconButton
-                icon = {'chevron-right'}
-                iconColor={'black'}
-                size={20}
-                onPress={() => console.log('Pressed')}
-              />
-            </View>
-          </View>
-        </Card>
-      </View>
-      <View style={styles.arrowButton}>
-        <IconButton
+          />
+        </View>
+        <View style={styles.cardContainer}>
+          <Card style={styles.card}>
+            <Card.Title 
+            style = {styles.header}
+            title = {adventActivities[index].activityNum + "/" + adventActivities[index].totActivities + ": " + t(adventActivities[index].activityTitle)}/>
+            <Card.Cover 
+            style = {styles.cardCover} 
+            source = {{ uri: adventImages[index]}} />
+          </Card>
+        </View>
+        <View style={styles.arrowButton}>
+          <IconButton
           icon = {'chevron-right'}
           iconColor={'orange'}
           size={80}
           onPress={handleNext}
-        />
+          />
+        </View>
+      </View>
+      <View style={styles.accordionContainer}>
+        <Text style={styles.accordionTitle}>
+          {t("activities.details")}
+        </Text>
+        <List.Accordion
+        onPress={handleDesc}
+        style={styles.accordion}
+        titleStyle={styles.accordionTitle}
+        theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
+        right={() => (
+          <TouchableOpacity
+          style={styles.iconButton}
+          activeOpacity={1} >
+            <Text style={styles.iconText}>
+              {isOpen ? '▼' : '▶'}
+            </Text>
+          </TouchableOpacity>
+        )} >
+          <Text style={styles.content}> {t(adventActivities[index].description)} </Text>
+        </List.Accordion>
       </View>
     </View>
   );
@@ -418,7 +432,7 @@ const adventActivities: ActivityCardProps[] = [
 
 const Activity_Cards = () => (
   <View style = {styles.topMargin}>
-    <ScrollView contentContainerStyle={styles.scrollViewContent}>
+    <ScrollView /*contentContainerStyle={styles.scrollViewContent}*/>
     <Card style={styles.container}>
       <View>
         <Card.Title 
