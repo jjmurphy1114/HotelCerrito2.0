@@ -9,9 +9,9 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.CPV.title"),
       t("tour.CPV.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
+      'CPV',
       require('../../../assets/images/CPV.jpg'),
-      '/(drawer)/tourStops/PlantaLactea' as RelativePathString,
+      '/(drawer)/tourStops/FabricaDeQueso' as RelativePathString,
       "/(drawer)/tourStops/Piscina" as RelativePathString
     )
   );

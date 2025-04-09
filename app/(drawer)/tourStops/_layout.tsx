@@ -94,6 +94,7 @@ export default function TourLayout() {
         <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center' }}>
           {t('tour.map.path')} {t(currentStop?.titleKey || '')} → {t(nextStop?.titleKey || '')}
         </Text>
+        {/* @ts-ignore */}
         <ImageZoom
           cropWidth={width * 0.9}
           cropHeight={height * 0.5}
