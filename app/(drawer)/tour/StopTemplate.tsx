@@ -5,7 +5,8 @@ import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
 
-export default function StopTemplate( description: string, 
+export default function StopTemplate( title: string,
+                                    description: string, 
                                     audioPath: any, 
                                     image: any, 
                                     prev: RelativePathString, 
@@ -60,6 +61,11 @@ export default function StopTemplate( description: string,
         fontSize: 16,
         lineHeight: 22,
       },
+      title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 10,
+      },
       navigation: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -85,7 +91,7 @@ export default function StopTemplate( description: string,
   
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
-      {/* <Text style={{ fontSize: 24 }}>{title}</Text> */}
+      <Text style={{ fontSize: 24 }}>{title}</Text>
       <Image
             style={styles.image}
             source={image} 
@@ -97,12 +103,12 @@ export default function StopTemplate( description: string,
       <View style={styles.navigation}>
         <View style={styles.navButton}>
           <IconButton icon="arrow-left" onPress={PrevPage} />
-          <Text style={styles.navLabel}>Back</Text>
+          <Text style={styles.navLabel}>{t("tour.back")}</Text>
         </View>
 
         <View style={styles.navButton}>
           <IconButton icon="arrow-right" onPress={NextPage} />
-          <Text style={styles.navLabel}>Next</Text>
+          <Text style={styles.navLabel}>{t("tour.next")}</Text>
         </View>
       </View>
       <Card style={styles.card}>

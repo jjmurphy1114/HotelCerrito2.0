@@ -16,10 +16,12 @@
         "title": "Tour Autoguiado",
         "begin_tour": "Comenzar Tour",
         "view_stops": {
-            "title": "Mirar Paradas",
-            "stop": "Parada"
+            "title": "Estaciones",
+            "stop": "Estación"
         },
-        "welcome": "¡Bienvenido a la Escuela y el Hotel Cerrito! En este tour, puede conocer la historia de la Escuela y el Hotel y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el mapa central y los puestos de madera amarilla para llegar a cada parada. Puede hacerlo en el orden recomendado o en cualquier orden que le gustaría con el botón de Mirar Paradas.\nLa siguiente pantalla tiene el mapa central de la escuela. Después hay las paradas del tour. Puede navegar la página por las flechas en la pantalla o usando las pestañas de navegación en la parte inferior de la pantalla",
+        "back": "Atrás",
+        "next": "Siguiente",
+        "welcome": "¡Bienvenido a la Escuela y el Hotel Cerrito! En este tour, puede conocer la historia de la Escuela y el Hotel y aprender sobre las unidades productivas del campus. Para hacer el tour, puede seguir los números indicados en el mapa central y los puestos de madera amarilla para llegar a cada parada. Puede hacerlo en el orden recomendado o en cualquier orden que le gustaría con el botón de Estaciones.\nLa siguiente pantalla tiene el mapa central de la escuela. Después hay las paradas del tour. Puede navegar la página por las flechas en la pantalla o usando las pestañas de navegación en la parte inferior de la pantalla",
         "map":{
             "open": "Mirar Mapa",
             "close": "Cerrar Mapa",
@@ -158,8 +160,8 @@
         "header": "Cambia Idioma"
     },
     "about": {
-        "title": "Nosotros",
-        "Header": "Sobre Nosotros",
+        "title": "Quiénes Somos",
+        "Header": "Quiénes Somos",
         "FDDesc": "Nosotros desarrollamos e implementamos soluciones prácticas, innovadoras y sostenibles que permitan activar el potencial emprendedor de las familias para eliminar la pobreza multidimensional y vivir con dignidad.",
         "CerritoTitle": "La Escuela Cerrito", 
         "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, llegados de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 

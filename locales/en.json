@@ -20,6 +20,8 @@
             "title": "View Stops",
             "stop": "Stop"
         },
+        "back": "Back",
+        "next": "Next",
         "welcome": "Welcome to the Self-Guided Tour!",
         "map":{
             "open": "View Map",
