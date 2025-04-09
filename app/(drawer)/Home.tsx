@@ -81,7 +81,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
     require("../../assets/images/CerritoSign.jpeg"),
     require("../../assets/images/MapaCentral.jpeg"),
     require("../../assets/images/HorseRiding.jpeg"),
-    require("../../assets/images/emoji4.png"),
+    require("../../assets/images/Store.jpeg"),
     require("../../assets/images/HotelSide.jpeg"),
     require("../../assets/images/HotelFrontDesk.jpeg"),
     require("../../assets/images/HowlerMonkey.jpeg"),
