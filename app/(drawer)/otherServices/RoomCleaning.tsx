@@ -36,16 +36,16 @@ export default function RoomCleaning() {
           right: 0,
           backgroundColor: colors.background,
           paddingVertical: 0,
-          marginTop: 20,
+          marginTop: width * 0.04,
           justifyContent: 'center', 
           alignItems: 'center',
-          paddingHorizontal: 10,
+          paddingHorizontal: width * 0.020,
         },
         headerText: {
           color: colors.onSecondary,
           textAlign: 'center',
           fontSize: 25,
-          padding: 5,
+          padding: width * 0.012,
           fontFamily: Platform.select({
             android: 'Inter_900Black',
             ios: 'Inter-Black',
@@ -63,8 +63,8 @@ export default function RoomCleaning() {
           textAlign: 'center',
           fontSize: 20,
           padding: 0,
-          paddingLeft: 30,
-          paddingRight: 30,
+          paddingLeft: width * 0.06,
+          paddingRight: width * 0.06,
           fontFamily: Platform.select({
             android: 'Inter_400Regular',
             ios: 'Inter24pt-Regular',
@@ -75,8 +75,8 @@ export default function RoomCleaning() {
           textAlign: 'center',
           fontSize: 20,
           padding: 0,
-          paddingLeft: 20,
-          paddingRight: 20,
+          paddingLeft: width * 0.06,
+          paddingRight: width * 0.06,
           fontFamily: Platform.select({
             android: 'Inter_400Regular',
             ios: 'Inter-Black',
@@ -88,8 +88,8 @@ export default function RoomCleaning() {
           textDecorationLine: 'underline',
           fontSize: 25,
           padding: 0,
-          paddingLeft: 20,
-          paddingRight: 20,
+          paddingLeft: width * 0.06,
+          paddingRight: width * 0.06,
           fontFamily: Platform.select({
             android: 'Inter_400Italic',
             ios: 'Inter-Italic',
@@ -101,9 +101,9 @@ export default function RoomCleaning() {
           alignItems: 'center',   
           backgroundColor: colors.secondary,
           paddingVertical: 18,
-          paddingRight: 10,
-          borderRadius: 10,
-          marginVertical: 20
+          paddingRight: width * 0.02,
+          borderRadius: width * 0.020,
+          marginVertical: width * 0.04
         },
         buttonText: {
           color: colors.onSecondary,
@@ -130,11 +130,11 @@ export default function RoomCleaning() {
           backgroundColor: colors.background,
           alignItems: 'center',
           justifyContent: 'center',
-          paddingTop: 60,
-          paddingBottom: 110,
+          paddingTop: width * 0.12,
+          paddingBottom: width * 0.2,
         },
         bodyTextContainer: {
-          marginTop: 40
+          marginTop: width * 0.1
         }
       });
     
