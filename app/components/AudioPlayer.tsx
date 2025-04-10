@@ -13,66 +13,54 @@ export default function AudioPlayer({ source }: { source: any }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const { t } = useTranslation();
 
-  useEffect(() => {
-    let isMounted = true;
-
-    const prepareAudio = async () => {
-      try {
-        await Audio.setAudioModeAsync({
-        allowsRecordingIOS: false,
-        staysActiveInBackground: false,
-        playsInSilentModeIOS: true,
-      });
-      
-      if (soundRef.current) {
-        await soundRef.current.unloadAsync();
-        soundRef.current.setOnPlaybackStatusUpdate(null);
-        soundRef.current = null;
-      }
-
-        const { sound, status } = await Audio.Sound.createAsync(
-          source,
-          { shouldPlay: false },
-          (status) => {
-            if (!isMounted) return;
-
-            if (status.isLoaded) {
-              setIsPlaying(status.isPlaying);
-              setIsLoaded(true);
-
-              if (status.didJustFinish) {
-                setIsPlaying(false);
-              }
-            } else {
-              console.warn('Audio not loaded:', status);
-              setIsLoaded(false);
-            }
-          }
-        );
-
-        soundRef.current = sound;
-      } catch (error) {
-        console.error('Failed to load audio', error);
-      }
-    };
-
-    prepareAudio();
-
-    return () => {
-      isMounted = false;
-      if (soundRef.current) {
-        soundRef.current.unloadAsync();
-        soundRef.current.setOnPlaybackStatusUpdate(null);
-      }
-    };
-  }, [source]);
-
   useFocusEffect(
     useCallback(() => {
-      // screen is focused
+      let isMounted = true;
+  
+      const prepareAudio = async () => {
+        try {
+          await Audio.setAudioModeAsync({
+            allowsRecordingIOS: false,
+            staysActiveInBackground: false,
+            playsInSilentModeIOS: true,
+          });
+  
+          if (soundRef.current) {
+            await soundRef.current.unloadAsync();
+            soundRef.current.setOnPlaybackStatusUpdate(null);
+            soundRef.current = null;
+          }
+  
+          const { sound, status } = await Audio.Sound.createAsync(
+            source,
+            { shouldPlay: false },
+            (status) => {
+              if (!isMounted) return;
+  
+              if (status.isLoaded) {
+                setIsPlaying(status.isPlaying);
+                setIsLoaded(true);
+  
+                if (status.didJustFinish) {
+                  setIsPlaying(false);
+                }
+              } else {
+                console.warn('Audio not loaded:', status);
+                setIsLoaded(false);
+              }
+            }
+          );
+  
+          soundRef.current = sound;
+        } catch (error) {
+          console.error('Failed to load audio', error);
+        }
+      };
+  
+      prepareAudio();
   
       return () => {
-        // screen is unfocused
+        isMounted = false;
         if (soundRef.current) {
           soundRef.current.unloadAsync();
           soundRef.current.setOnPlaybackStatusUpdate(null);
@@ -81,8 +69,9 @@ export default function AudioPlayer({ source }: { source: any }) {
           setIsLoaded(false);
         }
       };
-    }, [])
+    }, [source])
   );
+  
   
 
   const togglePlayPause = async () => {
