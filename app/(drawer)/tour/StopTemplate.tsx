@@ -6,6 +6,7 @@ import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
+import MapComponent from '@/app/components/Map';
 
 export default function StopTemplate( title: string,
                                     description: string,
@@ -108,18 +109,21 @@ export default function StopTemplate( title: string,
     // Placeholder for when the image is not loaded
     const blurhash =
     '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[';
-  
-  
+    
+    
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
       <Text style={{ fontSize: 24, marginTop: -25 }}>{title}</Text>
+      {directionsToggle ?  
+      <MapComponent /> :
       <Image
-            style={styles.image}
-            source={image} 
-            placeholder={{ blurhash }}
-            contentFit="cover"
-            transition={1000}
-          />
+        style={styles.image}
+        source={image} 
+        placeholder={{ blurhash }}
+        contentFit="cover"
+        transition={1000}
+        />
+      }
       <AudioPlayer source={currentAudio} />
       
       <Card style={styles.card}>
