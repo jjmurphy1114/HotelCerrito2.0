@@ -15,6 +15,7 @@
     },
     "tour": {
         "title": "Tour Autoguiado",
+        "header": "Tomar el Tour Autoguiado",
         "begin_tour": "Comenzar Tour",
         "view_stops": {
             "title": "Estaciones",
