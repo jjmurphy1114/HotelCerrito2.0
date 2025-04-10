@@ -15,6 +15,7 @@
     },
     "tour": {
         "title": "Tour Autoguiado",
+        "header": "Tomar el Tour Autoguiado",
         "begin_tour": "Comenzar Tour",
         "view_stops": {
             "title": "Estaciones",
@@ -239,7 +240,7 @@
         "title": "Reservar Actividades",
         "header": "Reservar Actividades", 
         "body1": "Algunas actividades disponibles requieren reserva previa en recepción. Estas incluyen:\n",
-        "body2": "Almuerzo o Cenaen el Restaurante Cerrito,\n Tour de la Fabrica de Queso,\n Paseos a Caballo,\n y Visitas al Stand de Productos Artesanales de la colectividad Toba Qom colindante con la Escuela.\n",
+        "body2": "Almuerzo o Cena en el Restaurante Cerrito,\n Tour de la Fabrica de Queso,\n Paseos a Caballo,\n y Visitas al Stand de Productos Artesanales de la colectividad Toba Qom colindante con la Escuela.\n",
         "body3": "Para conocer y reservar cualquiera de estas actividades, consulte en recepción o envíe un mensaje de WhatsApp a:\n",
         "body4": "+595-976-360-833"
     },

@@ -16,6 +16,7 @@
     },
     "tour": {
         "title": "Self-Guided Tour", 
+        "header": "Take the Self-Guided Tour",
         "begin_tour": "Begin Tour",
         "view_stops": {
             "title": "View Stops",
