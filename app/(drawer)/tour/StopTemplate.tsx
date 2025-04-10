@@ -1,13 +1,15 @@
 import { View, Text, Dimensions, StyleSheet, ScrollView } from 'react-native';
 import { RelativePathString, useRouter, usePathname } from 'expo-router';
-import { useTheme, Card, IconButton } from 'react-native-paper';
+import { useTheme, Card, IconButton, Button } from 'react-native-paper';
 import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
-import { audioMap, getAudio } from './stops';
+import { getAudio } from './stops';
+import { useState } from 'react';
 
 export default function StopTemplate( title: string,
-                                    description: string, 
+                                    description: string,
+                                    directions: string = 'N/A' ,
                                     audioPathKey: any, 
                                     image: any, 
                                     prev: RelativePathString, 
@@ -15,11 +17,18 @@ export default function StopTemplate( title: string,
                                   ) {
   
   // Need to implement audio player here
-
+  
   const router = useRouter();
   const { colors } = useTheme();
   const { t } = useTranslation();
-  const audio = getAudio(audioPathKey);
+  const audio = getAudio(audioPathKey, "descriptions");
+
+
+  const [directionsToggle, setDirectionsToggle] = useState(false);
+  const buttonColor = directionsToggle ? colors.secondary : colors.primary;
+  const displayedText = directionsToggle ?  directions : description;
+  const currentAudio = directionsToggle ? getAudio(audioPathKey, "directions") : getAudio(audioPathKey, "descriptions");
+
 
   /*For navigating to the next page*/
   const NextPage = () => router.replace(next);
@@ -48,6 +57,7 @@ export default function StopTemplate( title: string,
       },
       card: {
         margin: 20,
+        marginTop: -15,
         padding: 10,
         borderRadius: 10,
         backgroundColor: colors.secondary,
@@ -71,20 +81,29 @@ export default function StopTemplate( title: string,
       navigation: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '60%',
+        width: '90%',
         marginTop: 10,
       },
-      
       navButton: {
         alignItems: 'center',
         marginHorizontal: 10,
       },
-      
       navLabel: {
         fontSize: 14,
         color: '#666', // or use theme.colors.onBackground
       },
+      directionsButton: {
+        backgroundColor: buttonColor,
+        alignSelf: 'center', // Constrain the button within its content
+      }
     });
+
+    // Logic for directions button
+
+    const handleDirectionsButton = () => {
+        setDirectionsToggle(!directionsToggle);
+    }
+
 
     // Placeholder for when the image is not loaded
     const blurhash =
@@ -93,7 +112,7 @@ export default function StopTemplate( title: string,
   
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
-      <Text style={{ fontSize: 24 }}>{title}</Text>
+      <Text style={{ fontSize: 24, marginTop: -25 }}>{title}</Text>
       <Image
             style={styles.image}
             source={image} 
@@ -101,18 +120,8 @@ export default function StopTemplate( title: string,
             contentFit="cover"
             transition={1000}
           />
-      <AudioPlayer source={audio} />
-      <View style={styles.navigation}>
-        <View style={styles.navButton}>
-          <IconButton icon="arrow-left" onPress={PrevPage} />
-          <Text style={styles.navLabel}>{t("tour.back")}</Text>
-        </View>
-
-        <View style={styles.navButton}>
-          <IconButton icon="arrow-right" onPress={NextPage} />
-          <Text style={styles.navLabel}>{t("tour.next")}</Text>
-        </View>
-      </View>
+      <AudioPlayer source={currentAudio} />
+      
       <Card style={styles.card}>
         <ScrollView
           style={styles.scrollBox}
@@ -120,10 +129,27 @@ export default function StopTemplate( title: string,
           showsVerticalScrollIndicator={true}
         >
           <Text style={styles.text}>
-            {description}
+            {displayedText}
           </Text>
         </ScrollView>
       </Card>
+      <View style={styles.navigation}>
+        <View style={styles.navButton}>
+          <IconButton icon="arrow-left" onPress={PrevPage} />
+          <Text style={styles.navLabel}>{t("tour.back")}</Text>
+        </View>
+        <Button
+          style={styles.directionsButton}
+          mode="contained"
+          onPress={handleDirectionsButton}
+        >
+          {directionsToggle ? t("tour.descriptionsButton") : t("tour.directionsButton") }
+        </Button>
+        <View style={styles.navButton}>
+          <IconButton icon="arrow-right" onPress={NextPage} />
+          <Text style={styles.navLabel}>{t("tour.next")}</Text>
+        </View>
+      </View>
     </View>
   );
 }

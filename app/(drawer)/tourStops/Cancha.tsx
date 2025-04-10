@@ -9,9 +9,10 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.cancha.title"),
       t("tour.cancha.description"), 
+      "N/A",
       'cancha',
       require('../../../assets/images/Cancha.jpg'),
-      '/(drawer)/tourStops/Capilla' as RelativePathString,
+      '/(drawer)/tourStops/MapaCentral' as RelativePathString,
       '/(drawer)/tourStops/SectorAcademico' as RelativePathString,
     )
   );

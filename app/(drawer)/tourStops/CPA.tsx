@@ -9,6 +9,7 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.CPA.title"),
       t("tour.CPA.description"), 
+      "N/A",
       'CPA',
       require('../../../assets/images/CPA.jpg'),
       '/(drawer)/tourStops/Comedor' as RelativePathString,

@@ -38,7 +38,7 @@ export default function EndScreen() {
     }
   });
   
-  const audio = getAudio('endScreen');
+  const audio = getAudio('endScreen', 'descriptions');
 
   return (
     <View style={styles.container}>
