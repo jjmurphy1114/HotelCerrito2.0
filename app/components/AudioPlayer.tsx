@@ -3,6 +3,9 @@ import { useRef, useState, useEffect } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { IconButton, Text } from 'react-native-paper';
 import { useTranslation } from 'react-i18next';
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';
+
 
 export default function AudioPlayer({ source }: { source: any }) {
   const soundRef = useRef<Audio.Sound | null>(null);
@@ -16,16 +19,16 @@ export default function AudioPlayer({ source }: { source: any }) {
     const prepareAudio = async () => {
       try {
         await Audio.setAudioModeAsync({
-          allowsRecordingIOS: false,
-          staysActiveInBackground: false,
-          playsInSilentModeIOS: true,
-        });
-
-        if (soundRef.current) {
-          await soundRef.current.unloadAsync();
-          soundRef.current.setOnPlaybackStatusUpdate(null);
-          soundRef.current = null;
-        }
+        allowsRecordingIOS: false,
+        staysActiveInBackground: false,
+        playsInSilentModeIOS: true,
+      });
+      
+      if (soundRef.current) {
+        await soundRef.current.unloadAsync();
+        soundRef.current.setOnPlaybackStatusUpdate(null);
+        soundRef.current = null;
+      }
 
         const { sound, status } = await Audio.Sound.createAsync(
           source,
@@ -63,6 +66,24 @@ export default function AudioPlayer({ source }: { source: any }) {
       }
     };
   }, [source]);
+
+  useFocusEffect(
+    useCallback(() => {
+      // screen is focused
+  
+      return () => {
+        // screen is unfocused
+        if (soundRef.current) {
+          soundRef.current.unloadAsync();
+          soundRef.current.setOnPlaybackStatusUpdate(null);
+          soundRef.current = null;
+          setIsPlaying(false);
+          setIsLoaded(false);
+        }
+      };
+    }, [])
+  );
+  
 
   const togglePlayPause = async () => {
     if (!soundRef.current || !isLoaded) return;
