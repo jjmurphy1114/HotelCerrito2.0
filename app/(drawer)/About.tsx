@@ -71,6 +71,8 @@ export default function About() {
       fontSize: 28,
       paddingTop: width*.1,
       paddingBottom: width*.025,
+      paddingLeft: width*.022,
+      paddingRight: width*.022,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
