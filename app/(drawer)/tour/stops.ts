@@ -66,6 +66,7 @@ export default tourStops;
 export const descriptionsAudioMap: Record<string, Record<string, any>> = {
   en: {
     // For now making these all Amalio as a placeholder
+    start: require('../../../assets/audio/en/mapa_central.mp3'),
     mapa_central: require('../../../assets/audio/en/mapa_central.mp3'),
     capilla: require('../../../assets/audio/en/mapa_central.mp3'),
     cancha: require('../../../assets/audio/en/mapa_central.mp3'),
@@ -80,6 +81,7 @@ export const descriptionsAudioMap: Record<string, Record<string, any>> = {
     endScreen: require('../../../assets/audio/en/mapa_central.mp3'),
   },
   es: {
+    start: require('../../../assets/audio/es/descriptions/mapa_central.mp3'),
     mapa_central: require('../../../assets/audio/es/descriptions/mapa_central.mp3'),
     capilla: require('../../../assets/audio/es/descriptions/capilla.mp3'),
     cancha: require('../../../assets/audio/es/descriptions/cancha.mp3'),
@@ -98,6 +100,7 @@ export const descriptionsAudioMap: Record<string, Record<string, any>> = {
 export const directionsAudioMap: Record<string, Record<string, any>> = {
   en: {
     // For now making these all Amalio as a placeholder
+    start: require('../../../assets/audio/en/mapa_central.mp3'),
     mapa_central: require('../../../assets/audio/en/mapa_central.mp3'),
     capilla: require('../../../assets/audio/en/mapa_central.mp3'),
     cancha: require('../../../assets/audio/en/mapa_central.mp3'),
@@ -112,6 +115,7 @@ export const directionsAudioMap: Record<string, Record<string, any>> = {
     endScreen: require('../../../assets/audio/en/mapa_central.mp3'),
   },
   es: {
+    start: require('../../../assets/audio/es/directions/mapa_central.mp3'),
     mapa_central: require('../../../assets/audio/es/directions/mapa_central.mp3'),
     capilla: require('../../../assets/audio/es/directions/capilla.mp3'),
     cancha: require('../../../assets/audio/es/directions/cancha.mp3'),
