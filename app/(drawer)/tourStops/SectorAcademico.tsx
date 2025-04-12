@@ -9,6 +9,7 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.sector_academico.title"),
       t("tour.sector_academico.description"), 
+      "N/A",
       'sector_academico',
       require('../../../assets/images/SectorAcademico.jpg'),
       '/(drawer)/tourStops/Cancha' as RelativePathString,

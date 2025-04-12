@@ -36,7 +36,6 @@ export default function DrawerLayout() {
       <Drawer.Screen name="Settings" options={{ title: t('settings.title')} } />
 
       {/* Tour stops hidden from the main drawer but still accessible */}
-      <Drawer.Screen name='tour' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />
       <Drawer.Screen name='tour/index' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />
       <Drawer.Screen name='tour/stops' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />
       <Drawer.Screen name='tour/StopTemplate' options={{ drawerItemStyle: {display: 'none'}, title: t("tour.title")}} />

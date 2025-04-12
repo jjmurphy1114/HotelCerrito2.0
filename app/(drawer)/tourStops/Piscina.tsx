@@ -9,6 +9,7 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.piscina.title"),
       t("tour.piscina.description"), 
+      "N/A",
       'piscina',
       require('../../../assets/images/Piscina.jpg'),
       '/(drawer)/tourStops/CPV' as RelativePathString,

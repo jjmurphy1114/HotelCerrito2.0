@@ -9,6 +9,7 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.CPV.title"),
       t("tour.CPV.description"), 
+      "N/A",
       'CPV',
       require('../../../assets/images/CPV.jpg'),
       '/(drawer)/tourStops/FabricaDeQueso' as RelativePathString,

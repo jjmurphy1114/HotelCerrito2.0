@@ -103,7 +103,7 @@ export default function AudioPlayer({ source }: { source: any }) {
 
   return (
     <View style={styles.container}>
-      <Text variant="labelLarge">{t('tour.audio_player')}</Text>
+      {/* <Text variant="labelLarge">{t('tour.audio_player')}</Text> */}
 
       <View style={styles.controls}>
         <IconButton icon="rewind-10" onPress={() => skip(-10000)} disabled={!isLoaded} />

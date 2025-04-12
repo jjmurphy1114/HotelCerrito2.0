@@ -9,10 +9,11 @@ export default function MapaCentral() {
   return (
     StopTemplate(t("tour.mapa_central.title"),
       t("tour.mapa_central.description"), 
+      t("tour.mapa_central.directions"),
       'mapa_central',
       require('../../../assets/images/MapaCentral.jpeg'),
       '/(drawer)/Tour' as RelativePathString,
-      '/(drawer)/tourStops/Capilla' as RelativePathString
+      '/(drawer)/tourStops/Cancha' as RelativePathString
     )
   );
 }

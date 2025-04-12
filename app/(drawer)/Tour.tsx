@@ -4,6 +4,8 @@ import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'expo-image';
 import ImageCarousel from '../components/ImageCarousel';
+import AudioPlayer from '../components/AudioPlayer';
+import { getAudio } from './tour/stops';
 
 const { width, height } = Dimensions.get('window');
 const imageSizeWidth = width * 0.4;
@@ -15,6 +17,8 @@ export default function TourStart() {
   
   /*For navigating to the previous page*/
   const PrevPage = () => router.replace('/(drawer)/Home');
+
+  const audio = getAudio('start', 'descriptions');
 
   const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, textAlign: 'center' },
@@ -82,6 +86,7 @@ export default function TourStart() {
           require('../../assets/images/Capilla.jpg'),
         ]}
       /> 
+      <AudioPlayer source={audio}/>
       <Card style={styles.card}>
         <ScrollView
           style={styles.scrollBox}
