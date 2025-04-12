@@ -23,7 +23,7 @@ export default function DrawerLayout() {
         headerTintColor: colors.onPrimary,
         headerRight: () => (
           <View style={{ marginRight: 12 }}>
-            <CerritoLogo width={60} height={60} />
+            <CerritoLogo widthProp={60} heightProp={60} />
           </View>
         )
       }}>
