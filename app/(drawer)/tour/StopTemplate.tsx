@@ -113,7 +113,8 @@ export default function StopTemplate( title: string,
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
       <Text style={{ fontSize: 24, marginTop: -25 }}>{title}</Text>
       {directionsToggle ?  
-      <MapComponent /> :
+      // Experimented with the percentCropHeight and found this to be the bestas it shows the full map without pushing the text too far up
+      <MapComponent percentCropHeight={.26} showPath={false} /> :
       <Image
         style={styles.image}
         source={image} 

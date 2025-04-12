@@ -11,10 +11,11 @@ interface MapComponentProps {
     percentHeight?: number;
     percentCropWidth?: number;
     percentCropHeight?: number;
+    showPath?: boolean;
 }
 
 
-export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4}: MapComponentProps) {
+export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4, showPath=true}: MapComponentProps) {
     
     const { t } = useTranslation();
 
@@ -59,6 +60,11 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
     
     return (
     <View style={{ alignItems: 'center', justifyContent: 'center', padding: 10 }}>
+        {showPath && (
+        <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center' }}>
+          {t('tour.map.path')} {t(currentStop?.titleKey || '')} → {t(nextStop?.titleKey || '')}
+        </Text>
+        )}
         {/* @ts-ignore */}
         <ImageZoom
         cropWidth={cropWidth}
@@ -66,9 +72,7 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
         imageWidth={displayWidth}
         imageHeight={displayHeight}
         >
-        <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center' }}>
-          {t('tour.map.path')} {t(currentStop?.titleKey || '')} → {t(nextStop?.titleKey || '')}
-        </Text>
+        
         <View style={{ width: displayWidth, height: displayHeight }}>
         <Image
             source={require('../../assets/images/MapaCentral.jpg')}
