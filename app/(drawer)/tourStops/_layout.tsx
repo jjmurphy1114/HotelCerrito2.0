@@ -60,7 +60,7 @@ export default function TourLayout() {
           height: height * 0.8, // modal height (adjustable)
         }}
       >
-        <MapComponent />
+        <MapComponent percentWidth={.9} percentHeight={.5} percentCropWidth={.9} percentCropHeight={.5} />
         <Button
           mode="contained"
           onPress={() => setMapVisible(false)}

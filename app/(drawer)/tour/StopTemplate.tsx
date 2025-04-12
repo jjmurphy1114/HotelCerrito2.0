@@ -22,8 +22,6 @@ export default function StopTemplate( title: string,
   const router = useRouter();
   const { colors } = useTheme();
   const { t } = useTranslation();
-  const audio = getAudio(audioPathKey, "descriptions");
-
 
   const [directionsToggle, setDirectionsToggle] = useState(false);
   const buttonColor = directionsToggle ? colors.secondary : colors.primary;

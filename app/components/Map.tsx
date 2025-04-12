@@ -6,8 +6,15 @@ import tourStops from "../(drawer)/tour/stops";
 import { Text } from "react-native-paper";
 import { useTranslation } from "react-i18next";
 
+interface MapComponentProps {
+    percentWidth?: number;
+    percentHeight?: number;
+    percentCropWidth?: number;
+    percentCropHeight?: number;
+}
 
-export default function MapComponent() {
+
+export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4}: MapComponentProps) {
     
     const { t } = useTranslation();
 
@@ -26,6 +33,11 @@ export default function MapComponent() {
     const nextStop = tourStops[currentIndex + 1]; 
 
     const { width, height } = Dimensions.get('window');
+
+    const displayWidth = width * percentWidth;
+    const displayHeight = height * percentHeight;
+    const cropWidth = width * percentCropWidth;
+    const cropHeight = height * percentCropHeight;
 
     // Logic for getting path image
     const pathImages: { [key: string]: any } = {
@@ -46,38 +58,40 @@ export default function MapComponent() {
     const pathImage = pathImages[pathKey];
     
     return (
-        <>
+    <View style={{ alignItems: 'center', justifyContent: 'center', padding: 10 }}>
+        {/* @ts-ignore */}
+        <ImageZoom
+        cropWidth={cropWidth}
+        cropHeight={cropHeight}
+        imageWidth={displayWidth}
+        imageHeight={displayHeight}
+        >
         <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center' }}>
           {t('tour.map.path')} {t(currentStop?.titleKey || '')} → {t(nextStop?.titleKey || '')}
         </Text>
-        {/* @ts-ignore */}
-        <ImageZoom
-        cropWidth={width * 0.9}
-        cropHeight={height * 0.4}
-        imageWidth={width * 0.9}
-        imageHeight={height * 0.4}
-        >
-        <View style={{ width: width * 0.9, height: height * 0.6 }}>
+        <View style={{ width: displayWidth, height: displayHeight }}>
         <Image
             source={require('../../assets/images/MapaCentral.jpg')}
             style={{ width: '100%', height: '100%' }}
             contentFit="contain"
         />
         {/* Path overlay image */}
-        <Image
-            source={pathImage}
-            style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 999
-            }}
-            contentFit="contain"
-        />
+        {pathImage &&
+            <Image
+                source={pathImage}
+                style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                zIndex: 999
+                }}
+                contentFit="contain"
+            />
+        }
         </View>
     </ImageZoom>
-    </>
+    </View>
     ) 
 }
