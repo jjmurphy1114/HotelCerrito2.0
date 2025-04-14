@@ -161,16 +161,7 @@ export default function Laundry() {
         <Text style={styles.text}>{t('laundry.body7')}
         <Text style={styles.textGreen}>{t('laundry.body8')}</Text>
         </Text>
-        
-        <Text style={styles.textUnderline}>{t('laundry.body9')}</Text>
-        
-        <Text style={styles.text}>{t('laundry.body10')}
-        <Text style={styles.textGreen}>{t('laundry.body11')}</Text>
-        </Text>
-        
-        <Text style={styles.text}>{t('laundry.body12')}
-        <Text style={styles.textGreen}>{t('laundry.body13')}</Text>
-        </Text>
+
         </View>
         
       </ScrollView>
