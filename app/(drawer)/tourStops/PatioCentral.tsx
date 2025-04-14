@@ -12,8 +12,8 @@ export default function Capilla() {
       "N/A",
       'patio_central',
       require('../../../assets/images/PatioCentral.jpg'),
-      '/(drawer)/tourStops/SectorAcademico' as RelativePathString,
-      "/(drawer)/tourStops/Capilla" as RelativePathString
+      '/(drawer)/tourStops/Capilla' as RelativePathString,
+      "/(drawer)/tourStops/Comedor" as RelativePathString
     )
   );
 }

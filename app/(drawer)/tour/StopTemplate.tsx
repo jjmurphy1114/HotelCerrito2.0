@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
 import MapComponent from '@/app/components/Map';
+import tourStops from './stops';
 
 export default function StopTemplate( title: string,
                                     description: string,
@@ -40,6 +41,17 @@ export default function StopTemplate( title: string,
   const { width, height } = Dimensions.get('window');
   const imageSizeWidth = width * 0.9;
   const imageSizeHeight = height * 0.25;
+
+  // For navigating back to this page from the View Stops page
+  const pathname = usePathname();
+
+  // Grab the last part of the route (e.g., 'MapaCentral')
+  const stopName = pathname.split('/').pop();
+
+  // Find current index in tourStops
+  const currentIndex = tourStops.findIndex((stop) =>
+  stop.route.endsWith(`/${stopName}`)
+  );
 
   const styles = StyleSheet.create({
       container: {

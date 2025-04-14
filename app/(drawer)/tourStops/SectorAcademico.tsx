@@ -13,7 +13,7 @@ export default function Capilla() {
       'sector_academico',
       require('../../../assets/images/SectorAcademico.jpg'),
       '/(drawer)/tourStops/Cancha' as RelativePathString,
-      "/(drawer)/tourStops/PatioCentral" as RelativePathString
+      "/(drawer)/tourStops/Capilla" as RelativePathString
     )
   );
 }

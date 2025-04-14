@@ -12,7 +12,7 @@ export default function Capilla() {
       "N/A",
       'comedor',
       require('../../../assets/images/Comedor.jpg'),
-      '/(drawer)/tourStops/Capilla' as RelativePathString,
+      '/(drawer)/tourStops/PatioCentral' as RelativePathString,
       "/(drawer)/tourStops/CPA" as RelativePathString
     )
   );

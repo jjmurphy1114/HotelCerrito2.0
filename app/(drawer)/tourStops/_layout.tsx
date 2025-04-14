@@ -3,19 +3,12 @@ import { useRouter, usePathname } from 'expo-router';
 import { Button, useTheme, Text, Portal, Modal } from 'react-native-paper';
 import { View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import tourStops from '../tour/stops';
-import { useState } from 'react';
-import { Image } from 'expo-image';
-import { Dimensions } from 'react-native';
-import ImageZoom from 'react-native-image-pan-zoom';
-import MapComponent from '../../components/Map';
 
 export default function TourLayout() {
   const router = useRouter();
   const { t } = useTranslation();
   const { colors } = useTheme();
-  // const [mapVisible, setMapVisible] = useState(false);
-  // const { width, height } = Dimensions.get('window');
+  const currentPathname = usePathname();
 
   return (
     <View style={{ flex: 1 }}>
@@ -39,7 +32,7 @@ export default function TourLayout() {
       </View> */}
 
       <Button 
-        onPress={() => router.push('/(drawer)/tour')} 
+        onPress={() => router.replace({ pathname: '/(drawer)/tour', params: { from: currentPathname } })}
         labelStyle={{ textDecorationLine: 'underline' }}
         compact>
         {t("tour.view_stops.title")}
