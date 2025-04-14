@@ -7,12 +7,15 @@ export default function Capilla() {
   const { t } = useTranslation();
   
   return (
-    StopTemplate(t("tour.CPV.title"),
-      t("tour.CPV.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
-      require('../../../assets/images/CPV.jpg'),
-      '/(drawer)/tourStops/PlantaLactea' as RelativePathString,
-      "/(drawer)/tourStops/Piscina" as RelativePathString
-    )
+    <StopTemplate
+      title={t("tour.CPV.title")}
+      description={t("tour.CPV.description")}
+      directions={t("tour.CPV.directions")}
+      audioPathKey="CPV"
+      image={require('../../../assets/images/CPV.jpg')}
+      carouselImages={[require('../../../assets/images/CPV.jpg'), require('../../../assets/images/Gardening.jpg')]}
+      prev={'/(drawer)/tourStops/FabricaDeQueso' as RelativePathString}
+      next={'/(drawer)/tourStops/Piscina' as RelativePathString}
+    />
   );
 }

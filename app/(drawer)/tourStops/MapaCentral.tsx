@@ -7,12 +7,14 @@ export default function MapaCentral() {
   const { t } = useTranslation();
 
   return (
-    StopTemplate(t("tour.mapa_central.title"),
-      t("tour.mapa_central.description"), 
-      require('../../../assets/audio/en/mapa-central.mp3'),
-      require('../../../assets/images/MapaCentral.jpeg'),
-      '/(drawer)/Tour' as RelativePathString,
-      '/(drawer)/tourStops/Capilla' as RelativePathString
-    )
+    <StopTemplate
+      title={t("tour.mapa_central.title")}
+      description={t("tour.mapa_central.description")}
+      directions={t("tour.mapa_central.directions")}
+      audioPathKey="mapa_central"
+      image={require('../../../assets/images/MapaCentral.jpeg')}
+      prev={'/(drawer)/Tour' as RelativePathString}
+      next={'/(drawer)/tourStops/Cancha' as RelativePathString}
+    />
   );
 }

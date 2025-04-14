@@ -9,7 +9,7 @@ type Props = {
 
 const { width, height } = Dimensions.get('window');
 
-export default function CerritoLogo({ widthProp = width*.13, heightProp = height * .06 }: Props) {
+export default function CerritoLogo({ widthProp, heightProp}: Props) {
   const blurhash =
     '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[';
   
