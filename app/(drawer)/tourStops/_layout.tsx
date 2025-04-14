@@ -1,7 +1,7 @@
 import { Slot } from 'expo-router';
 import { useRouter, usePathname } from 'expo-router';
 import { Button, useTheme, Text, Portal, Modal } from 'react-native-paper';
-import { View } from 'react-native';
+import { View, Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import tourStops from '../tour/stops';
 import { useState } from 'react';
@@ -31,14 +31,28 @@ export default function TourLayout() {
     >
 
       <View style={{ flexDirection: 'row', gap: 8 }}>
-          <Button compact onPress={() => setMapVisible(true)}
+          <Button labelStyle={{
+                      fontFamily: Platform.select({
+                        android: 'Inter_500Medium',
+                        ios: 'Inter-Medium',
+                      }),
+                      fontSize: 16, // optional
+                    }}
+                    compact onPress={() => setMapVisible(true)}
                   icon={"map"}
             >
             {t('tour.map.open')}
           </Button>
       </View>
 
-      <Button onPress={() => router.push('/(drawer)/tour')} compact>
+      <Button labelStyle={{
+            fontFamily: Platform.select({
+              android: 'Inter_500Medium',
+              ios: 'Inter-Medium',
+            }),
+            fontSize: 16, // optional
+          }}
+          onPress={() => router.push('/(drawer)/tour')} compact>
         {t("tour.view_stops.title")}
       </Button>
       
@@ -65,6 +79,13 @@ export default function TourLayout() {
           mode="contained"
           onPress={() => setMapVisible(false)}
           style={{ marginTop: 10 }}
+          labelStyle={{
+            fontFamily: Platform.select({
+              android: 'Inter_500Medium',
+              ios: 'Inter-Medium',
+            }),
+            fontSize: 16, // optional
+          }}
         >
           {t('tour.map.close')}
         </Button>

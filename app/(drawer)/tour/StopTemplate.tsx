@@ -1,4 +1,4 @@
-import { View, Text, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Dimensions, StyleSheet, ScrollView, Platform } from 'react-native';
 import { RelativePathString, useRouter, usePathname } from 'expo-router';
 import { useTheme, Card, IconButton, Button } from 'react-native-paper';
 import { Image } from 'expo-image';
@@ -71,11 +71,19 @@ export default function StopTemplate( title: string,
       text: {
         fontSize: 18,
         lineHeight: 24,
+        fontFamily: Platform.select({
+                  android: 'Inter_400Regular',
+                  ios: 'Inter24pt-Regular',
+                }),
       },
       title: {
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 10,
+        fontFamily: Platform.select({
+          android: 'Inter_900Black',
+          ios: 'Inter-Black',
+        }),
       },
       navigation: {
         flexDirection: 'row',
@@ -90,12 +98,15 @@ export default function StopTemplate( title: string,
       navLabel: {
         fontSize: 14,
         color: '#666', // or use theme.colors.onBackground
+        fontFamily: Platform.select({
+          android: 'Inter_900Black',
+          ios: 'Inter-Black',
+        }),
       },
       directionsButton: {
         backgroundColor: buttonColor,
         alignSelf: 'center', // Constrain the button within its content
-      }
-    });
+    }})
 
     // Logic for directions button
 
@@ -111,7 +122,10 @@ export default function StopTemplate( title: string,
     
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
-      <Text style={{ fontSize: 24, marginTop: -25 }}>{title}</Text>
+      <Text style={{ fontSize: 24, marginTop: -25, fontFamily: Platform.select({
+            android: 'Inter_900Black',
+            ios: 'Inter-Black',
+          }), }}>{title}</Text>
       {directionsToggle ?  
       // Experimented with the percentCropHeight and found this to be the bestas it shows the full map without pushing the text too far up
       <MapComponent percentCropHeight={.26} showPath={false} /> :
@@ -143,6 +157,13 @@ export default function StopTemplate( title: string,
         </View>
         <Button
           style={styles.directionsButton}
+          labelStyle={{
+            fontFamily: Platform.select({
+              android: 'Inter_500Medium',
+              ios: 'Inter-Medium',
+            }),
+            fontSize: 16, // optional
+          }}
           mode="contained"
           onPress={handleDirectionsButton}
         >
