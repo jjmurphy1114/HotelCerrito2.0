@@ -108,9 +108,9 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
   const styles = StyleSheet.create({
     carousel: {
         flexDirection: 'row', 
-        justifyContent: 'space-between'/*'center'*/, 
+        justifyContent: 'space-between', 
         paddingHorizontal: 10, 
-        alignItems: 'center'/*'stretch'*/,
+        alignItems: 'center',
         flex: 1,
         marginTop: 20,
         borderWidth: 0,
@@ -139,7 +139,6 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         marginTop: -10
       },
       accordionContainer: {
-        //flexDirection: 'row',
         justifyContent: 'center',
         shadowColor: '#000',
         outlineColor: '#000',
@@ -154,41 +153,27 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         color: '#000',
         paddingLeft: 0,
         paddingRight: 0,
-        //marginTop: -50,
-        //paddingRight: -20,
-        //width: 20
-        //justifyContent: 'center'
       },
       accordion: {
-        //color: '#000',
         textDecorationColor: '#000',
         padding: 0,
         marginTop: -20,
         marginBottom: -20,
-        //justifyContent: 'flex-start',
         width: 200,
-        //alignContent: 'center'
       },
       iconButton: {
-        //paddingLeft: -50,
         marginLeft: -100,
-        //marginTop: 5,
-        //justifyContent: 'center',
-        //alignItems: 'flex-start',
-        //alignItems: 'center',
         fontSize: 1,
         color: '#555'
       },
       iconText: {
         fontSize: 18,
         color: '#000',
-        //marginBottom: 30
       },
       content: {
         marginRight: width/10,
         marginTop: 1,
         marginLeft: width/10,
-        //alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 20,
       }
