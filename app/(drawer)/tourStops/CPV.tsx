@@ -13,6 +13,7 @@ export default function Capilla() {
       directions={t("tour.CPV.directions")}
       audioPathKey="CPV"
       image={require('../../../assets/images/CPV.jpg')}
+      carouselImages={[require('../../../assets/images/CPV.jpg'), require('../../../assets/images/Gardening.jpg')]}
       prev={'/(drawer)/tourStops/FabricaDeQueso' as RelativePathString}
       next={'/(drawer)/tourStops/Piscina' as RelativePathString}
     />

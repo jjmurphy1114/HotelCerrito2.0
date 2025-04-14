@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
 import MapComponent from '@/app/components/Map';
+import ImageCarousel from '@/app/components/ImageCarousel';
 
 interface StopComponentProps {
   title: string;
@@ -16,6 +17,7 @@ interface StopComponentProps {
   image: any;
   prev: RelativePathString;
   next: RelativePathString;
+  carouselImages?: any[];
 }
 
 export default function StopTemplate({ 
@@ -25,7 +27,8 @@ export default function StopTemplate({
                                     audioPathKey, 
                                     image, 
                                     prev, 
-                                    next
+                                    next,
+                                    carouselImages
                                   }: StopComponentProps) {
   
   // Need to implement audio player here
@@ -138,17 +141,19 @@ export default function StopTemplate({
             android: 'Inter_900Black',
             ios: 'Inter-Black',
           }), }}>{title}</Text>
-      {directionsToggle ?  
-      // Experimented with the percentCropHeight and found this to be the bestas it shows the full map without pushing the text too far up
-      <MapComponent percentCropHeight={.26} showPath={false} /> :
-      <Image
-        style={styles.image}
-        source={image} 
-        placeholder={{ blurhash }}
-        contentFit="cover"
-        transition={1000}
-        />
-      }
+      {directionsToggle ? (
+          <MapComponent percentCropHeight={0.26} showPath={false} />
+        ) : carouselImages && carouselImages.length > 0 ? (
+          <ImageCarousel images={carouselImages} height={imageSizeHeight} />
+        ) : (
+          <Image
+            style={styles.image}
+            source={image}
+            placeholder={{ blurhash }}
+            contentFit="cover"
+            transition={1000}
+          />
+        )}
       <AudioPlayer source={currentAudio} />
       
       <Card style={styles.card}>
