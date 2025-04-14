@@ -14,8 +14,8 @@ export default function TourLayout() {
   const router = useRouter();
   const { t } = useTranslation();
   const { colors } = useTheme();
-  const [mapVisible, setMapVisible] = useState(false);
-  const { width, height } = Dimensions.get('window');
+  // const [mapVisible, setMapVisible] = useState(false);
+  // const { width, height } = Dimensions.get('window');
 
   return (
     <View style={{ flex: 1 }}>
@@ -30,15 +30,18 @@ export default function TourLayout() {
       }}
     >
 
-      <View style={{ flexDirection: 'row', gap: 8 }}>
+      {/* <View style={{ flexDirection: 'row', gap: 8 }}>
           <Button compact onPress={() => setMapVisible(true)}
                   icon={"map"}
             >
             {t('tour.map.open')}
           </Button>
-      </View>
+      </View> */}
 
-      <Button onPress={() => router.push('/(drawer)/tour')} compact>
+      <Button 
+        onPress={() => router.push('/(drawer)/tour')} 
+        labelStyle={{ textDecorationLine: 'underline' }}
+        compact>
         {t("tour.view_stops.title")}
       </Button>
       
@@ -46,7 +49,7 @@ export default function TourLayout() {
 
     <Slot />
 
-    {/* Map Modal */}
+    {/* Map Modal
     <Portal>
         <Modal
         visible={mapVisible}
@@ -69,7 +72,7 @@ export default function TourLayout() {
           {t('tour.map.close')}
         </Button>
       </Modal>
-      </Portal>
+      </Portal> */}
   </View>
   );
 }

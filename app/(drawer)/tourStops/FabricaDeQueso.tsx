@@ -9,8 +9,8 @@ export default function Capilla() {
   return (
     StopTemplate(t("tour.fabrica_de_queso.title"),
       t("tour.fabrica_de_queso.description"), 
-      'fabrica_de_queso',
       "N/A",
+      'fabrica_de_queso',
       require('../../../assets/images/FabricaDeQueso.jpg'),
       '/(drawer)/tourStops/CPA' as RelativePathString,
       "/(drawer)/tourStops/CPV" as RelativePathString

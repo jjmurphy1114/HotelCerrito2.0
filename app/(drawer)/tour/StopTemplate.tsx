@@ -27,6 +27,7 @@ export default function StopTemplate( title: string,
   const buttonColor = directionsToggle ? colors.secondary : colors.primary;
   const displayedText = directionsToggle ?  directions : description;
   const currentAudio = directionsToggle ? getAudio(audioPathKey, "directions") : getAudio(audioPathKey, "descriptions");
+  const icon = directionsToggle ?  "script-text" : "map"
 
 
   /*For navigating to the next page*/
@@ -145,6 +146,7 @@ export default function StopTemplate( title: string,
           style={styles.directionsButton}
           mode="contained"
           onPress={handleDirectionsButton}
+          icon={icon}
         >
           {directionsToggle ? t("tour.descriptionsButton") : t("tour.directionsButton") }
         </Button>
