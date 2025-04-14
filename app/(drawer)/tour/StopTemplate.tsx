@@ -9,14 +9,25 @@ import { useState } from 'react';
 import MapComponent from '@/app/components/Map';
 import tourStops from './stops';
 
-export default function StopTemplate( title: string,
-                                    description: string,
-                                    directions: string = 'N/A' ,
-                                    audioPathKey: any, 
-                                    image: any, 
-                                    prev: RelativePathString, 
-                                    next: RelativePathString
-                                  ) {
+interface StopComponentProps {
+  title: string;
+  description: string;
+  directions: string;
+  audioPathKey: any;
+  image: any;
+  prev: RelativePathString;
+  next: RelativePathString;
+}
+
+export default function StopTemplate({ 
+                                    title,
+                                    description,
+                                    directions = 'N/A',
+                                    audioPathKey, 
+                                    image, 
+                                    prev, 
+                                    next
+                                  }: StopComponentProps) {
   
   // Need to implement audio player here
   
