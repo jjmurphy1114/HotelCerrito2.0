@@ -10,7 +10,7 @@ export default function Capilla() {
     <StopTemplate
       title={t("tour.sector_academico.title")}
       description={t("tour.sector_academico.description")}
-      directions="N/A"
+      directions={t("tour.sector_academico.directions")}
       audioPathKey="sector_academico"
       image={require('../../../assets/images/SectorAcademico.jpg')}
       prev={'/(drawer)/tourStops/Cancha' as RelativePathString}
