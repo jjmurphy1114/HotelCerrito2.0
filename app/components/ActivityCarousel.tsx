@@ -4,6 +4,10 @@ import * as React from 'react'
 import { useState } from 'react';
 import { List, Card, IconButton } from 'react-native-paper';
 import { useTranslation } from 'react-i18next';
+import { Icon } from 'react-native-paper/lib/typescript/components/List/List';
+import { Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
 
 type ActivityCardProps = {
     imageUrl: any;
@@ -70,22 +74,28 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
           </View>
         </View>
         <View style={styles.accordionContainer}>
-          <Text style={styles.accordionTitle}>
+          {/* <Text style={styles.accordionTitle}>
             {t("activities.details")}
-          </Text>
+          </Text> */}
           <List.Accordion
           onPress={handleDesc}
           style={styles.accordion}
           titleStyle={styles.accordionTitle}
-          title=""
+          title={t("activities.details")}
           theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
           right={() => (
             <TouchableOpacity
             style={styles.iconButton}
             activeOpacity={1} >
-              <Text style={styles.iconText}>
-                {isOpen ? '▼' : '▶'}
-              </Text>
+                {isOpen ? <IconButton
+                            icon = {'chevron-right'}
+                            iconColor='gray'
+                            size={20} /> :
+                          <IconButton 
+                            icon = {'chevron-down'}
+                            iconColor='gray'
+                            size={20} /> }
+                                {/* {isOpen ? '▼' : '▶'} */}
             </TouchableOpacity>
           )} >
             <Text style={styles.content}> {t(activities[index].description)} </Text>
@@ -102,6 +112,8 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         paddingHorizontal: 10, 
         alignItems: 'center'/*'stretch'*/,
         flex: 1,
+        marginTop: 20,
+        borderWidth: 0,
       },
       arrowButton: {
         flex: 0,
@@ -127,40 +139,57 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         marginTop: -10
       },
       accordionContainer: {
-        flexDirection: 'row',
-        paddingTop: 5
-        //justifyContent: 'center'
+        //flexDirection: 'row',
+        justifyContent: 'center',
+        shadowColor: '#000',
+        outlineColor: '#000',
+        borderWidth: 2,
+        borderColor: '#ddd',
+        borderRadius: 8,
+        marginTop: 20,
+        backgroundColor: '#eeebee'
       },
       accordionTitle: {
         fontSize: 18,
         color: '#000',
-        paddingLeft: 10,
-        paddingTop: 20,
+        paddingLeft: 0,
+        paddingRight: 0,
+        //marginTop: -50,
         //paddingRight: -20,
         //width: 20
+        //justifyContent: 'center'
       },
       accordion: {
         //color: '#000',
         textDecorationColor: '#000',
         padding: 0,
-        margin: 0,
+        marginTop: -20,
+        marginBottom: -20,
         //justifyContent: 'flex-start',
-        width: 50
+        width: 200,
+        //alignContent: 'center'
       },
       iconButton: {
-        padding: 0,
-        justifyContent: 'center',
+        //paddingLeft: -50,
+        marginLeft: -100,
+        //marginTop: 5,
+        //justifyContent: 'center',
         //alignItems: 'flex-start',
-        alignItems: 'center'
+        //alignItems: 'center',
+        fontSize: 1,
+        color: '#555'
       },
       iconText: {
         fontSize: 18,
         color: '#000',
+        //marginBottom: 30
       },
       content: {
-        paddingRight: 100,
-        marginTop: -10,
-        marginLeft: -30,
-        justifyContent: 'space-evenly'
+        marginRight: width/10,
+        marginTop: 1,
+        marginLeft: width/10,
+        //alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: 20,
       }
     });

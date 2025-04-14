@@ -1,5 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { Text, View, StyleSheet, TextStyle, ScrollView, StatusBar, Dimensions, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, TextStyle, ScrollView, StatusBar, Dimensions, TouchableOpacity, Platform } from 'react-native';
 import 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Link } from 'expo-router';
@@ -454,7 +454,7 @@ const adventActivities: ActivityCardProps[] = [
 
 const Activity_Cards = () => (
   <View style = {styles.topMargin}>
-    <ScrollView /*contentContainerStyle={styles.scrollViewContent}*/>
+    <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <Card style={styles.container}>
         <View>
           <Card.Title 
@@ -523,7 +523,7 @@ export default function Activities() {
 
 const styles = StyleSheet.create({
   topMargin: {
-    marginTop: 30,
+    marginTop: 10,
   },
   container: {
     flex: 0,
@@ -531,6 +531,9 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     shadowColor: '#fff',
     borderRadius: 0
+  },
+  scrollViewContent: {
+    marginTop: 1,
   },
   // text: {
   //   color: '#fff',
@@ -553,14 +556,16 @@ const styles = StyleSheet.create({
   //   flex: 1,
   // },
   cardTitle: {
-    fontSize: 24,
-    textDecorationLine: 'underline',
+    fontSize: 25,
+    //textDecorationLine: 'underline',
     textAlign: 'center',
     color: '#000',
-    //fontWeight: 'bold',
-    fontFamily: 'inter',
-    marginTop: 0,
-    marginBottom: -10
+    fontFamily: Platform.select({
+            android: 'Inter_900Black',
+            ios: 'Inter-Black',
+          }),
+    marginTop: 30,
+    marginBottom: 0,
   },
   // header: {
   //   //how to get this centered

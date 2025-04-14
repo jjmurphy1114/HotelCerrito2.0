@@ -14,12 +14,13 @@ type ActivityCardProps = {
   };
 
 type CategoryProps = {
+    length: number;
     activities: ActivityCardProps[];
     images: any[];
     title: string;
 }
 
-export default function Category({activities, images, title}: CategoryProps) {
+export default function Category({length, activities, images, title}: CategoryProps) {
     const { t } = useTranslation();
     return (
         <Card style={styles.container}>
@@ -30,7 +31,8 @@ export default function Category({activities, images, title}: CategoryProps) {
           />
         </View>
         <Card.Content>
-          <ActivityCarousel 
+          <ActivityCarousel
+          length={length}
           activities={activities}
           images={images}/>
         </Card.Content>
