@@ -1,6 +1,6 @@
 import ImageZoom from "react-native-image-pan-zoom"
 import { Image } from "expo-image"
-import { Dimensions, View } from "react-native"
+import { Dimensions, View, Platform } from "react-native"
 import { usePathname } from "expo-router";
 import tourStops from "../(drawer)/tour/stops";
 import { Text } from "react-native-paper";
@@ -61,7 +61,10 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
     return (
     <View style={{ alignItems: 'center', justifyContent: 'center', padding: 10 }}>
         {showPath && (
-        <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center' }}>
+        <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center', fontFamily: Platform.select({
+                    android: 'Inter_900Black',
+                    ios: 'Inter-Black',
+                  }), }}>
           {t('tour.map.path')} {t(currentStop?.titleKey || '')} → {t(nextStop?.titleKey || '')}
         </Text>
         )}

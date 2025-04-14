@@ -66,6 +66,10 @@ export default function TourStart() {
     text: {
       fontSize: 18,
       lineHeight: 24,
+      fontFamily: Platform.select({
+        android: 'Inter_400Regular',
+        ios: 'Inter24pt-Regular',
+      }),
     },
   });
   
@@ -100,6 +104,13 @@ export default function TourStart() {
       </Card>
       <Button
         mode="contained"
+        labelStyle={{
+          fontFamily: Platform.select({
+            android: 'Inter_500Medium',
+            ios: 'Inter-Medium',
+          }),
+          fontSize: 16, // optional
+        }}
         onPress={() => router.push('/tourStops/MapaCentral')}
       >
         {t('tour.begin_tour')}
