@@ -1,7 +1,7 @@
 import { Slot } from 'expo-router';
 import { useRouter, usePathname } from 'expo-router';
 import { Button, useTheme, Text, Portal, Modal } from 'react-native-paper';
-import { View } from 'react-native';
+import { View, Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 export default function TourLayout() {
@@ -32,8 +32,15 @@ export default function TourLayout() {
       </View> */}
 
       <Button 
-        onPress={() => router.replace({ pathname: '/(drawer)/tour', params: { from: currentPathname } })}
-        labelStyle={{ textDecorationLine: 'underline' }}
+        labelStyle={{
+            fontFamily: Platform.select({
+              android: 'Inter_500Medium',
+              ios: 'Inter-Medium',
+            }),
+            fontSize: 16, // optional
+            textDecorationLine: 'underline'
+          }}
+          onPress={() => router.replace({ pathname: '/(drawer)/tour', params: { from: currentPathname } })}
         compact>
         {t("tour.view_stops.title")}
       </Button>
@@ -61,6 +68,13 @@ export default function TourLayout() {
           mode="contained"
           onPress={() => setMapVisible(false)}
           style={{ marginTop: 10 }}
+          labelStyle={{
+            fontFamily: Platform.select({
+              android: 'Inter_500Medium',
+              ios: 'Inter-Medium',
+            }),
+            fontSize: 16, // optional
+          }}
         >
           {t('tour.map.close')}
         </Button>

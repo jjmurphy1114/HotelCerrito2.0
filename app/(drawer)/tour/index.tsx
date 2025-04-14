@@ -63,7 +63,10 @@ export default function TourStops() {
           <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
               <IconButton icon="arrow-left" size={20} />
           </TouchableOpacity>
-          <Text style={styles.headerText}>{t("tour.view_stops.title")}</Text>
+          <Text style={{fontFamily: Platform.select({
+                  android: 'Inter_900Black',
+                  ios: 'Inter-Black',
+                }), textAlign: 'center', marginBottom: 10}} variant="headlineMedium">{t("tour.view_stops.title")}</Text>
         </View>
     <ScrollView contentContainerStyle={{ padding: 20, marginTop: 30 }}>
       {/* <Text variant="headlineMedium">{t("tour.view_stops.title")}</Text> */}
@@ -72,6 +75,13 @@ export default function TourStops() {
           key={stop.route}
           onPress={() => router.replace(stop.route)}
           style={{ marginTop: 10 }}
+          labelStyle={{
+            fontFamily: Platform.select({
+              android: 'Inter_500Medium',
+              ios: 'Inter-Medium',
+            }),
+            fontSize: 16, // optional
+          }}
         >
           {t('tour.view_stops.stop')} {stop.number}: {t(stop.titleKey)}
         </Button>
