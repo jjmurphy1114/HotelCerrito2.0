@@ -1,5 +1,5 @@
 import { View, Text, Dimensions, StyleSheet, ScrollView, Platform } from 'react-native';
-import { RelativePathString, useRouter, usePathname } from 'expo-router';
+import { RelativePathString, useRouter } from 'expo-router';
 import { useTheme, Card, IconButton, Button } from 'react-native-paper';
 import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
@@ -7,15 +7,29 @@ import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
 import MapComponent from '@/app/components/Map';
+import ImageCarousel from '@/app/components/ImageCarousel';
 
-export default function StopTemplate( title: string,
-                                    description: string,
-                                    directions: string = 'N/A' ,
-                                    audioPathKey: any, 
-                                    image: any, 
-                                    prev: RelativePathString, 
-                                    next: RelativePathString
-                                  ) {
+interface StopComponentProps {
+  title: string;
+  description: string;
+  directions: string;
+  audioPathKey: any;
+  image: any;
+  prev: RelativePathString;
+  next: RelativePathString;
+  carouselImages?: any[];
+}
+
+export default function StopTemplate({ 
+                                    title,
+                                    description,
+                                    directions = 'N/A',
+                                    audioPathKey, 
+                                    image, 
+                                    prev, 
+                                    next,
+                                    carouselImages
+                                  }: StopComponentProps) {
   
   // Need to implement audio player here
   
@@ -27,6 +41,7 @@ export default function StopTemplate( title: string,
   const buttonColor = directionsToggle ? colors.secondary : colors.primary;
   const displayedText = directionsToggle ?  directions : description;
   const currentAudio = directionsToggle ? getAudio(audioPathKey, "directions") : getAudio(audioPathKey, "descriptions");
+  const icon = directionsToggle ?  "script-text" : "map"
 
 
   /*For navigating to the next page*/
@@ -88,7 +103,7 @@ export default function StopTemplate( title: string,
       navigation: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '90%',
+        width: '100%',
         marginTop: 10,
       },
       navButton: {
@@ -126,17 +141,19 @@ export default function StopTemplate( title: string,
             android: 'Inter_900Black',
             ios: 'Inter-Black',
           }), }}>{title}</Text>
-      {directionsToggle ?  
-      // Experimented with the percentCropHeight and found this to be the bestas it shows the full map without pushing the text too far up
-      <MapComponent percentCropHeight={.26} showPath={false} /> :
-      <Image
-        style={styles.image}
-        source={image} 
-        placeholder={{ blurhash }}
-        contentFit="cover"
-        transition={1000}
-        />
-      }
+      {directionsToggle ? (
+          <MapComponent percentCropHeight={0.26} showPath={false} />
+        ) : carouselImages && carouselImages.length > 0 ? (
+          <ImageCarousel images={carouselImages} height={imageSizeHeight} />
+        ) : (
+          <Image
+            style={styles.image}
+            source={image}
+            placeholder={{ blurhash }}
+            contentFit="cover"
+            transition={1000}
+          />
+        )}
       <AudioPlayer source={currentAudio} />
       
       <Card style={styles.card}>
@@ -166,6 +183,7 @@ export default function StopTemplate( title: string,
           }}
           mode="contained"
           onPress={handleDirectionsButton}
+          icon={icon}
         >
           {directionsToggle ? t("tour.descriptionsButton") : t("tour.directionsButton") }
         </Button>

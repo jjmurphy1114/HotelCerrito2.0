@@ -19,13 +19,13 @@ const tourStops = [
       number: 3,
     },
     {
-      titleKey: 'tour.patio_central.title',
-      route: '/(drawer)/tourStops/PatioCentral' as RelativePathString,
+      titleKey: 'tour.capilla.title',
+      route: '/(drawer)/tourStops/Capilla' as RelativePathString,
       number: 4,
     },
     {
-      titleKey: 'tour.capilla.title',
-      route: '/(drawer)/tourStops/Capilla' as RelativePathString,
+      titleKey: 'tour.patio_central.title',
+      route: '/(drawer)/tourStops/PatioCentral' as RelativePathString,
       number: 5,
     },
     {

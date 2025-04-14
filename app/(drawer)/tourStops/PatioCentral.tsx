@@ -7,13 +7,14 @@ export default function Capilla() {
   const { t } = useTranslation();
   
   return (
-    StopTemplate(t("tour.patio_central.title"),
-      t("tour.patio_central.description"), 
-      "N/A",
-      'patio_central',
-      require('../../../assets/images/PatioCentral.jpg'),
-      '/(drawer)/tourStops/SectorAcademico' as RelativePathString,
-      "/(drawer)/tourStops/Capilla" as RelativePathString
-    )
+    <StopTemplate
+      title={t("tour.patio_central.title")}
+      description={t("tour.patio_central.description")}
+      directions={t("tour.patio_central.directions")}
+      audioPathKey="patio_central"
+      image={require('../../../assets/images/PatioCentral.jpg')}
+      prev={'/(drawer)/tourStops/Capilla' as RelativePathString}
+      next={'/(drawer)/tourStops/Comedor' as RelativePathString}
+    />
   );
 }

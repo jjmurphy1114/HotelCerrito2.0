@@ -7,13 +7,14 @@ export default function Capilla() {
   const { t } = useTranslation();
   
   return (
-    StopTemplate(t("tour.CPA.title"),
-      t("tour.CPA.description"), 
-      "N/A",
-      'CPA',
-      require('../../../assets/images/CPA.jpg'),
-      '/(drawer)/tourStops/Comedor' as RelativePathString,
-      "/(drawer)/tourStops/FabricaDeQueso" as RelativePathString
-    )
+    <StopTemplate
+      title={t("tour.CPA.title")}
+      description={t("tour.CPA.description")}
+      directions={t("tour.CPA.directions")}
+      audioPathKey="CPA"
+      image={require('../../../assets/images/CPA.jpg')}
+      prev={'/(drawer)/tourStops/Comedor' as RelativePathString}
+      next={'/(drawer)/tourStops/FabricaDeQueso' as RelativePathString}
+    />
   );
 }
