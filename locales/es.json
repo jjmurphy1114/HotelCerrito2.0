@@ -74,83 +74,85 @@
     }, 
     "activities": {
         "details": "Detalles",
-        "description": "",
+        "relax": "Actividades Relajantes",
+        "educate": "Actividades Educativas",
+        "adventure": "Actividades de Aventura",
         "relaxing": {
             "pool": {
-                "title": "Nada en la Piscina",
-                "description": ""
+                "title": "Natación",
+                "description": "Dese un refrescante chapuzón en la piscina y relájese en las sillas reclinables o quédese a la sombra bajo el pabellón. La piscina está abierta de 9:00 a 20:00 todos los días."
             },
             "restaurant": {
-                "title": "",
-                "description": ""
+                "title": "Restaurante de Campus",
+                "description": "Pruebe los sabores de Paraguay, con verduras directamente de la huerta de la escuela y queso hecho con leche de vacas del campus. Vea cómo hacer una reserva para un almuerzo o una cena aquí."
             },
             "hammocks": {
-                "title": "",
-                "description": ""
+                "title": "Hamacas Tradicionales",
+                "description": "Tome un libro o una siesta bajo los árboles en las hamacas tradicionales paraguayas para disfrutar de un tranquilo tiempo libre. Depende del clima."
             },
             "games": {
-                "title": "",
-                "description": ""
+                "title": "Juegas de Salón",
+                "description": "Visite la sala de juegos junto al Patio Central para disfrutar de una animada sesión de futbolito, cartas o juegos de mesa."
             },
             "quinchos": {
-                "title": "",
-                "description": ""
+                "title": "Quinchos",
+                "description": "Ase la comida a la parrilla y reúnase con amigos y familiares en la cabaña junto a la piscina."
             },
             "gift_shop": {
-                "title": "",
-                "description": ""
+                "title": "Tienda del Hotel",
+                "description": "Apoye a la Escuela Cerrito comprando productos en el lobby del hotel. Puede encontrar yogur, dulce de leche y queso, todos hechos por los estudiantes en el campus. También tenemos bocadillos, bebidas y recuerdos."
             },
             "exercise": {
-                "title": "",
-                "description": ""
+                "title": "Zona de Ejercicio",
+                "description": "Asegúrese de hacer un buen entrenamiento en la zona de ejercicio junto a la cancha. El equipo dinámico está disponible para su uso."
             }
         },
         "educational": {
             "production": {
-                "title": "",
-                "description": ""
+                "title": "Ver las Unidades de Producción",
+                "description": "Visite las diversas unidades de producción en el campus, como la panadería, el jardín o la granja, para aprender más sobre cómo los estudiantes trabajan para apoyar a la escuela mediante la adquisición de habilidades prácticas."
             },
             "tour": {
-                "title": "",
-                "description": ""
+                "title": "Tour Autoguiado del Campus",
+                "description": "Explore el hermoso campus de Cerrito y aprenda todo sobre las características principales de la escuela. Realice el tour autoguiado acá."
             },
             "cheese": {
-                "title": "",
-                "description": ""
+                "title": "Tour de la Fábrica de Queso",
+                "description": "Observe el emocionante proceso de fabricación del queso y conozca la historia de la fábrica de quesos del campus. Póngase en contacto con la recepción del hotel para concertar un tour guiado."
             },
             "toba_qom": {
-                "title": "",
-                "description": ""
+                "title": "Una Visita a los Toba Qom",
+                "description": "Explore la cercana comunidad indígena Toba Qom, aprenda sobre su cultura y apóyelos comprando productos artesanales hechos a mano. Consulte al conserje del hotel para concertar un tour guiado."
             },
             "eucalyptus": {
-                "title": "",
-                "description": ""
+                "title": "Plantación de Eucalipto",
+                "description": "Maravíllese con las filas de árboles de eucalipto. Anteriormente dedicada al cultivo de la caña de azúcar, la Escuela Cerrito ahora cultiva eucalipto para venderlo como leña. El campus tiene 37 hectáreas de plantaciones de eucalipto que están registradas en el Instituto Nacional Forestal de Paraguay."
             }
         },
         "adventurous": {
             "monkeys": {
-                "title": "",
-                "description": ""
+                "title": "Observar los Monos Aulladores",
+                "description": "Experimente las vistas y los sonidos de la naturaleza con la familia residente de monos aulladores. Obsérvelos mientras se columpian por las copas de los árboles y escuche sus llamadas, todo desde una distancia segura y respetuosa."
             },
             "hiking": {
-                "title": "",
-                "description": ""
+                "title": "Senderismo",
+                "description": "Sumérjase en la naturaleza en una caminata tranquila por los senderos que rodean el campus."
             },
             "biking": {
-                "title": "",
-                "description": ""
+                "title": "Ciclismo",
+                "description": "Sal a dar un paseo en bicicleta por los senderos que rodean el campus. Las bicicletas están disponibles bajo petición en la recepción del hotel."
             },
             "horses": {
-                "title": "",
-                "description": ""
+                "title": "Montar en Caballo",
+                "description": "Explore el Centro de Producción Animal a caballo con un paseo guiado por la granja de la escuela. Todos los niveles de experiencia son bienvenidos. Consulte al conserje del hotel para hacer una reserva."
             },
             "sports": {
-                "title": "",
-                "description": ""
+                "title": "Jugar Deportes",
+                "description": "Venga a pasar el rato en las canchas y juegue un partido de baloncesto o voleibol, o trote alrededor del campo de fútbol."
             },
             "playground": {
-                "title": "",
-                "description": ""
+                "title": "El Patio de Recreo",
+                "description": "¿Busca aventuras para niños? ¡Lleve a sus hijos a disfrutar de la diversión familiar en el patio de recreo junto a la piscina! Disponible las 24 horas del día, cada día."
             }
         }
     },
