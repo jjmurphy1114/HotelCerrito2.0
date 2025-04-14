@@ -1,5 +1,5 @@
 import { View, Text, Dimensions, StyleSheet, ScrollView, Platform } from 'react-native';
-import { RelativePathString, useRouter, usePathname } from 'expo-router';
+import { RelativePathString, useRouter } from 'expo-router';
 import { useTheme, Card, IconButton, Button } from 'react-native-paper';
 import { Image } from 'expo-image';
 import AudioPlayer from '@/app/components/AudioPlayer';
@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
 import MapComponent from '@/app/components/Map';
-import tourStops from './stops';
 
 interface StopComponentProps {
   title: string;
@@ -52,17 +51,6 @@ export default function StopTemplate({
   const { width, height } = Dimensions.get('window');
   const imageSizeWidth = width * 0.9;
   const imageSizeHeight = height * 0.25;
-
-  // For navigating back to this page from the View Stops page
-  const pathname = usePathname();
-
-  // Grab the last part of the route (e.g., 'MapaCentral')
-  const stopName = pathname.split('/').pop();
-
-  // Find current index in tourStops
-  const currentIndex = tourStops.findIndex((stop) =>
-  stop.route.endsWith(`/${stopName}`)
-  );
 
   const styles = StyleSheet.create({
       container: {
@@ -112,7 +100,7 @@ export default function StopTemplate({
       navigation: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '90%',
+        width: '100%',
         marginTop: 10,
       },
       navButton: {

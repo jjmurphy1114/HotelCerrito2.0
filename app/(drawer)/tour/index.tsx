@@ -59,17 +59,13 @@ export default function TourStops() {
   // This is the current menu for switching between stops. To change the order of the stops, go to stops.ts
   return (
     <View>
-    <View style={styles.header}>
+      <View style={styles.header}>
           <TouchableOpacity onPress={PrevPage} style={styles.backButton}>
               <IconButton icon="arrow-left" size={20} />
           </TouchableOpacity>
-          <Text style={{fontFamily: Platform.select({
-                  android: 'Inter_900Black',
-                  ios: 'Inter-Black',
-                }), textAlign: 'center', marginBottom: 10}} variant="headlineMedium">{t("tour.view_stops.title")}</Text>
+          <Text style={styles.headerText} variant="headlineMedium">{t("tour.view_stops.title")}</Text>
         </View>
     <ScrollView contentContainerStyle={{ padding: 20, marginTop: 30 }}>
-      {/* <Text variant="headlineMedium">{t("tour.view_stops.title")}</Text> */}
       {tourStops.map((stop) => (
         <Button
           key={stop.route}
