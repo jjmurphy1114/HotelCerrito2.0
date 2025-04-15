@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { List, Button, Card, IconButton, MD3Colors, Icon } from 'react-native-paper';
 import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 import CardCover from 'react-native-paper/lib/typescript/components/Card/CardCover';
 import { Image } from 'expo-image';
 import ActivityCarousel from '../components/ActivityCarousel';
@@ -218,14 +219,18 @@ const adventActivities: ActivityCardProps[] = [
   Playground,
 ];
 
+type Props = {
+  t: TFunction<"translation">
+};
 
-const Activity_Cards = () => (
+const Activity_Cards = ({t} : Props) => (
+  
   <View style = {styles.topMargin}>
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <Card style={styles.container}>
         <View>
           <Card.Title 
-          title = "Relaxing Activities" 
+          title = {t("activities.relax")}
           titleStyle={styles.cardTitle}
           />
         </View>
@@ -242,7 +247,7 @@ const Activity_Cards = () => (
       title="relax"/> */}
       <Card style={styles.container}>
         <Card.Title 
-        title = "Educational Activities" 
+        title = {t("activities.educate")}
         titleStyle={styles.cardTitle}
         />
         <Card.Content>
@@ -258,7 +263,7 @@ const Activity_Cards = () => (
       title="edicate"/> */}
       <Card style={styles.container}>
         <Card.Title 
-        title = "Adventure Activities"
+        title = {t("activities.adventure")}
         titleStyle={styles.cardTitle}
         />
         <Card.Content>
@@ -277,9 +282,11 @@ const Activity_Cards = () => (
 )
 
 export default function Activities() {
+  const { t } = useTranslation();
+
   return (
     <View>      
-      <Activity_Cards/>
+      <Activity_Cards t={t}/>
     </View>
   );
 }

@@ -24,6 +24,7 @@
         },
         "back": "Back",
         "next": "Next",
+        "start": "Start",
         "welcome": "Welcome to the Self-Guided Tour!",
         "map":{
             "open": "View Map",
@@ -34,7 +35,7 @@
         "descriptionsButton": "Play Description",
         "mapa_central": {
             "title": "Central Map",
-            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "description": "Welcome to the Agricultural School of Cerrito, a magical place in the Paraguayan Chaco, where young people from all over the country learn to “produce, sell and make money”! I am Amalio Enciso, Director of the School. It is a pleasure to welcome you to “Our House”! I invite you to look at the map where you can see the school campus and production areas. Right now, you are located at the red circle.\n\nThe School was founded in 1960 by the order of German Franciscan Brothers. Twenty years later, the Franciscan Brothers donated the school to the Christian Brothers of La Salle, whose mission is to educate.\n\nIn 2002, due to the financial crisis of 2000, the De La Salle Brothers offered the school to Fundación Paraguaya as a donation, with the agreement to continue with the curriculum of vocational technique in agriculture, but to add financial and entrepreneurial education.\n\nThe Paraguayan Foundation developed an Educational-Productive Business Plan with the three objectives of:\n\n• Employability for all graduates \n\n• A curriculum focused on the market \n\n• A one hundred percent self-sufficient institution, without state resources\n\nThe School achieved financial self-sufficiency in 2007, covering 100% of the operating budget and 40 salaries without receiving contributions from the government, and remains self-sufficient today. In this way, the Cerrito Agricultural School has served as inspiration for many schools around the world seeking to achieve their self-sufficiency.",
             "directions": "This is a placeholder for the directions of this page lorem ipsum raaaaaaaaaaa raaaaaaa lorem ipsum whats good jits im just typin hella stuff in this box to make the map make move type shi"
         },
         "capilla": {
