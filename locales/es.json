@@ -49,7 +49,7 @@
         },
         "sector_academico": { 
             "title": "Sector Académico", 
-            "description": "¡Hola, me llamo Mica y ahora estamos en el Sector Académico. Estoy en tercer año en la Escuela Cerrito y soy de caazapá. Mi pueblo es conocido por su historia de Ycua Bolaños.\n\nAquí se encuentran las aulas de clase. El método de educación de la Escuela Agrícola Cerrito es único: estamos divididos en dos grupos. Un grupo realiza tareas en el campo —lo que llamamos “aprender haciendo”— y el otro asiste a clases en el aula. Cada semana, los grupos se turnan para que todos podamos aprender tanto en las unidades productivas, como en el aula.\n\nTenemos 260 días de clase al año. Cada día, el horario comienza a las 5:45 de la mañana y se extiende hasta las 9:45 de la noche. Normalmente, un día transcurre entre tareas de limpieza, trabajos prácticos, clases teóricas, deportes, descanso y entretenimiento. Los fines de semana no tenemos clases, y podemos salir de la escuela para visitar a nuestros familiares. Sin embargo, debido a la naturaleza agropecuaria de la escuela, algunos estudiantes deben quedarse en el campus los fines de semana para cuidar a los animales o regar los cultivos, y se turnan para dichas tareas.\n\nLa escuela ofrece dos títulos aprobados por el Ministerio de Educación: Bachillerato Técnico Agropecuario y Bachillerato en Turismo Rural. Desde el 2003, ha graduado a más de 700 jóvenes, quienes hoy son profesionales y emprendedores en todo el país, honrando a la institución con sus carreras.\n\nMi clase favorita es física con el profesor Cristian Sandoval y, cuando me gradúe, quisiera ser ingeniera industrial.",
+            "description": "¡Hola, me llamo Mica y ahora estamos en el Sector Académico. Estoy en tercer año en la Escuela Cerrito y soy de caazapá. Mi pueblo es conocido por su historia de Ycua Bolaños.\n\nAquí se encuentran las aulas de clase. El método de educación de la Escuela Agrícola Cerrito es único: estamos divididos en dos grupos. Un grupo realiza tareas en el campo —lo que llamamos “aprender haciendo”— y el otro asiste a clases en el aula. Cada semana, los grupos se turnan para que todos podamos aprender tanto en las unidades productivas, como en el aula.\n\nTenemos 260 días de clase al año. Cada día, el horario comienza a las 5:45 de la mañana y se extiende hasta las 9:45 de la noche. Normalmente, un día transcurre entre tareas de limpieza, trabajos prácticos, clases teóricas, deportes, descanso y entretenimiento. Los fines de semana no tenemos clases, y podemos salir de la escuela para visitar a nuestros familiares. Sin embargo, debido a la naturaleza agropecuaria de la escuela, algunos estudiantes deben quedarse en el campus los fines de semana para cuidar a los animales o regar los cultivos, y se turnan para dichas tareas.\n\nLa escuela ofrece dos títulos aprobados por el Ministerio de Educación: Bachillerato Técnico Agropecuario y Bachillerato en Turismo Rural. Desde el 2003, ha graduado a más de 700 jóvenes, quienes hoy son profesionales y emprendedores en todo el país, honrando a la institución con sus carreras.\n\nMi clase favorita es física y cuando me gradúe, quisiera ser ingeniera industrial.",
             "directions": "Ahora vamos a la capilla. Dése la vuelta, cruce el camino, y pase por el portón hacia la zona de la capilla. Camina unos 50 metros hasta que encuentra el poste número 4 a la derecha. Mira a la izquierda para ver la capilla." 
         },
         "patio_central": { 
@@ -103,7 +103,7 @@
         "relaxing": {
             "pool": {
                 "title": "Natación",
-                "description": "Dese un refrescante chapuzón en la piscina y relájese en las sillas reclinables o quédese a la sombra bajo el pabellón. La piscina está abierta de 9:00 a 20:00 todos los días."
+                "description": "Dese un refrescante chapuzón en la piscina y relájese en las sillas reclinables o quédese en la sombra bajo el quincho. La piscina está abierta de 9:00 a 20:00 todos los días."
             },
             "restaurant": {
                 "title": "Restaurante de Campus",
@@ -111,7 +111,7 @@
             },
             "hammocks": {
                 "title": "Hamacas Tradicionales",
-                "description": "Tome un libro o una siesta bajo los árboles en las hamacas tradicionales paraguayas para disfrutar de un tranquilo tiempo libre. Depende del clima."
+                "description": "Tome un libro o una siesta bajo los árboles en las hamacas tradicionales paraguayas para disfrutar de un tranquilo tiempo libre."
             },
             "games": {
                 "title": "Juegas de Salón",
@@ -119,21 +119,21 @@
             },
             "quinchos": {
                 "title": "Quinchos",
-                "description": "Ase la comida a la parrilla y reúnase con amigos y familiares en la cabaña junto a la piscina."
+                "description": "Disfrute del asado y la reunión con amigos y familiares en el quincho junto a la piscina. Gestionar su reserva en la recepción del hotel."
             },
             "gift_shop": {
                 "title": "Tienda del Hotel",
-                "description": "Apoye a la Escuela Cerrito comprando productos en el lobby del hotel. Puede encontrar yogur, dulce de leche y queso, todos hechos por los estudiantes en el campus. También tenemos bocadillos, bebidas y recuerdos."
+                "description": "Apoye a la Escuela Cerrito comprando productos en el lobby del hotel y el quincho pequeño. Puede encontrar yogur, dulce de leche y queso, todos hechos por los estudiantes en el campus. También tenemos snacks, bebidas y recuerdos."
             },
             "exercise": {
-                "title": "Zona de Ejercicio",
-                "description": "Asegúrese de hacer un buen entrenamiento en la zona de ejercicio junto a la cancha. El equipo dinámico está disponible para su uso."
+                "title": "Gimnasio al Aire Libre",
+                "description": "Asegúrese de hacer un buen entrenamiento en el gimnasio al aire libre que se encuentra al lado de la capilla. El equipo dinámico está disponible para su uso."
             }
         },
         "educational": {
             "production": {
-                "title": "Ver las Unidades de Producción",
-                "description": "Visite las diversas unidades de producción en el campus, como la panadería, el jardín o la granja, para aprender más sobre cómo los estudiantes trabajan para apoyar a la escuela mediante la adquisición de habilidades prácticas."
+                "title": "Visitar las Unidades de Producción",
+                "description": "Visite las diversas unidades de producción en el campus, como la panadería, el jardín o la granja, para aprender más sobre cómo los estudiantes practican habilidades y las usan para apoyar a la escuela."
             },
             "tour": {
                 "title": "Tour Autoguiado del Campus",
@@ -141,15 +141,15 @@
             },
             "cheese": {
                 "title": "Tour de la Fábrica de Queso",
-                "description": "Observe el emocionante proceso de fabricación del queso y conozca la historia de la fábrica de quesos del campus. Póngase en contacto con la recepción del hotel para concertar un tour guiado."
+                "description": "Observe el emocionante proceso de fabricación del queso y conozca la historia de la fábrica de quesos del campus. Tours guiados son disponibles para grupos. Solicitar información en la recepción del hotel."
             },
             "toba_qom": {
                 "title": "Una Visita a los Toba Qom",
-                "description": "Explore la cercana comunidad indígena Toba Qom, aprenda sobre su cultura y apóyelos comprando productos artesanales hechos a mano. Consulte al conserje del hotel para concertar un tour guiado."
+                "description": "Visita la comunidad indígena toba qom, aprenda sobre su cultura y apóyelos comprando productos artesanales hechos a mano. Consulte a la recepción del hotel para concertar un tour guiado."
             },
             "eucalyptus": {
                 "title": "Plantación de Eucalipto",
-                "description": "Maravíllese con las filas de árboles de eucalipto. Anteriormente dedicada al cultivo de la caña de azúcar, la Escuela Cerrito ahora cultiva eucalipto para venderlo como leña. El campus tiene 37 hectáreas de plantaciones de eucalipto que están registradas en el Instituto Nacional Forestal de Paraguay."
+                "description": "Maravíllese en sistema silvopastoril los árboles de eucalipto. Anteriormente dedicada al cultivo de la caña de azúcar, la Escuela Cerrito ahora cultiva eucalipto para venderlo como leña. El campus tiene 37 hectáreas de plantaciones de eucalipto que están registradas en el Instituto Nacional Forestal de Paraguay."
             }
         },
         "adventurous": {
@@ -167,15 +167,15 @@
             },
             "horses": {
                 "title": "Montar en Caballo",
-                "description": "Explore el Centro de Producción Animal a caballo con un paseo guiado por la granja de la escuela. Todos los niveles de experiencia son bienvenidos. Consulte al conserje del hotel para hacer una reserva."
+                "description": "Explore el Centro de Producción Animal a caballo con un paseo guiado por la granja de la escuela. Todos los niveles de experiencia son bienvenidos. Consulte a la recepción del hotel para hacer una reserva."
             },
             "sports": {
-                "title": "Jugar Deportes",
+                "title": "Deportes",
                 "description": "Venga a pasar el rato en las canchas y juegue un partido de baloncesto o voleibol, o trote alrededor del campo de fútbol."
             },
             "playground": {
-                "title": "El Patio de Recreo",
-                "description": "¿Busca aventuras para niños? ¡Lleve a sus hijos a disfrutar de la diversión familiar en el patio de recreo junto a la piscina! Disponible las 24 horas del día, cada día."
+                "title": "Parque Infantil",
+                "description": "¿Busca aventuras para niños? ¡Lleve a sus hijos a disfrutar de la diversión familiar en el patio de recreo junto a la piscina! Disponible desde las 9:00 a las 20:00, cada día."
             }
         }
     },
@@ -187,7 +187,7 @@
         "title": "Quiénes Somos",
         "Header": "Quiénes Somos",
         "CerritoTitle": "La Escuela Cerrito", 
-        "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, quienes llegan de 12 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
+        "CerritoDesc": "Hotel Escuela Cerrito es un emprendimiento de la Fundación Paraguaya. La Escuela es un nuevo modelo de autogestión, en el que una granja escuela autosuficiente genera sus propios ingresos. Promovemos el espíritu emprendedor en nuestros estudiantes, quienes llegan de 17 departamentos del país y el extranjero. Somos una institución educativa mixta bajo el régimen de internado con infraestructura para albergar a 150 estudiantes.", 
         "HelpTitle": "Colaborando con la Escuela", 
         "HelpDesc": "Adquirir productos y servicios de la Escuela y Hotel Cerrito genera ingresos que ayudan a sostener nuestro labor de educación estudiantil. Reservar habitaciones, usar el servicio de lavandería, comer en el restaurante del hotel y comprar nuestros productos son maneras de apoyar nuestra misión. También puedes recomendar Cerrito a tus amigos y familiares!",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
@@ -198,7 +198,7 @@
         "title": "Los Monos Aulladores",
         "header": "Observar los Monos Aulladores",
         "subheader1": "Sobre los Monos Aulladores",
-        "subheader2": "Recomandacións para Ver a los Monos Aulladores",
+        "subheader2": "Recomendaciones para Ver a los Monos Aulladores",
         "text1": "Hay una familia de monos aulladores negros y dorados, también conocidos como Alouatta caraya, que residen en el campus de Cerrito. Todos los monos de esta especie nacen con pelo dorado. Las hembras permanecen doradas mientras que los machos se vuelven negros a medida que maduran.\n\nLos monos aulladores son animales tranquilos y no entran en contacto directo con los humanos a menos que estén amenazados. Son más activos durante el amanecer y el atardecer y generalmente se ven en los árboles. Ellos usan sus colas prensiles para colgar de ramas y dormir por la noche en ramas altas y seguras.\n\nSon conocidos como monos aulladores debido a los sonidos aulladores que hacen para defender su territorio, comunicarse con otros grupos y coordinar sus movimientos dentro del grupo. Es común que aulle al amanecer y al atardecer como una forma de establecer sus límites territoriales.\n\nLos monos aulladores comúnmente comen hojas, sin embargo, también comen flores, brotes tiernos y frutas como mangos. Cuando está en temporada, la familia local de monos aulladores en Cerrito disfrutan escalando los árboles de mango en el campus y comiendo la fruta. Sirven un papel ecológico importante en la dispersión de semillas, ya que comúnmente tiran semillas al suelo después de terminar sus frutos.",
         "text2": "Dado que los monos aulladores son más activos al amanecer y al atardecer, recomendamos caminar por el campus durante esas horas para tener la mejor oportunidad de ver a los monos. Mientras caminas, busca movimiento en las copas de los árboles y escucha sus aullidos (mira el reproductor de audio abajo para una muestra de audio).\n\nPara evitar interferir con sus actividades naturales y reducir el riesgo de transmisión de enfermedades, la observación de los monos debe ser pasiva, silenciosa, en grupos pequeños y a una distancia mínima de 10 metros.\n\nSi bien los monos aulladores se pueden ver en todo el campus, a menudo se pueden encontrar en los siguientes lugares:\n\n- La arboleda de bambú, o tacuaral, junto al lado del centro de producción animal\n\n- Los árboles junto a ambos conjuntos de cabañas\n\n- Los árboles entre la panadería, el hotel y la cabaña Jazmín"
     },
@@ -207,7 +207,7 @@
         "header": "Servicios",
         "button1": "El Restaurante Cerrito",
         "button2": "Servicio de Lavandería",
-        "button3": "Repuesto de Agua Potable",
+        "button3": "Agua Potable",
         "button4": "Limpieza de Habitación",
         "button5": "Reservar Actividades",
         "button6": "Mantenimiento"
@@ -215,26 +215,23 @@
     "cerritoRestaurant": {
         "title": "El Restaurante Cerrito",
         "header": "El Restaurante Cerrito", 
-        "body1": "El restaurante de la Escuela Cerrito sirve almuerzos y cenas todos los días. \n\nEl restaurante solicita que las visitas informen al hotel de su deseo de comer en el restaurante y el número de personas en su grupo antes de: \n\nlas 10.00 para el almuerzo, \no las 12.00 para la cena \n\nEl personal del hotel también enviará un menú para el día a pedido.\n",
+        "body1": "El restaurante de la Escuela Cerrito ofrece servicios de alimentos todos los días.\n\nEl restaurante solicita que los visitas informen en la recepción del hotel de su pedido y confirme la cantidad de personas en su grupo durante los horarios de reception: 6 a las 20.\n",
         "body2": "Para hacer una reserva o ver el menú del día, favor enviar un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
     "laundry": {
         "title": "Servicio de Lavandería",
         "header": "Servicio de Lavandería", 
-        "body1": "La ropa sucia se puede dejar en la Recepción del Hotel para el lavado y planchado.\n",
-        "body2": "Horario de Lavandería\n",
-        "body3": "La ropa sucia se puede dejar en la Recepción a las ",
-        "body4": "9.00 los lunes o martes",
-        "body5": ", o a las ",
-        "body6": "16.00 los miércoles.",
-        "body7": "\n Solicitamos que los huéspedes recojan su ropa limpia a las",
-        "body8": " 16.00 del día siguiente a dejarla.\n"
+        "body1": "La ropa sucia se puede dejar en la Recepción del Hotel para el lavado y planchado desde",
+        "body4": " 6 a 11 horas de lunes a sábado.\n",
+        "body5": "La retira de la ropa limpia y planchada se realiza en la recepción después de ",
+        "body6": "cinco horas ",
+        "body7": "de entregarla."
     },
     "waterRefill": {
-        "title": "Repuesto de Agua Potable",
-        "header": "Repuesto de Agua\n Potable", 
-        "body1": "Para visitas que hospedan en las cabañas, bidones de agua potable pueden ser retirados del lobby del hotel, bajo petición y sin cargo.\n",
+        "title": "Agua Potable",
+        "header": "Agua Potable", 
+        "body1": "El agua del grifo es potable. Agua mineral (botellada) está disponible en la recepción del hotel.\n\nPara visitas que hospedan en las cabañas, bidones de agua potable pueden ser retirados del lobby del hotel, bajo petición y sin cargo.\n",
         "body2": "Para solicitar un bidon de agua, favor envíar un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
@@ -242,22 +239,22 @@
         "title": "Limpieza",
         "header": "Limpieza", 
         "body1": "El servicio de limpieza de las habitaciones está disponible a petición de los clientes sin costo.\n",
-        "body2": "Para solicitar el servicio de limpieza de su habitación del hotel, envíe un mensaje de WhatsApp a:\n",
+        "body2": "Para solicitar el servicio de limpieza de su habitación del hotel, puede acercarse a recepción o puede enviar un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     },
     "reserveActivities": {
         "title": "Reservar Actividades",
         "header": "Reservar Actividades", 
         "body1": "Algunas actividades disponibles requieren reserva previa en recepción. Estas incluyen:\n",
-        "body2": "Almuerzo o Cena en el Restaurante Cerrito,\n Tour de la Fabrica de Queso,\n Paseos a Caballo,\n y Visitas al Stand de Productos Artesanales de la colectividad Toba Qom colindante con la Escuela.\n",
+        "body2": "Servicios del Restaurante Cerrito, Tour de la Fábrica de Queso, Paseos a Caballo, y Visitas al Stand de Productos Artesanales de la comunidad Toba Qom colindante con la Escuela.\n",
         "body3": "Para conocer y reservar cualquiera de estas actividades, consulte en recepción o envíe un mensaje de WhatsApp a:\n",
         "body4": "+595-976-360-833"
     },
     "maintenance": {
         "title": "Mantenimiento de Habitación",
         "header": "Mantenimiento de\n Habitación",
-        "body1": "Los servicios de mantenimiento están disponibles a pedido sin costo alguno.\n",
-        "body2": "Para solicitar mantenimiento de los electrodomésticos de su habitación/hotel, favor envia un mensaje de WhatsApp a:\n",
+        "body1": "Los servicios de reclamos están disponibles a pedido sin costo alguno.\n",
+        "body2": "Para solicitar mantenimiento del cualquier solicitud que desea, favor consulte en recepción o enviar un mensaje de WhatsApp a:\n",
         "body3": "+595-976-360-833"
     }
 }
