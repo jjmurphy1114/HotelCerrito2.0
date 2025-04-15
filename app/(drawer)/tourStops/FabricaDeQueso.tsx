@@ -7,13 +7,14 @@ export default function Capilla() {
   const { t } = useTranslation();
   
   return (
-    StopTemplate(t("tour.fabrica_de_queso.title"),
-      t("tour.fabrica_de_queso.description"), 
-      'fabrica_de_queso',
-      "N/A",
-      require('../../../assets/images/FabricaDeQueso.jpg'),
-      '/(drawer)/tourStops/CPA' as RelativePathString,
-      "/(drawer)/tourStops/CPV" as RelativePathString
-    )
+    <StopTemplate
+      title={t("tour.fabrica_de_queso.title")}
+      description={t("tour.fabrica_de_queso.description")}
+      directions={t("tour.fabrica_de_queso.directions")}
+      audioPathKey="fabrica_de_queso"
+      image={require('../../../assets/images/FabricaDeQueso.jpg')}
+      prev={'/(drawer)/tourStops/CPA' as RelativePathString}
+      next={'/(drawer)/tourStops/CPV' as RelativePathString}
+    />
   );
 }
