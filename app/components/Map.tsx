@@ -12,10 +12,11 @@ interface MapComponentProps {
     percentCropWidth?: number;
     percentCropHeight?: number;
     showPath?: boolean;
+    hideOverlay?: boolean;
 }
 
 
-export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4, showPath=true}: MapComponentProps) {
+export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4, showPath=true, hideOverlay=false}: MapComponentProps) {
     
     const { t } = useTranslation();
 
@@ -83,7 +84,7 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
             contentFit="contain"
         />
         {/* Path overlay image */}
-        {pathImage &&
+        {pathImage && !hideOverlay &&
             <Image
                 source={pathImage}
                 style={{
