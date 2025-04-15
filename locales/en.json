@@ -24,6 +24,7 @@
         },
         "back": "Back",
         "next": "Next",
+        "start": "Start",
         "welcome": "Welcome to the Self-Guided Tour!",
         "map":{
             "open": "View Map",

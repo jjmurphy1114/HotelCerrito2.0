@@ -3,7 +3,12 @@ import { useTranslation } from "react-i18next";
 
 // Array of stops. Add stops here in order to change the order of the tour
 const tourStops = [
-    {
+  {
+      titleKey: "tour.start",
+      route: '/(drawer)/tour' as RelativePathString,
+      number: 0 //Not actually a stop
+  }, 
+  {
       titleKey: 'tour.mapa_central.title',
       route: '/(drawer)/tourStops/MapaCentral' as RelativePathString,
       number: 1,
@@ -58,6 +63,11 @@ const tourStops = [
       route: '/(drawer)/tourStops/Hotel' as RelativePathString,
       number: 11,
     },
+    {
+      titleKey: 'tour.end.title',
+      route: '/(drawer)/tourStops/EndScreen' as RelativePathString,
+      number: 12 //Not actually a stop
+    }
 ];
   
 export default tourStops;

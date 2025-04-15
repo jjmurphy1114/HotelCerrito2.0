@@ -54,8 +54,8 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
     '10-11': require('../../assets/images/paths/10-11.png')
     };
 
-    // We used 1 based indexing for the path images
-    const pathKey = `${currentIndex + 1}-${currentIndex + 2}`;
+    // We used 0 based indexing for the path images
+    const pathKey = `${currentIndex }-${currentIndex + 1}`;
     const pathImage = pathImages[pathKey];
     
     return (
