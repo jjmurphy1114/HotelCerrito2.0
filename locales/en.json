@@ -97,27 +97,29 @@
     "activities": {
         "title": "Activities",
         "details": "Details",
-        "description": "",
+        "relax": "Relaxing Activities",
+        "educate": "Educational Activities",
+        "adventure": "Adventure Activities",
         "relaxing": {
             "pool": {
                 "title": "Swimming",
-                "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 7:00 PM, M-F."
+                "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 8:00 PM every day."
             },
             "restaurant": {
                 "title": "Campus Restaurant",
                 "description": "Taste the flavors of Paraguay, with vegetables straight from the school garden and cheese made from the milk of campus cows. See how to make a lunch or dinner reservation here."
             },
             "hammocks": {
-                "title": "Hammocks",
+                "title": "Traditional Hammocks",
                 "description": "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time. Weather dependent."
             },
             "games": {
                 "title": "Tabletop Games",
-                "description": "Visit the game room by the pavilion for a rousing session of foosball, cards, or board games."
+                "description": "Visit the game room by the Central Patio for a rousing session of foosball, cards, or board games."
             },
             "quinchos": {
-                "title": "Quinchos",
-                "description": "Cook and gather with friends/family. ingesta de asados y destinado a reuniones y actividades sociales."
+                "title": "Cabana",
+                "description": "Cook and gather with friends/family at the cabana by the pool."
             },
             "gift_shop": {
                 "title": "Hotel Shop",
@@ -125,7 +127,7 @@
             },
             "exercise": {
                 "title": "Exercise Zone",
-                "description": ""
+                "description": "Make sure to get in a good workout at the exercise zone by the sports field. Dynamic equipment is available for use."
             }
         },
         "educational": {
@@ -147,33 +149,33 @@
             },
             "eucalyptus": {
                 "title": "Eucalyptus Plantation",
-                "description": "Marvel at the rows of eucalyptus trees. Previously dedicated to the cultivation of sugarcane, the Cerrito School now grows eucalyptus to sell as firewood. The campus has 37 hectares of eucalyptus plantations on the campus that are registered in the National Forestry Institute of Paraguay."
+                "description": "Marvel at the rows of eucalyptus trees. Previously dedicated to the cultivation of sugarcane, the Cerrito School now grows eucalyptus to sell as firewood. The campus has 37 hectares of eucalyptus plantations that are registered in the National Forestry Institute of Paraguay."
             }
         },
         "adventurous": {
             "monkeys": {
                 "title": "Observe Howler Monkeys",
-                "description": ""
+                "description": "Experience the sights and sounds of nature with the resident family of howler monkeys. Watch them swing through the treetops and listen to their calls, all from a safe and respectful distance."
             },
             "hiking": {
                 "title": "Hiking",
-                "description": ""
+                "description": "Immerse yourself in nature on a leisurely hike through the trails around campus."
             },
             "biking": {
                 "title": "Biking",
-                "description": ""
+                "description": "Go for a bike ride along the trails around campus. Bicycles are available upon request at the hotel front desk."
             },
             "horses": {
                 "title": "Ride Horses",
-                "description": "Are you interested in riding a horse? The animal production center has horses. Contact the hotel reception to arrange a horseback ride."
+                "description": "Explore the Animal Production Center on horseback with a guided ride through the school’s farm. All experience levels welcome. Please see the hotel concierge to make a reservation."
             },
             "sports": {
                 "title": "Play Sports",
-                "description": "Come hang out at the sports field and play a game of soccer, basketball, or volleyball."
+                "description": "Come hang out at the courts and play a game of basketball or volleyball, or jog around the soccer field."
             },
             "playground": {
                 "title": "Playground",
-                "description": "Take your kids to enjoy family fun at the playground next to the pool."
+                "description": "Looking for child-friendly adventures? Take your kids to enjoy family fun at the playground next to the pool! Available 24/7."
             }
         }
     },
