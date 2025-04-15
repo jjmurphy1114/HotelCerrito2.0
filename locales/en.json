@@ -24,6 +24,7 @@
         },
         "back": "Back",
         "next": "Next",
+        "start": "Start",
         "welcome": "Welcome to the self-guided tour of the Cerrito Agricultural School and Hotel! In this tour, you will discover the history of the school and hotel and learn about the campus production units. To take the tour, follow the numbers indicated on the map on the following page and the numbered wooden posts around campus. You can take the tour in the order provided, or in any order you would like by clicking the “View Stops” button. To hear instructions to arrive at the recommended next stop, click the “Play Directions” button.\n\nThe original tour is narrated by students and staff of the Cerrito School and Hotel in Spanish. The English translation is voiced by students from Worcester Polytechnic Institute in the United States.\n\nDuring the tour, we invite you to enjoy the nature around campus. If you are observant, you might see or hear the animals found on campus, such as howler monkeys. To learn more about howler monkeys, you can visit the “Observe the Howler Monkeys” section on the homepage of the application. Now I invite you to approach the central map in front of the hotel to start the tour.",
         "map":{
             "open": "View Map",

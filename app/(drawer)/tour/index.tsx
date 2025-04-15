@@ -66,22 +66,33 @@ export default function TourStops() {
           <Text style={styles.headerText} variant="headlineMedium">{t("tour.view_stops.title")}</Text>
         </View>
     <ScrollView contentContainerStyle={{ padding: 20, marginTop: 30 }}>
-      {tourStops.map((stop) => (
-        <Button
-          key={stop.route}
-          onPress={() => router.replace(stop.route)}
-          style={{ marginTop: 10 }}
-          labelStyle={{
-            fontFamily: Platform.select({
-              android: 'Inter_500Medium',
-              ios: 'Inter-Medium',
-            }),
-            fontSize: 16, // optional
-          }}
-        >
-          {t('tour.view_stops.stop')} {stop.number}: {t(stop.titleKey)}
-        </Button>
-      ))}
+      {tourStops.map((stop, index) => {
+        let buttonText = '';
+        if (index === 0) {
+          buttonText = t('tour.start');
+        } else if (index === tourStops.length - 1) {
+          buttonText = t('tour.end.title');
+        } else {
+          buttonText = `${t('tour.view_stops.stop')} ${stop.number}: ${t(stop.titleKey)}`;
+        }
+
+        return (
+          <Button
+            key={stop.route}
+            onPress={() => router.replace(stop.route)}
+            style={{ marginTop: 10 }}
+            labelStyle={{
+              fontFamily: Platform.select({
+                android: 'Inter_500Medium',
+                ios: 'Inter-Medium',
+              }),
+              fontSize: 16, // optional
+            }}
+          >
+            {buttonText}
+          </Button>
+        );
+      })}
     </ScrollView>
     </View>
   );
