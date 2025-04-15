@@ -26,7 +26,7 @@ require('../../assets/images/emoji4.png'), //exercise
 const educatImages = [
   require('../../assets/images/emoji4.png'), //production; bakery?
   require('../../assets/images/MapaCentral.jpeg'), //tour
-  require('../../assets/images/PlantaLactea.jpg'), //cheese; replace with a pic from inside or of cheese
+  require('../../assets/images/FabricaDeQueso.jpg'), //cheese; replace with a pic from inside or of cheese
   require('../../assets/images/emoji4.png'), //toba qom; placeholder
   require('../../assets/images/emoji4.png'), //eucalyptus
 ];
