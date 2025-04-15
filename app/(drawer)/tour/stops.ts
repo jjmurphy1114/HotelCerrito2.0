@@ -90,7 +90,7 @@ export const descriptionsAudioMap: Record<string, Record<string, any>> = {
     endScreen: require('../../../assets/audio/en/descriptions/end.mp3'),
   },
   es: {
-    start: require('../../../assets/audio/es/descriptions/mapa_central.mp3'),
+    start: require('../../../assets/audio/es/descriptions/start_screen.mp3'),
     mapa_central: require('../../../assets/audio/es/descriptions/mapa_central.mp3'),
     capilla: require('../../../assets/audio/es/descriptions/capilla.mp3'),
     cancha: require('../../../assets/audio/es/descriptions/cancha.mp3'),
@@ -124,19 +124,19 @@ export const directionsAudioMap: Record<string, Record<string, any>> = {
     endScreen: require('../../../assets/audio/en/descriptions/central_map.mp3'),
   },
   es: {
-    start: require('../../../assets/audio/es/directions/mapa_central.mp3'),
-    mapa_central: require('../../../assets/audio/es/directions/mapa_central.mp3'),
-    capilla: require('../../../assets/audio/es/directions/capilla.mp3'),
-    cancha: require('../../../assets/audio/es/directions/cancha.mp3'),
-    sector_academico: require('../../../assets/audio/es/directions/sector_academico.mp3'),
-    patio_central: require('../../../assets/audio/es/directions/patio_central.mp3'),
-    comedor: require('../../../assets/audio/es/directions/comedor.mp3'),
-    CPA: require('../../../assets/audio/es/directions/cpa.mp3'),
-    fabrica_de_queso: require('../../../assets/audio/es/directions/fabrica_de_queso.mp3'),
-    CPV: require('../../../assets/audio/es/directions/cpv.mp3'),
-    piscina: require('../../../assets/audio/es/directions/piscina.mp3'),
-    hotel: require('../../../assets/audio/es/directions/hotel.mp3'),
-    endScreen: require('../../../assets/audio/es/directions/end_screen.mp3')
+    // start: require('../../../assets/audio/es/directions/mapa_central.mp3'),
+    mapa_central: require('../../../assets/audio/es/directions/1-2.mp3'),
+    cancha: require('../../../assets/audio/es/directions/2-3.mp3'),
+    sector_academico: require('../../../assets/audio/es/directions/3-4.mp3'),
+    capilla: require('../../../assets/audio/es/directions/4-5.mp3'),
+    patio_central: require('../../../assets/audio/es/directions/5-6.mp3'),
+    comedor: require('../../../assets/audio/es/directions/6-7.mp3'),
+    CPA: require('../../../assets/audio/es/directions/7-8.mp3'),
+    fabrica_de_queso: require('../../../assets/audio/es/directions/8-9.mp3'),
+    CPV: require('../../../assets/audio/es/directions/9-10.mp3'),
+    piscina: require('../../../assets/audio/es/directions/10-11.mp3'),
+    hotel: require('../../../assets/audio/es/directions/end.mp3'),
+    // endScreen: require('../../../assets/audio/es/directions/end_screen.mp3')
   }
 };
 
