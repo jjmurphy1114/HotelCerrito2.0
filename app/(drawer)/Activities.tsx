@@ -51,7 +51,7 @@ const Pool: ActivityCardProps = {
   imageUrl: relaxImages[0],
   activityTitle: "activities.relaxing.pool.title",
   activityNum: 1,
-  totActivities: 7,
+  totActivities: 6,
   description: "activities.relaxing.pool.description",
 };
 
@@ -59,20 +59,20 @@ const Restaurant: ActivityCardProps = {
   imageUrl: relaxImages[1],
   activityTitle: "activities.relaxing.restaurant.title",
   activityNum: 2,
-  totActivities: 7,
+  totActivities: 6,
   description: "activities.relaxing.restaurant.description",
 };
 
 const Hammocks: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[2],
   activityTitle: "activities.relaxing.hammocks.title",
   activityNum: 3,
-  totActivities: 7,
+  totActivities: 6,
   description: "activities.relaxing.hammocks.description",
 };
 
-const Games: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+const Games: ActivityCardProps = { //removed-- not available to guests
+  imageUrl: relaxImages[3],
   activityTitle: "activities.relaxing.games.title",
   activityNum: 4,
   totActivities: 7,
@@ -80,26 +80,26 @@ const Games: ActivityCardProps = {
 };
 
 const Quinchos: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[3],
   activityTitle: "activities.relaxing.quinchos.title",
-  activityNum: 5,
-  totActivities: 7,
+  activityNum: 4,
+  totActivities: 6,
   description: "activities.relaxing.quinchos.description",
 };
 
 const GiftShop: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[4],
   activityTitle: "activities.relaxing.gift_shop.title",
-  activityNum: 6,
-  totActivities: 7,
+  activityNum: 5,
+  totActivities: 6,
   description: "activities.relaxing.gift_shop.description",
 };
 
 const Exercise: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[5],
   activityTitle: "activities.relaxing.exercise.title",
-  activityNum: 7,
-  totActivities: 7,
+  activityNum: 6,
+  totActivities: 6,
   description: "activities.relaxing.exercise.description",
 };
 
@@ -120,7 +120,7 @@ const Tour: ActivityCardProps = {
 };
 
 const Cheese: ActivityCardProps = {
-  imageUrl: educatImages[0],
+  imageUrl: educatImages[2],
   activityTitle: "activities.educational.cheese.title",
   activityNum: 3,
   totActivities: 5,
@@ -128,7 +128,7 @@ const Cheese: ActivityCardProps = {
 };
 
 const TobaQom: ActivityCardProps = {
-  imageUrl: educatImages[0],
+  imageUrl: educatImages[3],
   activityTitle: "activities.educational.toba_qom.title",
   activityNum: 4,
   totActivities: 5,
@@ -136,7 +136,7 @@ const TobaQom: ActivityCardProps = {
 };
 
 const Eucalyptus: ActivityCardProps = {
-  imageUrl: educatImages[0],
+  imageUrl: educatImages[4],
   activityTitle: "activities.educational.eucalyptus.title",
   activityNum: 5,
   totActivities: 5,
@@ -160,7 +160,7 @@ const Hiking: ActivityCardProps = {
 };
 
 const Biking: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[2],
   activityTitle: "activities.adventurous.biking.title",
   activityNum: 3,
   totActivities: 6,
@@ -168,7 +168,7 @@ const Biking: ActivityCardProps = {
 };
 
 const Horses: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[3],
   activityTitle: "activities.adventurous.horses.title",
   activityNum: 4,
   totActivities: 6,
@@ -176,7 +176,7 @@ const Horses: ActivityCardProps = {
 };
 
 const Sports: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[4],
   activityTitle: "activities.adventurous.sports.title",
   activityNum: 5,
   totActivities: 6,
@@ -184,7 +184,7 @@ const Sports: ActivityCardProps = {
 };
 
 const Playground: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[5],
   activityTitle: "activities.adventurous.playground.title",
   activityNum: 6,
   totActivities: 6,
@@ -195,7 +195,6 @@ const relaxActivities: ActivityCardProps[] = [
   Pool,
   Restaurant,
   Hammocks,
-  Games,
   Quinchos,
   GiftShop,
   Exercise,
@@ -231,7 +230,7 @@ const Activity_Cards = () => (
         </View>
         <Card.Content>
           <ActivityCarousel 
-          length={7}
+          length={6}
           activities={relaxActivities}
           images={relaxImages}/>
         </Card.Content>
