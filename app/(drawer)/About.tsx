@@ -25,7 +25,7 @@ export default function About() {
 
 
   const handleFacebookLink = () => {
-    Linking.openURL('https://https://www.facebook.com/hotelescuelacerrito/');
+    Linking.openURL('https://www.facebook.com/hotelescuelacerrito');
   };
 
   const handleXLink = () => {
