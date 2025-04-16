@@ -6,9 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/images/cerrito-logo.png",
     "splash": {
-        "image": "./assets/images/cerrito-logo.png",
-        "resizeMode": "contain",
-        "backgroundColor": "#ffffff"
+      "image": "./assets/images/cerrito-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -17,8 +17,10 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.hotelcerrito.audiotour",
+      "versionCode": 6,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/cerrito-logo.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -41,12 +43,23 @@
       [
         "expo-font",
         {
-          "fonts": ["node_modules/@expo-google-fonts/inter/Inter_900Black.ttf", "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf"]
+          "fonts": [
+            "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf",
+            "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf"
+          ]
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fa15dea8-708e-4ca3-9dc1-b36d22d3e1ec"
+      }
     }
   }
 }
