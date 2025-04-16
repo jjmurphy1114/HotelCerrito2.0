@@ -80,7 +80,7 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
         <View style={{ width: displayWidth, height: displayHeight }}>
         <Image
             source={require('../../assets/images/MapaCentral.jpg')}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: '100%', height: '90%' }}
             contentFit="contain"
         />
         {/* Path overlay image */}
