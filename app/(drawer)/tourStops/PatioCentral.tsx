@@ -1,3 +1,4 @@
+import ImageCarousel from '@/app/components/ImageCarousel';
 import StopTemplate from '../tour/StopTemplate';
 import { RelativePathString } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -13,6 +14,11 @@ export default function Capilla() {
       directions={t("tour.patio_central.directions")}
       audioPathKey="patio_central"
       image={require('../../../assets/images/PatioCentral.jpg')}
+       customVisual={
+              <ImageCarousel images={[require('../../../assets/images/PatioCentral.jpg'),
+                                      require('../../../assets/images/PatioWithStudents.jpg')
+                                    ]}/>
+            }
       prev={'/(drawer)/tourStops/Capilla' as RelativePathString}
       next={'/(drawer)/tourStops/Comedor' as RelativePathString}
     />

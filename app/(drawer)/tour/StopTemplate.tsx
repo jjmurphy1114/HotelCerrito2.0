@@ -17,7 +17,7 @@ interface StopComponentProps {
   image: any;
   prev: RelativePathString;
   next: RelativePathString;
-  carouselImages?: any[];
+  customVisual?: React.ReactNode;
 }
 
 export default function StopTemplate({ 
@@ -28,7 +28,7 @@ export default function StopTemplate({
                                     image, 
                                     prev, 
                                     next,
-                                    carouselImages
+                                    customVisual
                                   }: StopComponentProps) {
   
   // Need to implement audio player here
@@ -142,9 +142,9 @@ export default function StopTemplate({
             ios: 'Inter-Black',
           }), }}>{title}</Text>
       {directionsToggle ? (
-          <MapComponent percentCropHeight={0.26} showPath={false} />
-        ) : carouselImages && carouselImages.length > 0 ? (
-          <ImageCarousel images={carouselImages} height={imageSizeHeight} />
+          <MapComponent percentCropHeight={0.273} showPath={false} />
+        ) : customVisual ? (
+          customVisual
         ) : (
           <Image
             style={styles.image}
