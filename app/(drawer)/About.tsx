@@ -25,7 +25,7 @@ export default function About() {
 
 
   const handleFacebookLink = () => {
-    Linking.openURL('https://https://www.facebook.com/hotelescuelacerrito/');
+    Linking.openURL('https://www.facebook.com/hotelescuelacerrito');
   };
 
   const handleXLink = () => {
@@ -71,6 +71,8 @@ export default function About() {
       fontSize: 28,
       paddingTop: width*.1,
       paddingBottom: width*.025,
+      paddingLeft: width*.022,
+      paddingRight: width*.022,
       fontFamily: Platform.select({
         android: 'Inter_900Black',
         ios: 'Inter-Black',
@@ -98,7 +100,7 @@ export default function About() {
     image: {
       width: imageSizeWidth,
       height: imageSizeHeight,
-      backgroundColor: '#0553',
+      backgroundColor: '#ffff',
       resizeMode: 'cover',
     },
     scrollView: {
@@ -145,7 +147,7 @@ export default function About() {
 
         <Image
           style={styles.image}
-          source={require('../../assets/images/hotel-cerrito-logo.png')}
+          source={require('../../assets/images/escuela-cerrito.png')}
           contentFit="contain"
           transition={1000}
         />
