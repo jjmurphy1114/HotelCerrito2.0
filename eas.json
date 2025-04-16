@@ -16,7 +16,14 @@
       }
     },
     "production": {
-      "autoIncrement": true
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "install": {
+    "npm": {
+      "legacyPeerDeps": true
     }
   },
   "submit": {
