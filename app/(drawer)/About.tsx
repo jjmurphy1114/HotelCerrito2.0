@@ -100,7 +100,7 @@ export default function About() {
     image: {
       width: imageSizeWidth,
       height: imageSizeHeight,
-      backgroundColor: '#0553',
+      backgroundColor: '#ffff',
       resizeMode: 'cover',
     },
     scrollView: {
@@ -147,7 +147,7 @@ export default function About() {
 
         <Image
           style={styles.image}
-          source={require('../../assets/images/hotel-cerrito-logo.png')}
+          source={require('../../assets/images/escuela-cerrito.png')}
           contentFit="contain"
           transition={1000}
         />

@@ -4,9 +4,9 @@
     "slug": "HotelCerritoApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/hotel-cerrito-logo.png",
+    "icon": "./assets/images/cerrito-logo.png",
     "splash": {
-        "image": "./assets/images/hotel-cerrito-logo.png",
+        "image": "./assets/images/cerrito-logo.png",
         "resizeMode": "contain",
         "backgroundColor": "#ffffff"
     },
