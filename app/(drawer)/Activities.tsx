@@ -17,27 +17,26 @@ import Category from '../components/Category';
 
 const relaxImages = [
 require('../../assets/images/Piscina.jpg'), //pool
-require('../../assets/images/Comedor.jpg'), //restaurant; replace with pic of inside
-require('../../assets/images/emoji4.png'), //hammocks
-require('../../assets/images/emoji4.png'), //games
-require('../../assets/images/emoji4.png'), //quinchos
-require('../../assets/images/emoji4.png'), //gift shop
-require('../../assets/images/emoji4.png'), //exercise
+require('../../assets/images/Comedor1.jpg'), //restaurant
+require('../../assets/images/Hammocks.jpg'), //hammocks
+require('../../assets/images/Quincho1.jpg'), //quinchos
+require('../../assets/images/Shop.jpg'), //gift shop
+require('../../assets/images/Ejercicios1.jpg'), //exercise
 ];
 const educatImages = [
-  require('../../assets/images/emoji4.png'), //production; bakery?
-  require('../../assets/images/MapaCentral.jpeg'), //tour
-  require('../../assets/images/FabricaDeQueso.jpg'), //cheese; replace with a pic from inside or of cheese
-  require('../../assets/images/emoji4.png'), //toba qom; placeholder
-  require('../../assets/images/emoji4.png'), //eucalyptus
+  require('../../assets/images/Production.png'), //production
+  require('../../assets/images/MapaCentral1.jpg'), //tour
+  require('../../assets/images/CheeseMaking.png'), //cheese
+  require('../../assets/images/TobaQom.png'), //toba qom
+  require('../../assets/images/Eucalipto3.jpg'), //eucalyptus
 ];
 const adventImages = [
   require('../../assets/images/HowlerMonkey.jpeg'), //monkeys
-  require('../../assets/images/emoji4.png'), //hiking
-  require('../../assets/images/emoji4.png'), //biking
-  require('../../assets/images/emoji4.png'), //horses
-  require('../../assets/images/Cancha.jpg'), //sports
-  require('../../assets/images/emoji4.png'), //playground
+  require('../../assets/images/Walking.jpg'), //hiking
+  require('../../assets/images/Bici.jpg'), //biking
+  require('../../assets/images/Horses.jpg'), //horses
+  require('../../assets/images/Sports.jpg'), //sports
+  require('../../assets/images/Playground.png'), //playground
 ];
 
 type ActivityCardProps = {
@@ -52,7 +51,7 @@ const Pool: ActivityCardProps = {
   imageUrl: relaxImages[0],
   activityTitle: "activities.relaxing.pool.title",
   activityNum: 1,
-  totActivities: 7,
+  totActivities: 6,
   description: "activities.relaxing.pool.description",
 };
 
@@ -60,20 +59,20 @@ const Restaurant: ActivityCardProps = {
   imageUrl: relaxImages[1],
   activityTitle: "activities.relaxing.restaurant.title",
   activityNum: 2,
-  totActivities: 7,
+  totActivities: 6,
   description: "activities.relaxing.restaurant.description",
 };
 
 const Hammocks: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[2],
   activityTitle: "activities.relaxing.hammocks.title",
   activityNum: 3,
-  totActivities: 7,
+  totActivities: 6,
   description: "activities.relaxing.hammocks.description",
 };
 
-const Games: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+const Games: ActivityCardProps = { //removed-- not available to guests
+  imageUrl: relaxImages[3],
   activityTitle: "activities.relaxing.games.title",
   activityNum: 4,
   totActivities: 7,
@@ -81,26 +80,26 @@ const Games: ActivityCardProps = {
 };
 
 const Quinchos: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[3],
   activityTitle: "activities.relaxing.quinchos.title",
-  activityNum: 5,
-  totActivities: 7,
+  activityNum: 4,
+  totActivities: 6,
   description: "activities.relaxing.quinchos.description",
 };
 
 const GiftShop: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[4],
   activityTitle: "activities.relaxing.gift_shop.title",
-  activityNum: 6,
-  totActivities: 7,
+  activityNum: 5,
+  totActivities: 6,
   description: "activities.relaxing.gift_shop.description",
 };
 
 const Exercise: ActivityCardProps = {
-  imageUrl: relaxImages[0],
+  imageUrl: relaxImages[5],
   activityTitle: "activities.relaxing.exercise.title",
-  activityNum: 7,
-  totActivities: 7,
+  activityNum: 6,
+  totActivities: 6,
   description: "activities.relaxing.exercise.description",
 };
 
@@ -121,7 +120,7 @@ const Tour: ActivityCardProps = {
 };
 
 const Cheese: ActivityCardProps = {
-  imageUrl: educatImages[0],
+  imageUrl: educatImages[2],
   activityTitle: "activities.educational.cheese.title",
   activityNum: 3,
   totActivities: 5,
@@ -129,7 +128,7 @@ const Cheese: ActivityCardProps = {
 };
 
 const TobaQom: ActivityCardProps = {
-  imageUrl: educatImages[0],
+  imageUrl: educatImages[3],
   activityTitle: "activities.educational.toba_qom.title",
   activityNum: 4,
   totActivities: 5,
@@ -137,7 +136,7 @@ const TobaQom: ActivityCardProps = {
 };
 
 const Eucalyptus: ActivityCardProps = {
-  imageUrl: educatImages[0],
+  imageUrl: educatImages[4],
   activityTitle: "activities.educational.eucalyptus.title",
   activityNum: 5,
   totActivities: 5,
@@ -161,7 +160,7 @@ const Hiking: ActivityCardProps = {
 };
 
 const Biking: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[2],
   activityTitle: "activities.adventurous.biking.title",
   activityNum: 3,
   totActivities: 6,
@@ -169,7 +168,7 @@ const Biking: ActivityCardProps = {
 };
 
 const Horses: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[3],
   activityTitle: "activities.adventurous.horses.title",
   activityNum: 4,
   totActivities: 6,
@@ -177,7 +176,7 @@ const Horses: ActivityCardProps = {
 };
 
 const Sports: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[4],
   activityTitle: "activities.adventurous.sports.title",
   activityNum: 5,
   totActivities: 6,
@@ -185,7 +184,7 @@ const Sports: ActivityCardProps = {
 };
 
 const Playground: ActivityCardProps = {
-  imageUrl: adventImages[0],
+  imageUrl: adventImages[5],
   activityTitle: "activities.adventurous.playground.title",
   activityNum: 6,
   totActivities: 6,
@@ -196,7 +195,6 @@ const relaxActivities: ActivityCardProps[] = [
   Pool,
   Restaurant,
   Hammocks,
-  Games,
   Quinchos,
   GiftShop,
   Exercise,
@@ -236,7 +234,7 @@ const Activity_Cards = ({t} : Props) => (
         </View>
         <Card.Content>
           <ActivityCarousel 
-          length={7}
+          length={6}
           activities={relaxActivities}
           images={relaxImages}/>
         </Card.Content>
