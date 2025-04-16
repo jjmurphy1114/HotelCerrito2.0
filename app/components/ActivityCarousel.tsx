@@ -176,5 +176,6 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         marginLeft: width/10,
         justifyContent: 'center',
         marginBottom: 20,
+        fontSize: 14,
       }
     });

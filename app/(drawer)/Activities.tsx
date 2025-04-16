@@ -16,27 +16,26 @@ import Category from '../components/Category';
 
 const relaxImages = [
 require('../../assets/images/Piscina.jpg'), //pool
-require('../../assets/images/Comedor.jpg'), //restaurant; replace with pic of inside
-require('../../assets/images/emoji4.png'), //hammocks
-require('../../assets/images/emoji4.png'), //games
-require('../../assets/images/emoji4.png'), //quinchos
-require('../../assets/images/emoji4.png'), //gift shop
-require('../../assets/images/emoji4.png'), //exercise
+require('../../assets/images/Comedor1.jpg'), //restaurant
+require('../../assets/images/Hammocks.jpg'), //hammocks
+require('../../assets/images/Quincho1.jpg'), //quinchos
+require('../../assets/images/Shop.jpg'), //gift shop
+require('../../assets/images/Ejercicios1.jpg'), //exercise
 ];
 const educatImages = [
-  require('../../assets/images/emoji4.png'), //production; bakery?
-  require('../../assets/images/MapaCentral.jpeg'), //tour
-  require('../../assets/images/PlantaLactea.jpg'), //cheese; replace with a pic from inside or of cheese
-  require('../../assets/images/emoji4.png'), //toba qom; placeholder
-  require('../../assets/images/emoji4.png'), //eucalyptus
+  require('../../assets/images/Production.png'), //production
+  require('../../assets/images/MapaCentral1.jpg'), //tour
+  require('../../assets/images/CheeseMaking.png'), //cheese
+  require('../../assets/images/TobaQom.png'), //toba qom
+  require('../../assets/images/Eucalipto3.jpg'), //eucalyptus
 ];
 const adventImages = [
   require('../../assets/images/HowlerMonkey.jpeg'), //monkeys
-  require('../../assets/images/emoji4.png'), //hiking
-  require('../../assets/images/emoji4.png'), //biking
-  require('../../assets/images/emoji4.png'), //horses
-  require('../../assets/images/Cancha.jpg'), //sports
-  require('../../assets/images/emoji4.png'), //playground
+  require('../../assets/images/Walking.jpg'), //hiking
+  require('../../assets/images/Bici.jpg'), //biking
+  require('../../assets/images/Horses.jpg'), //horses
+  require('../../assets/images/Sports.jpg'), //sports
+  require('../../assets/images/Playground.png'), //playground
 ];
 
 type ActivityCardProps = {
