@@ -132,11 +132,11 @@
         },
         "educational": {
             "production": {
-                "title": "Visitar las Unidades de Producción",
-                "description": "Visite las diversas unidades de producción en el campus, como la panadería, el jardín o la granja, para aprender más sobre cómo los estudiantes practican habilidades y las usan para apoyar a la escuela."
+                "title": "Unidades de Producción",
+                "description": "Visite las diversas unidades de producción en el campus, como la panadería, el jardín o la granja, para aprender más sobre cómo los estudiantes trabajan para apoyar a la escuela mediante la adquisición de habilidades prácticas."
             },
             "tour": {
-                "title": "Tour Autoguiado del Campus",
+                "title": "Tour Autoguiado",
                 "description": "Explore el hermoso campus de Cerrito y aprenda todo sobre las características principales de la escuela. Realice el tour autoguiado acá."
             },
             "cheese": {
@@ -154,7 +154,7 @@
         },
         "adventurous": {
             "monkeys": {
-                "title": "Observar los Monos Aulladores",
+                "title": "Monos Aulladores",
                 "description": "Experimente las vistas y los sonidos de la naturaleza con la familia residente de monos aulladores. Obsérvelos mientras se columpian por las copas de los árboles y escuche sus llamadas, todo desde una distancia segura y respetuosa."
             },
             "hiking": {
