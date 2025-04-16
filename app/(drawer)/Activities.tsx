@@ -34,8 +34,8 @@ const adventImages = [
   require('../../assets/images/HowlerMonkey.jpeg'), //monkeys
   require('../../assets/images/Walking.jpg'), //hiking
   require('../../assets/images/Bici.jpg'), //biking
-  require('../../assets/images/Horses.jpg'), //horses
-  require('../../assets/images/Sports.jpg'), //sports
+  require('../../assets/images/Horses1.jpeg'), //horses
+  require('../../assets/images/Sports1.png'), //sports
   require('../../assets/images/Playground.png'), //playground
 ];
 
