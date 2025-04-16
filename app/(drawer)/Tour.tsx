@@ -21,7 +21,7 @@ export default function TourStart() {
   const audio = getAudio('start', 'descriptions');
 
   const styles = StyleSheet.create({
-    container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, textAlign: 'center' },
+    container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: width*0.045, textAlign: 'center' },
     header: {
           position: 'absolute',
           top: 0,
@@ -31,6 +31,7 @@ export default function TourStart() {
           paddingVertical: 0,
           justifyContent: 'center',
           alignItems: 'center',
+          zIndex: 999
         },
         headerText: {
           color: colors.onSecondary, 
@@ -50,22 +51,22 @@ export default function TourStart() {
           zIndex: 10
         },
     card: {
-      margin: 20,
-      padding: 10,
+      margin: width*0.04,
+      padding: width*0.027,
       borderRadius: 10,
       backgroundColor: colors.secondary,
       width: "90%",
       height: '40%'
     },
     scrollBox: {
-      maxHeight: 400,
+      maxHeight: width*.7,
     },
     scrollContent: {
-      paddingRight: 10,
+      paddingRight: width*0.02,
     },
     text: {
       fontSize: 18,
-      lineHeight: 24,
+      lineHeight: width*0.064,
       fontFamily: Platform.select({
         android: 'Inter_400Regular',
         ios: 'Inter24pt-Regular',

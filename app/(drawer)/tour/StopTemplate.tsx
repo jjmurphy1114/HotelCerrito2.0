@@ -55,6 +55,10 @@ export default function StopTemplate({
   const imageSizeWidth = width * 0.9;
   const imageSizeHeight = height * 0.25;
 
+  const isSmallDevice = height < 700;
+
+  const cardHeight = isSmallDevice ? width*.4 : width*.5;
+
   const styles = StyleSheet.create({
       container: {
         backgroundColor: colors.background,
@@ -70,15 +74,15 @@ export default function StopTemplate({
         marginTop: 5
       },
       card: {
-        margin: 20,
-        marginTop: -15,
+        margin: 0,
+        marginTop: -width*.025,
         padding: 10,
         borderRadius: 10,
         backgroundColor: colors.secondary,
         width: "90%"
       },
       scrollBox: {
-        maxHeight: 200,
+        maxHeight: cardHeight,
       },
       scrollContent: {
         paddingRight: 10,
@@ -137,7 +141,7 @@ export default function StopTemplate({
     
     return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
-      <Text style={{ fontSize: 24, marginTop: -25, fontFamily: Platform.select({
+      <Text style={{ fontSize: 24, marginTop: -width*0.02, fontFamily: Platform.select({
             android: 'Inter_900Black',
             ios: 'Inter-Black',
           }), }}>{title}</Text>

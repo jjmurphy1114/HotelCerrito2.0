@@ -2,6 +2,9 @@ import ImageCarousel from '@/app/components/ImageCarousel';
 import StopTemplate from '../tour/StopTemplate';
 import { RelativePathString } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
 
 export default function Capilla() {  
   

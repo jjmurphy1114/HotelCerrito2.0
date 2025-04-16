@@ -2,6 +2,8 @@ import StopTemplate from '../tour/StopTemplate';
 import { useTranslation } from 'react-i18next';
 import { RelativePathString } from 'expo-router';
 import MapComponent from '@/app/components/Map';
+import { Dimensions } from 'react-native';
+
 
 export default function MapaCentral() {  
 

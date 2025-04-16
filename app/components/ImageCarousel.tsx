@@ -3,21 +3,25 @@ import Carousel from 'react-native-reanimated-carousel';
 import { Dimensions, View, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
 
-const { width } = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 type ImageCarouselProps = {
   images: any[];
   height?: number;
 };
 
-export default function ImageCarousel({ images, height = 200 }: ImageCarouselProps) {
+export default function ImageCarousel({ images }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const isSmallDevice = height < 700;
+
+  const carouselHeight = isSmallDevice ? height * 0.2 : height * 0.3;
 
   return (
     <View>
       <Carousel
         width={width}
-        height={height}
+        height={carouselHeight}
         data={images}
         autoPlay
         autoPlayInterval={3000}

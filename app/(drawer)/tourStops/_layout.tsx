@@ -1,8 +1,10 @@
 import { Slot } from 'expo-router';
 import { useRouter, usePathname } from 'expo-router';
 import { Button, useTheme, Text, Portal, Modal } from 'react-native-paper';
-import { View, Platform } from 'react-native';
+import { View, Platform, Dimensions } from 'react-native';
 import { useTranslation } from 'react-i18next';
+
+const { width, height } = Dimensions.get('window');
 
 export default function TourLayout() {
   const router = useRouter();
@@ -14,7 +16,7 @@ export default function TourLayout() {
     <View style={{ flex: 1 }}>
     <View
       style={{
-        height: 40,
+        height: width*.1,
         backgroundColor: colors.secondary,
         paddingHorizontal: 16,
         flexDirection: 'row',
