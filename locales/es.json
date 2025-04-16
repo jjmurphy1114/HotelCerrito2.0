@@ -131,7 +131,7 @@
         },
         "educational": {
             "production": {
-                "title": "Ver las Unidades de Producción",
+                "title": "Unidades de Producción",
                 "description": "Visite las diversas unidades de producción en el campus, como la panadería, el jardín o la granja, para aprender más sobre cómo los estudiantes trabajan para apoyar a la escuela mediante la adquisición de habilidades prácticas."
             },
             "tour": {
@@ -153,7 +153,7 @@
         },
         "adventurous": {
             "monkeys": {
-                "title": "Observar los Monos Aulladores",
+                "title": "Monos Aulladores",
                 "description": "Experimente las vistas y los sonidos de la naturaleza con la familia residente de monos aulladores. Obsérvelos mientras se columpian por las copas de los árboles y escuche sus llamadas, todo desde una distancia segura y respetuosa."
             },
             "hiking": {

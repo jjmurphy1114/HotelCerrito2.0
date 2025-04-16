@@ -131,7 +131,7 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         shadowColor: '#fff',
       },
       header: {
-        //how to get this centered
+        //fontSize: 16,
       },
       cardCover: {
         height: 200,
@@ -176,6 +176,6 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         marginLeft: width/10,
         justifyContent: 'center',
         marginBottom: 20,
-        fontSize: 14,
+        fontSize: 16,
       }
     });
