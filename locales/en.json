@@ -24,7 +24,8 @@
         },
         "back": "Back",
         "next": "Next",
-        "welcome": "Welcome to the Self-Guided Tour!",
+        "start": "Start",
+        "welcome": "Welcome to the self-guided tour of the Cerrito Agricultural School and Hotel! In this tour, you will discover the history of the school and hotel and learn about the campus production units. To take the tour, follow the numbers indicated on the map on the following page and the numbered wooden posts around campus. You can take the tour in the order provided, or in any order you would like by clicking the “View Stops” button. To hear instructions to arrive at the recommended next stop, click the “Play Directions” button.\n\nThe original tour is narrated by students and staff of the Cerrito School and Hotel in Spanish. The English translation is voiced by students from Worcester Polytechnic Institute in the United States.\n\nDuring the tour, we invite you to enjoy the nature around campus. If you are observant, you might see or hear the animals found on campus, such as howler monkeys. To learn more about howler monkeys, you can visit the “Observe the Howler Monkeys” section on the homepage of the application. Now I invite you to approach the central map in front of the hotel to start the tour.",
         "map":{
             "open": "View Map",
             "close": "Close Map",
@@ -34,62 +35,72 @@
         "descriptionsButton": "Play Description",
         "mapa_central": {
             "title": "Central Map",
-            "description": "Central Map lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "directions": "This is a placeholder for the directions of this page lorem ipsum raaaaaaaaaaa raaaaaaa lorem ipsum whats good jits im just typin hella stuff in this box to make the map make move type shi"
+            "description": "Welcome to the Cerrito Agricultural School, a magical place in the Paraguayan Chaco, where young people from all over the country learn to “produce, sell, and make money”! I am Amalio Enciso*, Director of the School. It is a pleasure to welcome you to “Our House”! I invite you to look at the map, where you can see the school campus and production areas. Right now, you are located at the red circle.\n\nThe school was founded in 1960 by the order of German Franciscan Brothers. Twenty years later, the Franciscan Brothers donated the school to the Christian Brothers De La Salle, whose mission is to educate.\n\nIn 2002, due to the financial crisis of 2000, the De La Salle Brothers offered the school to Fundación Paraguaya as a donation, with the agreement to continue technical agricultural training, but with the addition of financial and entrepreneurial education.\n\nFundación Paraguaya developed an Educational-Productive Business Plan with three objectives:\n\n• Employability for all graduates \n\n• A curriculum focused on the market\n\n• A one hundred percent self-sufficient institution, without state resources\n\nThe School achieved financial self-sufficiency in 2007, covering 100% of the operating budget and 40 salaries without receiving contributions from the government, and remains self-sufficient today. In this way, the Cerrito Agricultural School has served as inspiration for many schools around the world seeking to achieve self-sufficiency.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by the director of the Cerrito Agricultural School.",
+            "directions": "Our next stop is the Sports Fields. Turn to the metal gate 50 meters to your right. Walk through the gate, turn to your right, and walk until you find post number 2 next to the basketball court."
         },
         "capilla": {
             "title": "Chapel",
-            "description": "N/A",
+            "description": "Hello! We are now at the Chapel. My name is Daniela*, and I am in my third year here at the Cerrito School. I am from the Chaco region. My town is known for its zoo, Lluvia de Oro.\n\nThe chapel was constructed during the time of the Fransciscans and served as a place of worship open to the public during the times of the Franciscan and La Salle brothers. Since Fundación Paraguaya acquired the school in 2003, the chapel has been used for religious ceremonies and social activities. The chapel houses German artwork, including statues and the Stations of the Cross. Now, it functions as a space for internal events, receiving visitors, and celebrating Mass on special occasions.\n\nIn the patio of the chapel, there is a bell that we use as a clock; a student rings it at wake-up time, to signal breaks, at the end of daily activities, and for other general activities.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "The next stop is the central patio, where you already are! Walk 50 meters to the right towards post number 5 to hear about the central patio.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         }, 
         "cancha": {
             "title": "Sports Fields",
-            "description": "N/A",
+            "description": "Hello, I am Álvaro*, and we are now at the sports fields! I am in my third year at the Cerrito School and I am from Caacupé. My town is known for its cathedral, delicious chipa, and hospitality.\n\nHere you can see the large football field, a small paved court, and a volleyball court.\n\nThe football field was built in 2024. It has official dimensions, and the school rents it to local teams for competitions. In this way, the field generates income for the school.\n\nThe students of the school use the field to exercise outside and meet with friends after classes. Guests of the hotel can jog around the field for exercise.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "Now turn to your left and walk down 200 meters. To your right, you will find post number 3 at the entrance of the Academic Sector.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "sector_academico": {
             "title": "Academic Sector",
-            "description": "N/A",
+            "description": "Hello, my name is Mica*, and we are now in the Academic Sector! I am in my third year at the Cerrito School and am from Caazapá. My town is known for the story of the Ycuá Bolaños.\n\nHere you can find the student classrooms. The education model of the Cerrito Agricultural School is unique: we are divided into two groups. One group works in the production units – what we call “learning by doing” – and the other attends class. Each week, the groups switch so that we all can learn both in the production units and in the classroom.\n\nWe have 260 days of class every year. Each day, our schedule starts at 5:45 in the morning and goes to 9:45 at night. Normally, a day consists of cleaning, work in the production units, attending classes, sports, rest, and games. We do not have classes on the weekends, and can leave to visit our families. However, due to the agricultural nature of the school, some students stay on campus on the weekends to take care of animals or water crops, and take turns doing so.\n\nThe school offers two degrees approved by the Ministry of Education: one in Agriculture and the other in Rural Tourism. Since 2003, more than 700 students have graduated and are now professionals and entrepreneurs across the country, honoring the school with their careers.\n\nMy favorite class is physics, and when I graduate, I want to be an industrial engineer.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "Now we go to the chapel. Turn around, cross the road, and pass through the gate towards the chapel area. Walk about 50 meters until you find post number 4 on the right. Look to the left to see the chapel.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "patio_central": {
             "title": "Central Patio",
-            "description": "N/A",
+            "description": "Hello! It is Álvaro* again. We are now at the Central Patio.\n\nThe Central Patio is where students often gather in their free time. Facing the stairs of the two-story building, you will see the student dining room to your left and, next to it, a TV room that students use in their free time. Behind the student dining room is the boys’ dormitory.\n\nIn the two-story building, the ground floor houses the administration and general management of the school, while on the upper floor are the offices of some of the teachers.\n\nOn your right is the girls’ dormitory.\n\nI love to sit on the Central Patio with my friends and drink delicious tereré!\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "Now we are going to the guest restaurant. Take the path in the direction of the hotel, and you will see post number 6 on your right.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "comedor": {
             "title": "Restaurant",
-            "description": "N/A",
+            "description": "Hello! My name is Joaquín* and we are now in front of the guest restaurant. I am in my first year at the Cerrito School and am from Asunción. My city is known for being the economic, political, industrial, and cultural center of Paraguay.\n\nAs part of the hotel, the restaurant functions as a center for students to practice customer service. It is open from 7:30 to 21:00, offering breakfast, mid-morning snack, lunch, afternoon snack, and dinner. It has two rooms with a maximum capacity of approximately 200 people.\n\nMost of the food served in the dining room comes from the animal and vegetable production centers as well as the school’s cheese factory. Dining reservations can be made at the hotel reception.\n\nIn the dining room, students learn to organize buffets and to receive, attend to, and serve guests, which is part of our preparation to obtain a bachelor's degree in rural tourism.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "The next stop of our tour is the Animal Production Center. Go up the path in the direction of the hotel and turn onto the first dirt path on your right. Follow this path for about 50 meters, keeping right at the fork, and continue for another 150 meters. When you arrive at the iron gate, keep walking and continue straight, passing the tool shed on your left, until you arrive at the wooden post labeled 7.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         }, 
         "CPA": {
             "title": "Animal Production Center",
-            "description": "N/A",
+            "description": "Hello! It is Álvaro* again. We are now in the Animal Production Center, one of my favorite places on campus.\n\nHere we produce milk from cows and goats, suckling pigs, chicken, fish, eggs from chickens and quails, and honey.\n\nWe use the milk in the cheese factory to make our delicious cheeses, dulce de leche, and yogurt.\n\nThe school consumes approximately 30% of the products produced by this unit; the rest is sold in farmers’ markets, door-to-door in the community, and to restaurants and supermarkets in Benjamín Aceval and Asunción.\n\nThe students do everything necessary to take care of the animals. On a typical day, for example, we learn about the breeding and fattening of farm animals and participate in births and cleaning processes.\n\nThe Animal Production Center also houses horses. You can make arrangements with the hotel reception to ride them.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "We invite you to explore the area and see the animals. When you arrive at the “tambo,” walk up to the highest point of the animal production center. From there you can see a big white building, which is the cheese factory. This is our next stop. Walk to the corner of the cheese factory and find post number 8.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "fabrica_de_queso": {
             "title": "Cheese Factory",
-            "description": "N/A",
+            "description": "Hello! It is Mica* again! We are now in the cheese factory.\n\nThis building was constructed in 2023 with the goal of increasing the school’s cheese production capacity. It can now process up to 30,000 liters of milk every month.\n\nHere at the Cheese Factory, we make our famous Iberian cheese, blue cheese, ricotta cheese, drinkable yogurt, and dulce de leche using mainly the milk produced at the school.\n\nWe prepare our Iberian cheese with a mixture of goat and cow’s milk, and with this new factory, we can produce more than 100 kilos of cheese a week. Our most popular product is Iberian cheese, of which we make several types. We make it of various maturations and with different additions such as herbs or hot pepper.\n\nStudents participate in all steps of production. In a typical week, we receive the milk from the Animal Production Center, refrigerate it, and then use it to make the different dairy products\n\nYou can purchase all of our different delicious products at the hotel reception!\n\nIf you want to learn more about the cheese factory, you can schedule a guided tour at the hotel reception as well.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "Now we are going to the Vegetable Production Center. From the front of the cheese factory, go up the path for about 70 meters to reach post number 9 on your left.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "CPV": {
             "title": "Vegetable Production Center",
-            "description": "N/A",
+            "description": "Hello, it is Joaquín*! We are at the Vegetable Production Center.\n\nIn this unit, we grow 22 species of plants during the year, including tomatoes, peppers, lettuce, spinach, cabbage, cucumber, hot peppers, and more.\n\nHere we work exclusively in organic production, using no added chemicals. We produce fertilizer for the garden and nursery with organic matter generated by the school and sell the surplus.\n\nThe students, together with our teachers, perform all the tasks necessary for efficient production. In a typical week, for example, we water seedlings, transplant them, and harvest mature vegetables.\n\nLooking up the road, you will see some of the eucalyptus trees that belong to the school. To learn about our eucalyptus, you can visit the “Educational Activities” section of the application.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "The next stop of the tour is the pool and cabanas. Walk back toward the cheese factory for about 100 meters and then walk through the iron gate on your right. Walking towards the hotel, you will see the pool and cabana area on your right, marked by post number 10.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "piscina": {
             "title": "Pool and Gazebo",
-            "description": "N/A",
+            "description": "Hello! It is Mica* again. We are now at the pool and cabanas.\n\nOriginally, the structures of the two cabanas were chicken coops. Then, when we moved the hens to the Animal Production Center, the sheds were converted into cabanas with grills. They serve as outdoor spaces for families and groups to enjoy the environment and green space.\n\nThe hotel has a swimming pool for guests, which can accommodate up to 40 people, and can be used from 9 am to 8 pm every day.\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "Our next stop is the hotel. Follow the path for 20 meters from post number 10 to the hotel; then take the dirt trail on your left and follow it along the edge of the hotel until you reach the front where you will find post number 11.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "hotel" : {
             "title": "Hotel",
-            "description": "N/A",
+            "description": "Hello, it is Daniela* again! Right now we are at the hotel.\n\nIn the time of the Franciscans, this building was the student dormitory. Then it became a spiritual retreat house. Since 2005, it has been a rural hotel open to the public.\n\nToday, the hotel is a center for students to train in and practice hospitality and tourism, and accounts for 60% of the school's revenue.\n\nThe hotel has 23 rooms with group, marital, single, double, or triple options, some with private bathrooms. It also offers 5 cabins equipped with kitchens and bathrooms. The total capacity is 250 people.\n\nThe hotel offers several services: Wi-Fi in each room, a swimming pool, cabanas with grills, a restaurant, catering, and a guided tour, which you are enjoying right now! In addition, it has spaces for special events such as quinceañera celebrations and weddings.\n\nHere at the hotel, students do everything necessary to offer a pleasant stay to our guests. On a typical day, for example, I receive visitors, clean rooms, and learn how to serve meals in the hotel restaurant. My favorite part is meeting people from all over the world who come to visit our school!\n\n*Disclaimer: This is voiced by an English-speaking Worcester Polytechnic Institute student, translated from a Spanish script originally voiced by a student of the Cerrito Agricultural School.",
+            "directions": "This is the last stop of the tour. Please continue to the next screen.",
             "audio": "'../../../assets/audio/es/cancha.mp3'"
         },
         "end": {
             "title": "End of Tour",
-            "description": "Thank you for taking the self-guided tour! We hope you enjoyed learning about the Cerrito School and Hotel. If you have any questions or would like to learn more, please feel free to reach out to us.",
+            "description": "This concludes the tour of the Cerrito Agricultural School and Hotel. We hope you had a good time and learned something new about this unique place. If you want to explore and learn more about our School and Hotel, you can go to the “Activities” section of the app. We now invite you to the hotel lobby, where you can rest and buy a snack, drink, or some of our delicious products. Thank you very much for visiting us, and have a great day!",
             "endButton": "End Tour",
             "continue": "Return to Stop 1"
         }
@@ -103,7 +114,7 @@
         "relaxing": {
             "pool": {
                 "title": "Swimming",
-                "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the pavilion. The pool is open from 9:00 AM to 8:00 PM every day."
+                "description": "Take a refreshing dip in the pool and relax on the recliners or stay in the shade under the cabana. The pool is open from 9:00 AM to 8:00 PM every day."
             },
             "restaurant": {
                 "title": "Campus Restaurant",
@@ -111,7 +122,7 @@
             },
             "hammocks": {
                 "title": "Traditional Hammocks",
-                "description": "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time. Weather dependent."
+                "description": "Take a book or a nap under the trees in traditional Paraguayan hammocks for some peaceful leisure time."
             },
             "games": {
                 "title": "Tabletop Games",
@@ -119,21 +130,21 @@
             },
             "quinchos": {
                 "title": "Cabana",
-                "description": "Cook and gather with friends/family at the cabana by the pool."
+                "description": "Enjoy grilling and gathering with friends and family at the cabana by the pool. Manage your reservation at the hotel reception."
             },
             "gift_shop": {
                 "title": "Hotel Shop",
-                "description": "Support the Cerrito School by purchasing products in the hotel lobby. You can find yogurt, dulce de leche, and cheese, all made by students on campus. We also have snacks, drinks, and souvenirs."
+                "description": "Support the Cerrito School by purchasing products in the hotel lobby and the small cabana. You can find yogurt, dulce de leche, and cheese, all made by students on campus. We also have snacks, drinks, and souvenirs."
             },
             "exercise": {
-                "title": "Exercise Zone",
-                "description": "Make sure to get in a good workout at the exercise zone by the sports field. Dynamic equipment is available for use."
+                "title": "Outdoor Gym",
+                "description": "Make sure to get in a good workout at the outdoor gym by the side of the chappel. Dynamic equipment is available for use."
             }
         },
         "educational": {
             "production": {
-                "title": "View Production Units",
-                "description": "Visit the various production units on campus, such as the bakery, garden, or farm, to learn more about how students work to support the school by gaining practical skills."
+                "title": "View the Production Units",
+                "description": "Visit the various production units on campus, such as the bakery, garden, or farm, to learn more about how students practice skills and use them to support the school."
             },
             "tour": {
                 "title": "Self-Guided Campus Tour",
@@ -141,15 +152,15 @@
             },
             "cheese": {
                 "title": "Cheese Factory Tour",
-                "description": "Observe the exciting process of making cheese and learn the history of the campus cheese factory. Contact the hotel reception to arrange a guided tour."
+                "description": "Observe the exciting process of making cheese and learn the history of the campus cheese factory. Guided tours are available for groups upon request at the hotel reception."
             },
             "toba_qom": {
                 "title": "Visit to the Toba Qom",
-                "description": "Explore the nearby Toba Qom Indigenous community, learn about their culture, and support them by purchasing handmade artisanal goods. Please see the hotel concierge to arrange a guided visit."
+                "description": "Visit the Toba Qom Indigenous community, learn about their culture, and support them by purchasing handmade artisanal goods. Please see the hotel reception to arrange a guided visit."
             },
             "eucalyptus": {
                 "title": "Eucalyptus Plantation",
-                "description": "Marvel at the rows of eucalyptus trees. Previously dedicated to the cultivation of sugarcane, the Cerrito School now grows eucalyptus to sell as firewood. The campus has 37 hectares of eucalyptus plantations that are registered in the National Forestry Institute of Paraguay."
+                "description": "Marvel at the silvopasture of eucalyptus. Previously dedicated to the cultivation of sugarcane, the Cerrito School now grows eucalyptus to sell as firewood. The campus has 37 hectares of eucalyptus plantations that are registered in the National Forestry Institute of Paraguay."
             }
         },
         "adventurous": {
@@ -167,7 +178,7 @@
             },
             "horses": {
                 "title": "Ride Horses",
-                "description": "Explore the Animal Production Center on horseback with a guided ride through the school’s farm. All experience levels welcome. Please see the hotel concierge to make a reservation."
+                "description": "Explore the Animal Production Center on horseback with a guided ride through the school’s farm. All experience levels welcome. Please see the hotel recepción to make a reservation."
             },
             "sports": {
                 "title": "Play Sports",
@@ -175,7 +186,7 @@
             },
             "playground": {
                 "title": "Playground",
-                "description": "Looking for child-friendly adventures? Take your kids to enjoy family fun at the playground next to the pool! Available 24/7."
+                "description": "Looking for child-friendly adventures? Take your kids to enjoy family fun at the playground next to the pool! Available from 9:00 to 20:00, everyday."
             }
         }
     },
@@ -188,7 +199,7 @@
         "Header": "About Us",
         "FDDesc": "We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.We develop and implement practical, innovative, and sustainable solutions that unlock the entrepreneurial potential of families to eliminate multidimensional poverty and live with dignity.",
         "CerritoTitle": "The Cerrito School", 
-        "CerritoDesc": "Hotel Cerrito is a venture of Fundación Paraguaya. The school follows a self-management model, in which a self-sufficient farm school generates its own income. We foster an entrepreneurial spirit in our students, who come from 12 departments across the country and abroad. We are a coeducational boarding school with facilities for 150 students.",
+        "CerritoDesc": "Hotel Cerrito is a venture of Fundación Paraguaya. The school follows a self-management model, in which a self-sufficient farm school generates its own income. We foster an entrepreneurial spirit in our students, who come from 17 departments across the country and abroad. We are a coeducational boarding school with facilities for 150 students.",
         "HelpTitle": "Collaborating with the School", 
         "HelpDesc": "Acquiring products and services from the Cerrito School and Hotel generates income that helps sustain our student education work. Booking rooms, using the laundry service, eating at the hotel restaurant and purchasing our products are ways to support our mission. You can also recommend Cerrito to your friends and family!",
         "Footer1": "Copyright © 2018 Fundación Paraguaya.",
@@ -201,14 +212,15 @@
         "subheader1": "About the Howler Monkeys",
         "subheader2": "Reccomendations for Observing the Howler Monkeys",
         "text1": "There is a family of black-and-gold howler monkeys, also known as Alouatta caraya, that reside on the Cerrito School and Hotel campus. All monkeys of this species are born with gold fur. The females remain gold while the males turn black as they mature.\n\nHowler monkeys are calm animals and do not engage in direct contact with humans unless threatened. They are most active during sunrise and sunset and usually seen in the trees. They use their prehensile tails to hang on branches and sleep at night on high and safe branches.\n\nThey are known as howler monkeys because of the howling-like sounds they make to defend their territory, communicate with other groups, and coordinate their movements within the group. It is common for them to howl at dawn and dusk as a way to establish their territorial boundaries.\n\nHowler monkeys commonly eat leaves, however they also eat flowers, tender shoots, and fruits such as mangos. When in season, the local family of howler monkeys at Cerrito enjoy climbing the mango trees on campus and eating the fruit. They serve an important ecological role in seed dispersion as they commonly throw seeds on the ground after finishing their fruits.",
-        "text2": "Since howler monkeys are most active at dawn and dusk, we recommend walking through campus during those times for the best chance of seeing the monkeys. As you walk, look for movement in the tree tops and listen for their howling (see the audio player below for an audio sample).\n\nTo avoid interfering with their natural activities and reduce the risk of disease transmission, observation of the monkeys should be passive, silent, in small groups, and at a minimum distance of 10 meters.\n\nWhile the howler monkeys can be seen throughout campus, they can often be found in the following places:\n\n- The bamboo grove by the animal production center\n\n- The trees by both sets of cabins\n\n- The trees between the bakery, hotel, and Jazmín cabin"
+        "text2": "Since howler monkeys are most active at dawn and dusk, we recommend walking through campus during those times for the best chance of seeing the monkeys. As you walk, look for movement in the tree tops and listen for their howling (see the audio player below for an audio sample).\n",
+        "text3": "\nTo avoid interfering with their natural activities and reduce the risk of disease transmission, observation of the monkeys should be passive, silent, in small groups, and at a minimum distance of 10 meters.\n\nWhile the howler monkeys can be seen throughout campus, they can often be found in the following places:\n\n- The bamboo grove by the animal production center\n\n- The trees by both sets of cabins\n\n- The trees between the bakery, hotel, and Jazmín cabin"
     },
     "otherServices": {
         "title": "Services",
         "header": "Services",
         "button1": "Cerrito Restaurant",
         "button2": "Laundry Services",
-        "button3": "Refill Drinking Water",
+        "button3": "Drinking Water",
         "button4": "Housekeeping",
         "button5": "Reserve Activities",
         "button6": "Room Maintenance"
@@ -216,49 +228,46 @@
     "cerritoRestaurant": {
         "title": "Cerrito Restaurant",
         "header": "Cerrito Restaurant", 
-        "body1": "The Cerrito Schools restaurant serves lunch and dinner daily. \n\nThe restaurant requests that guests inform the hotel of their desire to eat at the restaurant and the number of people in their party: \n\nBy 10 AM for lunch, or \nBy 12 PM for dinner \n\nThe hotel staff will also send a menu for the day upon request.\n",
+        "body1": "The Cerrito School’s restaurant offers food service every day.\n\nThe restaurant requests that guests inform the hotel reception of their order and confirm the number of people in their party during the hours of reception: 6:00 to 20:00.\n",
         "body2": "To make a reservation or view the menu of the day, please send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     },
     "laundry": {
         "title": "Laundry",
         "header": "Laundry", 
-        "body1": "Dirty laundry can be dropped off at the Hotel Reception for washing and drying.\n",
-        "body2": "Laundry Schedule\n",
-        "body3": "Dirty laundry can be left at the Reception at ",
-        "body4": "9AM on Monday or Tuesday",
-        "body5": ", or ",
-        "body6": "4PM on Wednesday.",
-        "body7": "\n We request that guests pick up their clean clothes at",
-        "body8": " 4PM on the day after they drop it off.\n"
+        "body1": "Dirty laundry can be dropped off at the hotel reception to be washed and ironed from",
+        "body4": " 6:00 to 11:00 from Monday to Saturday.\n",
+        "body5": "You can collect your clean and ironed clothes at the hotel reception ",
+        "body6": "five hours ",
+        "body7": "after dropping them off."
     },
     "waterRefill": {
-        "title": "Refill Drinking Water",
-        "header": "Refill Drinking Water", 
-        "body1": "For visitors staying in the cabins, drinking water cans can be collected from the hotel lobby, upon request and free of charge.\n",
-        "body2": "To request a water can, please send a WhatsApp message to:\n",
+        "title": "Drinking Water",
+        "header": "Drinking Water", 
+        "body1": "Tap water is drinkable. Bottled water is available at the hotel reception.\n\nFor visitors staying in the cabins, cans of drinking water can be picked up from the hotel reception, upon request and free of charge.\n",
+        "body2": "To request a water refill, please send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     },
     "housekeeping": {
         "title": "Housekeeping",
         "header": "Housekeeping", 
         "body1": "Room cleaning services are available upon request at no charge.\n",
-        "body2": "To schedule room cleaning services for your hotel room, please send a WhatsApp message to:\n",
+        "body2": "To schedule housekeeping for your hotel room, you can go to the hotel reception or send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     },
     "reserveActivities": {
         "title": "Reserve Activities",
         "header": "Reserve Activities", 
         "body1": "Some available activities require reservations through the front desk. These include:\n",
-        "body2": "Lunch or dinner at the Cerrito Restaurant,\nTour of the Cheese Factory,\nHorseback Riding, and\nVisits to the the Stand of Artisan Products of the Toba Qom community adjacent to the School.\n",
-        "body3": "To learn about and make a reservation for any of these activities, please see the front desk or send a WhatsApp message to:\n",
+        "body2": "Eating at the Cerrito Restaurant,\nTouring the Cheese Factory,\nHorseback riding, and\nVisiting the Stand of Artisan Products of the Toba Qom community adjacent to the School.\n",
+        "body3": "To learn about and make a reservation for any of these activities, please see the hotel reception or send a WhatsApp message to:\n",
         "body4": "+595-976-360-833"
     },
     "maintenance": {
         "title": "Room Maintenance",
         "header": "Room Maintenance",
         "body1": "Maintenance services are available upon request at no charge.\n",
-        "body2": "To request maintenance for your room/hotel appliances, please send a WhatsApp message to:\n",
+        "body2": "To request maintenance for any problem you have, please visit the hotel reception or send a WhatsApp message to:\n",
         "body3": "+595-976-360-833"
     }
 }
