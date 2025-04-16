@@ -148,6 +148,17 @@ export default function HowlerMonkeys() {
         <Text style={styles.subheader}>{t('howlerMonkeys.subheader1')}</Text>
         <Text style={styles.text}>{t('howlerMonkeys.text1')}</Text>
 
+        <Image
+          style={{width: imageSizeWidth,
+            height: imageSizeHeight *.9,
+            backgroundColor: '#0553',
+            resizeMode: 'cover',
+          marginTop: height*.0504}}
+          source={require('../../assets/images/HowlerMonkey2.jpg')}
+          contentFit="contain"
+          transition={1000}
+        />
+
         <Text style={styles.subheader}>{t('howlerMonkeys.subheader2')}</Text>
         <Text style={styles.text}>{t('howlerMonkeys.text2')}</Text>
         <AudioPlayer source={require('../../assets/audio/HowlerMonkeyAudio.mp3')} />
