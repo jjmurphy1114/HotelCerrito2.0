@@ -14,7 +14,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fundacionparaguaya.cerritovisitorapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.hotelcerrito.audiotour",
@@ -38,15 +42,6 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
-        }
-      ],
-      [
-        "expo-font",
-        {
-          "fonts": [
-            "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf",
-            "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf"
-          ]
         }
       ]
     ],
