@@ -21,11 +21,6 @@
       }
     }
   },
-  "install": {
-    "npm": {
-      "legacyPeerDeps": true
-    }
-  },
   "submit": {
     "production": {}
   }
