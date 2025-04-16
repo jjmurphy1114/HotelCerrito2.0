@@ -1,10 +1,15 @@
 {
   "expo": {
-    "name": "HotelCerritoNewApp",
-    "slug": "HotelCerritoNewApp",
+    "name": "HotelCerritoApp",
+    "slug": "HotelCerritoApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/hotel-cerrito-logo.png",
+    "splash": {
+        "image": "./assets/images/hotel-cerrito-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+    },
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
