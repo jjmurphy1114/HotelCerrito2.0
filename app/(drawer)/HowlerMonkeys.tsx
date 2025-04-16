@@ -91,7 +91,7 @@ export default function HowlerMonkeys() {
     image: {
       width: imageSizeWidth,
       height: imageSizeHeight,
-      backgroundColor: '#0553',
+      backgroundColor: '#ffff',
       resizeMode: 'cover',
     },
     scrollView: {
@@ -151,7 +151,7 @@ export default function HowlerMonkeys() {
         <Image
           style={{width: imageSizeWidth,
             height: imageSizeHeight *.9,
-            backgroundColor: '#0553',
+            backgroundColor: '#ffff',
             resizeMode: 'cover',
           marginTop: height*.0504}}
           source={require('../../assets/images/HowlerMonkey2.jpg')}
