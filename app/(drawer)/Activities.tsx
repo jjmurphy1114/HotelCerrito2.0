@@ -27,7 +27,7 @@ const educatImages = [
   require('../../assets/images/Production.png'), //production
   require('../../assets/images/MapaCentral1.jpg'), //tour
   require('../../assets/images/CheeseMaking.png'), //cheese
-  require('../../assets/images/TobaQom.png'), //toba qom
+  require('../../assets/images/TobaQom.jpg'), //toba qom
   require('../../assets/images/Eucalipto3.jpg'), //eucalyptus
 ];
 const adventImages = [
