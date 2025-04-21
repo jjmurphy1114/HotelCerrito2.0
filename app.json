@@ -17,7 +17,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.hotelcerrito.audiotour",
+      "package": "com.fundacionparaguaya.cerritovisitorapp",
       "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/cerrito-logo.png",
