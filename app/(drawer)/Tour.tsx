@@ -88,7 +88,7 @@ export default function TourStart() {
         images={[
           require('../../assets/images/HotelWithTrees.jpg'),
           require('../../assets/images/CerritoSign.jpeg'),
-          require('../../assets/images/Capilla.jpg'),
+          require('../../assets/images/Capilla.webp'),
         ]}
       /> 
       <AudioPlayer source={audio}/>

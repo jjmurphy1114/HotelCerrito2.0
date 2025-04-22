@@ -19,7 +19,7 @@ const relaxImages = [
 require('../../assets/images/Piscina.jpg'), //pool
 require('../../assets/images/Comedor1.jpg'), //restaurant
 require('../../assets/images/Hammocks.jpg'), //hammocks
-require('../../assets/images/Quincho1.jpg'), //quinchos
+require('../../assets/images/Quincho.jpg'), //quinchos
 require('../../assets/images/Shop.jpg'), //gift shop
 require('../../assets/images/Ejercicios1.jpg'), //exercise
 ];
@@ -32,11 +32,11 @@ const educatImages = [
 ];
 const adventImages = [
   require('../../assets/images/HowlerMonkey.jpeg'), //monkeys
-  require('../../assets/images/Walking.jpg'), //hiking
+  require('../../assets/images/PatioWithStudents.jpg'), //hiking
   require('../../assets/images/Bici.jpg'), //biking
   require('../../assets/images/Horses1.jpeg'), //horses
   require('../../assets/images/Sports1.png'), //sports
-  require('../../assets/images/Playground.png'), //playground
+  require('../../assets/images/Parque.webp'), //playground
 ];
 
 type ActivityCardProps = {
