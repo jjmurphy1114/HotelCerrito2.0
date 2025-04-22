@@ -12,7 +12,7 @@ export default function Capilla() {
       description={t("tour.capilla.description")}
       directions={t("tour.capilla.directions")}
       audioPathKey="capilla"
-      image={require('../../../assets/images/Capilla.jpg')}
+      image={require('../../../assets/compressed/Capilla.webp')}
       prev={'/(drawer)/tourStops/SectorAcademico' as RelativePathString}
       next={'/(drawer)/tourStops/PatioCentral' as RelativePathString}
     />

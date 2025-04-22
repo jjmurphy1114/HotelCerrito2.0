@@ -13,10 +13,10 @@ export default function Capilla() {
       description={t("tour.hotel.description")}
       directions={t("tour.hotel.directions")}
       audioPathKey="hotel"
-      image={require('../../../assets/images/Hotel.jpg')}
+      image={require('../../../assets/compressed/Hotel.webp')}
        customVisual={
-              <ImageCarousel images={[require('../../../assets/images/Hotel.jpg'),
-                                      require('../../../assets/images/HotelFrontDesk.jpeg')
+              <ImageCarousel images={[require('../../../assets/compressed/Hotel.webp'),
+                                      require('../../../assets/compressed/HotelFrontDesk.webp')
                                     ]}/>
             }
       prev={'/(drawer)/tourStops/Piscina' as RelativePathString}

@@ -140,7 +140,7 @@ export default function HowlerMonkeys() {
 
         <Image
           style={styles.image}
-          source={require('../../assets/images/HowlerMonkey.jpeg')}
+          source={require('../../assets/compressed/HowlerMonkey.webp')}
           contentFit="contain"
           transition={1000}
         />
@@ -154,7 +154,7 @@ export default function HowlerMonkeys() {
             backgroundColor: '#ffff',
             resizeMode: 'cover',
           marginTop: height*.0504}}
-          source={require('../../assets/images/HowlerMonkey2.jpg')}
+          source={require('../../assets/compressed/HowlerMonkey2.webp')}
           contentFit="contain"
           transition={1000}
         />

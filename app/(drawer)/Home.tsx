@@ -78,13 +78,13 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   var routerPath: ButtonSelectProps;
 
   const images = [
-    require("../../assets/images/CerritoSign.jpeg"),
-    require("../../assets/images/MapaCentral.jpeg"),
-    require("../../assets/images/HorseRiding.jpeg"),
-    require("../../assets/images/Store.jpeg"),
-    require("../../assets/images/HotelSide.jpeg"),
-    require("../../assets/images/HotelFrontDesk.jpeg"),
-    require("../../assets/images/HowlerMonkey.jpeg"),
+    require("../../assets/compressed/CerritoSign.webp"),
+    require("../../assets/compressed/MapaCentral.webp"),
+    require("../../assets/compressed/HorseRiding.webp"),
+    require("../../assets/compressed/Store.webp"),
+    require("../../assets/compressed/HotelSide.webp"),
+    require("../../assets/compressed/HotelFrontDesk.webp"),
+    require("../../assets/compressed/HowlerMonkey.webp"),
   ];
 
   const routerPaths: RelativePathString[] = [
@@ -147,7 +147,7 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
           source={imagePath}
           placeholder={{ blurhash }}
           contentFit="cover"
-          transition={1000}
+          transition={Platform.OS === 'ios' ? 1000 : 0}
         />
           <Text style={styles.button}>{buttonTitle}</Text>
         </View>
@@ -194,16 +194,18 @@ export default function Home() {
     }
   });
 
+  const MemoizedImageButtonPair = React.memo(ImageButtonPair);
+
   return (
     <View>
     <ScrollView contentContainerStyle={styles.scrollView}>
-      <ImageButtonPair button={1}></ImageButtonPair>
-      <ImageButtonPair button={2}></ImageButtonPair>
-      <ImageButtonPair button={7}></ImageButtonPair>
-      <ImageButtonPair button={3}></ImageButtonPair>
-      <ImageButtonPair button={4}></ImageButtonPair>
-      <ImageButtonPair button={5}></ImageButtonPair>
-      <ImageButtonPair button={6}></ImageButtonPair>
+      <MemoizedImageButtonPair button={1}></MemoizedImageButtonPair>
+      <MemoizedImageButtonPair button={2}></MemoizedImageButtonPair>
+      <MemoizedImageButtonPair button={7}></MemoizedImageButtonPair>
+      <MemoizedImageButtonPair button={3}></MemoizedImageButtonPair>
+      <MemoizedImageButtonPair button={4}></MemoizedImageButtonPair>
+      <MemoizedImageButtonPair button={5}></MemoizedImageButtonPair>
+      <MemoizedImageButtonPair button={6}></MemoizedImageButtonPair>
 
       <View style={styles.footer}>
           <Text style={styles.footerText}>{t('home.Footer1')}</Text>
