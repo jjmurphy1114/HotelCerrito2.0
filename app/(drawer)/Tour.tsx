@@ -86,9 +86,9 @@ export default function TourStart() {
 
       <ImageCarousel
         images={[
-          require('../../assets/images/HotelWithTrees.webp'),
-          require('../../assets/images/CerritoSign.webp'),
-          require('../../assets/images/Capilla.webp'),
+          require('../../assets/compressed/HotelWithTrees.webp'),
+          require('../../assets/compressed/CerritoSign.webp'),
+          require('../../assets/compressed/Capilla.webp'),
         ]}
       /> 
       <AudioPlayer source={audio}/>

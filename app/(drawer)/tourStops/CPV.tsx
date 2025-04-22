@@ -13,8 +13,8 @@ export default function Capilla() {
       description={t("tour.CPV.description")}
       directions={t("tour.CPV.directions")}
       audioPathKey="CPV"
-      image={require('../../../assets/images/CPV.jpg')}
-      customVisual={<ImageCarousel images={[require('../../../assets/images/CPV.jpg'), require('../../../assets/images/Gardening.jpg')]}/>}
+      image={require('../../../assets/compressed/CPV.webp')}
+      customVisual={<ImageCarousel images={[require('../../../assets/compressed/CPV.webp'), require('../../../assets/compressed/Gardening.webp')]}/>}
       prev={'/(drawer)/tourStops/FabricaDeQueso' as RelativePathString}
       next={'/(drawer)/tourStops/Piscina' as RelativePathString}
     />
