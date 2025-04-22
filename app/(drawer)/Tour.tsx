@@ -86,8 +86,8 @@ export default function TourStart() {
 
       <ImageCarousel
         images={[
-          require('../../assets/images/HotelWithTrees.jpg'),
-          require('../../assets/images/CerritoSign.jpeg'),
+          require('../../assets/images/HotelWithTrees.webp'),
+          require('../../assets/images/CerritoSign.webp'),
           require('../../assets/images/Capilla.webp'),
         ]}
       /> 
