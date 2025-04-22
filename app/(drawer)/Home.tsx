@@ -78,11 +78,11 @@ function ImageButtonPair({ button } : ImageButtonPairProps) {
   var routerPath: ButtonSelectProps;
 
   const images = [
-    require("../../assets/images/CerritoSign.jpeg"),
+    require("../../assets/images/CerritoSign.webp"),
     require("../../assets/images/MapaCentral.jpeg"),
     require("../../assets/images/HorseRiding.jpeg"),
     require("../../assets/images/Store.jpeg"),
-    require("../../assets/images/HotelSide.jpeg"),
+    require("../../assets/images/HotelSide.webp"),
     require("../../assets/images/HotelFrontDesk.jpeg"),
     require("../../assets/images/HowlerMonkey.jpeg"),
   ];

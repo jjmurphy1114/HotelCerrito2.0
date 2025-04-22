@@ -19,7 +19,7 @@ const relaxImages = [
 require('../../assets/images/Piscina.jpg'), //pool
 require('../../assets/images/Comedor1.jpg'), //restaurant
 require('../../assets/images/Hammocks.jpg'), //hammocks
-require('../../assets/images/Quincho1.jpg'), //quinchos
+require('../../assets/images/Quincho.jpg'), //quinchos
 require('../../assets/images/Shop.jpg'), //gift shop
 require('../../assets/images/Ejercicios1.jpg'), //exercise
 ];
@@ -27,16 +27,16 @@ const educatImages = [
   require('../../assets/images/Production.png'), //production
   require('../../assets/images/MapaCentral1.jpg'), //tour
   require('../../assets/images/CheeseMaking.png'), //cheese
-  require('../../assets/images/TobaQom.png'), //toba qom
+  require('../../assets/images/TobaQom.jpg'), //toba qom
   require('../../assets/images/Eucalipto3.jpg'), //eucalyptus
 ];
 const adventImages = [
   require('../../assets/images/HowlerMonkey.jpeg'), //monkeys
-  require('../../assets/images/Walking.jpg'), //hiking
+  require('../../assets/images/PatioWithStudents.jpg'), //hiking
   require('../../assets/images/Bici.jpg'), //biking
   require('../../assets/images/Horses1.jpeg'), //horses
   require('../../assets/images/Sports1.png'), //sports
-  require('../../assets/images/Playground.png'), //playground
+  require('../../assets/images/Parque.webp'), //playground
 ];
 
 type ActivityCardProps = {

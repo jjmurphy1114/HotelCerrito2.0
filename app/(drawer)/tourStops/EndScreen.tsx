@@ -44,7 +44,7 @@ export default function EndScreen() {
     <View style={styles.container}>
       <ImageCarousel
         images={[
-          require('../../../assets/images/HotelWithTrees.jpg'),
+          require('../../../assets/images/HotelWithTrees.webp'),
           require('../../../assets/images/HowlerMonkey2.jpg'),
           require('../../../assets/images/StudentsAtCPV.jpg'),
         ]}

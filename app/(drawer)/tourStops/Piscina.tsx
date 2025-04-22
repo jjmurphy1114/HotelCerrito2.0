@@ -17,7 +17,7 @@ export default function Capilla() {
        customVisual={
               <ImageCarousel images={[require('../../../assets/images/Piscina.jpg'),
                                       require('../../../assets/images/Quincho.jpg'),
-                                      require('../../../assets/images/Parque.jpg')
+                                      require('../../../assets/images/Parque.webp')
                                     ]}/>
             }
       prev={'/(drawer)/tourStops/CPV' as RelativePathString}

@@ -17,7 +17,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.hotelcerrito.audiotour",
+      "package": "com.fundacionparaguaya.cerritovisitorapp",
       "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/cerrito-logo.png",
@@ -34,19 +34,10 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/hotel-cerrito-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
-        }
-      ],
-      [
-        "expo-font",
-        {
-          "fonts": [
-            "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf",
-            "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf"
-          ]
         }
       ]
     ],

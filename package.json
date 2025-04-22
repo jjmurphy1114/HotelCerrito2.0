@@ -14,14 +14,25 @@
   "jest": {
     "preset": "jest-expo"
   },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "i18next",
+          "i18next-browser-languagedetector",
+          "react-icons",
+          "react-native-image-pan-zoom"
+        ]
+      }
+    }
+  },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.3.0",
     "@expo/vector-icons": "^14.0.2",
     "@react-native-async-storage/async-storage": "1.23.1",
-    "@react-navigation/bottom-tabs": "^7.2.0",
-    "@react-navigation/drawer": "^7.3.9",
-    "@react-navigation/native": "^7.1.6",
-    "@react-navigation/native-stack": "^7.3.10",
+    "@react-navigation/drawer": "7.3.9",
+    "@react-navigation/native": "7.1.6",
+    "@react-navigation/native-stack": "7.3.10",
     "expo": "~52.0.42",
     "expo-av": "~15.0.2",
     "expo-blur": "~14.0.3",
@@ -48,11 +59,12 @@
     "react-native-paper": "^5.13.1",
     "react-native-reanimated": "~3.16.1",
     "react-native-reanimated-carousel": "^4.0.2",
-    "react-native-safe-area-context": "^4.12.0",
+    "react-native-safe-area-context": "4.12.0",
     "react-native-screens": "~4.4.0",
     "react-native-vector-icons": "^10.2.0",
     "react-native-web": "~0.19.13",
-    "react-native-webview": "13.12.5"
+    "react-native-webview": "13.12.5",
+    "@react-navigation/bottom-tabs": "7.3.10"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
