@@ -18,7 +18,7 @@
     },
     "android": {
       "package": "com.fundacionparaguaya.cerritovisitorapp",
-      "versionCode": 6,
+      "versionCode": 7,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/cerrito-logo.png",
         "backgroundColor": "#ffffff"
