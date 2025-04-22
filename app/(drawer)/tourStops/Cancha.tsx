@@ -13,11 +13,11 @@ export default function Capilla() {
       description={t("tour.cancha.description")}
       directions={t("tour.cancha.directions")}
       audioPathKey="cancha"
-      image={require('../../../assets/images/Cancha.jpg')}
+      image={require('../../../assets/compressed/Cancha.webp')}
       customVisual={
-        <ImageCarousel images={[require('../../../assets/images/Cancha.jpg'),
-                                require('../../../assets/images/Voleibol.jpg'),
-                                require('../../../assets/images/Baloncesto.jpg')
+        <ImageCarousel images={[require('../../../assets/compressed/Cancha.webp'),
+                                require('../../../assets/compressed/Voleibol.webp'),
+                                require('../../../assets/compressed/Baloncesto.webp')
                               ]}/>
       }
       prev={'/(drawer)/tourStops/MapaCentral' as RelativePathString}
