@@ -13,10 +13,10 @@ export default function Capilla() {
       description={t("tour.comedor.description")}
       directions={t("tour.comedor.directions")}
       audioPathKey="comedor"
-      image={require('../../../assets/images/Comedor.jpg')}
+      image={require('../../../assets/compressed/Comedor.webp')}
        customVisual={
-              <ImageCarousel images={[require('../../../assets/images/Comedor.jpg'),
-                                      require('../../../assets/images/ComedorInside.jpg')
+              <ImageCarousel images={[require('../../../assets/compressed/Comedor.webp'),
+                                      require('../../../assets/compressed/ComedorInside.webp')
                                     ]}/>
             }
       prev={'/(drawer)/tourStops/PatioCentral' as RelativePathString}

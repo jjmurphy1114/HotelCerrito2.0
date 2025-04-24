@@ -16,10 +16,10 @@ export default function Capilla() {
       description={t("tour.patio_central.description")}
       directions={t("tour.patio_central.directions")}
       audioPathKey="patio_central"
-      image={require('../../../assets/images/PatioCentral.jpg')}
+      image={require('../../../assets/compressed/PatioCentral.webp')}
        customVisual={
-              <ImageCarousel images={[require('../../../assets/images/PatioCentral.jpg'),
-                                      require('../../../assets/images/PatioWithStudents.jpg')
+              <ImageCarousel images={[require('../../../assets/compressed/PatioCentral.webp'),
+                                      require('../../../assets/compressed/PatioWithStudents.webp')
                                     ]}/>
             }
       prev={'/(drawer)/tourStops/Capilla' as RelativePathString}

@@ -2,7 +2,7 @@
   "expo": {
     "name": "HotelCerritoApp",
     "slug": "HotelCerritoApp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/cerrito-logo.png",
     "splash": {
@@ -14,11 +14,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fundacionparaguaya.cerritovisitorapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
-      "package": "com.hotelcerrito.audiotour",
-      "versionCode": 6,
+      "package": "com.fundacionparaguaya.cerritovisitorapp",
+      "versionCode": 7,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/cerrito-logo.png",
         "backgroundColor": "#ffffff"
@@ -34,19 +38,10 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/hotel-cerrito-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
-        }
-      ],
-      [
-        "expo-font",
-        {
-          "fonts": [
-            "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf",
-            "node_modules/@expo-google-fonts/inter/Inter_400Regular.ttf"
-          ]
         }
       ]
     ],

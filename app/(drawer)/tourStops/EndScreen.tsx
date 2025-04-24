@@ -44,9 +44,9 @@ export default function EndScreen() {
     <View style={styles.container}>
       <ImageCarousel
         images={[
-          require('../../../assets/images/HotelWithTrees.jpg'),
-          require('../../../assets/images/HowlerMonkey2.jpg'),
-          require('../../../assets/images/StudentsAtCPV.jpg'),
+          require('../../../assets/compressed/HotelWithTrees.webp'),
+          require('../../../assets/compressed/HowlerMonkey2.webp'),
+          require('../../../assets/compressed/StudentsAtCPV.webp'),
         ]}
       />
       <AudioPlayer source={audio}/> 

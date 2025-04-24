@@ -16,27 +16,27 @@ import Category from '../components/Category';
 
 
 const relaxImages = [
-require('../../assets/images/Piscina.jpg'), //pool
-require('../../assets/images/Comedor1.jpg'), //restaurant
-require('../../assets/images/Hammocks.jpg'), //hammocks
-require('../../assets/images/Quincho1.jpg'), //quinchos
-require('../../assets/images/Shop.jpg'), //gift shop
-require('../../assets/images/Ejercicios1.jpg'), //exercise
+require('../../assets/compressed/Piscina.webp'), //pool
+require('../../assets/compressed/Comedor1.webp'), //restaurant
+require('../../assets/compressed/Hammocks.webp'), //hammocks
+require('../../assets/compressed/Quincho.webp'), //quinchos
+require('../../assets/compressed/Shop.webp'), //gift shop
+require('../../assets/compressed/Ejercicios1.webp'), //exercise
 ];
 const educatImages = [
-  require('../../assets/images/Production.png'), //production
-  require('../../assets/images/MapaCentral1.jpg'), //tour
-  require('../../assets/images/CheeseMaking.png'), //cheese
-  require('../../assets/images/TobaQom.png'), //toba qom
-  require('../../assets/images/Eucalipto3.jpg'), //eucalyptus
+  require('../../assets/compressed/Production.webp'), //production
+  require('../../assets/compressed/MapaCentral1.webp'), //tour
+  require('../../assets/compressed/CheeseMaking.webp'), //cheese
+  require('../../assets/compressed/TobaQom.webp'), //toba qom
+  require('../../assets/compressed/Eucalipto3.webp'), //eucalyptus
 ];
 const adventImages = [
-  require('../../assets/images/HowlerMonkey.jpeg'), //monkeys
-  require('../../assets/images/Walking.jpg'), //hiking
-  require('../../assets/images/Bici.jpg'), //biking
-  require('../../assets/images/Horses1.jpeg'), //horses
-  require('../../assets/images/Sports1.png'), //sports
-  require('../../assets/images/Playground.png'), //playground
+  require('../../assets/compressed/HowlerMonkey.webp'), //monkeys
+  require('../../assets/compressed/PatioWithStudents.webp'), //hiking
+  require('../../assets/compressed/Bici.webp'), //biking
+  require('../../assets/compressed/Horses1.webp'), //horses
+  require('../../assets/compressed/Sports1.webp'), //sports
+  require('../../assets/compressed/Parque.webp'), //playground
 ];
 
 type ActivityCardProps = {
