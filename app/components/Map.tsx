@@ -92,7 +92,7 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
                 top: 0,
                 left: 0,
                 width: '100%',
-                height: '100%',
+                height: '90%',
                 zIndex: 999
                 }}
                 contentFit="contain"
