@@ -6,7 +6,7 @@ import AudioPlayer from '@/app/components/AudioPlayer';
 import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
-import MapComponent from '@/app/components/Map';
+import MapComponent, { getCurrentIndex } from '@/app/components/Map';
 import ImageCarousel from '@/app/components/ImageCarousel';
 
 interface StopComponentProps {
@@ -58,6 +58,8 @@ export default function StopTemplate({
   const isSmallDevice = height < 700;
 
   const cardHeight = isSmallDevice ? width*.4 : width*.5;
+
+  const currentIndex = getCurrentIndex();
 
   const styles = StyleSheet.create({
       container: {
@@ -144,7 +146,7 @@ export default function StopTemplate({
       <Text style={{ fontSize: 24, marginTop: -width*0.02, fontFamily: Platform.select({
             android: 'Inter_900Black',
             ios: 'Inter-Black',
-          }), }}>{title}</Text>
+          }), }}>{currentIndex}. {title}</Text>
       {directionsToggle ? (
           <MapComponent percentCropHeight={0.273} showPath={false} />
         ) : customVisual ? (

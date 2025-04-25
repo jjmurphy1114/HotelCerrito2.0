@@ -15,11 +15,7 @@ interface MapComponentProps {
     hideOverlay?: boolean;
 }
 
-
-export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4, showPath=true, hideOverlay=false}: MapComponentProps) {
-    
-    const { t } = useTranslation();
-
+export function getCurrentIndex() {
     const pathname = usePathname();
 
     // Grab the last part of the route (e.g., 'MapaCentral')
@@ -30,6 +26,16 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
     stop.route.endsWith(`/${stopName}`)
     );
 
+    return currentIndex;
+}
+
+
+export default function MapComponent({percentWidth = .9, percentHeight = .4, percentCropWidth = .9, percentCropHeight = .4, showPath=true, hideOverlay=false}: MapComponentProps) {
+    
+    const { t } = useTranslation();
+
+    const currentIndex = getCurrentIndex();
+    
     // Current and next stop
     const currentStop = tourStops[currentIndex];
     const nextStop = tourStops[currentIndex + 1]; 
@@ -92,7 +98,7 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
                 top: 0,
                 left: 0,
                 width: '100%',
-                height: '100%',
+                height: '90%',
                 zIndex: 999
                 }}
                 contentFit="contain"
