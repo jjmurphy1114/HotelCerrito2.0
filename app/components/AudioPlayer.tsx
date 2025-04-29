@@ -19,7 +19,7 @@ export default function AudioPlayer({ source }: { source: any }) {
   const styles = StyleSheet.create({
     container: {
       alignItems: 'center',
-      padding: isSmallDevice ? 8 : 16, // 🔥 Smaller padding on small screens
+      padding: isSmallDevice ? 8 : 12, // 🔥 Smaller padding on small screens
     },
     controls: {
       flexDirection: 'row',
@@ -120,14 +120,14 @@ export default function AudioPlayer({ source }: { source: any }) {
       {/* <Text variant="labelLarge">{t('tour.audio_player')}</Text> */}
 
       <View style={styles.controls}>
-        <IconButton icon="rewind-10" onPress={() => skip(-10000)} disabled={!isLoaded} />
+        <IconButton icon="rewind-10" onPress={() => skip(-10000)} disabled={!isLoaded} size={isSmallDevice ? 18 : 24} />
         <IconButton
           icon={isPlaying ? 'pause' : 'play'}
           onPress={togglePlayPause}
           disabled={!isLoaded}
-          size={isSmallDevice ? 30 : 36} // Slightly bigger play button
+          size={isSmallDevice ? 20 : 28} // Slightly bigger play button
         />
-        <IconButton icon="fast-forward-10" onPress={() => skip(10000)} disabled={!isLoaded} size={isSmallDevice ? 20 : 24} />
+        <IconButton icon="fast-forward-10" onPress={() => skip(10000)} disabled={!isLoaded} size={isSmallDevice ? 18 : 24} />
       </View>
     </View>
   );

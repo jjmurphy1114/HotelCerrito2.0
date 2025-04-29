@@ -128,7 +128,7 @@ export default function StopTemplate({
       },
       navButton: {
         alignItems: 'center',
-        marginHorizontal: 10,
+        marginHorizontal: 0,
       },
       navLabel: {
         fontSize: 14,
