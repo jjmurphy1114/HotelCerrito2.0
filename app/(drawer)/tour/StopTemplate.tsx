@@ -55,23 +55,28 @@ export default function StopTemplate({
   const imageSizeWidth = width * 0.9;
   const imageSizeHeight = height * 0.25;
 
+  // Smaller device logic
   const isSmallDevice = height < 700;
+  const imageHeight = isSmallDevice ? height * 0.22 : height * 0.26;
+  const cardHeight = isSmallDevice ? height * 0.25 : height * 0.3;
+  const audioHeight = isSmallDevice ? 60 : 80;
 
-  const cardHeight = isSmallDevice ? width*.4 : width*.5;
+  // const cardHeight = isSmallDevice ? width*.4 : width*.5;
 
   const currentIndex = getCurrentIndex();
 
   const styles = StyleSheet.create({
       container: {
-        backgroundColor: colors.background,
-        marginTop: 5,
-        padding: 2,
-        alignItems: 'center',
-        justifyContent: 'center',
+      flex: 1, // <-- 🔥 important to stretch the page vertically
+      backgroundColor: colors.background,
+      alignItems: 'center',
+      justifyContent: 'flex-start', // <- keep content aligned at the top
+      paddingTop: isSmallDevice ? 10 : 15, // <- smart, dynamic top padding
+      paddingBottom: 80, // <- reserve space above the fixed nav
       },
       image: {
         width: imageSizeWidth,
-        height: imageSizeHeight,
+        height: imageHeight,
         backgroundColor: colors.background,
         marginTop: 5
       },
@@ -81,7 +86,8 @@ export default function StopTemplate({
         padding: 10,
         borderRadius: 10,
         backgroundColor: colors.secondary,
-        width: "90%"
+        width: "90%",
+        height: cardHeight
       },
       scrollBox: {
         maxHeight: cardHeight,
@@ -107,10 +113,18 @@ export default function StopTemplate({
         }),
       },
       navigation: {
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '100%',
-        marginTop: 10,
+        alignItems: 'center',
+        backgroundColor: colors.background,
+        paddingBottom: 12,
+        paddingTop: 2,
+        paddingHorizontal: 20,
+        // borderTopWidth: 1,
+        // borderTopColor: '#ccc',
       },
       navButton: {
         alignItems: 'center',
@@ -142,7 +156,7 @@ export default function StopTemplate({
     
     
     return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
+    <View style={styles.container}>
       <Text style={{ fontSize: 24, marginTop: -width*0.02, fontFamily: Platform.select({
             android: 'Inter_900Black',
             ios: 'Inter-Black',

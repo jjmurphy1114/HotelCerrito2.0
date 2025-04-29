@@ -15,7 +15,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
 
   const isSmallDevice = height < 700;
 
-  const carouselHeight = isSmallDevice ? height * 0.2 : height * 0.3;
+  const carouselHeight = isSmallDevice ? height * 0.2 : height * 0.25;
 
   return (
     <View>

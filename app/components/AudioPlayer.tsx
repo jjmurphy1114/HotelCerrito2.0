@@ -1,6 +1,6 @@
 import { Audio } from 'expo-av';
 import { useRef, useState, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import { IconButton, Text } from 'react-native-paper';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect } from '@react-navigation/native';
@@ -12,6 +12,20 @@ export default function AudioPlayer({ source }: { source: any }) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const { t } = useTranslation();
+
+  const { height } = Dimensions.get('window');
+  const isSmallDevice = height < 700;
+
+  const styles = StyleSheet.create({
+    container: {
+      alignItems: 'center',
+      padding: isSmallDevice ? 8 : 16, // 🔥 Smaller padding on small screens
+    },
+    controls: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+  });
 
   useFocusEffect(
     useCallback(() => {
@@ -111,14 +125,12 @@ export default function AudioPlayer({ source }: { source: any }) {
           icon={isPlaying ? 'pause' : 'play'}
           onPress={togglePlayPause}
           disabled={!isLoaded}
+          size={isSmallDevice ? 30 : 36} // Slightly bigger play button
         />
-        <IconButton icon="fast-forward-10" onPress={() => skip(10000)} disabled={!isLoaded} />
+        <IconButton icon="fast-forward-10" onPress={() => skip(10000)} disabled={!isLoaded} size={isSmallDevice ? 20 : 24} />
       </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: { alignItems: 'center', padding: 16 },
-  controls: { flexDirection: 'row', alignItems: 'center' },
-});
+
