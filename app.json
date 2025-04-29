@@ -2,7 +2,7 @@
   "expo": {
     "name": "Hotel Cerrito App",
     "slug": "HotelCerritoApp",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/cerrito-logo.png",
     "splash": {
@@ -22,7 +22,7 @@
     },
     "android": {
       "package": "com.fundacionparaguaya.cerritovisitorapp",
-      "versionCode": 8,
+      "versionCode": 9,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/cerrito-logo.png",
         "backgroundColor": "#ffffff"
