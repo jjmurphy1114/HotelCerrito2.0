@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const tourStops = [
   {
       titleKey: "tour.start",
-      route: '/(drawer)/tour' as RelativePathString,
+      route: '/(drawer)/Tour' as RelativePathString,
       number: 0 //Not actually a stop
   }, 
   {

@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
 import MapComponent, { getCurrentIndex } from '@/app/components/Map';
-import ImageCarousel from '@/app/components/ImageCarousel';
+import ScrollingTextBox from '@/app/components/ScrollingTextBox';
 
 interface StopComponentProps {
   title: string;
@@ -53,41 +53,28 @@ export default function StopTemplate({
   // Expo Image setup
   const { width, height } = Dimensions.get('window');
   const imageSizeWidth = width * 0.9;
-  const imageSizeHeight = height * 0.25;
+  // const imageSizeHeight = height * 0.25;
 
+  // Smaller device logic
   const isSmallDevice = height < 700;
-
-  const cardHeight = isSmallDevice ? width*.4 : width*.5;
+  const imageHeight = isSmallDevice ? height * 0.22 : height * 0.26;
 
   const currentIndex = getCurrentIndex();
 
   const styles = StyleSheet.create({
       container: {
-        backgroundColor: colors.background,
-        marginTop: 5,
-        padding: 2,
-        alignItems: 'center',
-        justifyContent: 'center',
+      flex: 1, // <-- 🔥 important to stretch the page vertically
+      backgroundColor: colors.background,
+      alignItems: 'center',
+      justifyContent: 'flex-start', // <- keep content aligned at the top
+      paddingTop: isSmallDevice ? 10 : 15, // <- smart, dynamic top padding
+      paddingBottom: 80, // <- reserve space above the fixed nav
       },
       image: {
         width: imageSizeWidth,
-        height: imageSizeHeight,
+        height: imageHeight,
         backgroundColor: colors.background,
         marginTop: 5
-      },
-      card: {
-        margin: 0,
-        marginTop: -width*.025,
-        padding: 10,
-        borderRadius: 10,
-        backgroundColor: colors.secondary,
-        width: "90%"
-      },
-      scrollBox: {
-        maxHeight: cardHeight,
-      },
-      scrollContent: {
-        paddingRight: 10,
       },
       text: {
         fontSize: 18,
@@ -98,7 +85,7 @@ export default function StopTemplate({
                 }),
       },
       title: {
-        fontSize: 20,
+        fontSize: isSmallDevice? 15 : 20,
         fontWeight: 'bold',
         marginBottom: 10,
         fontFamily: Platform.select({
@@ -107,14 +94,22 @@ export default function StopTemplate({
         }),
       },
       navigation: {
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '100%',
-        marginTop: 10,
+        alignItems: 'center',
+        backgroundColor: colors.background,
+        paddingBottom: 12,
+        paddingTop: 2,
+        paddingHorizontal: 20,
+        // borderTopWidth: 1,
+        // borderTopColor: '#ccc',
       },
       navButton: {
         alignItems: 'center',
-        marginHorizontal: 10,
+        marginHorizontal: 0,
       },
       navLabel: {
         fontSize: 14,
@@ -142,7 +137,7 @@ export default function StopTemplate({
     
     
     return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.background }}>
+    <View style={styles.container}>
       <Text style={{ fontSize: 24, marginTop: -width*0.02, fontFamily: Platform.select({
             android: 'Inter_900Black',
             ios: 'Inter-Black',
@@ -162,17 +157,8 @@ export default function StopTemplate({
         )}
       <AudioPlayer source={currentAudio} />
       
-      <Card style={styles.card}>
-        <ScrollView
-          style={styles.scrollBox}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={true}
-        >
-          <Text style={styles.text}>
-            {displayedText}
-          </Text>
-        </ScrollView>
-      </Card>
+      <ScrollingTextBox text={displayedText} />
+
       <View style={styles.navigation}>
         <View style={styles.navButton}>
           <IconButton icon="arrow-left" onPress={PrevPage} />

@@ -107,7 +107,7 @@
             },
             "restaurant": {
                 "title": "Restaurante de Campus",
-                "description": "Pruebe los sabores de Paraguay, con verduras directamente de la huerta de la escuela y queso hecho con leche de vacas del campus. Vea cómo hacer una reserva para un almuerzo o una cena aquí."
+                "description": "Pruebe los sabores de Paraguay, con verduras directamente de la huerta de la escuela y queso hecho con leche de vacas del campus. Vea cómo hacer una reserva para un almuerzo o una cena en la página de servicios."
             },
             "hammocks": {
                 "title": "Hamacas Tradicionales",
@@ -137,7 +137,7 @@
             },
             "tour": {
                 "title": "Tour Autoguiado",
-                "description": "Explore el hermoso campus de Cerrito y aprenda todo sobre las características principales de la escuela. Realice el tour autoguiado acá."
+                "description": "Explore el hermoso campus de Cerrito y aprenda todo sobre las características principales de la escuela. Realice el tour autoguiado a través de nuestra página de inicio"
             },
             "cheese": {
                 "title": "Tour de la Fábrica de Queso",
@@ -201,7 +201,7 @@
         "subheader2": "Recomendaciones para Ver a los Monos Aulladores",
         "text1": "Hay una familia de monos aulladores negros y dorados, también conocidos como Alouatta caraya, que residen en el campus de Cerrito. Todos los monos de esta especie nacen con pelo dorado. Las hembras permanecen doradas mientras que los machos se vuelven negros a medida que maduran.\n\nLos monos aulladores son animales tranquilos y no entran en contacto directo con los humanos a menos que estén amenazados. Son más activos durante el amanecer y el atardecer y generalmente se ven en los árboles. Ellos usan sus colas prensiles para colgar de ramas y dormir por la noche en ramas altas y seguras.\n\nSon conocidos como monos aulladores debido a los sonidos aulladores que hacen para defender su territorio, comunicarse con otros grupos y coordinar sus movimientos dentro del grupo. Es común que aulle al amanecer y al atardecer como una forma de establecer sus límites territoriales.\n\nLos monos aulladores comúnmente comen hojas, sin embargo, también comen flores, brotes tiernos y frutas como mangos. Cuando está en temporada, la familia local de monos aulladores en Cerrito disfrutan escalando los árboles de mango en el campus y comiendo la fruta. Sirven un papel ecológico importante en la dispersión de semillas, ya que comúnmente tiran semillas al suelo después de terminar sus frutos.",
         "text2": "Dado que los monos aulladores son más activos al amanecer y al atardecer, recomendamos caminar por el campus durante esas horas para tener la mejor oportunidad de ver a los monos. Mientras caminas, busca movimiento en las copas de los árboles y escucha sus aullidos (mira el reproductor de audio abajo para una muestra de audio).\n",
-        "text3": "\nPara evitar interferir con sus actividades naturales y reducir el riesgo de transmisión de enfermedades, la observación de los monos debe ser pasiva, silenciosa, en grupos pequeños y a una distancia mínima de 10 metros.\n\nSi bien los monos aulladores se pueden ver en todo el campus, a menudo se pueden encontrar en los siguientes lugares:\n\n- La arboleda de bambú, o tacuaral, junto al lado del centro de producción animal\n\n- Los árboles junto a ambos conjuntos de cabañas\n\n- Los árboles entre la panadería, el hotel y la cabaña Jazmín"
+        "text3": "\nPara evitar interferir con sus actividades naturales y reducir el riesgo de transmisión de enfermedades, la observación de los monos debe ser pasiva, silenciosa, en grupos pequeños y a una distancia mínima de 10 metros.\n\nSi bien los monos aulladores se pueden ver en todo el campus, a menudo se pueden encontrar en los siguientes lugares:\n\n• La arboleda de bambú, o tacuaral, junto al lado del centro de producción animal\n\n• Los árboles junto a ambos conjuntos de cabañas\n\n• Los árboles entre la panadería, el hotel y la cabaña Jazmín"
     },
     "otherServices": {
         "title": "Servicios",

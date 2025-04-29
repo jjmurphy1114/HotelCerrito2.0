@@ -42,10 +42,13 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
 
     const { width, height } = Dimensions.get('window');
 
-    const displayWidth = width * percentWidth;
-    const displayHeight = height * percentHeight;
-    const cropWidth = width * percentCropWidth;
-    const cropHeight = height * percentCropHeight;
+    const isSmallDevice = height < 700;
+
+    const displayWidth = width * (isSmallDevice ? percentWidth * 0.95 : percentWidth);
+    const displayHeight = height * (isSmallDevice ? percentHeight * 0.9 : percentHeight);
+    const cropWidth = width * (isSmallDevice ? percentCropWidth * 0.95 : percentCropWidth);
+    const cropHeight = height * (isSmallDevice ? percentCropHeight * 0.9 : percentCropHeight);
+
 
     // Logic for getting path image
     const pathImages: { [key: string]: any } = {
@@ -66,7 +69,7 @@ export default function MapComponent({percentWidth = .9, percentHeight = .4, per
     const pathImage = pathImages[pathKey];
     
     return (
-    <View style={{ alignItems: 'center', justifyContent: 'center', padding: 10 }}>
+    <View style={{ alignItems: 'center', justifyContent: 'center', padding: 5 }}>
         {showPath && (
         <Text style={{ fontSize: 16, marginBottom: 8, textAlign: 'center', fontFamily: Platform.select({
                     android: 'Inter_900Black',
