@@ -1,4 +1,4 @@
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { View, StyleSheet, ScrollView, Platform } from 'react-native';
 import { Text, Button, Card, useTheme } from 'react-native-paper';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
@@ -6,6 +6,7 @@ import { Image } from 'expo-image';
 import ImageCarousel from '../../components/ImageCarousel';
 import AudioPlayer from '@/app/components/AudioPlayer';
 import { getAudio } from '../tour/stops';
+import ScrollingTextBox from '@/app/components/ScrollingTextBox';
 
 export default function EndScreen() {
   const router = useRouter();
@@ -34,7 +35,8 @@ export default function EndScreen() {
     },
     endButtons: {
         flexDirection: 'row',
-        columnGap: 5
+        columnGap: 5,
+        marginTop: 15
     }
   });
   
@@ -42,6 +44,10 @@ export default function EndScreen() {
 
   return (
     <View style={styles.container}>
+      <Text style={{ fontSize: 24, fontFamily: Platform.select({
+                  android: 'Inter_900Black',
+                  ios: 'Inter-Black',
+                }), }}>{t("tour.end.title")}</Text>
       <ImageCarousel
         images={[
           require('../../../assets/compressed/HotelWithTrees.webp'),
@@ -50,17 +56,9 @@ export default function EndScreen() {
         ]}
       />
       <AudioPlayer source={audio}/> 
-      <Card style={styles.card}>
-        <ScrollView
-          style={styles.scrollBox}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={true}
-        >
-          <Text style={styles.text}>
-            {t("tour.end.description")}
-          </Text>
-        </ScrollView>
-      </Card>
+            
+      <ScrollingTextBox text={t("tour.end.description")}/>
+
       <View style={styles.endButtons}>
         <Button
             mode="contained"

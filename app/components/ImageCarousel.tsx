@@ -3,19 +3,23 @@ import Carousel from 'react-native-reanimated-carousel';
 import { Dimensions, View, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
 
-const { width, height } = Dimensions.get('window');
 
 type ImageCarouselProps = {
   images: any[];
-  height?: number;
+  heightOverride?: number;
 };
 
-export default function ImageCarousel({ images }: ImageCarouselProps) {
+export default function ImageCarousel({ images, heightOverride }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const { width, height } = Dimensions.get('window');
   const isSmallDevice = height < 700;
-
-  const carouselHeight = isSmallDevice ? height * 0.2 : height * 0.25;
+  
+  const carouselHeight = heightOverride 
+    ? heightOverride * height
+    : isSmallDevice 
+      ? height * 0.22 
+      : height * 0.27;
 
   return (
     <View>
@@ -37,7 +41,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         )}
       />
 
-      {/* Pagination Dots */}
+      {/* Pagination Dots
       <View style={styles.paginationContainer}>
         {images.map((_, index) => (
           <View
@@ -48,7 +52,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
             ]}
           />
         ))}
-      </View>
+      </View> */}
     </View>
   );
 }

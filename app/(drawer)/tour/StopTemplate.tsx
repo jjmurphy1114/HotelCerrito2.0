@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { getAudio } from './stops';
 import { useState } from 'react';
 import MapComponent, { getCurrentIndex } from '@/app/components/Map';
-import ImageCarousel from '@/app/components/ImageCarousel';
+import ScrollingTextBox from '@/app/components/ScrollingTextBox';
 
 interface StopComponentProps {
   title: string;
@@ -53,15 +53,11 @@ export default function StopTemplate({
   // Expo Image setup
   const { width, height } = Dimensions.get('window');
   const imageSizeWidth = width * 0.9;
-  const imageSizeHeight = height * 0.25;
+  // const imageSizeHeight = height * 0.25;
 
   // Smaller device logic
   const isSmallDevice = height < 700;
   const imageHeight = isSmallDevice ? height * 0.22 : height * 0.26;
-  const cardHeight = isSmallDevice ? height * 0.25 : height * 0.3;
-  const audioHeight = isSmallDevice ? 60 : 80;
-
-  // const cardHeight = isSmallDevice ? width*.4 : width*.5;
 
   const currentIndex = getCurrentIndex();
 
@@ -80,21 +76,6 @@ export default function StopTemplate({
         backgroundColor: colors.background,
         marginTop: 5
       },
-      card: {
-        margin: 0,
-        marginTop: -width*.025,
-        padding: 10,
-        borderRadius: 10,
-        backgroundColor: colors.secondary,
-        width: "90%",
-        height: cardHeight
-      },
-      scrollBox: {
-        maxHeight: cardHeight,
-      },
-      scrollContent: {
-        paddingRight: 10,
-      },
       text: {
         fontSize: 18,
         lineHeight: 24,
@@ -104,7 +85,7 @@ export default function StopTemplate({
                 }),
       },
       title: {
-        fontSize: 20,
+        fontSize: isSmallDevice? 15 : 20,
         fontWeight: 'bold',
         marginBottom: 10,
         fontFamily: Platform.select({
@@ -176,17 +157,8 @@ export default function StopTemplate({
         )}
       <AudioPlayer source={currentAudio} />
       
-      <Card style={styles.card}>
-        <ScrollView
-          style={styles.scrollBox}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={true}
-        >
-          <Text style={styles.text}>
-            {displayedText}
-          </Text>
-        </ScrollView>
-      </Card>
+      <ScrollingTextBox text={displayedText} />
+
       <View style={styles.navigation}>
         <View style={styles.navButton}>
           <IconButton icon="arrow-left" onPress={PrevPage} />

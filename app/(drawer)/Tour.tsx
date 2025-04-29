@@ -6,9 +6,7 @@ import { Image } from 'expo-image';
 import ImageCarousel from '../components/ImageCarousel';
 import AudioPlayer from '../components/AudioPlayer';
 import { getAudio } from './tour/stops';
-
-const { width, height } = Dimensions.get('window');
-const imageSizeWidth = width * 0.4;
+import ScrollingTextBox from '../components/ScrollingTextBox';
 
 export default function TourStart() {
   const router = useRouter();
@@ -20,49 +18,46 @@ export default function TourStart() {
 
   const audio = getAudio('start', 'descriptions');
 
+  const { width, height } = Dimensions.get('window');
+  const imageSizeWidth = width * 0.4;
+  const isSmallDevice = height < 700;
+
   const styles = StyleSheet.create({
-    container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: width*0.045, textAlign: 'center' },
+    container: { 
+      flex: 1, 
+      justifyContent: 'flex-start', 
+      alignItems: 'center', 
+      // padding: width*0.045, 
+      paddingTop: isSmallDevice ? 10 : 15, // <- smart, dynamic top padding
+      textAlign: 'center' 
+    },
     header: {
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          backgroundColor: colors.secondary,
-          paddingVertical: 0,
-          justifyContent: 'center',
-          alignItems: 'center',
-          zIndex: 999
-        },
-        headerText: {
-          color: colors.onSecondary, 
-          textAlign: 'center',
-          fontSize: 20,
-          padding: width*.008,
-          fontFamily: Platform.select({
-            android: 'Inter_900Black',
-            ios: 'Inter-Black',
-          }),
-          position: 'absolute',
-            left: 0,
-            right: 0,
-        },
-        backButton: {
-          alignSelf: 'flex-start',
-          zIndex: 10
-        },
-    card: {
-      margin: width*0.04,
-      padding: width*0.027,
-      borderRadius: 10,
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
       backgroundColor: colors.secondary,
-      width: "90%",
-      height: '40%'
+      paddingVertical: 0,
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 999
     },
-    scrollBox: {
-      maxHeight: width*.7,
+    headerText: {
+      color: colors.onSecondary, 
+      textAlign: 'center',
+      fontSize: 20,
+      padding: width*.008,
+      fontFamily: Platform.select({
+        android: 'Inter_900Black',
+        ios: 'Inter-Black',
+      }),
+      position: 'absolute',
+        left: 0,
+        right: 0,
     },
-    scrollContent: {
-      paddingRight: width*0.02,
+    backButton: {
+      alignSelf: 'flex-start',
+      zIndex: 10
     },
     text: {
       fontSize: 18,
@@ -90,19 +85,12 @@ export default function TourStart() {
           require('../../assets/compressed/CerritoSign.webp'),
           require('../../assets/compressed/Capilla.webp'),
         ]}
+        heightOverride={.35}
       /> 
       <AudioPlayer source={audio}/>
-      <Card style={styles.card}>
-        <ScrollView
-          style={styles.scrollBox}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={true}
-        >
-          <Text style={styles.text}>
-            {t("tour.welcome")}
-          </Text>
-        </ScrollView>
-      </Card>
+     
+      <ScrollingTextBox text={t("tour.welcome")}/>
+
       <Button
         mode="contained"
         labelStyle={{
@@ -111,6 +99,9 @@ export default function TourStart() {
             ios: 'Inter-Medium',
           }),
           fontSize: 16, // optional
+        }}
+        style={{
+          marginTop: 15
         }}
         onPress={() => router.push('/tourStops/MapaCentral')}
       >
