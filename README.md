@@ -47,6 +47,7 @@ Enviar la versión para descargar
    ```
 
 → Si necesitas la propiedad de EAS, contacta a Jacob Murphy a jjmurphy1@wpi.edu 
+--> Para enviar la aplicación para la utilización de iOS, usamos Transporter en vez de de EAS CLI
 
 
 # ENGLISH: Welcome to the Cerrito Hotel and School visitor application!
@@ -96,3 +97,4 @@ Submit your build for download
    ```
 
 --> If you need EAS ownership, contact Jacob Murphy at jjmurphy1@wpi.edu 
+--> For iOS deployment, we used Transporter instead of EAS CLI
