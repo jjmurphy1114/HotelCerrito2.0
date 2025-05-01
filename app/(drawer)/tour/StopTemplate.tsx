@@ -100,10 +100,11 @@ export default function StopTemplate({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        alignSelf: 'center',
         backgroundColor: colors.background,
-        paddingBottom: 12,
+        paddingBottom: '3%',
         paddingTop: 2,
-        paddingHorizontal: 20,
+        paddingHorizontal: '5%',
         // borderTopWidth: 1,
         // borderTopColor: '#ccc',
       },
@@ -112,7 +113,7 @@ export default function StopTemplate({
         marginHorizontal: 0,
       },
       navLabel: {
-        fontSize: 14,
+        fontSize: 16,
         color: '#666', // or use theme.colors.onBackground
         fontFamily: Platform.select({
           android: 'Inter_900Black',
@@ -155,7 +156,7 @@ export default function StopTemplate({
             transition={1000}
           />
         )}
-      <AudioPlayer source={currentAudio} />
+      <AudioPlayer source={currentAudio} shouldPlay={true}/>
       
       <ScrollingTextBox text={displayedText} />
 

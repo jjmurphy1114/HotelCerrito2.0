@@ -7,7 +7,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { useCallback } from 'react';
 
 
-export default function AudioPlayer({ source }: { source: any }) {
+export default function AudioPlayer({ source, shouldPlay }: { source: any, shouldPlay?: boolean }) {
   const soundRef = useRef<Audio.Sound | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -47,7 +47,7 @@ export default function AudioPlayer({ source }: { source: any }) {
   
           const { sound, status } = await Audio.Sound.createAsync(
             source,
-            { shouldPlay: false },
+            { shouldPlay: shouldPlay },
             (status) => {
               if (!isMounted) return;
   

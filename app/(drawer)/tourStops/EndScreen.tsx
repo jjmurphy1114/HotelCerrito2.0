@@ -55,7 +55,7 @@ export default function EndScreen() {
           require('../../../assets/compressed/StudentsAtCPV.webp'),
         ]}
       />
-      <AudioPlayer source={audio}/> 
+      <AudioPlayer source={audio} shouldPlay={true}/> 
             
       <ScrollingTextBox text={t("tour.end.description")}/>
 
