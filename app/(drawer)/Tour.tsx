@@ -87,7 +87,7 @@ export default function TourStart() {
         ]}
         heightOverride={.35}
       /> 
-      <AudioPlayer source={audio}/>
+      <AudioPlayer source={audio} shouldPlay={true}/>
      
       <ScrollingTextBox text={t("tour.welcome")}/>
 
