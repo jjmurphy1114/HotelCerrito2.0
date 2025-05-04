@@ -1,13 +1,18 @@
 import { Audio } from 'expo-av';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
-import { IconButton, Text } from 'react-native-paper';
+import { IconButton } from 'react-native-paper';
 import { useTranslation } from 'react-i18next';
 import { useFocusEffect } from '@react-navigation/native';
 import { useCallback } from 'react';
 
+// Global variables to track current audio
+let currentGlobalSound: Audio.Sound | null = null;
+let currentGlobalSource: string | null = null;
+let isStopping = false;
+let latestSetupId = 0;
 
-export default function AudioPlayer({ source, shouldPlay }: { source: any, shouldPlay?: boolean }) {
+export default function AudioPlayer({ source, shouldPlay = true }: { source: any, shouldPlay?: boolean }) {
   const soundRef = useRef<Audio.Sound | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -19,7 +24,7 @@ export default function AudioPlayer({ source, shouldPlay }: { source: any, shoul
   const styles = StyleSheet.create({
     container: {
       alignItems: 'center',
-      padding: isSmallDevice ? 8 : 12, // 🔥 Smaller padding on small screens
+      padding: isSmallDevice ? 8 : 12,
     },
     controls: {
       flexDirection: 'row',
@@ -27,10 +32,32 @@ export default function AudioPlayer({ source, shouldPlay }: { source: any, shoul
     },
   });
 
+  const stopAllAudio = async () => {
+    if (isStopping) return;
+    isStopping = true;
+    try {
+      if (currentGlobalSound) {
+        const status = await currentGlobalSound.getStatusAsync();
+        if (status.isLoaded) {
+          await currentGlobalSound.stopAsync();
+          await currentGlobalSound.unloadAsync();
+        }
+        currentGlobalSound.setOnPlaybackStatusUpdate(null);
+      }
+    } catch (e) {
+      console.warn("Failed to stop/unload audio:", e);
+    } finally {
+      currentGlobalSound = null;
+      currentGlobalSource = null;
+      isStopping = false;
+    }
+  };
+
   useFocusEffect(
     useCallback(() => {
       let isMounted = true;
-  
+      const currentSetup = ++latestSetupId;
+
       const prepareAudio = async () => {
         try {
           await Audio.setAudioModeAsync({
@@ -38,59 +65,63 @@ export default function AudioPlayer({ source, shouldPlay }: { source: any, shoul
             staysActiveInBackground: false,
             playsInSilentModeIOS: true,
           });
-  
-          if (soundRef.current) {
-            await soundRef.current.unloadAsync();
-            soundRef.current.setOnPlaybackStatusUpdate(null);
-            soundRef.current = null;
+
+          if (currentGlobalSource !== source?.uri) {
+            await stopAllAudio();
           }
-  
+
           const { sound, status } = await Audio.Sound.createAsync(
             source,
-            { shouldPlay: shouldPlay },
-            (status) => {
-              if (!isMounted) return;
-  
-              if (status.isLoaded) {
-                setIsPlaying(status.isPlaying);
-                setIsLoaded(true);
-  
-                if (status.didJustFinish) {
-                  setIsPlaying(false);
-                }
-              } else {
-                console.warn('Audio not loaded:', status);
-                setIsLoaded(false);
-              }
-            }
+            { shouldPlay: false } // manual control
           );
-  
+
+          // Abort if a newer setup is running or component unmounted
+          if (latestSetupId !== currentSetup || !isMounted) {
+            await sound.unloadAsync();
+            return;
+          }
+
           soundRef.current = sound;
+          currentGlobalSound = sound;
+          currentGlobalSource = source?.uri;
+          setIsLoaded(status.isLoaded);
+          setIsPlaying(false);
+
+          sound.setOnPlaybackStatusUpdate((status) => {
+            if (!isMounted) return;
+            if (status.isLoaded) {
+              setIsPlaying(status.isPlaying);
+              if (status.didJustFinish) {
+                setIsPlaying(false);
+              }
+            } else {
+              setIsLoaded(false);
+            }
+          });
+
+          if (shouldPlay) {
+            await sound.playAsync();
+            setIsPlaying(true);
+          }
+
         } catch (error) {
-          console.error('Failed to load audio', error);
+          console.error('Failed to load/play audio:', error);
         }
       };
-  
+
       prepareAudio();
-  
+
       return () => {
         isMounted = false;
-        if (soundRef.current) {
-          soundRef.current.unloadAsync();
-          soundRef.current.setOnPlaybackStatusUpdate(null);
-          soundRef.current = null;
-          setIsPlaying(false);
-          setIsLoaded(false);
-        }
+        stopAllAudio();
+        setIsPlaying(false);
+        setIsLoaded(false);
       };
-    }, [source])
+    }, [source?.uri])
   );
-  
-  
 
   const togglePlayPause = async () => {
     if (!soundRef.current || !isLoaded) return;
-
     const status = await soundRef.current.getStatusAsync();
     if (!status.isLoaded) return;
 
@@ -105,7 +136,6 @@ export default function AudioPlayer({ source, shouldPlay }: { source: any, shoul
 
   const skip = async (ms: number) => {
     if (!soundRef.current || !isLoaded) return;
-
     const status = await soundRef.current.getStatusAsync();
     if (status.isLoaded) {
       let newPos = status.positionMillis + ms;
@@ -117,20 +147,11 @@ export default function AudioPlayer({ source, shouldPlay }: { source: any, shoul
 
   return (
     <View style={styles.container}>
-      {/* <Text variant="labelLarge">{t('tour.audio_player')}</Text> */}
-
       <View style={styles.controls}>
         <IconButton icon="rewind-10" onPress={() => skip(-10000)} disabled={!isLoaded} size={isSmallDevice ? 18 : 24} />
-        <IconButton
-          icon={isPlaying ? 'pause' : 'play'}
-          onPress={togglePlayPause}
-          disabled={!isLoaded}
-          size={isSmallDevice ? 20 : 28} // Slightly bigger play button
-        />
+        <IconButton icon={isPlaying ? 'pause' : 'play'} onPress={togglePlayPause} disabled={!isLoaded} size={isSmallDevice ? 20 : 28} />
         <IconButton icon="fast-forward-10" onPress={() => skip(10000)} disabled={!isLoaded} size={isSmallDevice ? 18 : 24} />
       </View>
     </View>
   );
 }
-
-
