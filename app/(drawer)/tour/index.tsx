@@ -37,23 +37,38 @@ export default function TourStops() {
             alignItems: 'center',
             zIndex: 999
           },
-          headerText: {
-            color: colors.onSecondary, 
-            textAlign: 'center',
-            fontSize: 20,
-            padding: width*.008,
-            fontFamily: Platform.select({
-              android: 'Inter_900Black',
-              ios: 'Inter-Black',
-            }),
-            position: 'absolute',
-              left: 0,
-              right: 0,
-          },
-          backButton: {
-            alignSelf: 'flex-start',
-            zIndex: 10
-          },
+      headerText: {
+        color: colors.onSecondary, 
+        textAlign: 'center',
+        fontSize: 20,
+        padding: width*.008,
+        fontFamily: Platform.select({
+          android: 'Inter_900Black',
+          ios: 'Inter-Black',
+        }),
+        position: 'absolute',
+          left: 0,
+          right: 0,
+      },
+      backButton: {
+        alignSelf: 'flex-start',
+        zIndex: 10
+      },
+      scrollContainer: {
+        padding: 30,
+        marginTop: 20,   // push it below the banner
+        alignItems: 'center',       // center children horizontally
+        width: '100%',              
+      },
+      stopButton: {
+        width: '80%',               // or whatever makes sense visually
+        marginVertical: 8,
+      },
+      stopLabel: {
+        textDecorationLine: 'underline',
+        fontSize: 16,
+      },
+      
    });
 
   // This is the current menu for switching between stops. To change the order of the stops, go to stops.ts
@@ -65,7 +80,7 @@ export default function TourStops() {
           </TouchableOpacity>
           <Text style={styles.headerText} variant="headlineMedium">{t("tour.view_stops.title")}</Text>
         </View>
-    <ScrollView contentContainerStyle={{ padding: 20, marginTop: 30 }}>
+    <ScrollView contentContainerStyle={styles.scrollContainer}>
       {tourStops.map((stop, index) => {
         let buttonText = '';
         if (index === 0) {
@@ -80,13 +95,16 @@ export default function TourStops() {
           <Button
             key={stop.route}
             onPress={() => router.replace(stop.route)}
-            style={{ marginTop: 10 }}
+            mode={'contained'}
+            style={{ marginTop: 10, width: '100%', backgroundColor: colors.tertiary, }}
             labelStyle={{
               fontFamily: Platform.select({
                 android: 'Inter_500Medium',
-                ios: 'Inter-Medium',
+                ios: 'Inter-MediumBold',
               }),
-              fontSize: 16, // optional
+              fontSize: 15.5, // optional
+              color: '555555', // optional
+              fontWeight: 'bold', // optional
             }}
           >
             {buttonText}

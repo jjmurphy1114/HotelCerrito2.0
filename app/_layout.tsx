@@ -15,6 +15,7 @@ const theme = {
     onSecondary: '#000000',
     surface: '#FFFFFF',
     onSurface: '#000000',
+    tertiary: '#D3D3D3',
   },
 };
 
