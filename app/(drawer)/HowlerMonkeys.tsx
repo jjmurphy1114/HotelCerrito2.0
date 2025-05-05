@@ -161,7 +161,7 @@ export default function HowlerMonkeys() {
 
         <Text style={styles.subheader}>{t('howlerMonkeys.subheader2')}</Text>
         <Text style={styles.text}>{t('howlerMonkeys.text2')}</Text>
-        <AudioPlayer source={require('../../assets/audio/HowlerMonkeyAudio.mp3')} />
+        <AudioPlayer source={require('../../assets/audio/HowlerMonkeyAudio.mp3')} shouldPlay={false} />
         <Text style={styles.text}>{t('howlerMonkeys.text3')}</Text>
       </ScrollView>
 
