@@ -82,6 +82,7 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
           style={styles.accordion}
           titleStyle={styles.accordionTitle}
           title={t("activities.details")}
+          rippleColor={'transparent'}
           theme={{colors: {primary: 'transparent', background: 'transparent', placeholder: 'transparent'}}}
           right={() => (
             <TouchableOpacity
@@ -160,6 +161,7 @@ export default function ActivityCarousel({length, activities, images}: ActivityC
         marginTop: -20,
         marginBottom: -20,
         width: 200,
+        // rippleColor: 'transparent',
       },
       iconButton: {
         marginLeft: -100,

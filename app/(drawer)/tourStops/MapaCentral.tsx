@@ -15,8 +15,8 @@ export default function MapaCentral() {
       description={t("tour.mapa_central.description")}
       directions={t("tour.mapa_central.directions")}
       audioPathKey="mapa_central"
-      image={require('../../../assets/images/MapaVirtual.jpg')}
-      customVisual={<MapComponent percentCropHeight={0.273} showPath={false} hideOverlay={true} />}
+      image={require('../../../assets/compressed/MapaCentral.webp')}
+      // customVisual={<MapComponent percentCropHeight={0.273} showPath={false} hideOverlay={true} />}
       prev={'/(drawer)/Tour' as RelativePathString}
       next={'/(drawer)/tourStops/Cancha' as RelativePathString}
     />
