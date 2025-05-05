@@ -56,7 +56,7 @@ export default function TourStops() {
       },
       scrollContainer: {
         padding: 30,
-        marginTop: 20,   // push it below the banner
+        marginTop: 30,   // push it below the banner
         alignItems: 'center',       // center children horizontally
         width: '100%',              
       },
